@@ -119,6 +119,24 @@
         "project:devouring_dragon"
       ],
       "count": 1
+    },
+    {
+      "when": "2026-09-20T12:59:55",
+      "file": "2026-09-20_dd_style_law.json",
+      "agent": "Sara (Agent Mode)",
+      "ids": [
+        "correction#8"
+      ],
+      "count": 1
+    },
+    {
+      "when": "2026-09-20T12:59:55",
+      "file": "registry_dd_s34_style_2026-09-20.json",
+      "agent": "Sara (Agent Mode)",
+      "ids": [
+        "project:devouring_dragon"
+      ],
+      "count": 1
     }
   ]
 }

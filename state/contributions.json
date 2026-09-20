@@ -85,6 +85,19 @@
       },
       "seq": 7,
       "kind": "correction"
+    },
+    {
+      "project": "devouring_dragon",
+      "was": "Chapters 11-12 of the Devouring Dragon serial were written in a single long-sentence register: average sentence 62-64 words with single sentences of 328 and 430 words, abstraction words ('the ledger', 'the word', 'the quiet thing') as the sentence engine, no scene shown in real time, and the parallel panels used as the place where scenes happened - two panels in ch12 including a planning scene.",
+      "now": "THE STYLE LAW (kit: RAILS section STYLE LAW, second offence against the s25 'don't write boring' law) with Chapters 11 and 12 REWRITTEN IN FULL in plain scene register: short concrete sentences (ch11 average 17 words, longest 53; ch12 average 19, longest 55); real scenes shown moment to moment (the race and kill of the thick-paw; the fight at the water; the crossing); the abstraction engines removed. PANEL LAW (author: 'THE PARALLEL PANEL when needed'): at most one short panel per chapter, only what the beast side cannot carry, never a planning scene, never a re-tell - ch11 keeps one short winter-place scene, ch12 one short water's-edge scene, the ch12 camp planning scene is gone from the page. Mirrors swept (every citation of a dropped line replaced with what the chapters now say); gates PASS (ch11 2,634 words / 17 dialogue lines; ch12 3,010 / 13; project sweep PASS); kit commit ba460bb.",
+      "reason": "Author correction of 2026-09-20, verbatim: 'what bad chapter's and events and scene are written, go check how canon are written what are even doing seriously... i can't read few lines before i disgusted by how bad is this.' Plus: 'THE PARALLEL PANEL when needed what you don't have common sense.' Chapters 1-10 carry the same defect and are being rewritten to this register next, two to three per pass.",
+      "found_by": "author correction 2026-09-20; session 34 measured the defect with sentence statistics and rewrote both chapters",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-09-20"
+      },
+      "seq": 8,
+      "kind": "correction"
     }
   ]
 }
