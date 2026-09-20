@@ -165,6 +165,15 @@
         "project:devouring_dragon"
       ],
       "count": 2
+    },
+    {
+      "when": "2026-09-20T13:52:00",
+      "file": "s36_ch7_quotation_repair.json",
+      "agent": "Sara (Agent Mode)",
+      "ids": [
+        "project:devouring_dragon@f1012e7"
+      ],
+      "count": 1
     }
   ]
 }
