@@ -174,6 +174,25 @@
         "project:devouring_dragon@f1012e7"
       ],
       "count": 1
+    },
+    {
+      "when": "2026-09-20T14:43:27",
+      "file": "2026-09-20_dd_ch13_keepers_line.json",
+      "agent": "unknown",
+      "ids": [
+        "note#10"
+      ],
+      "count": 1
+    },
+    {
+      "when": "2026-09-20T14:45:00",
+      "file": "2026-09-20_dd_ch13_keepers_line.json",
+      "agent": "Sara (Agent Mode)",
+      "ids": [
+        "project:devouring_dragon",
+        "kit:14405d9"
+      ],
+      "count": 2
     }
   ]
 }

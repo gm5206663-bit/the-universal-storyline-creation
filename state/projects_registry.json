@@ -62,13 +62,13 @@
       "path": "soul-land-universal-kit/soul_land_devouring_dragon/",
       "status": "live",
       "active": true,
-      "live_edge": "after the s36 FULL REBUILD of Chapters 1-12 to the house grammar - every human-side scene on the page at house density (8.2-10.7 spoken lines per 1000w in ch2-12; Chapter 1 the recorded no-voices exception); kit f1012e7, 2026-09-20",
+      "live_edge": "after Chapter 13 \"The Keepers' Line\" (DL 3664 falling of the green; real age ≈ 64–66 months) — the war aimed at him as a LINE: the watch craft, the line named, the voice read as a word, the want patient; kit 14405d9, 2026-09-20",
       "authority": {
         "status_source": "foundation/STATUS_PANEL.md",
         "conflict_rule": "STATUS_PANEL.md is the live edge for the beast POV."
       },
-      "verification": "verified 2026-09-20 from the kit clone: all 12 chapters rebuilt and gated (verify.py per chapter PASS except Chapter 1's three-spoken-line guard, as ruled; project sweep PASS, all hard gates clean)",
-      "notes": "Body words: ch1 2,595 / ch2 3,095 / ch3 3,389 / ch4 2,600 / ch5 3,375 / ch6 2,930 / ch7 3,086 / ch8 3,362 / ch9 3,879 / ch10 3,420 / ch11 2,786 / ch12 3,279. Prose averages 16.1-21.3 words, no sentence over 60, motif word 'the way' 0-1 per chapter. New ruling ER-13 (the standing light). Next: Chapter 13 - the keepers' line and the sign of the seen."
+      "verification": "verified 2026-09-20 from the kit clone: ch13 gated (4,008 words; 41 spoken lines; 10.2 per 1000w; average 20.8; longest 60) and the whole serial re-checked against the house law (paragraph rule enforced, ch5 apparatus head repaired, all 13 footers re-set); verify.py per chapter + project sweep PASS",
+      "notes": "Chapters 1–13. Body words: ch1 2,595 … ch7 3,089 … ch13 4,008. Prose averages 16.0–20.8 words, no sentence over 60, motif word 'the way' 0–2 per chapter. Rulings in force: ER-12 ring-slot law, ER-13 the standing light, SB-11 soul-beast rule, house grammar (8–10 spoken lines per 1000w wherever a human-side scene exists; ch1 the recorded no-voices exception). Next: ch14 — the season of the watch."
     },
     {
       "id": "dragon_prince_yuan",

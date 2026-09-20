@@ -111,6 +111,13 @@
       },
       "seq": 9,
       "kind": "correction"
+    },
+    {
+      "project": "devouring_dragon",
+      "tag": "chapter",
+      "text": "CHAPTER 13 'The Keepers' Line' written (s37, 2026-09-20; author verbatim: 'Continue'). First chapter written at the house grammar from the draft up: 4,008 words; 41 spoken lines (10.2 per 1000w); sentence average 20.8, longest 60; no one-sentence paragraphs; one human-side scene at house density (the watch-fold and the naming of the line); no panels. Beats: the after-cost of the crossing paid down (the water bank relearned him); the kill-word read for the first time as a SIGN (he had been signing his ground since the first season); the takers' craft mirrored (a kill of theirs left standing, the light boxed, the wire on both trails, a blind and a staked hound); THE KEEPERS' LINE SET - the list goes to the line it has seen (the watch: four days to a fold, the kill carried north a day's walk at a time; the rule to look and not shoot; the line named by Old Qin); the counter (the country made to lie); the voice spent once at the edge of the deep place and read as a WORD, not a roar; the want wakened patient (the flaw learned to wait); the wall at the thousand far, unfelt. Firewall held on the page: no sighting, no print, no contact. Same session closed the s36 rebuild: the paragraph rule enforced across all 13 chapters, ch5's false apparatus head repaired, all footers re-set to verified counts. Gates: verify.py per chapter and project sweep PASS. Kit commit 14405d9, pushed.",
+      "seq": 10,
+      "kind": "note"
     }
   ]
 }
