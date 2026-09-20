@@ -13,7 +13,7 @@ AT A GLANCE
   knowledge firewalls   18
   kit laws              11
   hard gates            7
-  growth events logged  6
+  growth events logged  7
 
 ==============================================================================
 SECTION 1 - CORE OPERATING RULE
@@ -566,6 +566,7 @@ RECORDS:
   row's original hundred-year assumption (register row corrected same turn,
   correction noted in the row); (3) new prey named per the serial's
   functional-naming convention — the old bull of the warm breaks [design].
+  - [correction] -
 
 
 ==============================================================================
@@ -798,6 +799,7 @@ OTHER RECORDS:
   correction noted in the row); (3) new prey named per the serial's
   functional-naming convention — the old bull of the warm breaks [design].
   (filed by Sara (Agent Mode))
+  - [correction] - (filed by Sara (Agent Mode))
 
 
 ==============================================================================

@@ -46,6 +46,19 @@
       },
       "seq": 4,
       "kind": "decision"
+    },
+    {
+      "project": "devouring_dragon",
+      "was": "The three Devouring Dragon design decisions of 2026-09-20 (session 29) — including the ratification of the year-takers' names as Bren, Yorre, Sella",
+      "now": "Superseded in part by the author's correction of 2026-09-20 ('This is complete failure — Bren?, dog's?... which angle it looks like soul land fen fiction'): the year-takers' names are OLD QIN (list-keeper, Soul King), GAO TIE (hound-man, Grand Soul Master), XIAO AN (the young one, Soul Master) — pinyin per the Soul Land naming convention — and the parallel panels were rewritten in the canon human-side texture (soul masters, the rank ladder, soul rings by canon tier, the road market, the Tang Sect's presence, the spirit hound). Decision (2) — the grey stag's tier = the ch10 event read (purple tier) — and decision (3) — the old bull named per convention — stand unchanged.",
+      "reason": "The first drafts of the ch11-12 parallel panels used Western-fantasy names and generic hunter texture; the full canon re-read (session 30) found the human-side canon already in the project's WORLD.md and the Control Centre canon spine (rank ladder, ring tiers). Both chapters corrected and re-gated the same turn.",
+      "found_by": "author correction 2026-09-20; session 30 full re-read",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-09-20"
+      },
+      "seq": 5,
+      "kind": "correction"
     }
   ]
 }
