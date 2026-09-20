@@ -74,6 +74,15 @@
         "correction#5"
       ],
       "count": 1
+    },
+    {
+      "when": "2026-09-20T11:03:19",
+      "file": "registry_dd_s31_rewrite_2026-09-20.json",
+      "agent": "Sara (Agent Mode)",
+      "ids": [
+        "project:devouring_dragon"
+      ],
+      "count": 1
     }
   ]
 }

@@ -13,7 +13,7 @@ AT A GLANCE
   knowledge firewalls   18
   kit laws              11
   hard gates            7
-  growth events logged  7
+  growth events logged  8
 
 ==============================================================================
 SECTION 1 - CORE OPERATING RULE
@@ -547,13 +547,15 @@ SECTION 16 - PROJECT STATE: DEVOURING DRAGON (BEAST-POV SERIAL)  [CONTRIBUTED]
 path: soul-land-universal-kit/soul_land_devouring_dragon/
 status: live
 live edge: after Chapter 12 'The Bull at the Water' (DL 3664 green season at
-its height — the bull taken at the water, the crossing, the war's shape
-changed; kit 7b144b5)
+its height — Chapters 11–12 FULLY REWRITTEN in s31 on the author's 'Rewrite
+that chapter' directive, beats + quoted lines preserved; the bull taken at the
+water, the crossing, the war's shape changed; kit a5036cb)
 notes: Author ruling pending: the unified StoryOS gate fails 0/10 on gate 4
 (dialogue >= 3) against the beast-POV design. Do not rewrite chapters to force
 the gate green before the ruling. NOT the Dragon Prince Yuan project —
 different serial, do not conflate.
-verification: verified 2026-09-20: 10 chapters on disk
+verification: verified 2026-09-20: 12 chapters on disk (s31 rewrite gated:
+ch11 2,866w, ch12 3,175w, project sweep PASS)
 
 RECORDS:
   - [correction] -

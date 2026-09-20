@@ -1,116 +1,116 @@
 {
- "projects": [
-  {
-   "id": "soul_land_2",
-   "name": "Soul Land 2 — Jiang Che",
-   "path": "soul-land-universal-kit/Soul_Land_2_Project/",
-   "status": "live",
-   "active": true,
-   "live_edge": "after Chapter 23 'The Watching' — the first line of the knockout (kit 614fc58, 2026-09-20)",
-   "authority": {
-    "status_source": "foundation/STATUS_PANEL.md",
-    "conflict_rule": "STATUS_PANEL.md is the single live-edge source of truth; every other file derives from it."
-   },
-   "verification": "verified 2026-09-20 from clone at 015ca86 (Chapter 22 audited, gates 23/23, receipt in audits/)",
-   "notes": "Ranks at the edge: Yuhao 17-peak (18-verge), Wang Dong 23, Jiang Che 29. The prize is two words. R5 (thirty-wall) sweep pending in OPEN.md and CANON_LEDGER."
-  },
-  {
-   "id": "soul_land_3",
-   "name": "Soul Land 3 — Lin Hao",
-   "path": "soul-land-universal-kit/Soul_Land_3_Project/",
-   "status": "live",
-   "active": true,
-   "live_edge": "end of Chapter 116 'The Grindstone' — rank 45, SP 2,918, hawk 3,260, ledger 179",
-   "authority": {
-    "status_source": "LIN_HAO_STATUS.md",
-    "conflict_rule": "The chapter footers (checks/state.json) are the single source; LIN_HAO_STATUS.md is re-derived from them."
-   },
-   "verification": "verified 2026-09-20: 116 chapters on disk",
-   "notes": "Chapter 117 is the survive-to-the-end battle for the class-president election announced in Chapter 116."
-  },
-  {
-   "id": "soul_land_4",
-   "name": "Soul Land 4 — Fire Phoenix (Yan Shuo'er)",
-   "path": "soul_land_4_fire_phoenix/ (private GitHub repo)",
-   "status": "live",
-   "active": true,
-   "live_edge": "after Chapter 52 'Amiable Beasts' (cf1cb9e, 2026-09-19 sync: Chapter52 v2 + validator/precedence fixes)",
-   "authority": {
-    "status_source": "foundation/STATUS_PANEL.md",
-    "conflict_rule": "STATUS_PANEL.md is the ONLY current status source; every other file derives from it."
-   },
-   "verification": "verified 2026-09-20 from the private-repo clone at cf1cb9e",
-   "notes": "Stale ch31 copies exist in the kit archive (_archive/2026-09-19_stale_sl4_copies_at_ch31) and the kit's NEXT_STEPS file stopped at Chapter 51 — the private repo is ahead. Never use the stale copies."
-  },
-  {
-   "id": "holy_spirit",
-   "name": "Holy Spirit — Luo Chen",
-   "path": "soul-land-universal-kit/soul_land_holy_spirit/",
-   "status": "active",
-   "active": true,
-   "live_edge": "after Chapter 4 'The Use' (DL ~12667-68, one season out, age six)",
-   "authority": {
-    "status_source": "foundation/STATUS_PANEL.md",
-    "conflict_rule": "STATUS_PANEL.md holds the live edge; next beats are author-gated."
-   },
-   "verification": "verified 2026-09-20: 4 chapters on disk, 13,731 words",
-   "notes": "Twin souls: DEVOURING DRAGON (public) + DRAGON HEART (hidden). Next beats are author-gated."
-  },
-  {
-   "id": "devouring_dragon",
-   "name": "Devouring Dragon (beast-POV serial)",
-   "path": "soul-land-universal-kit/soul_land_devouring_dragon/",
-   "status": "live",
-   "active": true,
-   "live_edge": "after Chapter 12 'The Bull at the Water' (DL 3664 green season at its height — the bull taken at the water, the crossing, the war's shape changed; kit 7b144b5)",
-   "authority": {
-    "status_source": "foundation/STATUS_PANEL.md",
-    "conflict_rule": "STATUS_PANEL.md is the live edge for the beast POV."
-   },
-   "verification": "verified 2026-09-20: 10 chapters on disk",
-   "notes": "Author ruling pending: the unified StoryOS gate fails 0/10 on gate 4 (dialogue >= 3) against the beast-POV design. Do not rewrite chapters to force the gate green before the ruling. NOT the Dragon Prince Yuan project — different serial, do not conflate."
-  },
-  {
-   "id": "dragon_prince_yuan",
-   "name": "Dragon Prince Yuan — Zhou Xu",
-   "path": "soul-land-universal-kit/dragon_prince_yuan_native_oc_fanfiction/",
-   "status": "active",
-   "active": true,
-   "live_edge": "after Chapter 1 'The Second Son in the Green Smoke'; next source canon ch 2 'Genesis Runes' (unfetched — Ch2 blocked on the fetch per the project lock)",
-   "authority": {
-    "status_source": "foundation/CURRENT_STATE_MANIFEST.json",
-    "conflict_rule": "The native manifest is the authoritative edge; STATUS_PANEL.md mirrors it."
-   },
-   "verification": "verified 2026-09-20: fresh StoryOS rebuild gate PASS, drift 0, integrity clean (storyos-site 64c1739); the published FAIL was a stale pre-fix snapshot",
-   "notes": "Open for the author: Zhou Xu's realm, firewall boundaries (TBD in KNOWLEDGE_FIREWALLS.md), wine-quirk handling, name confirmation."
-  },
-  {
-   "id": "blue_silver",
-   "name": "Blue Silver — Sunweave",
-   "path": "blue_silver/",
-   "status": "gate-pass",
-   "active": false,
-   "live_edge": "Book One complete — 15 rebuilt chapters, 34,711 words, all seven gates passing; ends on THE KEEPER",
-   "authority": {
-    "status_source": "bluesilver_foundation/REBUILD_CONTINUITY.md",
-    "conflict_rule": "Where REBUILD_CONTINUITY.md and bluesilver_codex/ disagree, REBUILD_CONTINUITY.md wins. chapters/ is SUPERSEDED — history only, never continuity."
-   },
-   "verification": "verified 2026-09-20: 15 files in chapters_rebuilt/",
-   "notes": "Protagonist Sunweave is a real elemental mutant with Adaptation Talent (no royal, dragon or devour blood). Kill count zero across all 775 years is permanent."
-  },
-  {
-   "id": "soul_land_new",
-   "name": "Soul Land New — Tian Yu",
-   "path": "soul-land-universal-kit/SOUL_LAND_NEW/",
-   "status": "active",
-   "active": true,
-   "live_edge": "Tian Yu at the gate — 6 chapters, pre-Chapter-11 intake (age 11, rank 30, standing at the third-ring wall)",
-   "authority": {
-    "status_source": "bible/CURRENT_STATE_PRE11.md",
-    "conflict_rule": "The bible snapshot is the one-page truth of the pre-11 state; its numbers live only there, in TIANYU_STATUS_PRE11.md, and in the chronicle."
-   },
-   "verification": "verified 2026-09-20: 6 chapters on disk",
-   "notes": "The ~10,000-year black third ring is the first true contender against the bloodline threshold. Mu En's rule: do not be the strongest in the room."
-  }
- ]
+  "projects": [
+    {
+      "id": "soul_land_2",
+      "name": "Soul Land 2 — Jiang Che",
+      "path": "soul-land-universal-kit/Soul_Land_2_Project/",
+      "status": "live",
+      "active": true,
+      "live_edge": "after Chapter 23 'The Watching' — the first line of the knockout (kit 614fc58, 2026-09-20)",
+      "authority": {
+        "status_source": "foundation/STATUS_PANEL.md",
+        "conflict_rule": "STATUS_PANEL.md is the single live-edge source of truth; every other file derives from it."
+      },
+      "verification": "verified 2026-09-20 from clone at 015ca86 (Chapter 22 audited, gates 23/23, receipt in audits/)",
+      "notes": "Ranks at the edge: Yuhao 17-peak (18-verge), Wang Dong 23, Jiang Che 29. The prize is two words. R5 (thirty-wall) sweep pending in OPEN.md and CANON_LEDGER."
+    },
+    {
+      "id": "soul_land_3",
+      "name": "Soul Land 3 — Lin Hao",
+      "path": "soul-land-universal-kit/Soul_Land_3_Project/",
+      "status": "live",
+      "active": true,
+      "live_edge": "end of Chapter 116 'The Grindstone' — rank 45, SP 2,918, hawk 3,260, ledger 179",
+      "authority": {
+        "status_source": "LIN_HAO_STATUS.md",
+        "conflict_rule": "The chapter footers (checks/state.json) are the single source; LIN_HAO_STATUS.md is re-derived from them."
+      },
+      "verification": "verified 2026-09-20: 116 chapters on disk",
+      "notes": "Chapter 117 is the survive-to-the-end battle for the class-president election announced in Chapter 116."
+    },
+    {
+      "id": "soul_land_4",
+      "name": "Soul Land 4 — Fire Phoenix (Yan Shuo'er)",
+      "path": "soul_land_4_fire_phoenix/ (private GitHub repo)",
+      "status": "live",
+      "active": true,
+      "live_edge": "after Chapter 52 'Amiable Beasts' (cf1cb9e, 2026-09-19 sync: Chapter52 v2 + validator/precedence fixes)",
+      "authority": {
+        "status_source": "foundation/STATUS_PANEL.md",
+        "conflict_rule": "STATUS_PANEL.md is the ONLY current status source; every other file derives from it."
+      },
+      "verification": "verified 2026-09-20 from the private-repo clone at cf1cb9e",
+      "notes": "Stale ch31 copies exist in the kit archive (_archive/2026-09-19_stale_sl4_copies_at_ch31) and the kit's NEXT_STEPS file stopped at Chapter 51 — the private repo is ahead. Never use the stale copies."
+    },
+    {
+      "id": "holy_spirit",
+      "name": "Holy Spirit — Luo Chen",
+      "path": "soul-land-universal-kit/soul_land_holy_spirit/",
+      "status": "active",
+      "active": true,
+      "live_edge": "after Chapter 4 'The Use' (DL ~12667-68, one season out, age six)",
+      "authority": {
+        "status_source": "foundation/STATUS_PANEL.md",
+        "conflict_rule": "STATUS_PANEL.md holds the live edge; next beats are author-gated."
+      },
+      "verification": "verified 2026-09-20: 4 chapters on disk, 13,731 words",
+      "notes": "Twin souls: DEVOURING DRAGON (public) + DRAGON HEART (hidden). Next beats are author-gated."
+    },
+    {
+      "id": "devouring_dragon",
+      "name": "Devouring Dragon (beast-POV serial)",
+      "path": "soul-land-universal-kit/soul_land_devouring_dragon/",
+      "status": "live",
+      "active": true,
+      "live_edge": "after Chapter 12 'The Bull at the Water' (DL 3664 green season at its height — Chapters 11–12 FULLY REWRITTEN in s31 on the author's 'Rewrite that chapter' directive, beats + quoted lines preserved; the bull taken at the water, the crossing, the war's shape changed; kit a5036cb)",
+      "authority": {
+        "status_source": "foundation/STATUS_PANEL.md",
+        "conflict_rule": "STATUS_PANEL.md is the live edge for the beast POV."
+      },
+      "verification": "verified 2026-09-20: 12 chapters on disk (s31 rewrite gated: ch11 2,866w, ch12 3,175w, project sweep PASS)",
+      "notes": "Author ruling pending: the unified StoryOS gate fails 0/10 on gate 4 (dialogue >= 3) against the beast-POV design. Do not rewrite chapters to force the gate green before the ruling. NOT the Dragon Prince Yuan project — different serial, do not conflate."
+    },
+    {
+      "id": "dragon_prince_yuan",
+      "name": "Dragon Prince Yuan — Zhou Xu",
+      "path": "soul-land-universal-kit/dragon_prince_yuan_native_oc_fanfiction/",
+      "status": "active",
+      "active": true,
+      "live_edge": "after Chapter 1 'The Second Son in the Green Smoke'; next source canon ch 2 'Genesis Runes' (unfetched — Ch2 blocked on the fetch per the project lock)",
+      "authority": {
+        "status_source": "foundation/CURRENT_STATE_MANIFEST.json",
+        "conflict_rule": "The native manifest is the authoritative edge; STATUS_PANEL.md mirrors it."
+      },
+      "verification": "verified 2026-09-20: fresh StoryOS rebuild gate PASS, drift 0, integrity clean (storyos-site 64c1739); the published FAIL was a stale pre-fix snapshot",
+      "notes": "Open for the author: Zhou Xu's realm, firewall boundaries (TBD in KNOWLEDGE_FIREWALLS.md), wine-quirk handling, name confirmation."
+    },
+    {
+      "id": "blue_silver",
+      "name": "Blue Silver — Sunweave",
+      "path": "blue_silver/",
+      "status": "gate-pass",
+      "active": false,
+      "live_edge": "Book One complete — 15 rebuilt chapters, 34,711 words, all seven gates passing; ends on THE KEEPER",
+      "authority": {
+        "status_source": "bluesilver_foundation/REBUILD_CONTINUITY.md",
+        "conflict_rule": "Where REBUILD_CONTINUITY.md and bluesilver_codex/ disagree, REBUILD_CONTINUITY.md wins. chapters/ is SUPERSEDED — history only, never continuity."
+      },
+      "verification": "verified 2026-09-20: 15 files in chapters_rebuilt/",
+      "notes": "Protagonist Sunweave is a real elemental mutant with Adaptation Talent (no royal, dragon or devour blood). Kill count zero across all 775 years is permanent."
+    },
+    {
+      "id": "soul_land_new",
+      "name": "Soul Land New — Tian Yu",
+      "path": "soul-land-universal-kit/SOUL_LAND_NEW/",
+      "status": "active",
+      "active": true,
+      "live_edge": "Tian Yu at the gate — 6 chapters, pre-Chapter-11 intake (age 11, rank 30, standing at the third-ring wall)",
+      "authority": {
+        "status_source": "bible/CURRENT_STATE_PRE11.md",
+        "conflict_rule": "The bible snapshot is the one-page truth of the pre-11 state; its numbers live only there, in TIANYU_STATUS_PRE11.md, and in the chronicle."
+      },
+      "verification": "verified 2026-09-20: 6 chapters on disk",
+      "notes": "The ~10,000-year black third ring is the first true contender against the bloodline threshold. Mu En's rule: do not be the strongest in the room."
+    }
+  ]
 }
