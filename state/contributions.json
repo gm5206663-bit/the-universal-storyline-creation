@@ -59,6 +59,19 @@
       },
       "seq": 5,
       "kind": "correction"
+    },
+    {
+      "project": "devouring_dragon",
+      "was": "The session-30 canon-texture ruling kept the mundane animal word for the men's kept hunting beasts on the beast side of the Devouring Dragon serial (the human side only was renamed to the team's spirit hound), and the ravine's ruler appeared in prose as a bare serpent.",
+      "now": "THE SOUL-BEAST RULE (recorded in the kit as CANON_LEDGER SB-11 and the author-law block of NO_MISTAKE_LIVE_RULES): this world has SOUL BEASTS, not ordinary animals. Every creature of the serial is a soul beast of a kind, with a year-tier; even the commonest thing of the world is a soul beast - blue silver grass, the low ground-cover of every country (named in ch1). The men's kept hunting beasts are the SPIRIT HOUNDS (soul beasts of the hound kind, kept, on the human side AND the beast side; Gao Tie holds the lead's collar); the ravine's ruler is the BLACK-RAVINE SERPENT, always named in full. Applied in one pass across all 12 chapters, all footers and every mirror; re-gated (ch11 2,873 words, ch12 3,197 words, project sweep PASS); kit commit 01ac0b7.",
+      "reason": "Author correction of 2026-09-20, verbatim: 'dogs and SERPENT'S?, what the hell, what this is soul land, soul land have soul beast not normal animal, even commonest thing is blue silver grass, correct everything even things i don't tell'. The s30 partial ruling was the direct cause of the recurrence and is marked SUPERSEDED in the serial's session log; the author's standing delegation puts the rule into effect immediately.",
+      "found_by": "author correction 2026-09-20; session 32 sweep",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-09-20"
+      },
+      "seq": 6,
+      "kind": "correction"
     }
   ]
 }

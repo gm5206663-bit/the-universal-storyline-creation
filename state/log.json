@@ -83,6 +83,24 @@
         "project:devouring_dragon"
       ],
       "count": 1
+    },
+    {
+      "when": "2026-09-20T11:33:24",
+      "file": "2026-09-20_dd_soul_beast_correction.json",
+      "agent": "Sara (Agent Mode)",
+      "ids": [
+        "correction#6"
+      ],
+      "count": 1
+    },
+    {
+      "when": "2026-09-20T11:33:27",
+      "file": "registry_dd_s32_soul_beast_2026-09-20.json",
+      "agent": "Sara (Agent Mode)",
+      "ids": [
+        "project:devouring_dragon"
+      ],
+      "count": 1
     }
   ]
 }
