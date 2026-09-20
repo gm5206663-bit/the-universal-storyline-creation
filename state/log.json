@@ -137,6 +137,15 @@
         "project:devouring_dragon"
       ],
       "count": 1
+    },
+    {
+      "when": "2026-09-20T13:07:59",
+      "file": "registry_dd_s35_house_grammar_2026-09-20.json",
+      "agent": "Sara (Agent Mode)",
+      "ids": [
+        "project:devouring_dragon"
+      ],
+      "count": 1
     }
   ]
 }
