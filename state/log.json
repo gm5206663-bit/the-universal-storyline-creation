@@ -146,6 +146,25 @@
         "project:devouring_dragon"
       ],
       "count": 1
+    },
+    {
+      "when": "2026-09-20T13:38:37",
+      "file": "2026-09-20_dd_full_rebuild.json",
+      "agent": "Sara (Agent Mode)",
+      "ids": [
+        "correction#9"
+      ],
+      "count": 1
+    },
+    {
+      "when": "2026-09-20T13:40:00",
+      "file": "2026-09-20_dd_full_rebuild.json",
+      "agent": "Sara (Agent Mode)",
+      "ids": [
+        "correction#9",
+        "project:devouring_dragon"
+      ],
+      "count": 2
     }
   ]
 }

@@ -98,6 +98,19 @@
       },
       "seq": 8,
       "kind": "correction"
+    },
+    {
+      "project": "devouring_dragon",
+      "was": "The Devouring Dragon serial carried the house-grammar defect the s35 audit measured across all twelve chapters: chapters 1-10 never brought the human side onto the page at all (the men existed only in beast-perspective description, zero quoted lines, while the footers claimed their beats), chapters 11-12 carried human scenes below the house dialogue target (6.5 and 4.3 spoken lines per thousand words against 8-10 required), and the motif phrase 'the way' ran 11 to 17 times per chapter as the sentence engine of the prose.",
+      "now": "THE FULL REBUILD (author instruction: 'Now rebuild chapter 1 to 12 completely') - all twelve chapters rebuilt in full to the house grammar of foundation/HOUSE_STYLE_AUDIT.md, same beats, same canon. Every chapter with a human-side beat now carries that scene ON THE PAGE at house density: ch2 the lodge (27 spoken lines, 8.7 per 1000w), ch3 the fern-country kill (30; 8.9), ch4 the deer-kind's husk (25; 9.6), ch5 the pass snare (36; 10.7), ch6 the thaw pull (27; 9.2), ch7 the eastern fold (28; 9.0), ch8 the deep-camp ledger (29; 8.6), ch9 the hunt beneath his ledge (32; 8.2), ch10 the winter fold (31; 9.1), ch11 (27; 9.7), ch12 (32; 9.8). Chapter 1 alone carries no voices - the recorded beat-forbids exception (the hatch, the empty mountain), and no second chapter goes without voices. Prose: sentence averages 16.1-21.3 words per chapter, no sentence over 60 words, motif word 'the way' cut to 0-1 per chapter. New ruling recorded as ER-13 (the standing light: a killed soul beast's light rises and stands where it died; it is taken by a soul master standing at it; a light no one stood at is left standing and dims) and the ch9/ch10 staging rebuilt to it. Mirrors swept (TIMELINE, ADAPTATION_LOG, CHARACTERS, CANON_LEDGER, STATUS_PANEL, SERIAL_LOG Session 36, HOUSE_STYLE_AUDIT queue marked done). Gates: verify.py per chapter PASS (Chapter 1 fails the three-spoken-line guard only, as ruled) + project sweep PASS, all hard gates clean. Kit commit e01561e, pushed.",
+      "reason": "Author, verbatim, 2026-09-20: 'Now rebuild chapter 1 to 12 completely' - and standing instruction that human-side beats always get their scene on the page at house density, because voices are how this fandom reads.",
+      "found_by": "author instruction 2026-09-20; session 36 rebuilt and gated all twelve chapters",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-09-20"
+      },
+      "seq": 9,
+      "kind": "correction"
     }
   ]
 }
