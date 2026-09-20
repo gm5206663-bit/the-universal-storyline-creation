@@ -1,3 +1,12 @@
 {
-  "records": []
+  "records": [
+    {
+      "was": "soul_land_4_fire_phoenix/ (private GitHub repo)",
+      "now": "soul_land_4_fire_phoenix/",
+      "reason": "Path field must be an actual directory path; the private-repo provenance already lives in the verification and notes fields of the same entry.",
+      "project": "soul_land_4",
+      "seq": 1,
+      "kind": "correction"
+    }
+  ]
 }

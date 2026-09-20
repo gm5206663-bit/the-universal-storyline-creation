@@ -13,7 +13,7 @@ AT A GLANCE
   knowledge firewalls   18
   kit laws              11
   hard gates            7
-  growth events logged  0
+  growth events logged  2
 
 ==============================================================================
 SECTION 1 - CORE OPERATING RULE
@@ -481,7 +481,121 @@ OPEN GAPS - FLAG, DO NOT INVENT:
      ruling: Do not invent one.
 
 ==============================================================================
-SECTION 12 - KNOWLEDGE FIREWALLS
+SECTION 12 - PROJECT STATE: SOUL LAND 2 — JIANG CHE  [CONTRIBUTED]
+==============================================================================
+
+path: soul-land-universal-kit/Soul_Land_2_Project/
+status: live
+live edge: after Chapter 22 'Knockout Brackets' — Group One 4-0, knockout
+first line chalked vs Group Forty-Seven
+notes: Ranks at the edge: Yuhao 17-peak (18-verge), Wang Dong 23, Jiang Che
+29. The prize is two words. R5 (thirty-wall) sweep pending in OPEN.md and
+CANON_LEDGER.
+verification: verified 2026-09-20 from clone at 015ca86 (Chapter 22 audited,
+gates 23/23, receipt in audits/)
+
+
+==============================================================================
+SECTION 13 - PROJECT STATE: SOUL LAND 3 — LIN HAO  [CONTRIBUTED]
+==============================================================================
+
+path: soul-land-universal-kit/Soul_Land_3_Project/
+status: live
+live edge: end of Chapter 116 'The Grindstone' — rank 45, SP 2,918, hawk
+3,260, ledger 179
+notes: Chapter 117 is the survive-to-the-end battle for the class-president
+election announced in Chapter 116.
+verification: verified 2026-09-20: 116 chapters on disk
+
+
+==============================================================================
+SECTION 14 - PROJECT STATE: SOUL LAND 4 — FIRE PHOENIX (YAN SHUO'ER)  [CONTRIBUTED]
+==============================================================================
+
+path: soul_land_4_fire_phoenix/ (private GitHub repo)
+status: live
+live edge: after Chapter 52 'Amiable Beasts' (cf1cb9e, 2026-09-19 sync:
+Chapter52 v2 + validator/precedence fixes)
+notes: Stale ch31 copies exist in the kit archive
+(_archive/2026-09-19_stale_sl4_copies_at_ch31) and the kit's NEXT_STEPS file
+stopped at Chapter 51 — the private repo is ahead. Never use the stale copies.
+verification: verified 2026-09-20 from the private-repo clone at cf1cb9e
+
+RECORDS:
+  - [correction] -
+
+
+==============================================================================
+SECTION 15 - PROJECT STATE: HOLY SPIRIT — LUO CHEN  [CONTRIBUTED]
+==============================================================================
+
+path: soul-land-universal-kit/soul_land_holy_spirit/
+status: active
+live edge: after Chapter 4 'The Use' (DL ~12667-68, one season out, age six)
+notes: Twin souls: DEVOURING DRAGON (public) + DRAGON HEART (hidden). Next
+beats are author-gated.
+verification: verified 2026-09-20: 4 chapters on disk, 13,731 words
+
+
+==============================================================================
+SECTION 16 - PROJECT STATE: DEVOURING DRAGON (BEAST-POV SERIAL)  [CONTRIBUTED]
+==============================================================================
+
+path: soul-land-universal-kit/soul_land_devouring_dragon/
+status: live
+live edge: after Chapter 10 'The Cold Country'
+notes: Author ruling pending: the unified StoryOS gate fails 0/10 on gate 4
+(dialogue >= 3) against the beast-POV design. Do not rewrite chapters to force
+the gate green before the ruling. NOT the Dragon Prince Yuan project —
+different serial, do not conflate.
+verification: verified 2026-09-20: 10 chapters on disk
+
+
+==============================================================================
+SECTION 17 - PROJECT STATE: DRAGON PRINCE YUAN — ZHOU XU  [CONTRIBUTED]
+==============================================================================
+
+path: soul-land-universal-kit/dragon_prince_yuan_native_oc_fanfiction/
+status: active
+live edge: after Chapter 1 'The Second Son in the Green Smoke'; next source
+canon ch 2 'Genesis Runes' (unfetched — Ch2 blocked on the fetch per the
+project lock)
+notes: Open for the author: Zhou Xu's realm, firewall boundaries (TBD in
+KNOWLEDGE_FIREWALLS.md), wine-quirk handling, name confirmation.
+verification: verified 2026-09-20: fresh StoryOS rebuild gate PASS, drift 0,
+integrity clean (storyos-site 64c1739); the published FAIL was a stale pre-fix
+snapshot
+
+
+==============================================================================
+SECTION 18 - PROJECT STATE: BLUE SILVER — SUNWEAVE  [CONTRIBUTED]
+==============================================================================
+
+path: blue_silver/
+status: gate-pass
+live edge: Book One complete — 15 rebuilt chapters, 34,711 words, all seven
+gates passing; ends on THE KEEPER
+notes: Protagonist Sunweave is a real elemental mutant with Adaptation Talent
+(no royal, dragon or devour blood). Kill count zero across all 775 years is
+permanent.
+verification: verified 2026-09-20: 15 files in chapters_rebuilt/
+
+
+==============================================================================
+SECTION 19 - PROJECT STATE: SOUL LAND NEW — TIAN YU  [CONTRIBUTED]
+==============================================================================
+
+path: soul-land-universal-kit/SOUL_LAND_NEW/
+status: active
+live edge: Tian Yu at the gate — 6 chapters, pre-Chapter-11 intake (age 11,
+rank 30, standing at the third-ring wall)
+notes: The ~10,000-year black third ring is the first true contender against
+the bloodline threshold. Mu En's rule: do not be the strongest in the room.
+verification: verified 2026-09-20: 6 chapters on disk
+
+
+==============================================================================
+SECTION 20 - KNOWLEDGE FIREWALLS
 ==============================================================================
 
 STATES: KNOWN / KNOWN PARTLY / SUSPICION / DISBELIEF / UNKNOWN / FALSE BELIEF / HIDDEN
@@ -623,7 +737,7 @@ regressions - without it, the next agent will helpfully let the character find
 out early because the plot needs it.
 
 ==============================================================================
-SECTION 13 - ADAPTATION TALENT (cross-project)
+SECTION 21 - ADAPTATION TALENT (cross-project)
 ==============================================================================
 
 WHAT IT IS: An innate, non-conscious, existence-level personal law or instinct
@@ -650,7 +764,15 @@ Adaptation cannot bypass setting rules. It operates inside the setting's
 physics - it is not an exemption from them.
 
 ==============================================================================
-SECTION 14 - HOW THIS SYSTEM GROWS
+SECTION 22 - CONTRIBUTED STATE
+==============================================================================
+
+OTHER RECORDS:
+  - [correction] - (filed by -)
+
+
+==============================================================================
+SECTION 23 - HOW THIS SYSTEM GROWS
 ==============================================================================
 
 This is not a static document. It is a generated view over a state layer that
@@ -674,7 +796,7 @@ RESERVED: authority_order, seven_gates, gate_scope_warning, _comment. These
 change the shape of the system and need the user, not a contribution.
 
 ==============================================================================
-SECTION 15 - INSTRUCTIONS TO THE RECEIVING AGENT
+SECTION 24 - INSTRUCTIONS TO THE RECEIVING AGENT
 ==============================================================================
 
  1. Ingest this bootstrap fully before doing anything else.
