@@ -1,0 +1,696 @@
+SOUL LAND UNIVERSAL - TRANSFER BOOTSTRAP
+Generated 2026-09-20 from state/. Control Centre is the navigation
+and state reference. Do not hand-edit this file; edit state/ and rebuild.
+
+PURPOSE
+Transfer active project state to another agent without losing canon
+discipline. You are taking over existing projects, not starting a new story.
+
+AT A GLANCE
+  projects tracked      6
+  project files         606
+  words on disk         1,682,117
+  knowledge firewalls   18
+  kit laws              11
+  hard gates            7
+  growth events logged  0
+
+==============================================================================
+SECTION 1 - CORE OPERATING RULE
+==============================================================================
+
+The Control Centre is the navigation and state reference. It is not a drafting
+surface and it is not canon.
+
+- Do not treat author knowledge as character knowledge.
+- Do not invent missing canon.
+- Preserve established decisions unless an explicit authorised change is made.
+- If a source scene is missing, identify it as missing rather than inventing it.
+- Authority order:
+    1. The user's explicit words
+    2. Project locked documents
+    3. Kit laws
+    4. Kit canon spine
+    5. Earlier projects - craft only, never canon
+
+==============================================================================
+SECTION 2 - PIPELINE
+==============================================================================
+
+LOAD -> VERIFY -> MAP -> FORECAST -> BLUEPRINT -> DRAFT -> AUDIT -> REPAIR -> DELIVER -> RECORD
+
+  01. LOAD - Read the live edge and the locks
+  02. VERIFY [GATE] - Reconstruct canon scene by scene
+  03. MAP - Timeline, location, prop, knowledge
+  04. FORECAST - Butterfly effects from real changes
+  05. BLUEPRINT - Beat order, registers, panel range
+  06. DRAFT - Prose carries the chapter
+  07. AUDIT [GATE] - Run all seven hard gates
+  08. REPAIR - Fix, then re-run the gates
+  09. DELIVER - Ship the chapter
+  10. RECORD - Update ledgers and the serial log
+
+VERIFY and AUDIT are gates. Do not proceed past one until it passes.
+RECORD is never skipped: a decision not written down will regress. In this
+system that means filing it into intake/drop/ as a decision or correction,
+not just saying it in chat.
+
+==============================================================================
+SECTION 3 - PRE-DRAFT GATE (six steps, in order)
+==============================================================================
+
+1. Reconstruct - Rebuild the relevant canon scene by scene. Not from memory -
+from receipts. If a scene is missing, say it is missing.
+
+2. Verify exact detail - Event order, location, timing, positions, clothing,
+objects, environment, dialogue style, motivations, character knowledge.
+
+3. Build the ledgers - Timeline, location, prop, power and adaptation,
+knowledge - who knows what, and since when.
+
+4. Firewall - Hide information from characters who have not earned it. Author
+knowledge is never character knowledge. Check every speaking character against
+the registry.
+
+5. Resolve conflicts - Use the authority hierarchy. User words beat project
+docs beat kit laws. Record the resolution, not just the result.
+
+6. Then blueprint - Only now set beat order. Set the panel year range first.
+Then draft.
+
+
+==============================================================================
+SECTION 4 - CANON RULES
+==============================================================================
+
+  - Canon first. Butterfly effects must grow from actual changed events.
+  - One canon episode = one operational unit.
+  - Never leak rejected drafts into the active canon.
+  - Never convert suspicion, intuition, rumour, or prophecy fragments into
+  factual character knowledge without evidence.
+  - Do not give characters information earlier than the earliest valid
+  change recorded in their knowledge firewall.
+  - Preserve competent canon characterisation.
+  - Do not nerf or inflate characters merely to force the OC plot.
+  - Record new decisions and corrections so they do not regress later.
+
+==============================================================================
+SECTION 5 - THE TWELVE LOCKS (set before drafting chapter one)
+==============================================================================
+
+   1. ERA              Which series, which years, which DC range
+   2. PROTAGONIST      Who they are - and explicitly what they are NOT
+   3. CANON ENTRY      The specific canon beats this serial touches. Name at least five.
+   4. SPINE            Who wants what from the protagonist, and what they will do to get it
+   5. POWER CEILING    The strongest the OC becomes, and what they never get
+   6. IDENTITY         Public name versus true name; what the reveal costs
+   7. ABSOLUTES        What the protagonist will never do, ever
+   8. CANON IMMUNITY   Which canon characters' fates may not be rerouted
+   9. MEASUREMENT      How rank and rings are shown on the page
+  10. VOICE            POV, tense, register rules
+  11. CADENCE          Chapters per pass, words per chapter, when audits run
+  12. HANDOFF          What a fresh agent must read first
+
+LOCK 4 IS THE ONE THAT MATTERS MOST. Write it as a full sentence with all
+three blanks filled: '______ wants ______ from my protagonist, and will ______
+to get it.' If you cannot fill all three, there is no story yet - there is
+only a setting.
+
+==============================================================================
+SECTION 6 - THE SEVEN HARD GATES (machine-checked, non-negotiable)
+==============================================================================
+
+1. Zero unreadable script - CJK, kana, hangul. Not a blanket non-ASCII ban -
+em dashes and box-drawing are fine.
+
+2. Zero literal backslash-n - The two-character sequence leaking into prose
+from escaped strings. Use the real newline.
+
+3. Zero digits in prose - Exact figures belong in panels and ledgers. Prose
+says 'seven', the panel says '7'.
+
+4. At least three spoken dialogue lines - Dialogue silently disappears from
+introspective serials. It went missing from seven of fifteen chapters in one
+rebuild and was only caught by counting. Count it; do not eyeball it.
+
+5. Panels contiguous - No overlap, no gap. Insertion and reordering
+desynchronise panels, and the drift is invisible until two chapters claim the
+same year.
+
+6. No placeholder text - No shipped file contains template slots or lorem-
+style filler.
+
+7. Marker discipline - The book-end marker never appears in prose; at most one
+end card, opening with END OF, last in the file.
+
+GATE SCOPE - getting this wrong trains everyone to ignore the gate:
+  gate                                chapter  templat      law    codex    audit
+  Zero unreadable script                  yes      yes      yes      yes      yes
+  Zero literal backslash-n                yes      yes      yes      yes      yes
+  Zero digits in prose                    yes        -        -        -        -
+  At least three spoken dialogue lin      yes        -        -        -        -
+  Panels contiguous                       yes        -        -        -        -
+  No placeholder text                     yes        -        -      yes        -
+  Marker discipline                       yes        -        -        -        -
+
+Gate 6 must never be applied to templates, law files, or audit logs. A
+template with no slot tokens is not a template. A law file that cannot show
+the panel format cannot teach it. An audit log reports on placeholder counts -
+a line reading 'TODO/FIXME/TBD = 0' is the log doing its job, not a leftover.
+Gates 1 and 2 are the only ones that apply everywhere, because they are the
+ones that indicate a file is broken rather than a file being what it is.
+
+A check must not match its own description. Five confirmed instances: a
+blanket non-ASCII gate flagging the em dashes in the prose law that explains
+the rule; a case-insensitive substring flagging 'placeholder' inside 'no
+placeholder text left'; gate 6 over templates flagging every slot token; gate
+6 over an audit log flagging its own zero-count report; and documenting that
+last case inside the audit law re-tripping the same class. Scope the gate, do
+not reword the file.
+
+Ship the negative test with the gate. tools/selftest.py exists because
+verify.py once reported fifteen failures against a proven 33,100-word serial -
+every one of them a false positive. A gate nobody has tested is a guess.
+
+==============================================================================
+SECTION 7 - HONESTY TAGS
+==============================================================================
+
+  [canon]          Multiple independent secondary sources agree. Never read in the Chinese original.
+                  strength: Strong for rank ladder and ring
+                  colours; medium for the clock
+  [fan]            Post-original-series material, fan consensus, or later-series additions.
+                  strength: Weak - usable, never load-
+                  bearing
+  [design]         Invented for this project. Not canon, and must never be dressed as canon.
+                  strength: N/A - it is ours
+  [user ruling]    The user decided it. Overrides every source, including canon.
+                  strength: Absolute
+  [on page]        Stated in the shipped prose, with a chapter and line reference.
+                  strength: Binding continuity
+  [reported]       Supplied by the user or an external system; not verified against files that could be opened.
+                  strength: Provisional until checked
+
+==============================================================================
+SECTION 8 - CANON SPINE (shared across Soul Land projects)
+==============================================================================
+
+RANK LADDER (strong, 4+ independent secondary sources agree):
+  Soul Warrior / Scholar       1-10    Soul King                   51-60
+  Soul Master                 11-20    Soul Emperor                61-70
+  Grand Soul Master           21-30    Soul Sage                   71-80
+  Soul Elder                  31-40    Soul Douluo                 81-90
+  Soul Ancestor               41-50    Titled Douluo               91-99
+
+  Titled Douluo splits 91-94 ordinary, 95-98 Super Douluo, 99 Limit Douluo.
+  The correct term at 71-80 is Soul Sage, not Soul Saint. That error was
+  caught and corrected in the kit.
+
+RING AGES:
+  White            10   [canon]
+  Yellow          100   [canon]
+  Purple        1,000   [canon]
+  Black        10,000   [canon]
+  Red         100,000   [canon]
+  Orange      200,000   [fan]  (special case, post-SL1)
+  Gold      1,000,000   [fan]  (god-tier, attribute-coloured)
+
+  Two yellow, two purple, five black. A character exceeding that is
+  exceptional and must stay exceptional on the page - never silently
+  corrected downward.
+
+BEAST LAW - WEAK EVIDENCE, ONE COMPILED SOURCE:
+  Load-bearing for any plant-beast protagonist, which makes these the most
+  dangerous facts in the system: heavily used, thinly sourced. Flag any
+  chapter whose logic collapses without them.
+  - 100,000-year gate grants human form: 100,000 yrs
+  - Bottleneck occurs every: 100 yrs
+  - Plant beasts fragile until roughly: 1,000 yrs
+  - Human-grade plant intellect at about: 100,000 yrs
+  - A 100,000-year ring grants: 2 skills
+  - Tree-monster attacks at / roots at: 1,000 / 3,000 yrs
+
+USER RULINGS (override all sources):
+  - Blue Silver Valley: Blue Silver Valley / Blue Silver Emperor Valley IS
+  canon Soul Land 1.
+    never: tagging it [design]
+    never: writing 'canon nowhere names it'
+    note: This wording was revoked once and must not be re-added.
+  - Home's birth year: Born approximately 1837 DC. Never move this anchor.
+    formula: DC is approximately 1837 plus his age in years.
+
+FILENAME LAW: ASCII letters, digits, underscores and dots only. No spaces, no
+special characters, no non-ASCII. Upload-safe names survive transfer between
+agents and platforms.
+
+==============================================================================
+SECTION 9 - PROJECT STATE: BLUE SILVER
+==============================================================================
+
+path: blue_silver/
+live edge: Book One complete - 15 rebuilt chapters, 34,711 words, all seven
+gates passing
+
+AUTHORITY:
+  - continuity source: bluesilver_foundation/REBUILD_CONTINUITY.md
+  - conflict rule: Where REBUILD_CONTINUITY.md and bluesilver_codex/
+  disagree, REBUILD_CONTINUITY.md wins.
+  - live chapters: chapters_rebuilt/
+  - superseded: chapters/ is SUPERSEDED - history only, never continuity,
+  never a source for a rebuilt chapter.
+  - entry point: HANDOFF.md
+
+SPINE (Lock 4, filled): Spirit Hall wants rings, and sends hunters into the forest to take them.
+  Star Dou is hunted. That is the canon fact the rejected original never
+  used.
+
+ABSOLUTES:
+  - He never kills. No exception, no accident.
+  - Kill count zero across all fifteen chapters and 775 years. Permanent.
+  - Dormant ritual powers stay dormant.
+  - A Yin's canon fate is never staged.
+
+TIMELINE: year 0 to year 775 = approximately 1837 to 2612 DC
+  birth anchor: approximately 1837 DC (user-locked, never move)
+  formula: DC is approximately 1837 plus his age in years
+
+FIXED ANCHORS:
+  year    1  First hunting party              Ch1
+  year   30  Flood lays the silt              Ch2; approximate. The ground he is later born-again into
+  year   61  Mantis arrives                   Ch3
+  year   98  The killing                      Ch3 - the arithmetic that founds the mercy law
+  year  104  Mantis dies                      Ch3 (61 + 43)
+  year  163  Shadow cat                       Ch4
+  year  193  Grid 19 surveyed-unresolved      Ch5; approximate
+  year  243  Serpent                          Ch6; approximate
+  year  301  Night-walker arrives             Ch7
+  year  340  Expedition turned                Ch7
+  year  402  Found one arrives                Ch8
+  year  468  Night-walker dies                Ch9 - FIRST REFUSAL
+  year  508  Found one answers                Ch10
+  year  557  Orrin Vase files                 Ch10
+  year  592  The liar                         Ch11
+  year  630  Found one dies                   Ch11
+  year  665  King gate                        Ch12 - stage three, 10,000 years
+  year  672  Grid hunted out                  Ch12
+  year  706  Last small stock                 Ch12
+  year  714  Root-mass lifts                  Ch13
+  year  735  Arrives valley                   Ch13
+  year  746  Old king dies                    Ch14 - SECOND REFUSAL
+  year  751  Hall names valley                Ch14
+  year  753  A Yin                            Ch15
+  year  753  The naming                       Ch15 - approximately 2590 DC
+
+CANON GATE - ANY EDIT PAST YEAR 784 BREAKS CANON.
+  Naming 2590 DC. Chapter 15 ends 2612 DC. A Yin's rooted era ends before
+  2621 DC. Margins +31 and +9.
+  The first pass put the naming at year 833 = 2670 DC, which is 49 years
+  after A Yin's rooted era ends. She could not have been rooted in the
+  valley to meet him. Chapters 10-15 were compressed to pull the naming
+  inside her era. Do not undo this.
+  Chapter 15 coda 'in forty-seven years' from approximately 2590 lands on
+  2637 DC, which is canon Tang San emergence. Delta zero.
+
+CULTIVATION: ~7,000 years at year 500; ~9,000 years at year 610; ~10,000 years at year 665
+  He takes nothing for 775 years.
+
+GROUND-LANGUAGE - FIXED AT 11 WORDS, LIST CLOSED:
+  here, home, safe, danger, gone, cold, many, one, come, stay
+  11th: Not a word but a struck rhythm meaning 'I am here, I am answering, I
+  am one of the ones who stays.' Invented by the found one; took eleven
+  years to agree on.
+  delivery chain: taps (night-walker) -> pulses (him) -> stamped feet (the
+  found one, then the fringe young, then the hundred at the door)
+  The drum outlives everyone who invented it.
+
+THE NAMED HUMANS - he survives by paperwork, not power:
+  - The surveyor (Ch5, rings: 4 - purple, purple, purple, black (Soul
+  Ancestor)): Marks grid nineteen surveyed and unresolved. Her note starts
+  the chain.
+    WARNING: Her black fourth ring exceeds the canonical optimum. She is a
+    Soul Ancestor, not a Soul Elder. This was an error once made in the
+    codex and must not be corrected downward.
+  - The thin man (Ch6, rings: 2 black): Writes the letter that carries the
+  note forward.
+  - Pell (Ch8, rings: none): Twenty-two years old. Refused the bend.
+  - Kesh (Ch9, rings: Soul Ancestor, fifty-one): Sole survivor. Her
+  testimony.
+  - Orrin Vase (Ch10, rings: None): Walked the round forty-one times. Filed
+  eleven pages.
+  - Drem (Ch11, rings: none): Released.
+  - Ilen Marr (Ch13, rings: Soul Ancestor): Burned the commission file.
+  - Tefer Hallum (Ch14, rings: none): Four lines naming the valley.
+  - Berrit Ohn (Ch15, rings: None - clerk, thirty-one): Filed the permanent
+  seal in her own name.
+
+DOCUMENTARY CHAIN: surveyor's note -> thin man's letter -> Kesh's testimony -> Vase's eleven pages -> Hallum's four lines -> Ohn's seal
+
+THE CULL: THE LINE WAS HARVESTED, NOT DWINDLED. Never soften this into natural
+decline.
+  There had been 400; 391 went back into the soil in single seasons; 9
+  remain rooted and immobile, 8 after year 746.
+
+A YIN:
+  - appearance: Gold threading; her face is woven in vines; she has no eyes.
+  - age: Youngest of the nine by roughly 40,000 years.
+  - secret: The only one who felt the cull's signature - and told no one.
+  - act: She names him Home.
+  - constraint: Ordinary grass is empty - she reads through grass, he
+  cannot. He can go where she cannot. Human form exists only from Tang Hao's
+  generation.
+  - fate: Never staged on page.
+
+IDENTITY: Sunweave is a real elemental mutant with Adaptation Talent, from a
+common line. NOT: royal blood, dragon blood, devour blood, anything fused into
+him.
+Book One ends on the words THE KEEPER.
+
+==============================================================================
+SECTION 10 - PROJECT STATE: SL4 FIRE PHOENIX
+==============================================================================
+
+path: sl4_fire_phoenix/
+live edge: After Chapter 31 - The Ticket Owed to Fire
+
+AUTHORITY:
+  - status source: foundation/STATUS_PANEL.md
+  - conflict rule: STATUS_PANEL.md is the ONLY current Yan Shuo'er status
+  source. Every other file derives from it.
+
+PROTAGONIST: Yan Shuo'er (she/her), cover Yan Shuo (he/him).
+  Native-born OC in Lan Xuanyu's cohort. Dorm 336. No public or formal
+  identity reveal without user approval.
+
+DO NOT:
+  - Do not sexualise her.
+  - Do not let the OC steal Lan Xuanyu's private protagonist mechanics.
+  - Never nerf Yan, Dawnflame or Dorm 336 to preserve a canon character.
+  - Public facts cause natural public consequences.
+
+CURRENT NUMERIC STATUS:
+  - Soul power: Rank 23 / Level 23 (No new formal measurement in Chapter 31.
+  No Level 30 yet.)
+  - Spiritual power: 156 (Latest formal end-term value.)
+  - Spiritual realm: Spirit Connection (Not Spirit Sea yet.)
+  - Ring count: 2 (No third ring.)
+  - Soul spirit count: 2 (Dawnflame Kite; Dawn-Iron Phoenix Roc.)
+  - Dawnflame Kite - public paperwork: 100 years (Historical legal
+  acquisition record.)
+  - Dawnflame Kite - sealed current: 1,120 years (Newborn purple-tier.
+  Crossed 1,000+ in Chapter 31 via the Platform. Phoenix-seed awakening
+  active.)
+  - First ring response: Purple-tier (Evolved from yellow. Cannot be written
+  as a static yellow ring.)
+  - Dawn-Iron Phoenix Roc: 2,040 years (Deeper purple structural response.
+  Rose from 1,680.)
+  - Second ring: Deep purple (Skybone Phoenix Frame remains the second
+  skill.)
+  - Song Yichen: Rank 19 / SP 63 (Platform gains not separately measured
+  yet.)
+  - Luo Haoran: Rank 17 / SP 74 (Platform gains not separately measured
+  yet.)
+
+CHRONOLOGY LOCKS:
+  - platform entry: Pre-time-skip, began in Chapter 31.
+  - time skip: Later, at corrected source Chapter 145 to Chapter 146.
+  - level30 fusion: In the MIDDLE of that later time skip - NOT NOW.
+  - Do not write a Level 30 now.
+  - Do not write the Purple Flame Eidolon Bird fusion now.
+  - No full Fire Phoenix, no Ultimate Fire, no full wings, no true flight
+  until the user-locked event.
+
+USER-LOCKED FUTURE:
+  - At Level 30, mid-time-skip, Yan fuses with the 6,000-year Purple Flame
+  Eidolon Bird.
+  - awakens: full Fire Phoenix, Ultimate Fire, full wings, true flight
+  - aftermath: Power is public while identity remains hidden.
+
+LATEST CHAPTER RESULTS:
+  - Dorm 333 keeps defending pressure-stage leadership.
+  - Dorm 336 was NOT erased - Yan, Song and Luo entered the Platform too.
+  - Dawnflame Kite crossed 1,000+ and evolved through its Phoenix seed.
+  - The direct Dorm 333 versus Dorm 336 match remains UNRESOLVED.
+  - Platform entry is official compensation and assessment data, not a fake
+  duel result.
+
+ANTI-NERF: Never reduce Yan, Dawnflame or Dorm 336 in order to preserve a
+canon character's standing. If a canon character would lose to the OC, the
+scene is written honestly and the consequence is carried - not the numbers
+bent.
+
+==============================================================================
+SECTION 11 - PROJECT STATE: STORYOS / NAAG  [REPORTED - not file-verified]
+==============================================================================
+
+path: external - Control Centre hosted
+live edge: Episode 1 boundary
+
+VERIFICATION: State supplied through the transfer bootstrap rather than read
+from files in this workspace. The StoryOS Control Centre sits behind a ChatGPT
+sign-in wall and returned HTTP 401 on every path tested, so its records could
+not be read directly. Reproduced faithfully; must not be extended by
+invention.
+
+UNIVERSE: Separate from Soul Land. An Ichchhadhari Naag serial.
+PROTAGONIST: Gaurav Raheja
+
+COUNTS [reported]:
+  Canon ledger scenes          17
+  User locks                   41
+  Character states             15
+  Knowledge firewalls          18
+  Story system records         36
+  Quarantine runs              2
+  Foundation                   PASS
+  Structural errors            0
+  Information discipline       ACTIVE
+
+OPEN GAPS - FLAG, DO NOT INVENT:
+  a. Are the two twenty-year-old events the same event?
+     Shivanya avenges a love story violently ended by guilty humans.
+     Gaurav's Sheshnaag-clan parents were attacked. Both sit twenty years
+     back. Nothing in the supplied material confirms they are one event.
+     ruling: Treat as separate until a canon scene establishes otherwise.
+  b. Who is culpable for Panchner?
+     Firewall 11 explicitly defers this.
+     ruling: Record exact culpability only when the corresponding canon
+     episode is reconstructed.
+  c. What is the golden Panchmukhi rank?
+     Referenced in firewall 14 as something Om does not know. No
+     definition was supplied.
+     ruling: Do not invent one.
+
+==============================================================================
+SECTION 12 - KNOWLEDGE FIREWALLS
+==============================================================================
+
+STATES: KNOWN / KNOWN PARTLY / SUSPICION / DISBELIEF / UNKNOWN / FALSE BELIEF / HIDDEN
+
+Author knowledge is never automatically available to a character.
+
+  KNOWN          Verified knowledge - May act on it and speak of it
+  KNOWN PARTLY   Partial knowledge - May act on the part held; must not
+  extend it by assumption
+  SUSPICION      Suspects, unproven - May worry, probe, deflect - may not
+  state as fact
+  DISBELIEF      Actively rejects it - Needs direct proof to move; will
+  rationalise anomalies first
+  UNKNOWN        No knowledge at all - Cannot reference it, hint at it, or
+  intuit it
+  FALSE BELIEF   Believes something untrue - Acts on the false version; the
+  truth must be earned on page
+  HIDDEN         Known by author, withheld - Declared but not yet used in
+  any registry
+
+THE FOUR LEAK PATHS: Never convert suspicion, intuition, rumour, or prophecy
+fragments into factual character knowledge without evidence. Never give a
+character information earlier than the earliest valid change recorded in their
+firewall. Predetermined destiny does not pre-install personal memories or
+trust. Instinctive power control after an awakening does not equal
+encyclopaedic lore.
+
+THE REGISTRY (18 firewalls):
+   1. Gaurav Raheja - FALSE BELIEF - Parentage
+      belief: Yamini and Ankush are his biological parents.
+      earliest change: A credible adoption reveal supported by evidence.
+      rule: Police instincts alone cannot overturn this lifelong belief.
+   2. Gaurav Raheja - UNKNOWN - Supernatural nature
+      belief: He considers himself an ordinary human.
+      earliest change: Unambiguous awakening signs several episodes
+      after Episode 1.
+      rule: No early self-identification as Naag, Sheshveer, or Maha
+      Naag.
+   3. Gaurav Raheja - UNKNOWN - Naag-world lore
+      belief: Only ordinary cultural and devotional stories are known.
+      earliest change: On-page teaching by a qualified source after
+      supernatural evidence.
+      rule: Instinctive power control after awakening does not equal
+      encyclopaedic lore.
+   4. Ritik Raheja - UNKNOWN - Gaurav's adoption and nature
+      belief: Gaurav is his biological near-twin brother and an ordinary
+      human.
+      earliest change: Later family or supernatural reveal.
+      rule: Brotherly intuition may create concern, not factual
+      knowledge.
+   5. Ritik Raheja - DISBELIEF - Ichchhadhari serpents
+      belief: They belong to television, films and books rather than
+      real life.
+      earliest change: Direct supernatural proof.
+      rule: Episode 1 anomalies disturb him but do not instantly make
+      him a believer.
+   6. Ritik Raheja - SUSPICION - Parents' twenty-year secret
+      belief: He overheard mention of a night and a secret but accepted
+      the immediate deflection.
+      earliest change: Further contradictions or disclosure.
+      rule: He cannot know the murders or perpetrators from Episode 1
+      evidence alone.
+   7. Tanvi - KNOWN PARTLY - Ritik's dream
+      belief: Ritik has had the same frightening dream for years and
+      sees a woman in it.
+      earliest change: Ritik discloses more, or she witnesses a
+      supernatural event.
+      rule: She does not know Shivanya is the dream-linked Naagin.
+   8. Yamini Raheja - KNOWN - Gaurav's adoption
+      belief: Gaurav was adopted as a baby after a violent incident.
+      earliest change: She may learn the supernatural origin only
+      through later evidence.
+      rule: Adoption knowledge does not grant knowledge of biological
+      clan, true name, rank, or power.
+   9. Ankush Raheja - KNOWN - Gaurav's adoption
+      belief: Gaurav was adopted as a baby after a violent incident.
+      earliest change: Later supernatural proof.
+      rule: He does not know Gaurav is Sheshnaag-clan or Mahadev-chosen.
+  10. Yamini Raheja - KNOWN PARTLY - Ritik's age danger
+      belief: Ritik must marry before twenty-five or a grave serpent-
+      linked danger will arise.
+      earliest change: Later prophecy clarification.
+      rule: Do not merge Ritik's warning with Gaurav's separate
+      awakening.
+  11. Ankush Raheja - KNOWN PARTLY - Panchner's past
+      belief: The event from twenty years ago and the villagers'
+      grievance could endanger the present celebration.
+      earliest change: Verified later canon revelations.
+      rule: Record exact culpability only when the corresponding canon
+      episode is reconstructed.
+  12. Shivanya - KNOWN - Revenge purpose
+      belief: She waited twenty years and attained Ichchhadhari form to
+      avenge the love story violently ended by guilty humans.
+      earliest change: Her judgments may become more nuanced through
+      direct acts by individual Rahejas.
+      rule: Compassion may complicate revenge; it must not erase grief
+      overnight.
+  13. Shivanya - UNKNOWN - Gaurav
+      belief: No verified knowledge of his identity, bloodline, true
+      name, or destiny at the Episode 1 opening.
+      earliest change: First on-page meeting, or a supernatural sensory
+      event caused by proximity.
+      rule: Predetermined romance does not pre-install personal memories
+      or trust.
+  14. Om Kaka - KNOWN PARTLY - Gaurav's origin
+      belief: Gaurav is the orphaned child of Sheshnaag-clan parents
+      whom Om was tasked to protect.
+      earliest change: Awakening, or recovered records.
+      rule: Om does not know the complete attack truth, the Adaptation
+      Talent outcome, the golden Panchmukhi rank, or Mahadev's full
+      design.
+  15. Om Kaka - SUSPICION - Timing of awakening
+      belief: Gaurav's twenty-fifth year may bring change, but Om cannot
+      predict its exact form or moment.
+      earliest change: Observable awakening symptoms.
+      rule: He may prepare or worry, not state a precise omniscient
+      prophecy.
+  16. Raheja family pandit - UNKNOWN - Gaurav
+      belief: No Episode 1 source establishes that the pandit recognises
+      anything supernatural about Gaurav.
+      earliest change: A later direct divination scene, if authorised.
+      rule: Do not repurpose Ritik's canon prophecy as exposition for
+      Gaurav.
+  17. Shesha - UNKNOWN - Gaurav
+      belief: No verified meeting or awareness exists at the Episode 1
+      boundary.
+      earliest change: Verified first proximity to him, or his awakening
+      signal.
+      rule: Do not invent early attraction, jealousy, or rank
+      recognition.
+  18. Gaurav Raheja - FALSE BELIEF - Om Kaka's identity
+      belief: Om is a trusted human driver and uncle figure.
+      earliest change: A later reveal supported by evidence.
+      rule: Preserve Gaurav's current belief until that evidence occurs.
+
+HOW TO ADD ONE: Five fields, no fewer: who, state, topic, earliest valid
+change, and rule. The earliest-valid-change field is the one that prevents
+regressions - without it, the next agent will helpfully let the character find
+out early because the plot needs it.
+
+==============================================================================
+SECTION 13 - ADAPTATION TALENT (cross-project)
+==============================================================================
+
+WHAT IT IS: An innate, non-conscious, existence-level personal law or instinct
+belonging to the user's OC. It adapts from the complete current foundation.
+
+WHAT IT IS NOT: a UI, a voice, a reward system, a companion, an anomaly, a generic learning mechanic.
+It has no dialogue, no notifications, no levels, and no narrator.
+
+REQUIREMENTS:
+  - Compatible foundation: There must be something there to adapt. It cannot
+  create power from absolute nothing.
+  - Integration: The adaptation becomes part of the character, not a bolted-
+  on ability.
+  - Exposure: The character must actually encounter the thing being adapted
+  to.
+  - Consequences: Adaptation costs something and changes something. No free
+  power.
+
+THE ONE ABUSE TO WATCH FOR: Do not use this framework to justify a character
+knowing lore they have not learned. Adaptation is not a knowledge pipe. It
+changes what a character can do; it never installs what a character knows.
+
+Adaptation cannot bypass setting rules. It operates inside the setting's
+physics - it is not an exemption from them.
+
+==============================================================================
+SECTION 14 - HOW THIS SYSTEM GROWS
+==============================================================================
+
+This is not a static document. It is a generated view over a state layer that
+accepts contributions from any agent.
+
+  FILE      write a JSON contribution into intake/drop/
+  VALIDATE  python3 tools/validate.py intake/drop/<file>.json
+  INGEST    python3 tools/ingest.py intake/drop/<file>.json
+  BUILD     python3 tools/bootstrap.py && python3 tools/build.py
+
+KINDS: anchor, canon, correction, decision, firewall, lock, note, project
+
+A firewall contribution needs: who, state, topic, earliest_change, rule.
+A canon contribution needs: claim, confidence - and sources if confidence is
+'canon'. The validator rejects a canon claim with no sources named.
+
+Contributions are APPEND-ONLY. Nothing can silently overwrite existing state;
+a correction is recorded as a correction, keeping the old value visible.
+
+RESERVED: authority_order, seven_gates, gate_scope_warning, _comment. These
+change the shape of the system and need the user, not a contribution.
+
+==============================================================================
+SECTION 15 - INSTRUCTIONS TO THE RECEIVING AGENT
+==============================================================================
+
+ 1. Ingest this bootstrap fully before doing anything else.
+ 2. DO NOT immediately draft prose.
+ 3. First perform LOAD -> VERIFY -> MAP.
+ 4. State only what is confirmed, what is missing, and what must be
+reconstructed.
+ 5. Then use the Control Centre and the project records as the active state.
+ 6. Do not overwrite established canon, locks, or knowledge firewalls without
+explicit authorisation.
+ 7. If a source scene is missing, identify it as missing rather than inventing
+it.
+ 8. When continuing, preserve all information-discipline constraints.
+ 9. Run the seven gates on anything you ship. 'Mostly passing' is a failure.
+10. Record every new decision and correction in the same pass you make it -
+file it into intake/drop/, do not just say it.
+11. Corrections come before new content.
+
+END OF TRANSFER BOOTSTRAP

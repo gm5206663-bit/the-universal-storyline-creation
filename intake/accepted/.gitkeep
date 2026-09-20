@@ -1,0 +1,2 @@
+# Keeps this directory in git. Git does not track empty directories,
+# and this one must exist for the grow loop to work.

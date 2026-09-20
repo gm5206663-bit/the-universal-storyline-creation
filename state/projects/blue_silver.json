@@ -1,0 +1,124 @@
+{
+  "id": "blue_silver",
+  "name": "Blue Silver",
+  "path": "blue_silver/",
+  "status": "gate-pass",
+  "live_edge": "Book One complete - 15 rebuilt chapters, 34,711 words, all seven gates passing",
+  "authority": {
+    "continuity_source": "bluesilver_foundation/REBUILD_CONTINUITY.md",
+    "conflict_rule": "Where REBUILD_CONTINUITY.md and bluesilver_codex/ disagree, REBUILD_CONTINUITY.md wins.",
+    "live_chapters": "chapters_rebuilt/",
+    "superseded": "chapters/ is SUPERSEDED - history only, never continuity, never a source for a rebuilt chapter.",
+    "entry_point": "HANDOFF.md"
+  },
+  "spine": {
+    "lock4": "Spirit Hall wants rings, and sends hunters into the forest to take them.",
+    "canon_fact_used": "Star Dou is hunted. That is the canon fact the rejected original never used."
+  },
+  "absolutes": [
+    "He never kills. No exception, no accident.",
+    "Kill count zero across all fifteen chapters and 775 years. Permanent.",
+    "Dormant ritual powers stay dormant.",
+    "A Yin's canon fate is never staged."
+  ],
+  "timeline": {
+    "span": "year 0 to year 775",
+    "dc_span": "approximately 1837 to 2612 DC",
+    "birth_anchor": "approximately 1837 DC (user-locked, never move)",
+    "formula": "DC is approximately 1837 plus his age in years"
+  },
+  "anchors": [
+    {"anchor": "First hunting party", "year": 1, "note": "Ch1"},
+    {"anchor": "Flood lays the silt", "year": 30, "note": "Ch2; approximate. The ground he is later born-again into"},
+    {"anchor": "Mantis arrives", "year": 61, "note": "Ch3"},
+    {"anchor": "The killing", "year": 98, "note": "Ch3 - the arithmetic that founds the mercy law"},
+    {"anchor": "Mantis dies", "year": 104, "note": "Ch3 (61 + 43)"},
+    {"anchor": "Shadow cat", "year": 163, "note": "Ch4"},
+    {"anchor": "Grid 19 surveyed-unresolved", "year": 193, "note": "Ch5; approximate"},
+    {"anchor": "Serpent", "year": 243, "note": "Ch6; approximate"},
+    {"anchor": "Night-walker arrives", "year": 301, "note": "Ch7"},
+    {"anchor": "Expedition turned", "year": 340, "note": "Ch7"},
+    {"anchor": "Found one arrives", "year": 402, "note": "Ch8"},
+    {"anchor": "Night-walker dies", "year": 468, "note": "Ch9 - FIRST REFUSAL"},
+    {"anchor": "Found one answers", "year": 508, "note": "Ch10"},
+    {"anchor": "Orrin Vase files", "year": 557, "note": "Ch10"},
+    {"anchor": "The liar", "year": 592, "note": "Ch11"},
+    {"anchor": "Found one dies", "year": 630, "note": "Ch11"},
+    {"anchor": "King gate", "year": 665, "note": "Ch12 - stage three, 10,000 years"},
+    {"anchor": "Grid hunted out", "year": 672, "note": "Ch12"},
+    {"anchor": "Last small stock", "year": 706, "note": "Ch12"},
+    {"anchor": "Root-mass lifts", "year": 714, "note": "Ch13"},
+    {"anchor": "Arrives valley", "year": 735, "note": "Ch13"},
+    {"anchor": "Old king dies", "year": 746, "note": "Ch14 - SECOND REFUSAL"},
+    {"anchor": "Hall names valley", "year": 751, "note": "Ch14"},
+    {"anchor": "A Yin", "year": 753, "note": "Ch15"},
+    {"anchor": "The naming", "year": 753, "note": "Ch15 - approximately 2590 DC"}
+  ],
+  "canon_gate": {
+    "naming_dc": 2590,
+    "ch15_end_dc": 2612,
+    "a_yin_era_ends_before_dc": 2621,
+    "margins": [31, 9],
+    "tightest": 9,
+    "hard_boundary": "Any edit past year 784 breaks canon.",
+    "history": "The first pass put the naming at year 833 = 2670 DC, which is 49 years after A Yin's rooted era ends. She could not have been rooted in the valley to meet him. Chapters 10-15 were compressed to pull the naming inside her era. Do not undo this.",
+    "coda_check": "Chapter 15 coda 'in forty-seven years' from approximately 2590 lands on 2637 DC, which is canon Tang San emergence. Delta zero."
+  },
+  "cultivation": [
+    {"at_year": 500, "years": 7000, "note": "approximate"},
+    {"at_year": 610, "years": 9000, "note": "approximate"},
+    {"at_year": 665, "years": 10000, "note": "King gate, stage three"}
+  ],
+  "takes_nothing_for": "775 years",
+  "refusals": [
+    {"n": 1, "year": 468, "chapter": 9, "what": "The night-walker stops walking and dies at his edge. He does not feed on it."},
+    {"n": 2, "year": 746, "chapter": 14, "what": "The old king dies. He could take it and does not."}
+  ],
+  "ground_language": {
+    "count": 11,
+    "closed": true,
+    "warning": "This list is closed. Adding a twelfth word breaks continuity across seven chapters.",
+    "words": ["here", "home", "safe", "danger", "gone", "cold", "many", "one", "come", "stay"],
+    "eleventh": "Not a word but a struck rhythm meaning 'I am here, I am answering, I am one of the ones who stays.' Invented by the found one; took eleven years to agree on.",
+    "delivery_chain": ["taps (night-walker)", "pulses (him)", "stamped feet (the found one, then the fringe young, then the hundred at the door)"],
+    "point": "The drum outlives everyone who invented it."
+  },
+  "named_humans": [
+    {"name": "The surveyor", "chapter": 5, "rings": "4 - purple, purple, purple, black (Soul Ancestor)", "contribution": "Marks grid nineteen surveyed and unresolved. Her note starts the chain.", "warning": "Her black fourth ring exceeds the canonical optimum. She is a Soul Ancestor, not a Soul Elder. This was an error once made in the codex and must not be corrected downward."},
+    {"name": "The thin man", "chapter": 6, "rings": "2 black", "contribution": "Writes the letter that carries the note forward."},
+    {"name": "Pell", "chapter": 8, "rings": null, "contribution": "Twenty-two years old. Refused the bend."},
+    {"name": "Kesh", "chapter": 9, "rings": "Soul Ancestor, fifty-one", "contribution": "Sole survivor. Her testimony."},
+    {"name": "Orrin Vase", "chapter": 10, "rings": "None", "contribution": "Walked the round forty-one times. Filed eleven pages."},
+    {"name": "Drem", "chapter": 11, "rings": null, "contribution": "Released."},
+    {"name": "Ilen Marr", "chapter": 13, "rings": "Soul Ancestor", "contribution": "Burned the commission file."},
+    {"name": "Tefer Hallum", "chapter": 14, "rings": null, "contribution": "Four lines naming the valley."},
+    {"name": "Berrit Ohn", "chapter": 15, "rings": "None - clerk, thirty-one", "contribution": "Filed the permanent seal in her own name."}
+  ],
+  "documentary_chain": ["surveyor's note", "thin man's letter", "Kesh's testimony", "Vase's eleven pages", "Hallum's four lines", "Ohn's seal"],
+  "the_cull": {
+    "had": 400,
+    "returned_to_soil": 391,
+    "remain": 9,
+    "remain_after_746": 8,
+    "state": "rooted and immobile",
+    "law": "THE LINE WAS HARVESTED, NOT DWINDLED. Never soften this into natural decline."
+  },
+  "a_yin": {
+    "appearance": "Gold threading; her face is woven in vines; she has no eyes.",
+    "age": "Youngest of the nine by roughly 40,000 years.",
+    "secret": "The only one who felt the cull's signature - and told no one.",
+    "act": "She names him Home.",
+    "constraint": "Ordinary grass is empty - she reads through grass, he cannot. He can go where she cannot. Human form exists only from Tang Hao's generation.",
+    "fate": "Never staged on page."
+  },
+  "identity": {
+    "is": "Sunweave is a real elemental mutant with Adaptation Talent, from a common line.",
+    "is_not": ["royal blood", "dragon blood", "devour blood", "anything fused into him"]
+  },
+  "ending": "Book One ends on the words THE KEEPER.",
+  "rebuild_history": {
+    "original_rejected_as": "nonsense",
+    "diagnosis": ["no canon spine", "nothing contested", "no felt progression", "one register repeated fifteen times", "apparatus outgrew story"],
+    "root_cause": "The serial never used the canon fact that Star Dou is hunted."
+  }
+}

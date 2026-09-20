@@ -1,0 +1,68 @@
+{
+  "_comment": "Canon spine shared across Soul Land projects. Confidence is stated honestly: nothing here was read in the Chinese original, so [canon] means multiple independent secondary sources agree.",
+  "rank_ladder": {
+    "confidence": "strong",
+    "sources": "4+ independent secondary sources agree",
+    "rows": [
+      {"rank": "Soul Warrior / Scholar", "levels": "1-10"},
+      {"rank": "Soul Master", "levels": "11-20"},
+      {"rank": "Grand Soul Master", "levels": "21-30"},
+      {"rank": "Soul Elder", "levels": "31-40"},
+      {"rank": "Soul Ancestor", "levels": "41-50"},
+      {"rank": "Soul King", "levels": "51-60"},
+      {"rank": "Soul Emperor", "levels": "61-70"},
+      {"rank": "Soul Sage", "levels": "71-80"},
+      {"rank": "Soul Douluo", "levels": "81-90"},
+      {"rank": "Titled Douluo", "levels": "91-99"}
+    ],
+    "subdivisions": "Titled Douluo splits 91-94 ordinary, 95-98 Super Douluo, 99 Limit Douluo.",
+    "known_error": "The correct term at 71-80 is Soul Sage, not Soul Saint. That error was caught and corrected in the kit."
+  },
+  "ring_ages": [
+    {"colour": "White",  "years": 10,       "confidence": "canon"},
+    {"colour": "Yellow", "years": 100,      "confidence": "canon"},
+    {"colour": "Purple", "years": 1000,     "confidence": "canon"},
+    {"colour": "Black",  "years": 10000,    "confidence": "canon"},
+    {"colour": "Red",    "years": 100000,   "confidence": "canon"},
+    {"colour": "Orange", "years": 200000,   "confidence": "fan", "note": "special case, post-SL1"},
+    {"colour": "Gold",   "years": 1000000,  "confidence": "fan", "note": "god-tier, attribute-coloured"}
+  ],
+  "optimal_nine_ring": "Two yellow, two purple, five black. A character exceeding that is exceptional and must stay exceptional on the page - never silently corrected downward.",
+  "beast_law": {
+    "confidence": "weak",
+    "sources": "one compiled source",
+    "warning": "Load-bearing for any plant-beast protagonist, which makes these the most dangerous facts in the system: heavily used, thinly sourced. Flag any chapter whose logic collapses without them.",
+    "rows": [
+      {"fact": "100,000-year gate grants human form", "value": "100,000 yrs"},
+      {"fact": "Bottleneck occurs every", "value": "100 yrs"},
+      {"fact": "Plant beasts fragile until roughly", "value": "1,000 yrs"},
+      {"fact": "Human-grade plant intellect at about", "value": "100,000 yrs"},
+      {"fact": "A 100,000-year ring grants", "value": "2 skills"},
+      {"fact": "Tree-monster attacks at / roots at", "value": "1,000 / 3,000 yrs"}
+    ]
+  },
+  "user_rulings": [
+    {
+      "topic": "Blue Silver Valley",
+      "ruling": "Blue Silver Valley / Blue Silver Emperor Valley IS canon Soul Land 1.",
+      "date": "2026-09",
+      "forbidden": ["tagging it [design]", "writing 'canon nowhere names it'"],
+      "note": "This wording was revoked once and must not be re-added."
+    },
+    {
+      "topic": "Home's birth year",
+      "ruling": "Born approximately 1837 DC. Never move this anchor.",
+      "date": "user-locked",
+      "formula": "DC is approximately 1837 plus his age in years."
+    }
+  ],
+  "honesty_tags": [
+    {"tag": "[canon]",       "meaning": "Multiple independent secondary sources agree. Never read in the Chinese original.", "strength": "Strong for rank ladder and ring colours; medium for the clock"},
+    {"tag": "[fan]",         "meaning": "Post-original-series material, fan consensus, or later-series additions.", "strength": "Weak - usable, never load-bearing"},
+    {"tag": "[design]",      "meaning": "Invented for this project. Not canon, and must never be dressed as canon.", "strength": "N/A - it is ours"},
+    {"tag": "[user ruling]", "meaning": "The user decided it. Overrides every source, including canon.", "strength": "Absolute"},
+    {"tag": "[on page]",     "meaning": "Stated in the shipped prose, with a chapter and line reference.", "strength": "Binding continuity"},
+    {"tag": "[reported]",    "meaning": "Supplied by the user or an external system; not verified against files that could be opened.", "strength": "Provisional until checked"}
+  ],
+  "filename_law": "ASCII letters, digits, underscores and dots only. No spaces, no special characters, no non-ASCII. Upload-safe names survive transfer between agents and platforms."
+}

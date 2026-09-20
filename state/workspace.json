@@ -1,0 +1,328 @@
+{
+  "generated": "2026-09-20",
+  "workspace": "..",
+  "totals": {
+    "projects": 6,
+    "files": 606,
+    "words": 1682117,
+    "blue_silver_chapters": 15,
+    "sl4_chapters": 31,
+    "kit_laws": 11,
+    "kit_templates": 13
+  },
+  "projects": [
+    {
+      "id": "blue_silver",
+      "name": "Blue Silver",
+      "path": "blue_silver",
+      "files": 61,
+      "words": 219567,
+      "live_edge": "Book One complete — 15 rebuilt chapters",
+      "status": "gate-pass",
+      "mislabeled_binaries": []
+    },
+    {
+      "id": "sl4_fire_phoenix",
+      "name": "SL4 Fire Phoenix",
+      "path": "sl4_fire_phoenix",
+      "files": 172,
+      "words": 359006,
+      "live_edge": "After Chapter 31 — The Ticket Owed to Fire",
+      "status": "live",
+      "mislabeled_binaries": []
+    },
+    {
+      "id": "SOUL_LAND_UNIVERSAL_KIT",
+      "name": "Universal Kit",
+      "path": "SOUL_LAND_UNIVERSAL_KIT",
+      "files": 27,
+      "words": 16590,
+      "live_edge": "11 laws + 13 templates + verify tooling",
+      "status": "portable",
+      "mislabeled_binaries": []
+    },
+    {
+      "id": "SOUL_LAND_NEW",
+      "name": "Soul Land New",
+      "path": "SOUL_LAND_NEW",
+      "files": 25,
+      "words": 79088,
+      "live_edge": "Tian Yu — 6 chapters, pre-Chapter-11",
+      "status": "active",
+      "mislabeled_binaries": []
+    },
+    {
+      "id": "reference_sl3_lin_hao",
+      "name": "SL3 Lin Hao",
+      "path": "reference/sl3_lin_hao",
+      "files": 300,
+      "words": 1002381,
+      "live_edge": "Reference archive — craft only, never canon",
+      "status": "reference",
+      "mislabeled_binaries": []
+    },
+    {
+      "id": "soul_land_starter",
+      "name": "Starter Pack",
+      "path": "soul_land_starter",
+      "files": 21,
+      "words": 5485,
+      "live_edge": "Blank-project bootstrap skeleton",
+      "status": "template",
+      "mislabeled_binaries": []
+    }
+  ],
+  "blue_silver_chapters": [
+    {
+      "file": "Chapter_01_Awake.md",
+      "title": "Awake",
+      "n": 1,
+      "words": 2821,
+      "year_start": 0,
+      "year_end": 1,
+      "sha256": "61a922e0f6a7b063"
+    },
+    {
+      "file": "Chapter_02_What_the_Water_Teaches.md",
+      "title": "What the Water Teaches",
+      "n": 2,
+      "words": 2253,
+      "year_start": 1,
+      "year_end": 40,
+      "sha256": "ff9864faf1e4306c"
+    },
+    {
+      "file": "Chapter_03_The_One_Who_Stayed.md",
+      "title": "The One Who Stayed",
+      "n": 3,
+      "words": 1960,
+      "year_start": 40,
+      "year_end": 105,
+      "sha256": "d0249b29f126a441"
+    },
+    {
+      "file": "Chapter_04_The_Teeth_in_the_Grass.md",
+      "title": "The Teeth in the Grass",
+      "n": 4,
+      "words": 2127,
+      "year_start": 105,
+      "year_end": 190,
+      "sha256": "10097cd407d1edea"
+    },
+    {
+      "file": "Chapter_05_The_One_Who_Watched.md",
+      "title": "The One Who Watched",
+      "n": 5,
+      "words": 1846,
+      "year_start": 190,
+      "year_end": 240,
+      "sha256": "16a54229f42919b3"
+    },
+    {
+      "file": "Chapter_06_The_One_Below.md",
+      "title": "The One Below",
+      "n": 6,
+      "words": 1999,
+      "year_start": 240,
+      "year_end": 300,
+      "sha256": "dea18a80cc662fd5"
+    },
+    {
+      "file": "Chapter_07_The_One_Who_Keeps.md",
+      "title": "The One Who Keeps",
+      "n": 7,
+      "words": 1898,
+      "year_start": 300,
+      "year_end": 360,
+      "sha256": "f5b8fdad41261b2c"
+    },
+    {
+      "file": "Chapter_08_The_One_Who_Crossed.md",
+      "title": "The One Who Crossed",
+      "n": 8,
+      "words": 2265,
+      "year_start": 360,
+      "year_end": 440,
+      "sha256": "1f3cb8ec5cabcd6d"
+    },
+    {
+      "file": "Chapter_09_The_Last_Vigil.md",
+      "title": "The Last Vigil",
+      "n": 9,
+      "words": 2225,
+      "year_start": 440,
+      "year_end": 500,
+      "sha256": "6feb3c113cd8dc98"
+    },
+    {
+      "file": "Chapter_10_The_One_Who_Answers.md",
+      "title": "The One Who Answers",
+      "n": 10,
+      "words": 2488,
+      "year_start": 500,
+      "year_end": 580,
+      "sha256": "5e6266a6ac6387b2"
+    },
+    {
+      "file": "Chapter_11_The_Liar_at_the_Door.md",
+      "title": "The Liar at the Door",
+      "n": 11,
+      "words": 2575,
+      "year_start": 580,
+      "year_end": 650,
+      "sha256": "3cb0b1b74c9782c1"
+    },
+    {
+      "file": "Chapter_12_The_Ten_Thousandth_Year.md",
+      "title": "The Ten Thousandth Year",
+      "n": 12,
+      "words": 1873,
+      "year_start": 650,
+      "year_end": 700,
+      "sha256": "8539956c282d8d1c"
+    },
+    {
+      "file": "Chapter_13_The_One_Who_Goes.md",
+      "title": "The One Who Goes",
+      "n": 13,
+      "words": 2502,
+      "year_start": 700,
+      "year_end": 735,
+      "sha256": "7fba0e634570af46"
+    },
+    {
+      "file": "Chapter_14_The_Ground_That_Remembers.md",
+      "title": "The Ground That Remembers",
+      "n": 14,
+      "words": 2494,
+      "year_start": 735,
+      "year_end": 753,
+      "sha256": "e2dac91ba922cf04"
+    },
+    {
+      "file": "Chapter_15_The_One_Who_Is_Named.md",
+      "title": "The One Who Is Named",
+      "n": 15,
+      "words": 3385,
+      "year_start": 753,
+      "year_end": 775,
+      "sha256": "6e060ebe1b147465"
+    }
+  ],
+  "kit_laws": [
+    {
+      "file": "00_START_HERE.md",
+      "n": 0,
+      "words": 945,
+      "title": "00 — START HERE"
+    },
+    {
+      "file": "01_CANON_SPINE.md",
+      "n": 1,
+      "words": 1987,
+      "title": "01 — CANON SPINE"
+    },
+    {
+      "file": "02_PROJECT_SETUP.md",
+      "n": 2,
+      "words": 794,
+      "title": "02 — PROJECT SETUP"
+    },
+    {
+      "file": "03_STORY_LAW.md",
+      "n": 3,
+      "words": 1101,
+      "title": "03 — STORY LAW"
+    },
+    {
+      "file": "04_CANON_BUTTERFLY.md",
+      "n": 4,
+      "words": 660,
+      "title": "04 — CANON AND BUTTERFLY"
+    },
+    {
+      "file": "05_POWER_LAW.md",
+      "n": 5,
+      "words": 725,
+      "title": "05 — POWER LAW"
+    },
+    {
+      "file": "06_KNOWLEDGE_FIREWALLS.md",
+      "n": 6,
+      "words": 623,
+      "title": "06 — KNOWLEDGE FIREWALLS"
+    },
+    {
+      "file": "07_PROSE_LAW.md",
+      "n": 7,
+      "words": 1283,
+      "title": "07 — PROSE LAW"
+    },
+    {
+      "file": "08_CONTINUITY_LAW.md",
+      "n": 8,
+      "words": 832,
+      "title": "08 — CONTINUITY LAW"
+    },
+    {
+      "file": "09_AUDIT_LAW.md",
+      "n": 9,
+      "words": 1532,
+      "title": "09 — AUDIT LAW"
+    },
+    {
+      "file": "10_HANDOFF_LAW.md",
+      "n": 10,
+      "words": 801,
+      "title": "10 — HANDOFF LAW"
+    }
+  ],
+  "kit_templates": [
+    "CANON_LEDGER.md",
+    "CANON_NOTES.md",
+    "CHAPTER_TEMPLATE.md",
+    "CHARACTERS.md",
+    "CONTINUITY.md",
+    "HANDOFF.md",
+    "KNOWLEDGE_FIREWALLS.md",
+    "NO_MISTAKE_LIVE_RULES.md",
+    "PLACES.md",
+    "PROJECT_README.md",
+    "SERIAL_LOG.md",
+    "STATUS_PANEL.md",
+    "TIMELINE.md"
+  ],
+  "sl4_chapters": [
+    "Chapter_01.md",
+    "Chapter_02.md",
+    "Chapter_03.md",
+    "Chapter_04.md",
+    "Chapter_05.md",
+    "Chapter_06.md",
+    "Chapter_07.md",
+    "Chapter_08.md",
+    "Chapter_09.md",
+    "Chapter_10.md",
+    "Chapter_11.md",
+    "Chapter_12.md",
+    "Chapter_13.md",
+    "Chapter_14.md",
+    "Chapter_15.md",
+    "Chapter_16.md",
+    "Chapter_17.md",
+    "Chapter_18.md",
+    "Chapter_19.md",
+    "Chapter_20.md",
+    "Chapter_21.md",
+    "Chapter_22.md",
+    "Chapter_23.md",
+    "Chapter_24.md",
+    "Chapter_25.md",
+    "Chapter_26.md",
+    "Chapter_27.md",
+    "Chapter_28.md",
+    "Chapter_29.md",
+    "Chapter_30.md",
+    "Chapter_31.md"
+  ]
+}

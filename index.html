@@ -1,0 +1,1371 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SOUL LAND UNIVERSAL - CONTROL CENTRE</title>
+<style>
+:root{
+  --bg:#0a0e14; --bg2:#0f151d; --panel:#121a24; --panel2:#161f2b;
+  --line:#1e2a38; --line2:#2a3a4d;
+  --ink:#c8d6e5; --ink2:#8b9db3; --ink3:#5d7186;
+  --amber:#f0b429; --cyan:#4fd1c5; --green:#48bb78; --red:#fc8181;
+  --violet:#b794f4; --blue:#63b3ed; --orange:#ed8936;
+  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.65}
+a{color:var(--cyan);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* ---------- layout ---------- */
+.shell{display:flex;min-height:100vh}
+nav{width:250px;flex:0 0 250px;background:var(--bg2);border-right:1px solid var(--line);
+    position:sticky;top:0;height:100vh;overflow-y:auto;padding:18px 0}
+main{flex:1;min-width:0;padding:0 0 120px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 34px}
+
+/* ---------- nav ---------- */
+.brand{padding:0 20px 16px;border-bottom:1px solid var(--line);margin-bottom:14px}
+.brand h1{font-size:13px;letter-spacing:.14em;color:var(--amber);font-weight:700;line-height:1.5}
+.brand p{font-size:11px;color:var(--ink3);letter-spacing:.06em;margin-top:3px}
+nav ol{list-style:none;counter-reset:s}
+nav li a{display:block;padding:6px 20px;font-size:12.5px;color:var(--ink2);
+         border-left:2px solid transparent;letter-spacing:.02em}
+nav li a:hover{background:var(--panel);color:var(--ink);text-decoration:none;border-left-color:var(--line2)}
+nav li a .n{display:inline-block;width:26px;color:var(--ink3);font-family:var(--mono);font-size:11px}
+
+/* ---------- header ---------- */
+header{background:linear-gradient(180deg,#0d131b,#0a0e14);border-bottom:1px solid var(--line);
+       padding:44px 0 34px;margin-bottom:0}
+header .kicker{font-family:var(--mono);font-size:11px;letter-spacing:.22em;color:var(--amber);margin-bottom:12px}
+header h2{font-size:31px;font-weight:700;letter-spacing:-.01em;color:#eaf2fb;line-height:1.25}
+header .sub{color:var(--ink2);margin-top:12px;max-width:760px;font-size:14.5px}
+.statusbar{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.chip{font-family:var(--mono);font-size:11px;padding:5px 11px;border:1px solid var(--line2);
+      border-radius:3px;background:var(--panel);color:var(--ink2);letter-spacing:.04em}
+.chip b{color:var(--ink);font-weight:600}
+.chip.ok{border-color:#1f4433;color:var(--green)}
+.chip.ok b{color:var(--green)}
+.chip.warn{border-color:#4a3a1c;color:var(--amber)}
+.chip.warn b{color:var(--amber)}
+
+/* ---------- sections ---------- */
+section{padding:46px 0 8px;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:none}
+h3{font-size:12px;letter-spacing:.18em;color:var(--amber);font-family:var(--mono);
+   margin-bottom:6px;font-weight:700}
+h4{font-size:21px;color:#e8f0fa;font-weight:650;margin-bottom:16px;letter-spacing:-.005em}
+h5{font-size:14px;color:var(--cyan);margin:26px 0 10px;font-weight:650;letter-spacing:.01em}
+p{color:var(--ink2);margin-bottom:12px;max-width:840px}
+p.tight{margin-bottom:8px}
+strong{color:var(--ink);font-weight:650}
+em{color:var(--violet);font-style:normal}
+code{font-family:var(--mono);font-size:.88em;background:var(--panel2);padding:1px 5px;
+     border-radius:3px;color:var(--cyan);border:1px solid var(--line)}
+
+/* ---------- tables ---------- */
+table{width:100%;border-collapse:collapse;margin:14px 0 22px;font-size:13px}
+th{text-align:left;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;color:var(--ink3);
+   padding:8px 11px;border-bottom:1px solid var(--line2);font-weight:600;white-space:nowrap}
+td{padding:8px 11px;border-bottom:1px solid var(--line);color:var(--ink2);vertical-align:top}
+tr:hover td{background:#0e141c}
+td.k{color:var(--ink);font-weight:600;white-space:nowrap}
+td.num{font-family:var(--mono);color:var(--cyan);text-align:right;white-space:nowrap}
+td.mono{font-family:var(--mono);font-size:12px;color:var(--ink3)}
+.scroll{overflow-x:auto}
+
+/* ---------- cards ---------- */
+.grid{display:grid;gap:14px;margin:16px 0 24px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:5px;padding:17px 19px}
+.card h6{font-size:12.5px;color:var(--ink);font-weight:650;margin-bottom:9px;
+         letter-spacing:.01em;display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+.card h6 .tag{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;padding:2px 7px;
+              border-radius:3px;font-weight:600;white-space:nowrap}
+.t-live{background:#14352a;color:var(--green);border:1px solid #1f4d3d}
+.t-lock{background:#3a2e14;color:var(--amber);border:1px solid #54421c}
+.t-ref{background:#1b2b3d;color:var(--blue);border:1px solid #26405c}
+.t-arch{background:#262626;color:var(--ink3);border:1px solid #3a3a3a}
+.t-user{background:#321f3d;color:var(--violet);border:1px solid #4a2f5c}
+.card ul{list-style:none;font-size:12.5px;color:var(--ink2)}
+.card ul li{padding:3px 0;padding-left:13px;position:relative;line-height:1.55}
+.card ul li::before{content:"\2013";position:absolute;left:0;color:var(--ink3)}
+.metric{font-family:var(--mono);font-size:25px;color:var(--ink);font-weight:600;line-height:1.1}
+.metric.small{font-size:19px}
+.mlabel{font-family:var(--mono);font-size:10px;letter-spacing:.11em;color:var(--ink3);margin-top:6px}
+
+/* ---------- pipeline ---------- */
+.pipe{display:flex;flex-wrap:wrap;gap:6px;align-items:stretch;margin:18px 0 26px}
+.stage{flex:1 1 96px;min-width:96px;background:var(--panel);border:1px solid var(--line2);
+       border-radius:4px;padding:11px 9px;text-align:center;position:relative}
+.stage .sn{font-family:var(--mono);font-size:9.5px;color:var(--ink3);letter-spacing:.1em}
+.stage .sl{font-family:var(--mono);font-size:11.5px;color:var(--ink);margin-top:4px;letter-spacing:.05em;font-weight:600}
+.stage .sd{font-size:10.5px;color:var(--ink3);margin-top:5px;line-height:1.4}
+.stage.gate{border-color:#54421c;background:#171308}
+.stage.gate .sl{color:var(--amber)}
+
+/* ---------- callouts ---------- */
+.note{border-left:3px solid var(--cyan);background:#0d1a1f;padding:14px 18px;margin:16px 0;
+      border-radius:0 4px 4px 0;font-size:13.5px;color:var(--ink2)}
+.note.law{border-left-color:var(--amber);background:#161208}
+.note.stop{border-left-color:var(--red);background:#1c1012}
+.note.good{border-left-color:var(--green);background:#0c1a13}
+.note b{color:var(--ink)}
+.note .nt{font-family:var(--mono);font-size:10px;letter-spacing:.14em;display:block;margin-bottom:6px}
+.note.law .nt{color:var(--amber)}
+.note.stop .nt{color:var(--red)}
+.note.good .nt{color:var(--green)}
+.note .nt{color:var(--cyan)}
+
+/* ---------- firewall rows ---------- */
+.fw{background:var(--panel);border:1px solid var(--line);border-radius:5px;padding:15px 18px;margin-bottom:10px}
+.fw .fwh{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:9px}
+.fw .who{font-size:14px;color:var(--ink);font-weight:650}
+.fw .num{font-family:var(--mono);font-size:10.5px;color:var(--ink3)}
+.state{font-family:var(--mono);font-size:9.5px;letter-spacing:.09em;padding:2px 8px;border-radius:3px;font-weight:600}
+.s-known{background:#14352a;color:var(--green);border:1px solid #1f4d3d}
+.s-part{background:#12303a;color:var(--cyan);border:1px solid #1c4a58}
+.s-susp{background:#3a2e14;color:var(--amber);border:1px solid #54421c}
+.s-unk{background:#262626;color:var(--ink3);border:1px solid #3a3a3a}
+.s-false{background:#3a1a1a;color:var(--red);border:1px solid #552626}
+.s-disb{background:#33200f;color:var(--orange);border:1px solid #4d3117}
+.fw dl{display:grid;grid-template-columns:112px 1fr;gap:5px 14px;font-size:12.5px}
+.fw dt{font-family:var(--mono);font-size:10px;letter-spacing:.08em;color:var(--ink3);padding-top:2px}
+.fw dd{color:var(--ink2);line-height:1.55}
+.fw dd.rule{color:var(--amber)}
+
+/* ---------- bootstrap ---------- */
+.bootwrap{margin:18px 0 26px}
+textarea{width:100%;min-height:520px;background:#080b10;color:#a9c3dd;border:1px solid var(--line2);
+  border-radius:5px;padding:18px;font-family:var(--mono);font-size:11.5px;line-height:1.7;
+  resize:vertical;white-space:pre;overflow-wrap:normal;overflow-x:auto}
+textarea:focus{outline:none;border-color:var(--cyan)}
+.btnrow{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:11px}
+button{font-family:var(--mono);font-size:11px;letter-spacing:.09em;padding:9px 17px;
+  background:var(--panel2);color:var(--ink);border:1px solid var(--line2);border-radius:4px;
+  cursor:pointer;font-weight:600}
+button:hover{background:var(--line);border-color:var(--ink3)}
+button.pri{background:#1a2c22;border-color:#2c5340;color:var(--green)}
+button.pri:hover{background:#22382c}
+
+/* ---------- footer ---------- */
+footer{padding:38px 0 0;color:var(--ink3);font-size:12px}
+footer .sig{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;color:var(--ink3);
+  border-top:1px solid var(--line);padding-top:16px;margin-top:8px}
+
+@media(max-width:900px){
+  .shell{flex-direction:column}
+  nav{width:100%;flex:none;height:auto;position:static;border-right:none;border-bottom:1px solid var(--line)}
+  nav ol{display:flex;flex-wrap:wrap}
+  nav li a{border-left:none;border-bottom:2px solid transparent;padding:8px 13px}
+  .wrap{padding:0 20px}
+  header h2{font-size:24px}
+  .fw dl{grid-template-columns:1fr}
+}
+
+/* additions for generated build */
+pre.code{background:#080b10;color:#a9c3dd;border:1px solid var(--line2);border-radius:5px;
+  padding:16px 18px;font-family:var(--mono);font-size:11.5px;line-height:1.7;
+  overflow-x:auto;white-space:pre;margin:14px 0 22px}
+ul.bullets{list-style:none;margin:14px 0 22px;font-size:13.5px;color:var(--ink2)}
+ul.bullets li{padding:5px 0 5px 16px;position:relative;line-height:1.6}
+ul.bullets li::before{content:"\2013";position:absolute;left:0;color:var(--ink3)}
+#cpmsg{font-family:var(--mono);font-size:11px;color:var(--green);align-self:center}
+</style></head><body><div class="shell">
+<nav><div class="brand"><h1>SOUL LAND<br>UNIVERSAL</h1><p>CONTROL CENTRE</p></div><ol>
+<li><a href="#status"><span class="n">00</span>Operating status</a></li>
+<li><a href="#registry"><span class="n">01</span>Project registry</a></li>
+<li><a href="#rule"><span class="n">02</span>Core operating rule</a></li>
+<li><a href="#pipeline"><span class="n">03</span>Pipeline</a></li>
+<li><a href="#predraft"><span class="n">04</span>Pre-draft gate</a></li>
+<li><a href="#locks"><span class="n">05</span>Twelve locks</a></li>
+<li><a href="#gates"><span class="n">06</span>Seven hard gates</a></li>
+<li><a href="#canon"><span class="n">07</span>Canon spine</a></li>
+<li><a href="#firewalls"><span class="n">08</span>Knowledge firewalls</a></li>
+<li><a href="#bs"><span class="n">09</span>Blue Silver state</a></li>
+<li><a href="#sl4"><span class="n">10</span>SL4 Fire Phoenix</a></li>
+<li><a href="#storyos"><span class="n">11</span>StoryOS / Naag</a></li>
+<li><a href="#others"><span class="n">12</span>Other projects</a></li>
+<li><a href="#adaptation"><span class="n">13</span>Adaptation Talent</a></li>
+<li><a href="#growth"><span class="n">14</span>Growth log</a></li>
+<li><a href="#protocol"><span class="n">15</span>Contribution protocol</a></li>
+<li><a href="#bootstrap"><span class="n">16</span>Transfer bootstrap</a></li>
+<li><a href="#verify"><span class="n">17</span>Verification status</a></li>
+</ol></nav><main>
+<header><div class="wrap">
+<div class="kicker">NAVIGATION &amp; STATE REFERENCE - GENERATED FROM state/ - NOT A DRAFTING SURFACE</div>
+<h2>Soul Land Universal - Control Centre</h2>
+<p class="sub">The single orientation point for every active serial in this universe, plus the portable authoring law that governs them. This page is generated. The state beneath it grows by contribution, and every addition is validated before it lands.</p>
+<div class="statusbar">
+<span class="chip ok">FOUNDATION <b>PASS</b></span>
+<span class="chip ok">STRUCTURAL ERRORS <b>0</b></span>
+<span class="chip ok">INFORMATION DISCIPLINE <b>ACTIVE</b></span>
+<span class="chip">PROJECTS <b>6</b></span>
+<span class="chip">WORDS <b>1,682,117</b></span>
+<span class="chip">FIREWALLS <b>18</b></span>
+<span class="chip">GROWTH EVENTS <b>0</b></span>
+<span class="chip warn">BUILT <b>2026-09-20</b></span>
+</div></div></header>
+<section id="status"><div class="wrap"><h3>SECTION 00</h3><h4>Operating status</h4>
+<p>Every figure on this page is rendered from <code>state/*.json</code>. Those files were measured from disk by <code>tools/extract_state.py</code> or filed as validated contributions. Nothing here is typed into the page by hand.</p>
+<div class="grid g4">
+<div class="card"><div class="metric">6</div><div class="mlabel">PROJECTS TRACKED</div></div>
+<div class="card"><div class="metric">606</div><div class="mlabel">PROJECT FILES</div></div>
+<div class="card"><div class="metric">1.68M</div><div class="mlabel">WORDS ON DISK</div></div>
+<div class="card"><div class="metric">46</div><div class="mlabel">LIVE CHAPTERS</div></div>
+</div>
+<div class="grid g3">
+<div class="card"><h6>What this document is</h6><ul><li>A navigation and state reference</li><li>A transfer bootstrap for new agents</li><li>A record of locks and firewalls</li><li>A growable state layer with validation</li></ul></div>
+<div class="card"><h6>What it is not</h6><ul><li>Not a place to draft prose</li><li>Not a substitute for the source files</li><li>Not an authority above your own words</li><li>Not a canon source in itself</li></ul></div>
+<div class="card"><h6>Authority order</h6><ul><li>The user&#x27;s explicit words</li><li>Project locked documents</li><li>Kit laws</li><li>Kit canon spine</li><li>Earlier projects - craft only, never canon</li></ul></div>
+</div>
+<div class="note law"><span class="nt">CORE OPERATING RULE</span>This Control Centre is the <b>navigation and state reference</b>. It is not a drafting surface and it is not canon. Do not treat author knowledge as character knowledge. Do not invent missing canon. Preserve established decisions unless an explicit authorised change is made.</div>
+</div></section>
+<section id="registry"><div class="wrap"><h3>SECTION 01</h3><h4>Project registry</h4>
+<p>Counts are measured from disk by <code>tools/extract_state.py</code> and written to <code>state/workspace.json</code>. Re-run that script any time the workspace changes.</p>
+<div class="scroll"><table>
+<thead><tr><th>Project</th><th>Path</th><th>Files</th><th>Words</th><th>Live edge</th><th>Status</th></tr></thead><tbody>
+<tr><td class="k">Blue Silver</td><td class="mono">blue_silver</td><td class="num">61</td><td class="num">219,567</td><td>Book One complete — 15 rebuilt chapters</td><td><span class="tag t-live">GATE-PASS</span></td></tr>
+<tr><td class="k">SL4 Fire Phoenix</td><td class="mono">sl4_fire_phoenix</td><td class="num">172</td><td class="num">359,006</td><td>After Chapter 31 — The Ticket Owed to Fire</td><td><span class="tag t-live">LIVE</span></td></tr>
+<tr><td class="k">Universal Kit</td><td class="mono">SOUL_LAND_UNIVERSAL_KIT</td><td class="num">27</td><td class="num">16,590</td><td>11 laws + 13 templates + verify tooling</td><td><span class="tag t-live">PORTABLE</span></td></tr>
+<tr><td class="k">Soul Land New</td><td class="mono">SOUL_LAND_NEW</td><td class="num">25</td><td class="num">79,088</td><td>Tian Yu — 6 chapters, pre-Chapter-11</td><td><span class="tag t-ref">ACTIVE</span></td></tr>
+<tr><td class="k">SL3 Lin Hao</td><td class="mono">reference/sl3_lin_hao</td><td class="num">300</td><td class="num">1,002,381</td><td>Reference archive — craft only, never canon</td><td><span class="tag t-ref">REFERENCE</span></td></tr>
+<tr><td class="k">Starter Pack</td><td class="mono">soul_land_starter</td><td class="num">21</td><td class="num">5,485</td><td>Blank-project bootstrap skeleton</td><td><span class="tag t-arch">TEMPLATE</span></td></tr>
+</tbody></table></div>
+<div class="note"><span class="nt">FILE TREE LAW</span>Every project uses the same layout: <code>foundation/</code> for status, continuity, locks, canon notes and serial log; <code>codex/</code> for characters, timeline, places and knowledge firewalls; <code>chapters/</code> for prose; <code>audits/</code> for dated audit reports. Do not invent your own layout - the layout is what lets a fresh agent orient in one read.</div>
+<div class="note law"><span class="nt">FILENAME LAW</span>ASCII letters, digits, underscores and dots only. No spaces, no special characters, no non-ASCII. Upload-safe names survive transfer between agents and platforms.</div>
+</div></section>
+<section id="rule"><div class="wrap"><h3>SECTION 02</h3><h4>Core operating rule</h4>
+<p>Five failure modes killed a 90,000-word serial once. Every law in this system exists because one of them happened.</p>
+<div class="scroll"><table>
+<thead><tr><th>#</th><th>Failure mode</th><th>What it looked like</th><th>Structural cure</th></tr></thead><tbody>
+<tr><td class="num">1</td><td class="k">No canon spine</td><td>The serial never asked what canon says happens in that forest. Canon says people hunt there for rings.</td><td>Name at least five canon beats the serial touches, before drafting.</td></tr>
+<tr><td class="num">2</td><td class="k">Nothing contested</td><td>No antagonist pressure. The protagonist was never wanted by anyone for anything.</td><td>Every chapter gets a threat and a named face.</td></tr>
+<tr><td class="num">3</td><td class="k">No felt progression</td><td>Rank and ring changes were asserted in panels but never earned on the page.</td><td>Ring gates are chapter rhythm, not decoration.</td></tr>
+<tr><td class="num">4</td><td class="k">One register repeated</td><td>Fifteen chapters in a single interior-meditation voice. Dialogue vanished from seven of them.</td><td>Five registers, at least three per chapter, counted not eyeballed.</td></tr>
+<tr><td class="num">5</td><td class="k">Apparatus outgrew story</td><td>Panels, ledgers and codex entries became the product; the story became the appendix.</td><td>Slim panel at top, no chapter footer, prose carries the weight.</td></tr>
+</tbody></table></div>
+<h5>The honesty tags</h5>
+<div class="scroll"><table>
+<thead><tr><th>Tag</th><th>Means</th><th>Strength</th></tr></thead><tbody>
+<tr><td class="k">[canon]</td><td>Multiple independent secondary sources agree. Never read in the Chinese original.</td><td>Strong for rank ladder and ring colours; medium for the clock</td></tr>
+<tr><td class="k">[fan]</td><td>Post-original-series material, fan consensus, or later-series additions.</td><td>Weak - usable, never load-bearing</td></tr>
+<tr><td class="k">[design]</td><td>Invented for this project. Not canon, and must never be dressed as canon.</td><td>N/A - it is ours</td></tr>
+<tr><td class="k">[user ruling]</td><td>The user decided it. Overrides every source, including canon.</td><td>Absolute</td></tr>
+<tr><td class="k">[on page]</td><td>Stated in the shipped prose, with a chapter and line reference.</td><td>Binding continuity</td></tr>
+<tr><td class="k">[reported]</td><td>Supplied by the user or an external system; not verified against files that could be opened.</td><td>Provisional until checked</td></tr>
+</tbody></table></div>
+</div></section>
+<section id="pipeline"><div class="wrap"><h3>SECTION 03</h3><h4>Pipeline</h4>
+<p>Ten stages. Amber stages are gates - you do not proceed past one until it passes. The two most commonly skipped are <strong>VERIFY</strong> and <strong>AUDIT</strong>.</p><div class="pipe">
+<div class="stage"><div class="sn">01</div><div class="sl">LOAD</div><div class="sd">Read the live edge and the locks</div></div>
+<div class="stage gate"><div class="sn">02</div><div class="sl">VERIFY</div><div class="sd">Reconstruct canon scene by scene</div></div>
+<div class="stage"><div class="sn">03</div><div class="sl">MAP</div><div class="sd">Timeline, location, prop, knowledge</div></div>
+<div class="stage"><div class="sn">04</div><div class="sl">FORECAST</div><div class="sd">Butterfly effects from real changes</div></div>
+<div class="stage"><div class="sn">05</div><div class="sl">BLUEPRINT</div><div class="sd">Beat order, registers, panel range</div></div>
+<div class="stage"><div class="sn">06</div><div class="sl">DRAFT</div><div class="sd">Prose carries the chapter</div></div>
+<div class="stage gate"><div class="sn">07</div><div class="sl">AUDIT</div><div class="sd">Run all seven hard gates</div></div>
+<div class="stage"><div class="sn">08</div><div class="sl">REPAIR</div><div class="sd">Fix, then re-run the gates</div></div>
+<div class="stage"><div class="sn">09</div><div class="sl">DELIVER</div><div class="sd">Ship the chapter</div></div>
+<div class="stage"><div class="sn">10</div><div class="sl">RECORD</div><div class="sd">Update ledgers and the serial log</div></div>
+</div>
+<div class="note stop"><span class="nt">NEVER SKIP RECORD</span>A decision that is not written down will regress. Every new decision, correction and canon receipt gets recorded in the same pass it is made. In this system that means filing it into <code>intake/drop/</code> as a <code>decision</code> or <code>correction</code>, not just saying it in chat.</div>
+</div></section>
+<section id="predraft"><div class="wrap"><h3>SECTION 04</h3><h4>Pre-draft gate</h4>
+<p>Six steps, in order, before any prose is written.</p><div class="grid g2">
+<div class="card"><h6><span>1. Reconstruct</span><span class="tag t-lock">REQUIRED</span></h6><ul><li>Rebuild the relevant canon scene by scene. Not from memory - from receipts. If a scene is missing, say it is missing.</li></ul></div>
+<div class="card"><h6><span>2. Verify exact detail</span><span class="tag t-lock">REQUIRED</span></h6><ul><li>Event order, location, timing, positions, clothing, objects, environment, dialogue style, motivations, character knowledge.</li></ul></div>
+<div class="card"><h6><span>3. Build the ledgers</span><span class="tag t-lock">REQUIRED</span></h6><ul><li>Timeline, location, prop, power and adaptation, knowledge - who knows what, and since when.</li></ul></div>
+<div class="card"><h6><span>4. Firewall</span><span class="tag t-lock">REQUIRED</span></h6><ul><li>Hide information from characters who have not earned it. Author knowledge is never character knowledge. Check every speaking character against the registry.</li></ul></div>
+<div class="card"><h6><span>5. Resolve conflicts</span><span class="tag t-lock">REQUIRED</span></h6><ul><li>Use the authority hierarchy. User words beat project docs beat kit laws. Record the resolution, not just the result.</li></ul></div>
+<div class="card"><h6><span>6. Then blueprint</span><span class="tag t-live">PROCEED</span></h6><ul><li>Only now set beat order. Set the panel year range first. Then draft.</li></ul></div>
+</div>
+<div class="note"><span class="nt">WHY PANEL RANGE COMES FIRST</span>Set the panel timeline endpoints before writing a single line of prose. Every date in the chapter derives from them. Seventeen separate date bugs were found that way in one rebuild.</div>
+</div></section>
+<section id="locks"><div class="wrap"><h3>SECTION 05</h3><h4>The twelve locks</h4>
+<p>Set these before drafting chapter one. Write them into <code>NO_MISTAKE_LIVE_RULES.md</code>.</p>
+<div class="scroll"><table>
+<thead><tr><th>#</th><th>Lock</th><th>Question it answers</th></tr></thead><tbody>
+<tr><td class="num">1</td><td class="k">ERA</td><td>Which series, which years, which DC range</td></tr>
+<tr><td class="num">2</td><td class="k">PROTAGONIST</td><td>Who they are - and explicitly what they are NOT</td></tr>
+<tr><td class="num">3</td><td class="k">CANON ENTRY</td><td>The specific canon beats this serial touches. Name at least five.</td></tr>
+<tr><td class="num">4</td><td class="k">SPINE</td><td>Who wants what from the protagonist, and what they will do to get it</td></tr>
+<tr><td class="num">5</td><td class="k">POWER CEILING</td><td>The strongest the OC becomes, and what they never get</td></tr>
+<tr><td class="num">6</td><td class="k">IDENTITY</td><td>Public name versus true name; what the reveal costs</td></tr>
+<tr><td class="num">7</td><td class="k">ABSOLUTES</td><td>What the protagonist will never do, ever</td></tr>
+<tr><td class="num">8</td><td class="k">CANON IMMUNITY</td><td>Which canon characters&#x27; fates may not be rerouted</td></tr>
+<tr><td class="num">9</td><td class="k">MEASUREMENT</td><td>How rank and rings are shown on the page</td></tr>
+<tr><td class="num">10</td><td class="k">VOICE</td><td>POV, tense, register rules</td></tr>
+<tr><td class="num">11</td><td class="k">CADENCE</td><td>Chapters per pass, words per chapter, when audits run</td></tr>
+<tr><td class="num">12</td><td class="k">HANDOFF</td><td>What a fresh agent must read first</td></tr>
+</tbody></table></div>
+<div class="note law"><span class="nt">LOCK 4 IS THE ONE THAT MATTERS MOST</span>Write it as a full sentence with all three blanks filled: &#x27;______ wants ______ from my protagonist, and will ______ to get it.&#x27; If you cannot fill all three, there is no story yet - there is only a setting.<br><br>Blue Silver's cure was: <em>Spirit Hall wants rings, and sends hunters into the forest to take them.</em></div>
+</div></section>
+<section id="gates"><div class="wrap"><h3>SECTION 06</h3><h4>The seven hard gates</h4>
+<p>Machine-checked by <code>tools/verify.py</code> in the Universal Kit. These are not negotiable, and "mostly passing" is a failure.</p>
+<div class="scroll"><table>
+<thead><tr><th>#</th><th>Gate</th><th>Why it exists</th></tr></thead><tbody>
+<tr><td class="num">1</td><td class="k">Zero unreadable script</td><td>CJK, kana, hangul. Not a blanket non-ASCII ban - em dashes and box-drawing are fine.</td></tr>
+<tr><td class="num">2</td><td class="k">Zero literal backslash-n</td><td>The two-character sequence leaking into prose from escaped strings. Use the real newline.</td></tr>
+<tr><td class="num">3</td><td class="k">Zero digits in prose</td><td>Exact figures belong in panels and ledgers. Prose says &#x27;seven&#x27;, the panel says &#x27;7&#x27;.</td></tr>
+<tr><td class="num">4</td><td class="k">At least three spoken dialogue lines</td><td>Dialogue silently disappears from introspective serials. It went missing from seven of fifteen chapters in one rebuild and was only caught by counting. Count it; do not eyeball it.</td></tr>
+<tr><td class="num">5</td><td class="k">Panels contiguous</td><td>No overlap, no gap. Insertion and reordering desynchronise panels, and the drift is invisible until two chapters claim the same year.</td></tr>
+<tr><td class="num">6</td><td class="k">No placeholder text</td><td>No shipped file contains template slots or lorem-style filler.</td></tr>
+<tr><td class="num">7</td><td class="k">Marker discipline</td><td>The book-end marker never appears in prose; at most one end card, opening with END OF, last in the file.</td></tr>
+</tbody></table></div>
+<h5>Gate scope - which gates apply to which files</h5>
+<div class="scroll"><table>
+<thead><tr><th>Gate</th><th>Chapters</th><th>Templates</th><th>Law</th><th>Codex</th><th>Audit</th></tr></thead><tbody>
+<tr><td class="k">Zero unreadable script</td><td>yes</td><td>yes</td><td>yes</td><td>yes</td><td>yes</td></tr>
+<tr><td class="k">Zero literal backslash-n</td><td>yes</td><td>yes</td><td>yes</td><td>yes</td><td>yes</td></tr>
+<tr><td class="k">Zero digits in prose</td><td>yes</td><td class="mono">&mdash;</td><td class="mono">&mdash;</td><td class="mono">&mdash;</td><td class="mono">&mdash;</td></tr>
+<tr><td class="k">At least three spoken dialogue lines</td><td>yes</td><td class="mono">&mdash;</td><td class="mono">&mdash;</td><td class="mono">&mdash;</td><td class="mono">&mdash;</td></tr>
+<tr><td class="k">Panels contiguous</td><td>yes</td><td class="mono">&mdash;</td><td class="mono">&mdash;</td><td class="mono">&mdash;</td><td class="mono">&mdash;</td></tr>
+<tr><td class="k">No placeholder text</td><td>yes</td><td class="mono">&mdash;</td><td class="mono">&mdash;</td><td>yes</td><td class="mono">&mdash;</td></tr>
+<tr><td class="k">Marker discipline</td><td>yes</td><td class="mono">&mdash;</td><td class="mono">&mdash;</td><td class="mono">&mdash;</td><td class="mono">&mdash;</td></tr>
+</tbody></table></div>
+<div class="note stop"><span class="nt">GATE SCOPE IS NOT OPTIONAL</span>Gate 6 must never be applied to templates, law files, or audit logs. A template with no slot tokens is not a template. A law file that cannot show the panel format cannot teach it. An audit log reports on placeholder counts - a line reading &#x27;TODO/FIXME/TBD = 0&#x27; is the log doing its job, not a leftover. Gates 1 and 2 are the only ones that apply everywhere, because they are the ones that indicate a file is broken rather than a file being what it is.</div>
+<div class="note"><span class="nt">THE SELF-REFERENTIAL TRAP</span>A check must not match its own description. Five confirmed instances: a blanket non-ASCII gate flagging the em dashes in the prose law that explains the rule; a case-insensitive substring flagging &#x27;placeholder&#x27; inside &#x27;no placeholder text left&#x27;; gate 6 over templates flagging every slot token; gate 6 over an audit log flagging its own zero-count report; and documenting that last case inside the audit law re-tripping the same class. Scope the gate, do not reword the file.</div>
+<div class="note good"><span class="nt">SHIP THE NEGATIVE TEST WITH THE GATE</span>Ship the negative test with the gate. tools/selftest.py exists because verify.py once reported fifteen failures against a proven 33,100-word serial - every one of them a false positive. A gate nobody has tested is a guess.</div>
+</div></section>
+<section id="canon"><div class="wrap"><h3>SECTION 07</h3><h4>Canon spine</h4>
+<p>4+ independent secondary sources agree. Confidence: <b>strong</b>.</p>
+<h5>Soul rank ladder</h5>
+<div class="scroll"><table>
+<thead><tr><th>Rank</th><th>Levels</th></tr></thead><tbody>
+<tr><td class="k">Soul Warrior / Scholar</td><td class="num">1-10</td></tr>
+<tr><td class="k">Soul Master</td><td class="num">11-20</td></tr>
+<tr><td class="k">Grand Soul Master</td><td class="num">21-30</td></tr>
+<tr><td class="k">Soul Elder</td><td class="num">31-40</td></tr>
+<tr><td class="k">Soul Ancestor</td><td class="num">41-50</td></tr>
+<tr><td class="k">Soul King</td><td class="num">51-60</td></tr>
+<tr><td class="k">Soul Emperor</td><td class="num">61-70</td></tr>
+<tr><td class="k">Soul Sage</td><td class="num">71-80</td></tr>
+<tr><td class="k">Soul Douluo</td><td class="num">81-90</td></tr>
+<tr><td class="k">Titled Douluo</td><td class="num">91-99</td></tr>
+</tbody></table></div>
+<p class="tight">Titled Douluo splits 91-94 ordinary, 95-98 Super Douluo, 99 Limit Douluo. The correct term at 71-80 is Soul Sage, not Soul Saint. That error was caught and corrected in the kit.</p>
+<h5>Soul ring ages</h5>
+<div class="scroll"><table>
+<thead><tr><th>Colour</th><th>Years</th><th>Confidence</th></tr></thead><tbody>
+<tr><td class="k">White</td><td class="num">10</td><td><span class="tag t-live">CANON</span> </td></tr>
+<tr><td class="k">Yellow</td><td class="num">100</td><td><span class="tag t-live">CANON</span> </td></tr>
+<tr><td class="k">Purple</td><td class="num">1,000</td><td><span class="tag t-live">CANON</span> </td></tr>
+<tr><td class="k">Black</td><td class="num">10,000</td><td><span class="tag t-live">CANON</span> </td></tr>
+<tr><td class="k">Red</td><td class="num">100,000</td><td><span class="tag t-live">CANON</span> </td></tr>
+<tr><td class="k">Orange</td><td class="num">200,000</td><td><span class="tag t-arch">FAN</span> special case, post-SL1</td></tr>
+<tr><td class="k">Gold</td><td class="num">1,000,000</td><td><span class="tag t-arch">FAN</span> god-tier, attribute-coloured</td></tr>
+</tbody></table></div>
+<p class="tight">Two yellow, two purple, five black. A character exceeding that is exceptional and must stay exceptional on the page - never silently corrected downward.</p>
+<div class="note stop"><span class="nt">DISCLOSED WEAKNESS</span>Confidence: <b>weak</b> - one compiled source. Load-bearing for any plant-beast protagonist, which makes these the most dangerous facts in the system: heavily used, thinly sourced. Flag any chapter whose logic collapses without them.</div>
+<div class="scroll"><table>
+<thead><tr><th>Fact</th><th>Value</th></tr></thead><tbody>
+<tr><td class="k">100,000-year gate grants human form</td><td class="num">100,000 yrs</td></tr>
+<tr><td class="k">Bottleneck occurs every</td><td class="num">100 yrs</td></tr>
+<tr><td class="k">Plant beasts fragile until roughly</td><td class="num">1,000 yrs</td></tr>
+<tr><td class="k">Human-grade plant intellect at about</td><td class="num">100,000 yrs</td></tr>
+<tr><td class="k">A 100,000-year ring grants</td><td class="num">2 skills</td></tr>
+<tr><td class="k">Tree-monster attacks at / roots at</td><td class="num">1,000 / 3,000 yrs</td></tr>
+</tbody></table></div>
+<h5>User rulings - these override every source</h5><div class="grid g2">
+<div class="card"><h6><span>Blue Silver Valley</span><span class="tag t-user">USER RULING 2026-09</span></h6><ul><li>Blue Silver Valley / Blue Silver Emperor Valley IS canon Soul Land 1.</li>
+<li>Never: tagging it [design]</li>
+<li>Never: writing &#x27;canon nowhere names it&#x27;</li>
+<li>This wording was revoked once and must not be re-added.</li>
+</ul></div>
+<div class="card"><h6><span>Home&#x27;s birth year</span><span class="tag t-user">USER RULING user-locked</span></h6><ul><li>Born approximately 1837 DC. Never move this anchor.</li>
+<li>Formula: DC is approximately 1837 plus his age in years.</li>
+</ul></div>
+</div>
+</div></section>
+<section id="firewalls"><div class="wrap"><h3>SECTION 08</h3><h4>Knowledge firewalls</h4>
+<p>The single most violated law in collaborative fiction. <strong>Author knowledge is never automatically character knowledge.</strong></p>
+<div class="scroll"><table>
+<thead><tr><th>State</th><th>Means</th><th>What it permits</th></tr></thead><tbody>
+<tr><td><span class="state s-known">KNOWN</span></td><td class="k">Verified knowledge</td><td>May act on it and speak of it</td></tr>
+<tr><td><span class="state s-part">KNOWN PARTLY</span></td><td class="k">Partial knowledge</td><td>May act on the part held; must not extend it by assumption</td></tr>
+<tr><td><span class="state s-susp">SUSPICION</span></td><td class="k">Suspects, unproven</td><td>May worry, probe, deflect - may not state as fact</td></tr>
+<tr><td><span class="state s-disb">DISBELIEF</span></td><td class="k">Actively rejects it</td><td>Needs direct proof to move; will rationalise anomalies first</td></tr>
+<tr><td><span class="state s-unk">UNKNOWN</span></td><td class="k">No knowledge at all</td><td>Cannot reference it, hint at it, or intuit it</td></tr>
+<tr><td><span class="state s-false">FALSE BELIEF</span></td><td class="k">Believes something untrue</td><td>Acts on the false version; the truth must be earned on page</td></tr>
+<tr><td><span class="state s-unk">HIDDEN</span></td><td class="k">Known by author, withheld</td><td>Declared but not yet used in any registry</td></tr>
+</tbody></table></div>
+<div class="note law"><span class="nt">THE FOUR LEAK PATHS</span>Never convert suspicion, intuition, rumour, or prophecy fragments into factual character knowledge without evidence. Never give a character information earlier than the earliest valid change recorded in their firewall. Predetermined destiny does not pre-install personal memories or trust. Instinctive power control after an awakening does not equal encyclopaedic lore.</div>
+<div class="note"><span class="nt">HOW TO ADD A FIREWALL</span>Five fields, no fewer: who, state, topic, earliest valid change, and rule. The earliest-valid-change field is the one that prevents regressions - without it, the next agent will helpfully let the character find out early because the plot needs it.</div>
+<h5>Live registry - 18 firewalls</h5>
+<div class="fw"><div class="fwh"><span class="who">Gaurav Raheja</span><span><span class="state s-false">FALSE BELIEF</span> <span class="num">FW 01 - storyos_naag</span></span></div><dl><dt>Topic</dt><dd>Parentage</dd><dt>Belief</dt><dd>Yamini and Ankush are his biological parents.</dd><dt>Earliest change</dt><dd>A credible adoption reveal supported by evidence.</dd><dt>Rule</dt><dd class="rule">Police instincts alone cannot overturn this lifelong belief.</dd></dl></div>
+<div class="fw"><div class="fwh"><span class="who">Gaurav Raheja</span><span><span class="state s-unk">UNKNOWN</span> <span class="num">FW 02 - storyos_naag</span></span></div><dl><dt>Topic</dt><dd>Supernatural nature</dd><dt>Belief</dt><dd>He considers himself an ordinary human.</dd><dt>Earliest change</dt><dd>Unambiguous awakening signs several episodes after Episode 1.</dd><dt>Rule</dt><dd class="rule">No early self-identification as Naag, Sheshveer, or Maha Naag.</dd></dl></div>
+<div class="fw"><div class="fwh"><span class="who">Gaurav Raheja</span><span><span class="state s-unk">UNKNOWN</span> <span class="num">FW 03 - storyos_naag</span></span></div><dl><dt>Topic</dt><dd>Naag-world lore</dd><dt>Belief</dt><dd>Only ordinary cultural and devotional stories are known.</dd><dt>Earliest change</dt><dd>On-page teaching by a qualified source after supernatural evidence.</dd><dt>Rule</dt><dd class="rule">Instinctive power control after awakening does not equal encyclopaedic lore.</dd></dl></div>
+<div class="fw"><div class="fwh"><span class="who">Ritik Raheja</span><span><span class="state s-unk">UNKNOWN</span> <span class="num">FW 04 - storyos_naag</span></span></div><dl><dt>Topic</dt><dd>Gaurav&#x27;s adoption and nature</dd><dt>Belief</dt><dd>Gaurav is his biological near-twin brother and an ordinary human.</dd><dt>Earliest change</dt><dd>Later family or supernatural reveal.</dd><dt>Rule</dt><dd class="rule">Brotherly intuition may create concern, not factual knowledge.</dd></dl></div>
+<div class="fw"><div class="fwh"><span class="who">Ritik Raheja</span><span><span class="state s-disb">DISBELIEF</span> <span class="num">FW 05 - storyos_naag</span></span></div><dl><dt>Topic</dt><dd>Ichchhadhari serpents</dd><dt>Belief</dt><dd>They belong to television, films and books rather than real life.</dd><dt>Earliest change</dt><dd>Direct supernatural proof.</dd><dt>Rule</dt><dd class="rule">Episode 1 anomalies disturb him but do not instantly make him a believer.</dd></dl></div>
+<div class="fw"><div class="fwh"><span class="who">Ritik Raheja</span><span><span class="state s-susp">SUSPICION</span> <span class="num">FW 06 - storyos_naag</span></span></div><dl><dt>Topic</dt><dd>Parents&#x27; twenty-year secret</dd><dt>Belief</dt><dd>He overheard mention of a night and a secret but accepted the immediate deflection.</dd><dt>Earliest change</dt><dd>Further contradictions or disclosure.</dd><dt>Rule</dt><dd class="rule">He cannot know the murders or perpetrators from Episode 1 evidence alone.</dd></dl></div>
+<div class="fw"><div class="fwh"><span class="who">Tanvi</span><span><span class="state s-part">KNOWN PARTLY</span> <span class="num">FW 07 - storyos_naag</span></span></div><dl><dt>Topic</dt><dd>Ritik&#x27;s dream</dd><dt>Belief</dt><dd>Ritik has had the same frightening dream for years and sees a woman in it.</dd><dt>Earliest change</dt><dd>Ritik discloses more, or she witnesses a supernatural event.</dd><dt>Rule</dt><dd class="rule">She does not know Shivanya is the dream-linked Naagin.</dd></dl></div>
+<div class="fw"><div class="fwh"><span class="who">Yamini Raheja</span><span><span class="state s-known">KNOWN</span> <span class="num">FW 08 - storyos_naag</span></span></div><dl><dt>Topic</dt><dd>Gaurav&#x27;s adoption</dd><dt>Belief</dt><dd>Gaurav was adopted as a baby after a violent incident.</dd><dt>Earliest change</dt><dd>She may learn the supernatural origin only through later evidence.</dd><dt>Rule</dt><dd class="rule">Adoption knowledge does not grant knowledge of biological clan, true name, rank, or power.</dd></dl></div>
+<div class="fw"><div class="fwh"><span class="who">Ankush Raheja</span><span><span class="state s-known">KNOWN</span> <span class="num">FW 09 - storyos_naag</span></span></div><dl><dt>Topic</dt><dd>Gaurav&#x27;s adoption</dd><dt>Belief</dt><dd>Gaurav was adopted as a baby after a violent incident.</dd><dt>Earliest change</dt><dd>Later supernatural proof.</dd><dt>Rule</dt><dd class="rule">He does not know Gaurav is Sheshnaag-clan or Mahadev-chosen.</dd></dl></div>
+<div class="fw"><div class="fwh"><span class="who">Yamini Raheja</span><span><span class="state s-part">KNOWN PARTLY</span> <span class="num">FW 10 - storyos_naag</span></span></div><dl><dt>Topic</dt><dd>Ritik&#x27;s age danger</dd><dt>Belief</dt><dd>Ritik must marry before twenty-five or a grave serpent-linked danger will arise.</dd><dt>Earliest change</dt><dd>Later prophecy clarification.</dd><dt>Rule</dt><dd class="rule">Do not merge Ritik&#x27;s warning with Gaurav&#x27;s separate awakening.</dd></dl></div>
+<div class="fw"><div class="fwh"><span class="who">Ankush Raheja</span><span><span class="state s-part">KNOWN PARTLY</span> <span class="num">FW 11 - storyos_naag</span></span></div><dl><dt>Topic</dt><dd>Panchner&#x27;s past</dd><dt>Belief</dt><dd>The event from twenty years ago and the villagers&#x27; grievance could endanger the present celebration.</dd><dt>Earliest change</dt><dd>Verified later canon revelations.</dd><dt>Rule</dt><dd class="rule">Record exact culpability only when the corresponding canon episode is reconstructed.</dd></dl></div>
+<div class="fw"><div class="fwh"><span class="who">Shivanya</span><span><span class="state s-known">KNOWN</span> <span class="num">FW 12 - storyos_naag</span></span></div><dl><dt>Topic</dt><dd>Revenge purpose</dd><dt>Belief</dt><dd>She waited twenty years and attained Ichchhadhari form to avenge the love story violently ended by guilty humans.</dd><dt>Earliest change</dt><dd>Her judgments may become more nuanced through direct acts by individual Rahejas.</dd><dt>Rule</dt><dd class="rule">Compassion may complicate revenge; it must not erase grief overnight.</dd></dl></div>
+<div class="fw"><div class="fwh"><span class="who">Shivanya</span><span><span class="state s-unk">UNKNOWN</span> <span class="num">FW 13 - storyos_naag</span></span></div><dl><dt>Topic</dt><dd>Gaurav</dd><dt>Belief</dt><dd>No verified knowledge of his identity, bloodline, true name, or destiny at the Episode 1 opening.</dd><dt>Earliest change</dt><dd>First on-page meeting, or a supernatural sensory event caused by proximity.</dd><dt>Rule</dt><dd class="rule">Predetermined romance does not pre-install personal memories or trust.</dd></dl></div>
+<div class="fw"><div class="fwh"><span class="who">Om Kaka</span><span><span class="state s-part">KNOWN PARTLY</span> <span class="num">FW 14 - storyos_naag</span></span></div><dl><dt>Topic</dt><dd>Gaurav&#x27;s origin</dd><dt>Belief</dt><dd>Gaurav is the orphaned child of Sheshnaag-clan parents whom Om was tasked to protect.</dd><dt>Earliest change</dt><dd>Awakening, or recovered records.</dd><dt>Rule</dt><dd class="rule">Om does not know the complete attack truth, the Adaptation Talent outcome, the golden Panchmukhi rank, or Mahadev&#x27;s full design.</dd></dl></div>
+<div class="fw"><div class="fwh"><span class="who">Om Kaka</span><span><span class="state s-susp">SUSPICION</span> <span class="num">FW 15 - storyos_naag</span></span></div><dl><dt>Topic</dt><dd>Timing of awakening</dd><dt>Belief</dt><dd>Gaurav&#x27;s twenty-fifth year may bring change, but Om cannot predict its exact form or moment.</dd><dt>Earliest change</dt><dd>Observable awakening symptoms.</dd><dt>Rule</dt><dd class="rule">He may prepare or worry, not state a precise omniscient prophecy.</dd></dl></div>
+<div class="fw"><div class="fwh"><span class="who">Raheja family pandit</span><span><span class="state s-unk">UNKNOWN</span> <span class="num">FW 16 - storyos_naag</span></span></div><dl><dt>Topic</dt><dd>Gaurav</dd><dt>Belief</dt><dd>No Episode 1 source establishes that the pandit recognises anything supernatural about Gaurav.</dd><dt>Earliest change</dt><dd>A later direct divination scene, if authorised.</dd><dt>Rule</dt><dd class="rule">Do not repurpose Ritik&#x27;s canon prophecy as exposition for Gaurav.</dd></dl></div>
+<div class="fw"><div class="fwh"><span class="who">Shesha</span><span><span class="state s-unk">UNKNOWN</span> <span class="num">FW 17 - storyos_naag</span></span></div><dl><dt>Topic</dt><dd>Gaurav</dd><dt>Belief</dt><dd>No verified meeting or awareness exists at the Episode 1 boundary.</dd><dt>Earliest change</dt><dd>Verified first proximity to him, or his awakening signal.</dd><dt>Rule</dt><dd class="rule">Do not invent early attraction, jealousy, or rank recognition.</dd></dl></div>
+<div class="fw"><div class="fwh"><span class="who">Gaurav Raheja</span><span><span class="state s-false">FALSE BELIEF</span> <span class="num">FW 18 - storyos_naag</span></span></div><dl><dt>Topic</dt><dd>Om Kaka&#x27;s identity</dd><dt>Belief</dt><dd>Om is a trusted human driver and uncle figure.</dd><dt>Earliest change</dt><dd>A later reveal supported by evidence.</dd><dt>Rule</dt><dd class="rule">Preserve Gaurav&#x27;s current belief until that evidence occurs.</dd></dl></div>
+</div></section>
+<section id="bs"><div class="wrap"><h3>SECTION 09</h3><h4>Blue Silver - live state</h4>
+<p>Book One complete - 15 rebuilt chapters, 34,711 words, all seven gates passing</p>
+<div class="grid g4">
+<div class="card"><div class="metric small">15</div><div class="mlabel">CHAPTERS</div></div>
+<div class="card"><div class="metric small">775</div><div class="mlabel">YEARS COVERED</div></div>
+<div class="card"><div class="metric small">0</div><div class="mlabel">KILL COUNT - PERMANENT</div></div>
+<div class="card"><div class="metric small">+9</div><div class="mlabel">TIGHTEST CANON MARGIN</div></div>
+</div>
+<h5>Spine and absolutes</h5><div class="grid g2">
+<div class="card"><h6><span>Lock 4 - the spine</span><span class="tag t-live">FILLED</span></h6><ul><li><b>Spirit Hall wants rings, and sends hunters into the forest to take them.</b></li><li>Star Dou is hunted. That is the canon fact the rejected original never used.</li></ul></div>
+<div class="card"><h6><span>Lock 7 - absolutes</span><span class="tag t-lock">BINDING</span></h6><ul><li>He never kills. No exception, no accident.</li><li>Kill count zero across all fifteen chapters and 775 years. Permanent.</li><li>Dormant ritual powers stay dormant.</li><li>A Yin&#x27;s canon fate is never staged.</li></ul></div></div>
+<h5>Chapter ledger</h5>
+<p>Panels are contiguous with no overlap and no gap.</p>
+<div class="scroll"><table>
+<thead><tr><th>#</th><th>Title</th><th>His years</th><th>Words</th></tr></thead><tbody>
+<tr><td class="num">1</td><td class="k">Awake</td><td class="mono">0-1</td><td class="num">2,821</td></tr>
+<tr><td class="num">2</td><td class="k">What the Water Teaches</td><td class="mono">1-40</td><td class="num">2,253</td></tr>
+<tr><td class="num">3</td><td class="k">The One Who Stayed</td><td class="mono">40-105</td><td class="num">1,960</td></tr>
+<tr><td class="num">4</td><td class="k">The Teeth in the Grass</td><td class="mono">105-190</td><td class="num">2,127</td></tr>
+<tr><td class="num">5</td><td class="k">The One Who Watched</td><td class="mono">190-240</td><td class="num">1,846</td></tr>
+<tr><td class="num">6</td><td class="k">The One Below</td><td class="mono">240-300</td><td class="num">1,999</td></tr>
+<tr><td class="num">7</td><td class="k">The One Who Keeps</td><td class="mono">300-360</td><td class="num">1,898</td></tr>
+<tr><td class="num">8</td><td class="k">The One Who Crossed</td><td class="mono">360-440</td><td class="num">2,265</td></tr>
+<tr><td class="num">9</td><td class="k">The Last Vigil</td><td class="mono">440-500</td><td class="num">2,225</td></tr>
+<tr><td class="num">10</td><td class="k">The One Who Answers</td><td class="mono">500-580</td><td class="num">2,488</td></tr>
+<tr><td class="num">11</td><td class="k">The Liar at the Door</td><td class="mono">580-650</td><td class="num">2,575</td></tr>
+<tr><td class="num">12</td><td class="k">The Ten Thousandth Year</td><td class="mono">650-700</td><td class="num">1,873</td></tr>
+<tr><td class="num">13</td><td class="k">The One Who Goes</td><td class="mono">700-735</td><td class="num">2,502</td></tr>
+<tr><td class="num">14</td><td class="k">The Ground That Remembers</td><td class="mono">735-753</td><td class="num">2,494</td></tr>
+<tr><td class="num">15</td><td class="k">The One Who Is Named</td><td class="mono">753-775</td><td class="num">3,385</td></tr>
+</tbody></table></div>
+<h5>Fixed anchors</h5>
+<div class="scroll"><table>
+<thead><tr><th>Anchor</th><th>Year</th><th>Note</th></tr></thead><tbody>
+<tr><td class="k">First hunting party</td><td class="num">1</td><td>Ch1</td></tr>
+<tr><td class="k">Flood lays the silt</td><td class="num">30</td><td>Ch2; approximate. The ground he is later born-again into</td></tr>
+<tr><td class="k">Mantis arrives</td><td class="num">61</td><td>Ch3</td></tr>
+<tr><td class="k">The killing</td><td class="num">98</td><td>Ch3 - the arithmetic that founds the mercy law</td></tr>
+<tr><td class="k">Mantis dies</td><td class="num">104</td><td>Ch3 (61 + 43)</td></tr>
+<tr><td class="k">Shadow cat</td><td class="num">163</td><td>Ch4</td></tr>
+<tr><td class="k">Grid 19 surveyed-unresolved</td><td class="num">193</td><td>Ch5; approximate</td></tr>
+<tr><td class="k">Serpent</td><td class="num">243</td><td>Ch6; approximate</td></tr>
+<tr><td class="k">Night-walker arrives</td><td class="num">301</td><td>Ch7</td></tr>
+<tr><td class="k">Expedition turned</td><td class="num">340</td><td>Ch7</td></tr>
+<tr><td class="k">Found one arrives</td><td class="num">402</td><td>Ch8</td></tr>
+<tr><td class="k">Night-walker dies</td><td class="num">468</td><td>Ch9 - FIRST REFUSAL</td></tr>
+<tr><td class="k">Found one answers</td><td class="num">508</td><td>Ch10</td></tr>
+<tr><td class="k">Orrin Vase files</td><td class="num">557</td><td>Ch10</td></tr>
+<tr><td class="k">The liar</td><td class="num">592</td><td>Ch11</td></tr>
+<tr><td class="k">Found one dies</td><td class="num">630</td><td>Ch11</td></tr>
+<tr><td class="k">King gate</td><td class="num">665</td><td>Ch12 - stage three, 10,000 years</td></tr>
+<tr><td class="k">Grid hunted out</td><td class="num">672</td><td>Ch12</td></tr>
+<tr><td class="k">Last small stock</td><td class="num">706</td><td>Ch12</td></tr>
+<tr><td class="k">Root-mass lifts</td><td class="num">714</td><td>Ch13</td></tr>
+<tr><td class="k">Arrives valley</td><td class="num">735</td><td>Ch13</td></tr>
+<tr><td class="k">Old king dies</td><td class="num">746</td><td>Ch14 - SECOND REFUSAL</td></tr>
+<tr><td class="k">Hall names valley</td><td class="num">751</td><td>Ch14</td></tr>
+<tr><td class="k">A Yin</td><td class="num">753</td><td>Ch15</td></tr>
+<tr><td class="k">The naming</td><td class="num">753</td><td>Ch15 - approximately 2590 DC</td></tr>
+</tbody></table></div>
+<div class="note stop"><span class="nt">CANON GATE - ANY EDIT PAST YEAR 784 BREAKS CANON.</span>Naming <b>2590 DC</b>; chapter fifteen ends <b>2612 DC</b>; A Yin's rooted era ends before <b>2621 DC</b>. Margins <b>+31</b> and <b>+9</b>. The first pass put the naming at year 833 = 2670 DC, which is 49 years after A Yin&#x27;s rooted era ends. She could not have been rooted in the valley to meet him. Chapters 10-15 were compressed to pull the naming inside her era. Do not undo this.<br><br>Chapter 15 coda &#x27;in forty-seven years&#x27; from approximately 2590 lands on 2637 DC, which is canon Tang San emergence. Delta zero.</div>
+<h5>The two refusals - the moral spine</h5><div class="grid g2">
+<div class="card"><h6><span>Refusal 1 - year 468</span><span class="tag t-lock">CHAPTER 9</span></h6><ul><li>The night-walker stops walking and dies at his edge. He does not feed on it.</li></ul></div>
+<div class="card"><h6><span>Refusal 2 - year 746</span><span class="tag t-lock">CHAPTER 14</span></h6><ul><li>The old king dies. He could take it and does not.</li></ul></div>
+</div>
+<h5>Ground-language - fixed at 11 words</h5>
+<p>This list is closed. Adding a twelfth word breaks continuity across seven chapters.</p>
+<div class="grid g4"><div class="card"><div class="metric small">1</div><div class="mlabel">HERE</div></div><div class="card"><div class="metric small">2</div><div class="mlabel">HOME</div></div><div class="card"><div class="metric small">3</div><div class="mlabel">SAFE</div></div><div class="card"><div class="metric small">4</div><div class="mlabel">DANGER</div></div><div class="card"><div class="metric small">5</div><div class="mlabel">GONE</div></div><div class="card"><div class="metric small">6</div><div class="mlabel">COLD</div></div><div class="card"><div class="metric small">7</div><div class="mlabel">MANY</div></div><div class="card"><div class="metric small">8</div><div class="mlabel">ONE</div></div><div class="card"><div class="metric small">9</div><div class="mlabel">COME</div></div><div class="card"><div class="metric small">10</div><div class="mlabel">STAY</div></div></div>
+<div class="note"><span class="nt">THE ELEVENTH</span>Not a word but a struck rhythm meaning &#x27;I am here, I am answering, I am one of the ones who stays.&#x27; Invented by the found one; took eleven years to agree on.<br><br>Delivery chain: taps (night-walker) then pulses (him) then stamped feet (the found one, then the fringe young, then the hundred at the door). <b>The drum outlives everyone who invented it.</b></div>
+<h5>The nine named humans - survival by paperwork</h5>
+<div class="scroll"><table>
+<thead><tr><th>Name</th><th>Chapter</th><th>Rings</th><th>Contribution</th></tr></thead><tbody>
+<tr><td class="k">The surveyor</td><td class="mono">5</td><td>4 - purple, purple, purple, black (Soul Ancestor)</td><td>Marks grid nineteen surveyed and unresolved. Her note starts the chain.</td></tr>
+<tr><td class="k">The thin man</td><td class="mono">6</td><td>2 black</td><td>Writes the letter that carries the note forward.</td></tr>
+<tr><td class="k">Pell</td><td class="mono">8</td><td>-</td><td>Twenty-two years old. Refused the bend.</td></tr>
+<tr><td class="k">Kesh</td><td class="mono">9</td><td>Soul Ancestor, fifty-one</td><td>Sole survivor. Her testimony.</td></tr>
+<tr><td class="k">Orrin Vase</td><td class="mono">10</td><td>None</td><td>Walked the round forty-one times. Filed eleven pages.</td></tr>
+<tr><td class="k">Drem</td><td class="mono">11</td><td>-</td><td>Released.</td></tr>
+<tr><td class="k">Ilen Marr</td><td class="mono">13</td><td>Soul Ancestor</td><td>Burned the commission file.</td></tr>
+<tr><td class="k">Tefer Hallum</td><td class="mono">14</td><td>-</td><td>Four lines naming the valley.</td></tr>
+<tr><td class="k">Berrit Ohn</td><td class="mono">15</td><td>None - clerk, thirty-one</td><td>Filed the permanent seal in her own name.</td></tr>
+</tbody></table></div>
+<div class="note"><span class="nt">DO NOT CORRECT THIS DOWNWARD</span><b>The surveyor</b>: Her black fourth ring exceeds the canonical optimum. She is a Soul Ancestor, not a Soul Elder. This was an error once made in the codex and must not be corrected downward.</div>
+<div class="note"><span class="nt">THE DOCUMENTARY CHAIN</span>surveyor&#x27;s note &rarr; thin man&#x27;s letter &rarr; Kesh&#x27;s testimony &rarr; Vase&#x27;s eleven pages &rarr; Hallum&#x27;s four lines &rarr; Ohn&#x27;s seal. <b>He survives by paperwork, not power.</b></div>
+<div class="note stop"><span class="nt">THE LINE WAS HARVESTED, NOT DWINDLED. NEVER SOFTEN THIS INTO NATURAL DECLINE.</span>There had been <b>400</b> great ones. <b>391</b> went back into the soil in single seasons. <b>9</b> remain, rooted and immobile - <b>8</b> after year 746.</div>
+<h5>A Yin</h5><div class="grid g2">
+<div class="card"><h6><span>Who she is</span><span class="tag t-live">CANON</span></h6><ul><li>Gold threading; her face is woven in vines; she has no eyes.</li><li>Youngest of the nine by roughly 40,000 years.</li><li>The only one who felt the cull&#x27;s signature - and told no one.</li><li><b>She names him Home.</b></li></ul></div>
+<div class="card"><h6><span>Standing constraints</span><span class="tag t-lock">BINDING</span></h6><ul><li>Ordinary grass is empty - she reads through grass, he cannot. He can go where she cannot. Human form exists only from Tang Hao&#x27;s generation.</li><li>Her fate: Never staged on page.</li></ul></div></div>
+<div class="note law"><span class="nt">WHAT HE IS - AND WHAT HE IS NOT</span>Sunweave is a real elemental mutant with Adaptation Talent, from a common line. <b>Not: royal blood, dragon blood, devour blood, anything fused into him.</b> Cultivation: ~7,000 years at year 500; ~9,000 years at year 610; ~10,000 years at year 665. He takes nothing for 775 years. Book One ends on the words THE KEEPER.</div>
+</div></section>
+<section id="sl4"><div class="wrap"><h3>SECTION 10</h3><h4>SL4 Fire Phoenix - live state</h4>
+<p>Live edge is <strong>After Chapter 31 - The Ticket Owed to Fire</strong>. 31 chapter files on disk. This project is <b>not currently active</b> - the locks below are binding if it resumes.</p>
+<h5>Protagonist</h5><div class="grid g2">
+<div class="card"><h6><span>Identity</span><span class="tag t-lock">LOCK 6</span></h6><ul><li><b>Yan Shuo&#x27;er</b> - she/her, true identity</li><li>Cover name <b>Yan Shuo</b> - he/him, public</li><li>Native-born OC in Lan Xuanyu&#x27;s cohort</li><li>Dorm 336</li><li><b>No public or formal identity reveal without user approval.</b></li></ul></div>
+<div class="card"><h6><span>Do not</span><span class="tag t-lock">BINDING</span></h6><ul><li>Do not sexualise her.</li><li>Do not let the OC steal Lan Xuanyu&#x27;s private protagonist mechanics.</li><li>Never nerf Yan, Dawnflame or Dorm 336 to preserve a canon character.</li><li>Public facts cause natural public consequences.</li></ul></div></div>
+<h5>Current numeric status</h5>
+<div class="scroll"><table>
+<thead><tr><th>Item</th><th>Current</th><th>Notes</th></tr></thead><tbody>
+<tr><td class="k">Soul power</td><td class="num">Rank 23 / Level 23</td><td>No new formal measurement in Chapter 31. No Level 30 yet.</td></tr>
+<tr><td class="k">Spiritual power</td><td class="num">156</td><td>Latest formal end-term value.</td></tr>
+<tr><td class="k">Spiritual realm</td><td class="num">Spirit Connection</td><td>Not Spirit Sea yet.</td></tr>
+<tr><td class="k">Ring count</td><td class="num">2</td><td>No third ring.</td></tr>
+<tr><td class="k">Soul spirit count</td><td class="num">2</td><td>Dawnflame Kite; Dawn-Iron Phoenix Roc.</td></tr>
+<tr><td class="k">Dawnflame Kite - public paperwork</td><td class="num">100 years</td><td>Historical legal acquisition record.</td></tr>
+<tr><td class="k">Dawnflame Kite - sealed current</td><td class="num">1,120 years</td><td>Newborn purple-tier. Crossed 1,000+ in Chapter 31 via the Platform. Phoenix-seed awakening active.</td></tr>
+<tr><td class="k">First ring response</td><td class="num">Purple-tier</td><td>Evolved from yellow. Cannot be written as a static yellow ring.</td></tr>
+<tr><td class="k">Dawn-Iron Phoenix Roc</td><td class="num">2,040 years</td><td>Deeper purple structural response. Rose from 1,680.</td></tr>
+<tr><td class="k">Second ring</td><td class="num">Deep purple</td><td>Skybone Phoenix Frame remains the second skill.</td></tr>
+<tr><td class="k">Song Yichen</td><td class="num">Rank 19 / SP 63</td><td>Platform gains not separately measured yet.</td></tr>
+<tr><td class="k">Luo Haoran</td><td class="num">Rank 17 / SP 74</td><td>Platform gains not separately measured yet.</td></tr>
+</tbody></table></div>
+<div class="note stop"><span class="nt">THE THREE-YEAR SKIP - DO NOT WRITE IT NOW</span>Platform entry: Pre-time-skip, began in Chapter 31. The time skip: Later, at corrected source Chapter 145 to Chapter 146. Level 30 fusion: In the MIDDLE of that later time skip - NOT NOW.<br><br><b>Do not write a Level 30 now.</b> <b>Do not write the Purple Flame Eidolon Bird fusion now.</b> <b>No full Fire Phoenix, no Ultimate Fire, no full wings, no true flight until the user-locked event.</b></div>
+<div class="grid g2"><div class="card"><h6><span>Latest chapter results</span><span class="tag t-live">RECORDED</span></h6><ul><li>Dorm 333 keeps defending pressure-stage leadership.</li><li>Dorm 336 was NOT erased - Yan, Song and Luo entered the Platform too.</li><li>Dawnflame Kite crossed 1,000+ and evolved through its Phoenix seed.</li><li>The direct Dorm 333 versus Dorm 336 match remains UNRESOLVED.</li><li>Platform entry is official compensation and assessment data, not a fake duel result.</li></ul></div>
+<div class="card"><h6><span>The user-locked future</span><span class="tag t-user">USER LOCK</span></h6><ul><li>At Level 30, mid-time-skip, Yan fuses with the 6,000-year Purple Flame Eidolon Bird.</li><li>Awakens: full Fire Phoenix, Ultimate Fire, full wings, true flight</li><li><b>Power is public while identity remains hidden.</b></li></ul></div></div>
+<div class="note"><span class="nt">MEASUREMENT PARITY</span>Never reduce Yan, Dawnflame or Dorm 336 in order to preserve a canon character&#x27;s standing. If a canon character would lose to the OC, the scene is written honestly and the consequence is carried - not the numbers bent.</div>
+</div></section>
+<section id="storyos"><div class="wrap"><h3>SECTION 11</h3><h4>StoryOS / Naag - live state</h4>
+<p>Separate from Soul Land. An Ichchhadhari Naag serial. Protagonist <strong>Gaurav Raheja</strong>.</p>
+<div class="note"><span class="nt">TAGGED [REPORTED]</span>State supplied through the transfer bootstrap rather than read from files in this workspace. The StoryOS Control Centre sits behind a ChatGPT sign-in wall and returned HTTP 401 on every path tested, so its records could not be read directly. Reproduced faithfully; must not be extended by invention.</div>
+<div class="grid g4"><div class="card"><div class="metric small">17</div><div class="mlabel">CANON LEDGER SCENES</div></div><div class="card"><div class="metric small">41</div><div class="mlabel">USER LOCKS</div></div><div class="card"><div class="metric small">15</div><div class="mlabel">CHARACTER STATES</div></div><div class="card"><div class="metric small">18</div><div class="mlabel">KNOWLEDGE FIREWALLS</div></div><div class="card"><div class="metric small">36</div><div class="mlabel">STORY SYSTEM RECORDS</div></div><div class="card"><div class="metric small">2</div><div class="mlabel">QUARANTINE RUNS</div></div><div class="card"><div class="metric small">PASS</div><div class="mlabel">FOUNDATION</div></div><div class="card"><div class="metric small">0</div><div class="mlabel">STRUCTURAL ERRORS</div></div><div class="card"><div class="metric small">ACTIVE</div><div class="mlabel">INFORMATION DISCIPLINE</div></div></div>
+<p class="tight">All eighteen are held in state/firewalls.json under project storyos_naag. They are listed in <a href="#firewalls">Section 08</a>.</p>
+<h5>Unresolved questions - flag, do not invent</h5>
+<div class="note stop"><span class="nt">OPEN CANON GAPS</span>
+<b>1. Are the two twenty-year-old events the same event?</b> Shivanya avenges a love story violently ended by guilty humans. Gaurav&#x27;s Sheshnaag-clan parents were attacked. Both sit twenty years back. Nothing in the supplied material confirms they are one event. <i>Ruling: Treat as separate until a canon scene establishes otherwise.</i><br><br>
+<b>2. Who is culpable for Panchner?</b> Firewall 11 explicitly defers this. <i>Ruling: Record exact culpability only when the corresponding canon episode is reconstructed.</i><br><br>
+<b>3. What is the golden Panchmukhi rank?</b> Referenced in firewall 14 as something Om does not know. No definition was supplied. <i>Ruling: Do not invent one.</i><br><br>
+</div>
+</div></section>
+<section id="others"><div class="wrap"><h3>SECTION 12</h3><h4>Other projects</h4><div class="grid g2">
+<div class="card"><h6><span>Soul Land New</span><span class="tag t-ref">ACTIVE</span></h6><ul><li>25 files, 79,088 words</li><li>Tian Yu — 6 chapters, pre-Chapter-11</li></ul></div>
+<div class="card"><h6><span>SL3 Lin Hao</span><span class="tag t-ref">REFERENCE</span></h6><ul><li>300 files, 1,002,381 words</li><li>Reference archive — craft only, never canon</li></ul></div>
+<div class="card"><h6><span>Starter Pack</span><span class="tag t-arch">TEMPLATE</span></h6><ul><li>21 files, 5,485 words</li><li>Blank-project bootstrap skeleton</li></ul></div>
+<div class="card"><h6><span>Universal Kit</span><span class="tag t-live">PORTABLE</span></h6><ul><li>27 files, 16,590 words</li><li>11 laws + 13 templates + verify tooling</li></ul></div>
+</div>
+<div class="note"><span class="nt">THE CROSS-PROJECT CONFLATION TRAP</span>Identify a project from the contents of its own files before applying any sibling project's labels - and never let a number cross a project boundary. SL1 Gu Yuan at Rank 40 is not SL4 Yan at Rank 23.</div>
+<h5>Opening a new project</h5><div class="grid g3">
+<div class="card"><h6><span>Copy the skeleton</span><span class="tag t-lock">STEP 1</span></h6><ul><li>Copy soul_land_starter/, rename to an ASCII-safe name, do not invent a new layout.</li></ul></div>
+<div class="card"><h6><span>Fill the twelve locks</span><span class="tag t-lock">STEP 2</span></h6><ul><li>All twelve, before chapter one. Lock 4 must be a filled sentence.</li></ul></div>
+<div class="card"><h6><span>Name the canon beats</span><span class="tag t-lock">STEP 3</span></h6><ul><li>At least five, with receipts. Tag each honestly and disclose weak sourcing.</li></ul></div>
+</div></div></section>
+<section id="adaptation"><div class="wrap"><h3>SECTION 13</h3><h4>Adaptation Talent</h4>
+<p>A cross-project framework belonging to the user's OCs, defined once here because it has been misimplemented repeatedly - always the same error: turning an existence-level instinct into a game interface.</p>
+<div class="note law"><span class="nt">WHAT IT IS</span>An innate, non-conscious, existence-level personal law or instinct belonging to the user&#x27;s OC. It adapts from the complete current foundation.</div>
+<div class="note stop"><span class="nt">WHAT IT IS NOT</span>It is <b>not</b> <b>a UI</b>, not <b>a voice</b>, not <b>a reward system</b>, not <b>a companion</b>, not <b>an anomaly</b>, not <b>a generic learning mechanic</b>. It has no dialogue, no notifications, no levels, and no narrator.</div>
+<h5>The four requirements</h5>
+<div class="scroll"><table>
+<thead><tr><th>Requirement</th><th>What it means in practice</th></tr></thead><tbody>
+<tr><td class="k">Compatible foundation</td><td>There must be something there to adapt. It cannot create power from absolute nothing.</td></tr>
+<tr><td class="k">Integration</td><td>The adaptation becomes part of the character, not a bolted-on ability.</td></tr>
+<tr><td class="k">Exposure</td><td>The character must actually encounter the thing being adapted to.</td></tr>
+<tr><td class="k">Consequences</td><td>Adaptation costs something and changes something. No free power.</td></tr>
+</tbody></table></div>
+<div class="note stop"><span class="nt">THE ONE ABUSE TO WATCH FOR</span>Do not use this framework to justify a character knowing lore they have not learned. Adaptation is not a knowledge pipe. It changes what a character can do; it never installs what a character knows. Every knowledge firewall in <a href="#firewalls">Section 08</a> still applies in full, without exception, to any character who has this talent.</div>
+<div class="note"><span class="nt">SETTING RULES STILL BIND</span>Adaptation cannot bypass setting rules. It operates inside the setting&#x27;s physics - it is not an exemption from them.</div>
+</div></section>
+<section id="growth"><div class="wrap"><h3>SECTION 14</h3><h4>Growth log</h4>
+<p>Every accepted contribution is recorded here. This is what makes the system auditable: you can see what entered, when, and who filed it.</p>
+<div class="grid g4">
+<div class="card"><div class="metric small">18</div><div class="mlabel">FIREWALLS</div></div>
+<div class="card"><div class="metric small">0</div><div class="mlabel">CONTRIBUTED PROJECTS</div></div>
+<div class="card"><div class="metric small">0</div><div class="mlabel">CONTRIBUTED RECORDS</div></div>
+<div class="card"><div class="metric small">0</div><div class="mlabel">GROWTH EVENTS</div></div>
+</div>
+<div class="note good"><span class="nt">NO CONTRIBUTIONS YET</span>The state layer is at its seeded baseline. The first contribution filed into <code>intake/drop/</code> will appear here with the agent name and timestamp attached.</div>
+<div class="note law"><span class="nt">APPEND-ONLY BY DESIGN</span>A contribution can ADD a firewall, an anchor, a decision or a correction. It cannot silently overwrite existing state. A correction is recorded as a correction, which keeps the old value visible and shows why it changed. That is deliberate: a state layer where anything can be quietly replaced is a state layer nobody can trust.</div>
+</div></section>
+<section id="protocol"><div class="wrap"><h3>SECTION 15</h3><h4>Contribution protocol</h4>
+<p>This is how the system grows. Any agent - or you - files a JSON contribution into <code>intake/drop/</code>. The validator checks it, the ingester merges it, the builder re-renders this page.</p>
+<div class="pipe"><div class="stage"><div class="sn">01</div><div class="sl">FILE</div><div class="sd">Write JSON into intake/drop/</div></div><div class="stage gate"><div class="sn">02</div><div class="sl">VALIDATE</div><div class="sd">tools/validate.py</div></div><div class="stage"><div class="sn">03</div><div class="sl">INGEST</div><div class="sd">tools/ingest.py merges it</div></div><div class="stage"><div class="sn">04</div><div class="sl">BUILD</div><div class="sd">tools/build.py re-renders</div></div><div class="stage"><div class="sn">05</div><div class="sl">LOG</div><div class="sd">state/log.json records it</div></div></div>
+<h5>Contribution kinds</h5>
+<div class="scroll"><table>
+<thead><tr><th>Kind</th><th>Required fields</th><th>Optional fields</th><th>What it is for</th></tr></thead><tbody>
+<tr><td class="k">anchor</td><td class="mono">anchor, year</td><td class="mono">project, note, chapter</td><td>Add a fixed timeline anchor</td></tr>
+<tr><td class="k">canon</td><td class="mono">claim, confidence</td><td class="mono">sources, note, project</td><td>Assert a canon claim with a confidence tag and sources</td></tr>
+<tr><td class="k">correction</td><td class="mono">was, now, reason</td><td class="mono">project, file, line, found_by</td><td>Correct an existing value, keeping the old one visible</td></tr>
+<tr><td class="k">decision</td><td class="mono">decision, reason</td><td class="mono">project, authorized_by, date, supersedes</td><td>Record an authorised decision so it does not regress</td></tr>
+<tr><td class="k">firewall</td><td class="mono">who, state, topic, earliest_change, rule</td><td class="mono">project, belief, notes</td><td>Add a knowledge firewall for a character</td></tr>
+<tr><td class="k">lock</td><td class="mono">lock, value</td><td class="mono">project, note</td><td>Record one of the twelve locks for a project</td></tr>
+<tr><td class="k">note</td><td class="mono">text</td><td class="mono">project, tag</td><td>Add a free-form note tagged to a project</td></tr>
+<tr><td class="k">project</td><td class="mono">id, name, path, status, live_edge</td><td class="mono">active, verification, notes, authority</td><td>Register a new project in the registry</td></tr>
+</tbody></table></div>
+<h5>Example contribution</h5>
+<pre class="code">{
+  &quot;kind&quot;: &quot;firewall&quot;,
+  &quot;project&quot;: &quot;blue_silver&quot;,
+  &quot;who&quot;: &quot;Berrit Ohn&quot;,
+  &quot;state&quot;: &quot;KNOWN PARTLY&quot;,
+  &quot;topic&quot;: &quot;The valley&#x27;s contents&quot;,
+  &quot;belief&quot;: &quot;She knows the seal exists and what it protects, but not that the grass is sentient.&quot;,
+  &quot;earliest_change&quot;: &quot;A direct encounter with Home after the seal is filed.&quot;,
+  &quot;rule&quot;: &quot;Her paperwork protects the valley without her knowing what lives in it.&quot;,
+  &quot;provenance&quot;: {&quot;agent&quot;: &quot;your-agent-name&quot;, &quot;date&quot;: &quot;2026-09-18&quot;}
+}</pre>
+<h5>What the validator rejects</h5><ul class="bullets"><li>An unknown <code>kind</code>, or a required field missing</li><li>A firewall <code>state</code> outside the seven defined states - adding a state is a law change and needs the user</li><li>A <code>[canon]</code> claim with no sources named</li><li>CJK, kana or hangul anywhere in the file (gate 1)</li><li>A literal backslash-n sequence (gate 2)</li><li>A reserved field such as <code>authority_order</code> or <code>seven_gates</code></li><li>A duplicate of another contribution in the same file</li><li>A project id that already exists - file a correction instead</li></ul>
+<div class="note"><span class="nt">WHY THIS IS STRICT</span>A state layer that accepts anything becomes a pile of notes, and then no agent can trust it. The rejection report tells the filing agent exactly what to fix, and the file moves to <code>intake/rejected/</code> rather than being deleted, so nothing is lost.</div>
+</div></section>
+<section id="bootstrap"><div class="wrap"><h3>SECTION 16</h3><h4>Transfer bootstrap</h4>
+<p>Generated from the same state as this page. Copy it and give it to any new agent. It is self-contained: the recipient does not need access to this workspace to operate correctly.</p>
+<div class="bootwrap"><div class="btnrow"><button class="pri" onclick="copyBoot()">COPY TRANSFER BOOTSTRAP</button><button onclick="selBoot()">SELECT ALL</button><button onclick="dlBoot()">DOWNLOAD AS .TXT</button><span id="cpmsg"></span></div>
+<textarea id="boot" spellcheck="false" readonly>SOUL LAND UNIVERSAL - TRANSFER BOOTSTRAP
+Generated 2026-09-20 from state/. Control Centre is the navigation
+and state reference. Do not hand-edit this file; edit state/ and rebuild.
+
+PURPOSE
+Transfer active project state to another agent without losing canon
+discipline. You are taking over existing projects, not starting a new story.
+
+AT A GLANCE
+  projects tracked      6
+  project files         606
+  words on disk         1,682,117
+  knowledge firewalls   18
+  kit laws              11
+  hard gates            7
+  growth events logged  0
+
+==============================================================================
+SECTION 1 - CORE OPERATING RULE
+==============================================================================
+
+The Control Centre is the navigation and state reference. It is not a drafting
+surface and it is not canon.
+
+- Do not treat author knowledge as character knowledge.
+- Do not invent missing canon.
+- Preserve established decisions unless an explicit authorised change is made.
+- If a source scene is missing, identify it as missing rather than inventing it.
+- Authority order:
+    1. The user&#x27;s explicit words
+    2. Project locked documents
+    3. Kit laws
+    4. Kit canon spine
+    5. Earlier projects - craft only, never canon
+
+==============================================================================
+SECTION 2 - PIPELINE
+==============================================================================
+
+LOAD -&gt; VERIFY -&gt; MAP -&gt; FORECAST -&gt; BLUEPRINT -&gt; DRAFT -&gt; AUDIT -&gt; REPAIR -&gt; DELIVER -&gt; RECORD
+
+  01. LOAD - Read the live edge and the locks
+  02. VERIFY [GATE] - Reconstruct canon scene by scene
+  03. MAP - Timeline, location, prop, knowledge
+  04. FORECAST - Butterfly effects from real changes
+  05. BLUEPRINT - Beat order, registers, panel range
+  06. DRAFT - Prose carries the chapter
+  07. AUDIT [GATE] - Run all seven hard gates
+  08. REPAIR - Fix, then re-run the gates
+  09. DELIVER - Ship the chapter
+  10. RECORD - Update ledgers and the serial log
+
+VERIFY and AUDIT are gates. Do not proceed past one until it passes.
+RECORD is never skipped: a decision not written down will regress. In this
+system that means filing it into intake/drop/ as a decision or correction,
+not just saying it in chat.
+
+==============================================================================
+SECTION 3 - PRE-DRAFT GATE (six steps, in order)
+==============================================================================
+
+1. Reconstruct - Rebuild the relevant canon scene by scene. Not from memory -
+from receipts. If a scene is missing, say it is missing.
+
+2. Verify exact detail - Event order, location, timing, positions, clothing,
+objects, environment, dialogue style, motivations, character knowledge.
+
+3. Build the ledgers - Timeline, location, prop, power and adaptation,
+knowledge - who knows what, and since when.
+
+4. Firewall - Hide information from characters who have not earned it. Author
+knowledge is never character knowledge. Check every speaking character against
+the registry.
+
+5. Resolve conflicts - Use the authority hierarchy. User words beat project
+docs beat kit laws. Record the resolution, not just the result.
+
+6. Then blueprint - Only now set beat order. Set the panel year range first.
+Then draft.
+
+
+==============================================================================
+SECTION 4 - CANON RULES
+==============================================================================
+
+  - Canon first. Butterfly effects must grow from actual changed events.
+  - One canon episode = one operational unit.
+  - Never leak rejected drafts into the active canon.
+  - Never convert suspicion, intuition, rumour, or prophecy fragments into
+  factual character knowledge without evidence.
+  - Do not give characters information earlier than the earliest valid
+  change recorded in their knowledge firewall.
+  - Preserve competent canon characterisation.
+  - Do not nerf or inflate characters merely to force the OC plot.
+  - Record new decisions and corrections so they do not regress later.
+
+==============================================================================
+SECTION 5 - THE TWELVE LOCKS (set before drafting chapter one)
+==============================================================================
+
+   1. ERA              Which series, which years, which DC range
+   2. PROTAGONIST      Who they are - and explicitly what they are NOT
+   3. CANON ENTRY      The specific canon beats this serial touches. Name at least five.
+   4. SPINE            Who wants what from the protagonist, and what they will do to get it
+   5. POWER CEILING    The strongest the OC becomes, and what they never get
+   6. IDENTITY         Public name versus true name; what the reveal costs
+   7. ABSOLUTES        What the protagonist will never do, ever
+   8. CANON IMMUNITY   Which canon characters&#x27; fates may not be rerouted
+   9. MEASUREMENT      How rank and rings are shown on the page
+  10. VOICE            POV, tense, register rules
+  11. CADENCE          Chapters per pass, words per chapter, when audits run
+  12. HANDOFF          What a fresh agent must read first
+
+LOCK 4 IS THE ONE THAT MATTERS MOST. Write it as a full sentence with all
+three blanks filled: &#x27;______ wants ______ from my protagonist, and will ______
+to get it.&#x27; If you cannot fill all three, there is no story yet - there is
+only a setting.
+
+==============================================================================
+SECTION 6 - THE SEVEN HARD GATES (machine-checked, non-negotiable)
+==============================================================================
+
+1. Zero unreadable script - CJK, kana, hangul. Not a blanket non-ASCII ban -
+em dashes and box-drawing are fine.
+
+2. Zero literal backslash-n - The two-character sequence leaking into prose
+from escaped strings. Use the real newline.
+
+3. Zero digits in prose - Exact figures belong in panels and ledgers. Prose
+says &#x27;seven&#x27;, the panel says &#x27;7&#x27;.
+
+4. At least three spoken dialogue lines - Dialogue silently disappears from
+introspective serials. It went missing from seven of fifteen chapters in one
+rebuild and was only caught by counting. Count it; do not eyeball it.
+
+5. Panels contiguous - No overlap, no gap. Insertion and reordering
+desynchronise panels, and the drift is invisible until two chapters claim the
+same year.
+
+6. No placeholder text - No shipped file contains template slots or lorem-
+style filler.
+
+7. Marker discipline - The book-end marker never appears in prose; at most one
+end card, opening with END OF, last in the file.
+
+GATE SCOPE - getting this wrong trains everyone to ignore the gate:
+  gate                                chapter  templat      law    codex    audit
+  Zero unreadable script                  yes      yes      yes      yes      yes
+  Zero literal backslash-n                yes      yes      yes      yes      yes
+  Zero digits in prose                    yes        -        -        -        -
+  At least three spoken dialogue lin      yes        -        -        -        -
+  Panels contiguous                       yes        -        -        -        -
+  No placeholder text                     yes        -        -      yes        -
+  Marker discipline                       yes        -        -        -        -
+
+Gate 6 must never be applied to templates, law files, or audit logs. A
+template with no slot tokens is not a template. A law file that cannot show
+the panel format cannot teach it. An audit log reports on placeholder counts -
+a line reading &#x27;TODO/FIXME/TBD = 0&#x27; is the log doing its job, not a leftover.
+Gates 1 and 2 are the only ones that apply everywhere, because they are the
+ones that indicate a file is broken rather than a file being what it is.
+
+A check must not match its own description. Five confirmed instances: a
+blanket non-ASCII gate flagging the em dashes in the prose law that explains
+the rule; a case-insensitive substring flagging &#x27;placeholder&#x27; inside &#x27;no
+placeholder text left&#x27;; gate 6 over templates flagging every slot token; gate
+6 over an audit log flagging its own zero-count report; and documenting that
+last case inside the audit law re-tripping the same class. Scope the gate, do
+not reword the file.
+
+Ship the negative test with the gate. tools/selftest.py exists because
+verify.py once reported fifteen failures against a proven 33,100-word serial -
+every one of them a false positive. A gate nobody has tested is a guess.
+
+==============================================================================
+SECTION 7 - HONESTY TAGS
+==============================================================================
+
+  [canon]          Multiple independent secondary sources agree. Never read in the Chinese original.
+                  strength: Strong for rank ladder and ring
+                  colours; medium for the clock
+  [fan]            Post-original-series material, fan consensus, or later-series additions.
+                  strength: Weak - usable, never load-
+                  bearing
+  [design]         Invented for this project. Not canon, and must never be dressed as canon.
+                  strength: N/A - it is ours
+  [user ruling]    The user decided it. Overrides every source, including canon.
+                  strength: Absolute
+  [on page]        Stated in the shipped prose, with a chapter and line reference.
+                  strength: Binding continuity
+  [reported]       Supplied by the user or an external system; not verified against files that could be opened.
+                  strength: Provisional until checked
+
+==============================================================================
+SECTION 8 - CANON SPINE (shared across Soul Land projects)
+==============================================================================
+
+RANK LADDER (strong, 4+ independent secondary sources agree):
+  Soul Warrior / Scholar       1-10    Soul King                   51-60
+  Soul Master                 11-20    Soul Emperor                61-70
+  Grand Soul Master           21-30    Soul Sage                   71-80
+  Soul Elder                  31-40    Soul Douluo                 81-90
+  Soul Ancestor               41-50    Titled Douluo               91-99
+
+  Titled Douluo splits 91-94 ordinary, 95-98 Super Douluo, 99 Limit Douluo.
+  The correct term at 71-80 is Soul Sage, not Soul Saint. That error was
+  caught and corrected in the kit.
+
+RING AGES:
+  White            10   [canon]
+  Yellow          100   [canon]
+  Purple        1,000   [canon]
+  Black        10,000   [canon]
+  Red         100,000   [canon]
+  Orange      200,000   [fan]  (special case, post-SL1)
+  Gold      1,000,000   [fan]  (god-tier, attribute-coloured)
+
+  Two yellow, two purple, five black. A character exceeding that is
+  exceptional and must stay exceptional on the page - never silently
+  corrected downward.
+
+BEAST LAW - WEAK EVIDENCE, ONE COMPILED SOURCE:
+  Load-bearing for any plant-beast protagonist, which makes these the most
+  dangerous facts in the system: heavily used, thinly sourced. Flag any
+  chapter whose logic collapses without them.
+  - 100,000-year gate grants human form: 100,000 yrs
+  - Bottleneck occurs every: 100 yrs
+  - Plant beasts fragile until roughly: 1,000 yrs
+  - Human-grade plant intellect at about: 100,000 yrs
+  - A 100,000-year ring grants: 2 skills
+  - Tree-monster attacks at / roots at: 1,000 / 3,000 yrs
+
+USER RULINGS (override all sources):
+  - Blue Silver Valley: Blue Silver Valley / Blue Silver Emperor Valley IS
+  canon Soul Land 1.
+    never: tagging it [design]
+    never: writing &#x27;canon nowhere names it&#x27;
+    note: This wording was revoked once and must not be re-added.
+  - Home&#x27;s birth year: Born approximately 1837 DC. Never move this anchor.
+    formula: DC is approximately 1837 plus his age in years.
+
+FILENAME LAW: ASCII letters, digits, underscores and dots only. No spaces, no
+special characters, no non-ASCII. Upload-safe names survive transfer between
+agents and platforms.
+
+==============================================================================
+SECTION 9 - PROJECT STATE: BLUE SILVER
+==============================================================================
+
+path: blue_silver/
+live edge: Book One complete - 15 rebuilt chapters, 34,711 words, all seven
+gates passing
+
+AUTHORITY:
+  - continuity source: bluesilver_foundation/REBUILD_CONTINUITY.md
+  - conflict rule: Where REBUILD_CONTINUITY.md and bluesilver_codex/
+  disagree, REBUILD_CONTINUITY.md wins.
+  - live chapters: chapters_rebuilt/
+  - superseded: chapters/ is SUPERSEDED - history only, never continuity,
+  never a source for a rebuilt chapter.
+  - entry point: HANDOFF.md
+
+SPINE (Lock 4, filled): Spirit Hall wants rings, and sends hunters into the forest to take them.
+  Star Dou is hunted. That is the canon fact the rejected original never
+  used.
+
+ABSOLUTES:
+  - He never kills. No exception, no accident.
+  - Kill count zero across all fifteen chapters and 775 years. Permanent.
+  - Dormant ritual powers stay dormant.
+  - A Yin&#x27;s canon fate is never staged.
+
+TIMELINE: year 0 to year 775 = approximately 1837 to 2612 DC
+  birth anchor: approximately 1837 DC (user-locked, never move)
+  formula: DC is approximately 1837 plus his age in years
+
+FIXED ANCHORS:
+  year    1  First hunting party              Ch1
+  year   30  Flood lays the silt              Ch2; approximate. The ground he is later born-again into
+  year   61  Mantis arrives                   Ch3
+  year   98  The killing                      Ch3 - the arithmetic that founds the mercy law
+  year  104  Mantis dies                      Ch3 (61 + 43)
+  year  163  Shadow cat                       Ch4
+  year  193  Grid 19 surveyed-unresolved      Ch5; approximate
+  year  243  Serpent                          Ch6; approximate
+  year  301  Night-walker arrives             Ch7
+  year  340  Expedition turned                Ch7
+  year  402  Found one arrives                Ch8
+  year  468  Night-walker dies                Ch9 - FIRST REFUSAL
+  year  508  Found one answers                Ch10
+  year  557  Orrin Vase files                 Ch10
+  year  592  The liar                         Ch11
+  year  630  Found one dies                   Ch11
+  year  665  King gate                        Ch12 - stage three, 10,000 years
+  year  672  Grid hunted out                  Ch12
+  year  706  Last small stock                 Ch12
+  year  714  Root-mass lifts                  Ch13
+  year  735  Arrives valley                   Ch13
+  year  746  Old king dies                    Ch14 - SECOND REFUSAL
+  year  751  Hall names valley                Ch14
+  year  753  A Yin                            Ch15
+  year  753  The naming                       Ch15 - approximately 2590 DC
+
+CANON GATE - ANY EDIT PAST YEAR 784 BREAKS CANON.
+  Naming 2590 DC. Chapter 15 ends 2612 DC. A Yin&#x27;s rooted era ends before
+  2621 DC. Margins +31 and +9.
+  The first pass put the naming at year 833 = 2670 DC, which is 49 years
+  after A Yin&#x27;s rooted era ends. She could not have been rooted in the
+  valley to meet him. Chapters 10-15 were compressed to pull the naming
+  inside her era. Do not undo this.
+  Chapter 15 coda &#x27;in forty-seven years&#x27; from approximately 2590 lands on
+  2637 DC, which is canon Tang San emergence. Delta zero.
+
+CULTIVATION: ~7,000 years at year 500; ~9,000 years at year 610; ~10,000 years at year 665
+  He takes nothing for 775 years.
+
+GROUND-LANGUAGE - FIXED AT 11 WORDS, LIST CLOSED:
+  here, home, safe, danger, gone, cold, many, one, come, stay
+  11th: Not a word but a struck rhythm meaning &#x27;I am here, I am answering, I
+  am one of the ones who stays.&#x27; Invented by the found one; took eleven
+  years to agree on.
+  delivery chain: taps (night-walker) -&gt; pulses (him) -&gt; stamped feet (the
+  found one, then the fringe young, then the hundred at the door)
+  The drum outlives everyone who invented it.
+
+THE NAMED HUMANS - he survives by paperwork, not power:
+  - The surveyor (Ch5, rings: 4 - purple, purple, purple, black (Soul
+  Ancestor)): Marks grid nineteen surveyed and unresolved. Her note starts
+  the chain.
+    WARNING: Her black fourth ring exceeds the canonical optimum. She is a
+    Soul Ancestor, not a Soul Elder. This was an error once made in the
+    codex and must not be corrected downward.
+  - The thin man (Ch6, rings: 2 black): Writes the letter that carries the
+  note forward.
+  - Pell (Ch8, rings: none): Twenty-two years old. Refused the bend.
+  - Kesh (Ch9, rings: Soul Ancestor, fifty-one): Sole survivor. Her
+  testimony.
+  - Orrin Vase (Ch10, rings: None): Walked the round forty-one times. Filed
+  eleven pages.
+  - Drem (Ch11, rings: none): Released.
+  - Ilen Marr (Ch13, rings: Soul Ancestor): Burned the commission file.
+  - Tefer Hallum (Ch14, rings: none): Four lines naming the valley.
+  - Berrit Ohn (Ch15, rings: None - clerk, thirty-one): Filed the permanent
+  seal in her own name.
+
+DOCUMENTARY CHAIN: surveyor&#x27;s note -&gt; thin man&#x27;s letter -&gt; Kesh&#x27;s testimony -&gt; Vase&#x27;s eleven pages -&gt; Hallum&#x27;s four lines -&gt; Ohn&#x27;s seal
+
+THE CULL: THE LINE WAS HARVESTED, NOT DWINDLED. Never soften this into natural
+decline.
+  There had been 400; 391 went back into the soil in single seasons; 9
+  remain rooted and immobile, 8 after year 746.
+
+A YIN:
+  - appearance: Gold threading; her face is woven in vines; she has no eyes.
+  - age: Youngest of the nine by roughly 40,000 years.
+  - secret: The only one who felt the cull&#x27;s signature - and told no one.
+  - act: She names him Home.
+  - constraint: Ordinary grass is empty - she reads through grass, he
+  cannot. He can go where she cannot. Human form exists only from Tang Hao&#x27;s
+  generation.
+  - fate: Never staged on page.
+
+IDENTITY: Sunweave is a real elemental mutant with Adaptation Talent, from a
+common line. NOT: royal blood, dragon blood, devour blood, anything fused into
+him.
+Book One ends on the words THE KEEPER.
+
+==============================================================================
+SECTION 10 - PROJECT STATE: SL4 FIRE PHOENIX
+==============================================================================
+
+path: sl4_fire_phoenix/
+live edge: After Chapter 31 - The Ticket Owed to Fire
+
+AUTHORITY:
+  - status source: foundation/STATUS_PANEL.md
+  - conflict rule: STATUS_PANEL.md is the ONLY current Yan Shuo&#x27;er status
+  source. Every other file derives from it.
+
+PROTAGONIST: Yan Shuo&#x27;er (she/her), cover Yan Shuo (he/him).
+  Native-born OC in Lan Xuanyu&#x27;s cohort. Dorm 336. No public or formal
+  identity reveal without user approval.
+
+DO NOT:
+  - Do not sexualise her.
+  - Do not let the OC steal Lan Xuanyu&#x27;s private protagonist mechanics.
+  - Never nerf Yan, Dawnflame or Dorm 336 to preserve a canon character.
+  - Public facts cause natural public consequences.
+
+CURRENT NUMERIC STATUS:
+  - Soul power: Rank 23 / Level 23 (No new formal measurement in Chapter 31.
+  No Level 30 yet.)
+  - Spiritual power: 156 (Latest formal end-term value.)
+  - Spiritual realm: Spirit Connection (Not Spirit Sea yet.)
+  - Ring count: 2 (No third ring.)
+  - Soul spirit count: 2 (Dawnflame Kite; Dawn-Iron Phoenix Roc.)
+  - Dawnflame Kite - public paperwork: 100 years (Historical legal
+  acquisition record.)
+  - Dawnflame Kite - sealed current: 1,120 years (Newborn purple-tier.
+  Crossed 1,000+ in Chapter 31 via the Platform. Phoenix-seed awakening
+  active.)
+  - First ring response: Purple-tier (Evolved from yellow. Cannot be written
+  as a static yellow ring.)
+  - Dawn-Iron Phoenix Roc: 2,040 years (Deeper purple structural response.
+  Rose from 1,680.)
+  - Second ring: Deep purple (Skybone Phoenix Frame remains the second
+  skill.)
+  - Song Yichen: Rank 19 / SP 63 (Platform gains not separately measured
+  yet.)
+  - Luo Haoran: Rank 17 / SP 74 (Platform gains not separately measured
+  yet.)
+
+CHRONOLOGY LOCKS:
+  - platform entry: Pre-time-skip, began in Chapter 31.
+  - time skip: Later, at corrected source Chapter 145 to Chapter 146.
+  - level30 fusion: In the MIDDLE of that later time skip - NOT NOW.
+  - Do not write a Level 30 now.
+  - Do not write the Purple Flame Eidolon Bird fusion now.
+  - No full Fire Phoenix, no Ultimate Fire, no full wings, no true flight
+  until the user-locked event.
+
+USER-LOCKED FUTURE:
+  - At Level 30, mid-time-skip, Yan fuses with the 6,000-year Purple Flame
+  Eidolon Bird.
+  - awakens: full Fire Phoenix, Ultimate Fire, full wings, true flight
+  - aftermath: Power is public while identity remains hidden.
+
+LATEST CHAPTER RESULTS:
+  - Dorm 333 keeps defending pressure-stage leadership.
+  - Dorm 336 was NOT erased - Yan, Song and Luo entered the Platform too.
+  - Dawnflame Kite crossed 1,000+ and evolved through its Phoenix seed.
+  - The direct Dorm 333 versus Dorm 336 match remains UNRESOLVED.
+  - Platform entry is official compensation and assessment data, not a fake
+  duel result.
+
+ANTI-NERF: Never reduce Yan, Dawnflame or Dorm 336 in order to preserve a
+canon character&#x27;s standing. If a canon character would lose to the OC, the
+scene is written honestly and the consequence is carried - not the numbers
+bent.
+
+==============================================================================
+SECTION 11 - PROJECT STATE: STORYOS / NAAG  [REPORTED - not file-verified]
+==============================================================================
+
+path: external - Control Centre hosted
+live edge: Episode 1 boundary
+
+VERIFICATION: State supplied through the transfer bootstrap rather than read
+from files in this workspace. The StoryOS Control Centre sits behind a ChatGPT
+sign-in wall and returned HTTP 401 on every path tested, so its records could
+not be read directly. Reproduced faithfully; must not be extended by
+invention.
+
+UNIVERSE: Separate from Soul Land. An Ichchhadhari Naag serial.
+PROTAGONIST: Gaurav Raheja
+
+COUNTS [reported]:
+  Canon ledger scenes          17
+  User locks                   41
+  Character states             15
+  Knowledge firewalls          18
+  Story system records         36
+  Quarantine runs              2
+  Foundation                   PASS
+  Structural errors            0
+  Information discipline       ACTIVE
+
+OPEN GAPS - FLAG, DO NOT INVENT:
+  a. Are the two twenty-year-old events the same event?
+     Shivanya avenges a love story violently ended by guilty humans.
+     Gaurav&#x27;s Sheshnaag-clan parents were attacked. Both sit twenty years
+     back. Nothing in the supplied material confirms they are one event.
+     ruling: Treat as separate until a canon scene establishes otherwise.
+  b. Who is culpable for Panchner?
+     Firewall 11 explicitly defers this.
+     ruling: Record exact culpability only when the corresponding canon
+     episode is reconstructed.
+  c. What is the golden Panchmukhi rank?
+     Referenced in firewall 14 as something Om does not know. No
+     definition was supplied.
+     ruling: Do not invent one.
+
+==============================================================================
+SECTION 12 - KNOWLEDGE FIREWALLS
+==============================================================================
+
+STATES: KNOWN / KNOWN PARTLY / SUSPICION / DISBELIEF / UNKNOWN / FALSE BELIEF / HIDDEN
+
+Author knowledge is never automatically available to a character.
+
+  KNOWN          Verified knowledge - May act on it and speak of it
+  KNOWN PARTLY   Partial knowledge - May act on the part held; must not
+  extend it by assumption
+  SUSPICION      Suspects, unproven - May worry, probe, deflect - may not
+  state as fact
+  DISBELIEF      Actively rejects it - Needs direct proof to move; will
+  rationalise anomalies first
+  UNKNOWN        No knowledge at all - Cannot reference it, hint at it, or
+  intuit it
+  FALSE BELIEF   Believes something untrue - Acts on the false version; the
+  truth must be earned on page
+  HIDDEN         Known by author, withheld - Declared but not yet used in
+  any registry
+
+THE FOUR LEAK PATHS: Never convert suspicion, intuition, rumour, or prophecy
+fragments into factual character knowledge without evidence. Never give a
+character information earlier than the earliest valid change recorded in their
+firewall. Predetermined destiny does not pre-install personal memories or
+trust. Instinctive power control after an awakening does not equal
+encyclopaedic lore.
+
+THE REGISTRY (18 firewalls):
+   1. Gaurav Raheja - FALSE BELIEF - Parentage
+      belief: Yamini and Ankush are his biological parents.
+      earliest change: A credible adoption reveal supported by evidence.
+      rule: Police instincts alone cannot overturn this lifelong belief.
+   2. Gaurav Raheja - UNKNOWN - Supernatural nature
+      belief: He considers himself an ordinary human.
+      earliest change: Unambiguous awakening signs several episodes
+      after Episode 1.
+      rule: No early self-identification as Naag, Sheshveer, or Maha
+      Naag.
+   3. Gaurav Raheja - UNKNOWN - Naag-world lore
+      belief: Only ordinary cultural and devotional stories are known.
+      earliest change: On-page teaching by a qualified source after
+      supernatural evidence.
+      rule: Instinctive power control after awakening does not equal
+      encyclopaedic lore.
+   4. Ritik Raheja - UNKNOWN - Gaurav&#x27;s adoption and nature
+      belief: Gaurav is his biological near-twin brother and an ordinary
+      human.
+      earliest change: Later family or supernatural reveal.
+      rule: Brotherly intuition may create concern, not factual
+      knowledge.
+   5. Ritik Raheja - DISBELIEF - Ichchhadhari serpents
+      belief: They belong to television, films and books rather than
+      real life.
+      earliest change: Direct supernatural proof.
+      rule: Episode 1 anomalies disturb him but do not instantly make
+      him a believer.
+   6. Ritik Raheja - SUSPICION - Parents&#x27; twenty-year secret
+      belief: He overheard mention of a night and a secret but accepted
+      the immediate deflection.
+      earliest change: Further contradictions or disclosure.
+      rule: He cannot know the murders or perpetrators from Episode 1
+      evidence alone.
+   7. Tanvi - KNOWN PARTLY - Ritik&#x27;s dream
+      belief: Ritik has had the same frightening dream for years and
+      sees a woman in it.
+      earliest change: Ritik discloses more, or she witnesses a
+      supernatural event.
+      rule: She does not know Shivanya is the dream-linked Naagin.
+   8. Yamini Raheja - KNOWN - Gaurav&#x27;s adoption
+      belief: Gaurav was adopted as a baby after a violent incident.
+      earliest change: She may learn the supernatural origin only
+      through later evidence.
+      rule: Adoption knowledge does not grant knowledge of biological
+      clan, true name, rank, or power.
+   9. Ankush Raheja - KNOWN - Gaurav&#x27;s adoption
+      belief: Gaurav was adopted as a baby after a violent incident.
+      earliest change: Later supernatural proof.
+      rule: He does not know Gaurav is Sheshnaag-clan or Mahadev-chosen.
+  10. Yamini Raheja - KNOWN PARTLY - Ritik&#x27;s age danger
+      belief: Ritik must marry before twenty-five or a grave serpent-
+      linked danger will arise.
+      earliest change: Later prophecy clarification.
+      rule: Do not merge Ritik&#x27;s warning with Gaurav&#x27;s separate
+      awakening.
+  11. Ankush Raheja - KNOWN PARTLY - Panchner&#x27;s past
+      belief: The event from twenty years ago and the villagers&#x27;
+      grievance could endanger the present celebration.
+      earliest change: Verified later canon revelations.
+      rule: Record exact culpability only when the corresponding canon
+      episode is reconstructed.
+  12. Shivanya - KNOWN - Revenge purpose
+      belief: She waited twenty years and attained Ichchhadhari form to
+      avenge the love story violently ended by guilty humans.
+      earliest change: Her judgments may become more nuanced through
+      direct acts by individual Rahejas.
+      rule: Compassion may complicate revenge; it must not erase grief
+      overnight.
+  13. Shivanya - UNKNOWN - Gaurav
+      belief: No verified knowledge of his identity, bloodline, true
+      name, or destiny at the Episode 1 opening.
+      earliest change: First on-page meeting, or a supernatural sensory
+      event caused by proximity.
+      rule: Predetermined romance does not pre-install personal memories
+      or trust.
+  14. Om Kaka - KNOWN PARTLY - Gaurav&#x27;s origin
+      belief: Gaurav is the orphaned child of Sheshnaag-clan parents
+      whom Om was tasked to protect.
+      earliest change: Awakening, or recovered records.
+      rule: Om does not know the complete attack truth, the Adaptation
+      Talent outcome, the golden Panchmukhi rank, or Mahadev&#x27;s full
+      design.
+  15. Om Kaka - SUSPICION - Timing of awakening
+      belief: Gaurav&#x27;s twenty-fifth year may bring change, but Om cannot
+      predict its exact form or moment.
+      earliest change: Observable awakening symptoms.
+      rule: He may prepare or worry, not state a precise omniscient
+      prophecy.
+  16. Raheja family pandit - UNKNOWN - Gaurav
+      belief: No Episode 1 source establishes that the pandit recognises
+      anything supernatural about Gaurav.
+      earliest change: A later direct divination scene, if authorised.
+      rule: Do not repurpose Ritik&#x27;s canon prophecy as exposition for
+      Gaurav.
+  17. Shesha - UNKNOWN - Gaurav
+      belief: No verified meeting or awareness exists at the Episode 1
+      boundary.
+      earliest change: Verified first proximity to him, or his awakening
+      signal.
+      rule: Do not invent early attraction, jealousy, or rank
+      recognition.
+  18. Gaurav Raheja - FALSE BELIEF - Om Kaka&#x27;s identity
+      belief: Om is a trusted human driver and uncle figure.
+      earliest change: A later reveal supported by evidence.
+      rule: Preserve Gaurav&#x27;s current belief until that evidence occurs.
+
+HOW TO ADD ONE: Five fields, no fewer: who, state, topic, earliest valid
+change, and rule. The earliest-valid-change field is the one that prevents
+regressions - without it, the next agent will helpfully let the character find
+out early because the plot needs it.
+
+==============================================================================
+SECTION 13 - ADAPTATION TALENT (cross-project)
+==============================================================================
+
+WHAT IT IS: An innate, non-conscious, existence-level personal law or instinct
+belonging to the user&#x27;s OC. It adapts from the complete current foundation.
+
+WHAT IT IS NOT: a UI, a voice, a reward system, a companion, an anomaly, a generic learning mechanic.
+It has no dialogue, no notifications, no levels, and no narrator.
+
+REQUIREMENTS:
+  - Compatible foundation: There must be something there to adapt. It cannot
+  create power from absolute nothing.
+  - Integration: The adaptation becomes part of the character, not a bolted-
+  on ability.
+  - Exposure: The character must actually encounter the thing being adapted
+  to.
+  - Consequences: Adaptation costs something and changes something. No free
+  power.
+
+THE ONE ABUSE TO WATCH FOR: Do not use this framework to justify a character
+knowing lore they have not learned. Adaptation is not a knowledge pipe. It
+changes what a character can do; it never installs what a character knows.
+
+Adaptation cannot bypass setting rules. It operates inside the setting&#x27;s
+physics - it is not an exemption from them.
+
+==============================================================================
+SECTION 14 - HOW THIS SYSTEM GROWS
+==============================================================================
+
+This is not a static document. It is a generated view over a state layer that
+accepts contributions from any agent.
+
+  FILE      write a JSON contribution into intake/drop/
+  VALIDATE  python3 tools/validate.py intake/drop/&lt;file&gt;.json
+  INGEST    python3 tools/ingest.py intake/drop/&lt;file&gt;.json
+  BUILD     python3 tools/bootstrap.py &amp;&amp; python3 tools/build.py
+
+KINDS: anchor, canon, correction, decision, firewall, lock, note, project
+
+A firewall contribution needs: who, state, topic, earliest_change, rule.
+A canon contribution needs: claim, confidence - and sources if confidence is
+&#x27;canon&#x27;. The validator rejects a canon claim with no sources named.
+
+Contributions are APPEND-ONLY. Nothing can silently overwrite existing state;
+a correction is recorded as a correction, keeping the old value visible.
+
+RESERVED: authority_order, seven_gates, gate_scope_warning, _comment. These
+change the shape of the system and need the user, not a contribution.
+
+==============================================================================
+SECTION 15 - INSTRUCTIONS TO THE RECEIVING AGENT
+==============================================================================
+
+ 1. Ingest this bootstrap fully before doing anything else.
+ 2. DO NOT immediately draft prose.
+ 3. First perform LOAD -&gt; VERIFY -&gt; MAP.
+ 4. State only what is confirmed, what is missing, and what must be
+reconstructed.
+ 5. Then use the Control Centre and the project records as the active state.
+ 6. Do not overwrite established canon, locks, or knowledge firewalls without
+explicit authorisation.
+ 7. If a source scene is missing, identify it as missing rather than inventing
+it.
+ 8. When continuing, preserve all information-discipline constraints.
+ 9. Run the seven gates on anything you ship. &#x27;Mostly passing&#x27; is a failure.
+10. Record every new decision and correction in the same pass you make it -
+file it into intake/drop/, do not just say it.
+11. Corrections come before new content.
+
+END OF TRANSFER BOOTSTRAP
+</textarea></div>
+</div></section>
+<section id="verify"><div class="wrap"><h3>SECTION 17</h3><h4>Verification status</h4>
+<p>An honest account of what was checked and what was not.</p>
+<h5>Measured from disk</h5>
+<div class="scroll"><table>
+<thead><tr><th>Claim</th><th>How it was checked</th></tr></thead><tbody>
+<tr><td class="k">Project file and word counts</td><td class="mono">tools/extract_state.py, per-file, binary-aware</td></tr>
+<tr><td class="k">Chapter counts and word counts</td><td class="mono">per-file word count of chapters_rebuilt/</td></tr>
+<tr><td class="k">Kit law and template counts</td><td class="mono">directory listing, regex on filename law</td></tr>
+<tr><td class="k">Binary files excluded from word counts</td><td class="mono">magic-byte check, not extension</td></tr>
+</tbody></table></div>
+<h5>Read from source documents</h5>
+<div class="scroll"><table>
+<thead><tr><th>Claim</th><th>Source</th></tr></thead><tbody>
+<tr><td class="k">Blue Silver chapter ledger and anchors</td><td class="mono">bluesilver_foundation/REBUILD_CONTINUITY.md</td></tr>
+<tr><td class="k">Ground-language word list</td><td class="mono">blue_silver/rebuild_codex/GLOSSARY.md</td></tr>
+<tr><td class="k">Seven gates and scope table</td><td class="mono">SOUL_LAND_UNIVERSAL_KIT/09_AUDIT_LAW.md</td></tr>
+<tr><td class="k">Twelve locks</td><td class="mono">SOUL_LAND_UNIVERSAL_KIT/02_PROJECT_SETUP.md</td></tr>
+<tr><td class="k">SL4 numbers</td><td class="mono">sl4_fire_phoenix/foundation/STATUS_PANEL.md</td></tr>
+</tbody></table></div>
+<h5>Reported, not file-verified</h5>
+<div class="note"><span class="nt">TAGGED [REPORTED]</span>Everything in <a href="#storyos">Section 11</a> came through the transfer bootstrap you supplied. The StoryOS Control Centre sits behind a ChatGPT sign-in wall and returned <b>HTTP 401</b> on every path tested, so its records could not be read directly. The eighteen firewalls are reproduced exactly as given, but have not been checked against source scenes.</div>
+<h5>Known weaknesses carried forward</h5>
+<div class="scroll"><table>
+<thead><tr><th>Weakness</th><th>Why it matters</th><th>Mitigation</th></tr></thead><tbody>
+<tr><td class="k">Beast law rests on one compiled source</td><td>Load-bearing for any plant-beast protagonist</td><td>Disclosed in Section 07; flag dependent chapters</td></tr>
+<tr><td class="k">No canon was read in the Chinese original</td><td>[canon] here means secondary-source agreement</td><td>Tag strength stated everywhere it is used</td></tr>
+<tr><td class="k">SL3 Lin Hao is craft-only reference</td><td>1M words of plausible numbers that must never cross projects</td><td>Marked reference-only in the registry</td></tr>
+<tr><td class="k">StoryOS state is unverified</td><td>Eighteen firewalls govern a serial nobody here has read the source for</td><td>Tagged reported; open gaps listed explicitly</td></tr>
+<tr><td class="k">Blue Silver canon margin is nine years</td><td>Any edit past year 784 breaks canon outright</td><td>Hard boundary stated in Section 09</td></tr>
+<tr><td class="k">Three files in uploads/ are mislabelled archives</td><td>A ZIP and a DOCX carry .txt and .md extensions, inflating naive word counts by ~450,000</td><td>Excluded by magic-byte check, not by extension</td></tr>
+</tbody></table></div>
+<div class="note law"><span class="nt">THE STANDING INSTRUCTION</span>Corrections come before new content. If a lock, a firewall or a canon receipt turns out to be wrong, file a <code>correction</code> and re-run the gates <b>before</b> writing the next chapter. A clean exit code is not a pass when the output is wrong.</div>
+<footer><div class="sig">SOUL LAND UNIVERSAL - CONTROL CENTRE &nbsp;|&nbsp; BUILT 2026-09-20 &nbsp;|&nbsp; GENERATED FROM state/ - DO NOT HAND-EDIT &nbsp;|&nbsp; NAVIGATION AND STATE REFERENCE, NOT CANON</div></footer>
+</div></section>
+</main></div>
+<script>
+function bootText(){return document.getElementById('boot').value.trim();}
+function selBoot(){var t=document.getElementById('boot');t.focus();t.select();
+  document.getElementById('cpmsg').textContent='selected';}
+function copyBoot(){var txt=bootText(),m=document.getElementById('cpmsg');
+  function ok(){m.textContent='copied to clipboard';setTimeout(function(){m.textContent='';},2600);}
+  function fail(){selBoot();m.textContent='press Ctrl/Cmd+C to copy';}
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(txt).then(ok).catch(function(){legacyCopy(txt)?ok():fail();});
+  }else{legacyCopy(txt)?ok():fail();}}
+function legacyCopy(txt){try{var ta=document.createElement('textarea');ta.value=txt;
+  ta.setAttribute('readonly','');ta.style.position='fixed';ta.style.top='-1000px';ta.style.opacity='0';
+  document.body.appendChild(ta);ta.select();var ok=document.execCommand('copy');
+  document.body.removeChild(ta);return ok;}catch(e){return false;}}
+function dlBoot(){var blob=new Blob([bootText()],{type:'text/plain;charset=utf-8'});
+  var a=document.createElement('a');a.href=URL.createObjectURL(blob);
+  a.download='SOUL_LAND_UNIVERSAL_TRANSFER_BOOTSTRAP.txt';
+  document.body.appendChild(a);a.click();
+  setTimeout(function(){URL.revokeObjectURL(a.href);document.body.removeChild(a);},400);
+  var m=document.getElementById('cpmsg');m.textContent='downloaded';
+  setTimeout(function(){m.textContent='';},2600);}
+</script>
+</body></html>

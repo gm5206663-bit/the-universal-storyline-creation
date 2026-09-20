@@ -1,0 +1,199 @@
+{
+  "_comment": "Knowledge firewalls. Author knowledge is never automatically character knowledge. Every fact is tracked separately per character. Five fields, no fewer: who, state, topic, earliest valid change, rule.",
+  "registry": [
+    {
+      "id": 1,
+      "project": "storyos_naag",
+      "who": "Gaurav Raheja",
+      "state": "FALSE BELIEF",
+      "topic": "Parentage",
+      "belief": "Yamini and Ankush are his biological parents.",
+      "earliest_change": "A credible adoption reveal supported by evidence.",
+      "rule": "Police instincts alone cannot overturn this lifelong belief."
+    },
+    {
+      "id": 2,
+      "project": "storyos_naag",
+      "who": "Gaurav Raheja",
+      "state": "UNKNOWN",
+      "topic": "Supernatural nature",
+      "belief": "He considers himself an ordinary human.",
+      "earliest_change": "Unambiguous awakening signs several episodes after Episode 1.",
+      "rule": "No early self-identification as Naag, Sheshveer, or Maha Naag."
+    },
+    {
+      "id": 3,
+      "project": "storyos_naag",
+      "who": "Gaurav Raheja",
+      "state": "UNKNOWN",
+      "topic": "Naag-world lore",
+      "belief": "Only ordinary cultural and devotional stories are known.",
+      "earliest_change": "On-page teaching by a qualified source after supernatural evidence.",
+      "rule": "Instinctive power control after awakening does not equal encyclopaedic lore."
+    },
+    {
+      "id": 4,
+      "project": "storyos_naag",
+      "who": "Ritik Raheja",
+      "state": "UNKNOWN",
+      "topic": "Gaurav's adoption and nature",
+      "belief": "Gaurav is his biological near-twin brother and an ordinary human.",
+      "earliest_change": "Later family or supernatural reveal.",
+      "rule": "Brotherly intuition may create concern, not factual knowledge."
+    },
+    {
+      "id": 5,
+      "project": "storyos_naag",
+      "who": "Ritik Raheja",
+      "state": "DISBELIEF",
+      "topic": "Ichchhadhari serpents",
+      "belief": "They belong to television, films and books rather than real life.",
+      "earliest_change": "Direct supernatural proof.",
+      "rule": "Episode 1 anomalies disturb him but do not instantly make him a believer."
+    },
+    {
+      "id": 6,
+      "project": "storyos_naag",
+      "who": "Ritik Raheja",
+      "state": "SUSPICION",
+      "topic": "Parents' twenty-year secret",
+      "belief": "He overheard mention of a night and a secret but accepted the immediate deflection.",
+      "earliest_change": "Further contradictions or disclosure.",
+      "rule": "He cannot know the murders or perpetrators from Episode 1 evidence alone."
+    },
+    {
+      "id": 7,
+      "project": "storyos_naag",
+      "who": "Tanvi",
+      "state": "KNOWN PARTLY",
+      "topic": "Ritik's dream",
+      "belief": "Ritik has had the same frightening dream for years and sees a woman in it.",
+      "earliest_change": "Ritik discloses more, or she witnesses a supernatural event.",
+      "rule": "She does not know Shivanya is the dream-linked Naagin."
+    },
+    {
+      "id": 8,
+      "project": "storyos_naag",
+      "who": "Yamini Raheja",
+      "state": "KNOWN",
+      "topic": "Gaurav's adoption",
+      "belief": "Gaurav was adopted as a baby after a violent incident.",
+      "earliest_change": "She may learn the supernatural origin only through later evidence.",
+      "rule": "Adoption knowledge does not grant knowledge of biological clan, true name, rank, or power."
+    },
+    {
+      "id": 9,
+      "project": "storyos_naag",
+      "who": "Ankush Raheja",
+      "state": "KNOWN",
+      "topic": "Gaurav's adoption",
+      "belief": "Gaurav was adopted as a baby after a violent incident.",
+      "earliest_change": "Later supernatural proof.",
+      "rule": "He does not know Gaurav is Sheshnaag-clan or Mahadev-chosen."
+    },
+    {
+      "id": 10,
+      "project": "storyos_naag",
+      "who": "Yamini Raheja",
+      "state": "KNOWN PARTLY",
+      "topic": "Ritik's age danger",
+      "belief": "Ritik must marry before twenty-five or a grave serpent-linked danger will arise.",
+      "earliest_change": "Later prophecy clarification.",
+      "rule": "Do not merge Ritik's warning with Gaurav's separate awakening."
+    },
+    {
+      "id": 11,
+      "project": "storyos_naag",
+      "who": "Ankush Raheja",
+      "state": "KNOWN PARTLY",
+      "topic": "Panchner's past",
+      "belief": "The event from twenty years ago and the villagers' grievance could endanger the present celebration.",
+      "earliest_change": "Verified later canon revelations.",
+      "rule": "Record exact culpability only when the corresponding canon episode is reconstructed."
+    },
+    {
+      "id": 12,
+      "project": "storyos_naag",
+      "who": "Shivanya",
+      "state": "KNOWN",
+      "topic": "Revenge purpose",
+      "belief": "She waited twenty years and attained Ichchhadhari form to avenge the love story violently ended by guilty humans.",
+      "earliest_change": "Her judgments may become more nuanced through direct acts by individual Rahejas.",
+      "rule": "Compassion may complicate revenge; it must not erase grief overnight."
+    },
+    {
+      "id": 13,
+      "project": "storyos_naag",
+      "who": "Shivanya",
+      "state": "UNKNOWN",
+      "topic": "Gaurav",
+      "belief": "No verified knowledge of his identity, bloodline, true name, or destiny at the Episode 1 opening.",
+      "earliest_change": "First on-page meeting, or a supernatural sensory event caused by proximity.",
+      "rule": "Predetermined romance does not pre-install personal memories or trust."
+    },
+    {
+      "id": 14,
+      "project": "storyos_naag",
+      "who": "Om Kaka",
+      "state": "KNOWN PARTLY",
+      "topic": "Gaurav's origin",
+      "belief": "Gaurav is the orphaned child of Sheshnaag-clan parents whom Om was tasked to protect.",
+      "earliest_change": "Awakening, or recovered records.",
+      "rule": "Om does not know the complete attack truth, the Adaptation Talent outcome, the golden Panchmukhi rank, or Mahadev's full design."
+    },
+    {
+      "id": 15,
+      "project": "storyos_naag",
+      "who": "Om Kaka",
+      "state": "SUSPICION",
+      "topic": "Timing of awakening",
+      "belief": "Gaurav's twenty-fifth year may bring change, but Om cannot predict its exact form or moment.",
+      "earliest_change": "Observable awakening symptoms.",
+      "rule": "He may prepare or worry, not state a precise omniscient prophecy."
+    },
+    {
+      "id": 16,
+      "project": "storyos_naag",
+      "who": "Raheja family pandit",
+      "state": "UNKNOWN",
+      "topic": "Gaurav",
+      "belief": "No Episode 1 source establishes that the pandit recognises anything supernatural about Gaurav.",
+      "earliest_change": "A later direct divination scene, if authorised.",
+      "rule": "Do not repurpose Ritik's canon prophecy as exposition for Gaurav."
+    },
+    {
+      "id": 17,
+      "project": "storyos_naag",
+      "who": "Shesha",
+      "state": "UNKNOWN",
+      "topic": "Gaurav",
+      "belief": "No verified meeting or awareness exists at the Episode 1 boundary.",
+      "earliest_change": "Verified first proximity to him, or his awakening signal.",
+      "rule": "Do not invent early attraction, jealousy, or rank recognition."
+    },
+    {
+      "id": 18,
+      "project": "storyos_naag",
+      "who": "Gaurav Raheja",
+      "state": "FALSE BELIEF",
+      "topic": "Om Kaka's identity",
+      "belief": "Om is a trusted human driver and uncle figure.",
+      "earliest_change": "A later reveal supported by evidence.",
+      "rule": "Preserve Gaurav's current belief until that evidence occurs."
+    }
+  ],
+  "blue_silver_structure": {
+    "kind": "documentary chain rather than per-character belief states",
+    "reason": "The protagonist is a plant and the humans each hold one fragment.",
+    "chain": [
+      "surveyor's note",
+      "thin man's letter",
+      "Kesh's testimony",
+      "Vase's eleven pages",
+      "Hallum's four lines",
+      "Ohn's seal"
+    ],
+    "thesis": "He survives by paperwork, not power."
+  },
+  "add_rule": "Five fields, no fewer: who, state, topic, earliest valid change, and rule. The earliest-valid-change field is the one that prevents regressions - without it, the next agent will helpfully let the character find out early because the plot needs it."
+}

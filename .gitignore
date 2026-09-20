@@ -18,3 +18,13 @@ vqmod/logs/*
 vqmod/vqcache/*
 vqmod/checked.cache
 vqmod/mods.cache
+
+# --- Control Centre (Python) ---
+__pycache__/
+*.pyc
+
+# intake is a mailbox; keep the dirs, not the contents
+intake/drop/*
+intake/accepted/*
+intake/rejected/*
+!intake/**/.gitkeep

@@ -1,0 +1,40 @@
+{
+  "id": "storyos_naag",
+  "name": "StoryOS / Naag",
+  "path": "external - Control Centre hosted",
+  "status": "external",
+  "verification": "reported",
+  "verification_note": "State supplied through the transfer bootstrap rather than read from files in this workspace. The StoryOS Control Centre sits behind a ChatGPT sign-in wall and returned HTTP 401 on every path tested, so its records could not be read directly. Reproduced faithfully; must not be extended by invention.",
+  "universe": "Separate from Soul Land. An Ichchhadhari Naag serial.",
+  "protagonist": "Gaurav Raheja",
+  "live_edge": "Episode 1 boundary",
+  "counts": [
+    {"label": "Canon ledger scenes", "value": 17},
+    {"label": "User locks", "value": 41},
+    {"label": "Character states", "value": 15},
+    {"label": "Knowledge firewalls", "value": 18},
+    {"label": "Story system records", "value": 36},
+    {"label": "Quarantine runs", "value": 2},
+    {"label": "Foundation", "value": "PASS"},
+    {"label": "Structural errors", "value": 0},
+    {"label": "Information discipline", "value": "ACTIVE"}
+  ],
+  "open_gaps": [
+    {
+      "question": "Are the two twenty-year-old events the same event?",
+      "detail": "Shivanya avenges a love story violently ended by guilty humans. Gaurav's Sheshnaag-clan parents were attacked. Both sit twenty years back. Nothing in the supplied material confirms they are one event.",
+      "ruling": "Treat as separate until a canon scene establishes otherwise."
+    },
+    {
+      "question": "Who is culpable for Panchner?",
+      "detail": "Firewall 11 explicitly defers this.",
+      "ruling": "Record exact culpability only when the corresponding canon episode is reconstructed."
+    },
+    {
+      "question": "What is the golden Panchmukhi rank?",
+      "detail": "Referenced in firewall 14 as something Om does not know. No definition was supplied.",
+      "ruling": "Do not invent one."
+    }
+  ],
+  "firewall_location": "All eighteen are held in state/firewalls.json under project storyos_naag."
+}
