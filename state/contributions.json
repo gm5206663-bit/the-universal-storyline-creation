@@ -7,6 +7,45 @@
       "project": "soul_land_4",
       "seq": 1,
       "kind": "correction"
+    },
+    {
+      "project": "devouring_dragon",
+      "was": "after Chapter 10 'The Cold Country'",
+      "now": "after Chapter 12 'The Bull at the Water' (DL 3664 green season at its height — the bull taken at the water, the crossing, the war's shape changed; kit 7b144b5)",
+      "reason": "Chapters 11 and 12 written 2026-09-20 under the author's standing delegation; the registry live edge was stale at the time of registration (Ch10).",
+      "found_by": "full-repo check, session 29",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-09-20"
+      },
+      "seq": 2,
+      "kind": "correction"
+    },
+    {
+      "project": "soul_land_2",
+      "was": "after Chapter 22 'Knockout Brackets' — Group One 4-0, knockout first line chalked vs Group Forty-Seven",
+      "now": "after Chapter 23 'The Watching' — the first line of the knockout (kit 614fc58, 2026-09-20)",
+      "reason": "Chapter 23 closed 2026-09-20 (kit 614fc58) after the registry entry was filed at Ch22; the live edge was stale.",
+      "found_by": "full-repo check, session 29",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-09-20"
+      },
+      "seq": 3,
+      "kind": "correction"
+    },
+    {
+      "project": "devouring_dragon",
+      "decision": "Three design decisions taken by the agent under the author's delegation (2026-09-20, verbatim: 'Do everything yourself if you don't know what you need to do'): (1) the year-takers' names RATIFIED as canonical [design] — Bren (list-keeper), Yorre (dogs), Sella (the young one); (2) THE GREY STAG is thousand-year class / purple tier — the ch10 event read (ring-light darker than pale gold) stands over the CREATURES row's original hundred-year assumption (register row corrected same turn, correction noted in the row); (3) new prey named per the serial's functional-naming convention — the old bull of the warm breaks [design].",
+      "reason": "The author's standing delegation of 2026-09-20 grants full ownership of the workflow, including design decisions previously flagged for acceptance. All three are recorded append-only in the serial (SERIAL_LOG session 29) and remain correctable by the author.",
+      "authorized_by": "author delegation 2026-09-20 (verbatim: 'Do everything yourself... you know what you need to do')",
+      "date": "2026-09-20",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-09-20"
+      },
+      "seq": 4,
+      "kind": "decision"
     }
   ]
 }

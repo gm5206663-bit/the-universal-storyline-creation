@@ -13,7 +13,7 @@ AT A GLANCE
   knowledge firewalls   18
   kit laws              11
   hard gates            7
-  growth events logged  2
+  growth events logged  6
 
 ==============================================================================
 SECTION 1 - CORE OPERATING RULE
@@ -486,13 +486,16 @@ SECTION 12 - PROJECT STATE: SOUL LAND 2 — JIANG CHE  [CONTRIBUTED]
 
 path: soul-land-universal-kit/Soul_Land_2_Project/
 status: live
-live edge: after Chapter 22 'Knockout Brackets' — Group One 4-0, knockout
-first line chalked vs Group Forty-Seven
+live edge: after Chapter 23 'The Watching' — the first line of the knockout
+(kit 614fc58, 2026-09-20)
 notes: Ranks at the edge: Yuhao 17-peak (18-verge), Wang Dong 23, Jiang Che
 29. The prize is two words. R5 (thirty-wall) sweep pending in OPEN.md and
 CANON_LEDGER.
 verification: verified 2026-09-20 from clone at 015ca86 (Chapter 22 audited,
 gates 23/23, receipt in audits/)
+
+RECORDS:
+  - [correction] -
 
 
 ==============================================================================
@@ -543,12 +546,26 @@ SECTION 16 - PROJECT STATE: DEVOURING DRAGON (BEAST-POV SERIAL)  [CONTRIBUTED]
 
 path: soul-land-universal-kit/soul_land_devouring_dragon/
 status: live
-live edge: after Chapter 10 'The Cold Country'
+live edge: after Chapter 12 'The Bull at the Water' (DL 3664 green season at
+its height — the bull taken at the water, the crossing, the war's shape
+changed; kit 7b144b5)
 notes: Author ruling pending: the unified StoryOS gate fails 0/10 on gate 4
 (dialogue >= 3) against the beast-POV design. Do not rewrite chapters to force
 the gate green before the ruling. NOT the Dragon Prince Yuan project —
 different serial, do not conflate.
 verification: verified 2026-09-20: 10 chapters on disk
+
+RECORDS:
+  - [correction] -
+  - [decision] Three design decisions taken by the agent under the author's
+  delegation (2026-09-20, verbatim: 'Do everything yourself if you don't
+  know what you need to do'): (1) the year-takers' names RATIFIED as
+  canonical [design] — Bren (list-keeper), Yorre (dogs), Sella (the young
+  one); (2) THE GREY STAG is thousand-year class / purple tier — the ch10
+  event read (ring-light darker than pale gold) stands over the CREATURES
+  row's original hundred-year assumption (register row corrected same turn,
+  correction noted in the row); (3) new prey named per the serial's
+  functional-naming convention — the old bull of the warm breaks [design].
 
 
 ==============================================================================
@@ -769,6 +786,18 @@ SECTION 22 - CONTRIBUTED STATE
 
 OTHER RECORDS:
   - [correction] - (filed by -)
+  - [correction] - (filed by Sara (Agent Mode))
+  - [correction] - (filed by Sara (Agent Mode))
+  - [decision] Three design decisions taken by the agent under the author's
+  delegation (2026-09-20, verbatim: 'Do everything yourself if you don't
+  know what you need to do'): (1) the year-takers' names RATIFIED as
+  canonical [design] — Bren (list-keeper), Yorre (dogs), Sella (the young
+  one); (2) THE GREY STAG is thousand-year class / purple tier — the ch10
+  event read (ring-light darker than pale gold) stands over the CREATURES
+  row's original hundred-year assumption (register row corrected same turn,
+  correction noted in the row); (3) new prey named per the serial's
+  functional-naming convention — the old bull of the warm breaks [design].
+  (filed by Sara (Agent Mode))
 
 
 ==============================================================================

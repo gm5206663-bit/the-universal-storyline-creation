@@ -1,29 +1,70 @@
 {
-  "events": [
-    {
-      "when": "2026-09-20T06:40:40",
-      "file": "live_serials_registry_2026-09-20.json",
-      "agent": "unknown",
-      "ids": [
-        "project:soul_land_2",
-        "project:soul_land_3",
-        "project:soul_land_4",
-        "project:holy_spirit",
-        "project:devouring_dragon",
-        "project:dragon_prince_yuan",
-        "project:blue_silver",
-        "project:soul_land_new"
-      ],
-      "count": 8
-    },
-    {
-      "when": "2026-09-20T06:40:48",
-      "file": "fix_sl4_path_2026-09-20.json",
-      "agent": "unknown",
-      "ids": [
-        "correction#1"
-      ],
-      "count": 1
-    }
-  ]
+ "events": [
+  {
+   "when": "2026-09-20T06:40:40",
+   "file": "live_serials_registry_2026-09-20.json",
+   "agent": "unknown",
+   "ids": [
+    "project:soul_land_2",
+    "project:soul_land_3",
+    "project:soul_land_4",
+    "project:holy_spirit",
+    "project:devouring_dragon",
+    "project:dragon_prince_yuan",
+    "project:blue_silver",
+    "project:soul_land_new"
+   ],
+   "count": 8
+  },
+  {
+   "when": "2026-09-20T06:40:48",
+   "file": "fix_sl4_path_2026-09-20.json",
+   "agent": "unknown",
+   "ids": [
+    "correction#1"
+   ],
+   "count": 1
+  },
+  {
+   "when": "2026-09-20T09:34:58",
+   "file": "dd_live_edge_ch12_2026-09-20.json",
+   "agent": "Sara (Agent Mode)",
+   "ids": [
+    "correction#2"
+   ],
+   "count": 1
+  },
+  {
+   "when": "2026-09-20T09:34:58",
+   "file": "sl2_live_edge_ch23_2026-09-20.json",
+   "agent": "Sara (Agent Mode)",
+   "ids": [
+    "correction#3"
+   ],
+   "count": 1
+  },
+  {
+   "when": "2026-09-20T09:34:58",
+   "file": "dd_decisions_s29_2026-09-20.json",
+   "agent": "Sara (Agent Mode)",
+   "ids": [
+    "decision#4"
+   ],
+   "count": 1
+  },
+  {
+   "when": "2026-09-20T09:34:58",
+   "file": "manual_curation_session29_2026-09-20",
+   "agent": "Sara (Agent Mode)",
+   "ids": [
+    "correction#2",
+    "correction#3",
+    "decision#1",
+    "registry:devouring_dragon.live_edge",
+    "registry:soul_land_2.live_edge"
+   ],
+   "count": 2,
+   "note": "state/projects_registry.json hand-curated: two stale live edges updated (devouring_dragon Ch10->Ch12, soul_land_2 Ch22->Ch23); matching corrections filed via intake the same turn (append-only record kept)."
+  }
+ ]
 }
