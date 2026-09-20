@@ -72,6 +72,19 @@
       },
       "seq": 6,
       "kind": "correction"
+    },
+    {
+      "project": "devouring_dragon",
+      "was": "The ch11-12 parallel panels set the year-takers' ring plans on slots canon does not allow: the grey stag's purple ring spoken of as Old Qin's second ring (he is a Soul King whose slots are long filled), and the old bull's purple ring planned as Xiao An's first ring on a Soul Master's frame with the answer that the Tang Sect's frontier teams call it a future.",
+      "now": "THE RING-SLOT LAW (kit: CANON_LEDGER ER-12, ER-11 rewritten, the s33 author-law block in NO_MISTAKE_LIVE_RULES, glossary entry): a soul master's Nth ring is taken at the Nth decade of rank - the first at ten, the second at twenty, the third at thirty; a filled slot is never re-taken. The canon standard is thin lights for thin slots and the deep thousand-year light at the third and beyond - the workspace's Soul Land 2 receipts read thin-thin-deep (the fourth-year proctor and Bei Bei: two yellow rings and one purple across three). A thousand-year SECOND ring is a pedigree anomaly, rare even in Soul Land 2 (receipt: Wang Dong of Shrek carries it, the marked exception); a thousand-year FIRST ring is a death, never a plan. No panel, mirror or chapter sets a deep light on a thin frame: the border's deep lights are market goods - the tables buy depth for frames that have grown into it. Both panels rewritten (ch11: 'A thousand-year light... they buy depth for frames that have grown into it'); ch12: Old Qin's law speech, Xiao An's thin white first ring carried with her second light to come); mirrors swept; re-gated (ch11 2,896 words / 19 dialogue lines; ch12 3,292 / 27; project sweep PASS); kit commit 9e5c6dd.",
+      "reason": "Author correction of 2026-09-20, verbatim: 'A thousand-year second ring,?, what are you even saying what you know how even this rear even in soul land 2.' The struck phrase set a deep light on a thin frame; the author's exact point is that such a ring is rare even in Soul Land 2 - ten thousand years after our era - and our border folk are planning them as their own. The previous s29-s31 records of those ring plans are annotated SUPERSEDED in the serial's session log, not erased.",
+      "found_by": "author correction 2026-09-20; session 33 sweep",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-09-20"
+      },
+      "seq": 7,
+      "kind": "correction"
     }
   ]
 }

@@ -101,6 +101,24 @@
         "project:devouring_dragon"
       ],
       "count": 1
+    },
+    {
+      "when": "2026-09-20T12:51:43",
+      "file": "2026-09-20_dd_ring_slot_law.json",
+      "agent": "Sara (Agent Mode)",
+      "ids": [
+        "correction#7"
+      ],
+      "count": 1
+    },
+    {
+      "when": "2026-09-20T12:51:46",
+      "file": "registry_dd_s33_ring_slot_2026-09-20.json",
+      "agent": "Sara (Agent Mode)",
+      "ids": [
+        "project:devouring_dragon"
+      ],
+      "count": 1
     }
   ]
 }

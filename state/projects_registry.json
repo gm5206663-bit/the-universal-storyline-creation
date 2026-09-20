@@ -62,12 +62,12 @@
       "path": "soul-land-universal-kit/soul_land_devouring_dragon/",
       "status": "live",
       "active": true,
-      "live_edge": "after Chapter 12 'The Bull at the Water' (DL 3664 green season at its height — Chapters 11–12 FULLY REWRITTEN in s31; s32 SOUL-BEAST CORRECTION applied across the whole serial on the author's correction: soul beasts, not ordinary animals — the spirit hounds, the Black-Ravine Serpent named in full, blue silver grass as the commonest soul beast; the bull taken at the water, the crossing, the war's shape changed; kit 01ac0b7)",
+      "live_edge": "after Chapter 12 'The Bull at the Water' (DL 3664 green season at its height — s31 total rewrites; s32 soul-beast correction; s33 THE RING-SLOT LAW enforced: the deep lights are market goods and no deep light is set on a thin frame — both panels rewritten; kit 9e5c6dd)",
       "authority": {
         "status_source": "foundation/STATUS_PANEL.md",
         "conflict_rule": "STATUS_PANEL.md is the live edge for the beast POV."
       },
-      "verification": "verified 2026-09-20: 12 chapters on disk (s32 soul-beast correction gated: ch11 2,873w, ch12 3,197w, project sweep PASS)",
+      "verification": "verified 2026-09-20: 12 chapters on disk (s33 ring-slot correction gated: ch11 2,896w, ch12 3,292w, project sweep PASS)",
       "notes": "Author ruling pending: the unified StoryOS gate fails 0/10 on gate 4 (dialogue >= 3) against the beast-POV design. Do not rewrite chapters to force the gate green before the ruling. NOT the Dragon Prince Yuan project — different serial, do not conflate."
     },
     {
