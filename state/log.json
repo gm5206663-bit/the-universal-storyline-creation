@@ -193,6 +193,25 @@
         "kit:14405d9"
       ],
       "count": 2
+    },
+    {
+      "when": "2026-09-20T15:56:37",
+      "file": "2026-09-20_dd_ch14_wrong_face.json",
+      "agent": "unknown",
+      "ids": [
+        "note#11"
+      ],
+      "count": 1
+    },
+    {
+      "when": "2026-09-20T15:20:00",
+      "file": "2026-09-20_dd_ch14_wrong_face.json",
+      "agent": "Sara (Agent Mode)",
+      "ids": [
+        "project:devouring_dragon",
+        "kit:91497a0"
+      ],
+      "count": 2
     }
   ]
 }
