@@ -252,6 +252,24 @@
         "correction#19"
       ],
       "count": 1
+    },
+    {
+      "when": "2026-09-21T01:46:01",
+      "file": "2026-09-21_dd_ch16.json",
+      "agent": "Sara (Agent Mode)",
+      "ids": [
+        "note#20"
+      ],
+      "count": 1
+    },
+    {
+      "when": "2026-09-21T01:46:01",
+      "file": "2026-09-21_dd_registry_edge_ch16.json",
+      "agent": "Sara (Agent Mode)",
+      "ids": [
+        "correction#21"
+      ],
+      "count": 1
     }
   ]
 }

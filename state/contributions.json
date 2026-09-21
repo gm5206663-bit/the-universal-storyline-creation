@@ -205,6 +205,30 @@
       },
       "seq": 19,
       "kind": "correction"
+    },
+    {
+      "project": "devouring_dragon",
+      "tag": "chapter",
+      "text": "CHAPTER 16 \"The One Print\" WRITTEN AND SHIPPED (s42, 2026-09-21; author, verbatim: \"Continue\" - the second consecutive go). The summer delivered: the low country hunted as his own (the old thin grazer taken at the lower pool at dusk; kills kept off the trail); the line comes back north (smoke on the south wind; read three days out; he lets them walk his own trail rather than move in front of men; the hound's night half-circle at the camp edge met by his quiet at its last limit); THE SUMMER WALK ON THE HIGH GROUND (stone, dry grass and baked pans; three days of nothing; the hound's stop at the dried pan); THE ONE PRINT read by Xiao An (the beast had stood in the setting mud, no roll in the print, looking down at the south where their fires had been); Gao Tie's casts off both ends (stone and stream; she will not cross running water); the print is NOT the pale beast's (narrower, heavier in front, one print in a whole season); OLD QIN'S RULING - one print with no face and no kill is not a line, so THE PAN IS THE WATCH: four stones set, the younger man's first watch promised for the next wet; and THE TURN - HE PRINTS NO MORE (he reads their stopped places, the hound's two lines and the men's knees in the dust beside his own print; the pan untouched; the long way after - crossings at the rock bars, ridges of bare stone, mud flats left to the grazing kind; twice a kill passed up rather than cross soft mud, a day hungry each time, the cost paid). Written PLAIN from the first draft under the s39 SCOPE LAW and the s40 PLAIN LANGUAGE LAW (the s40 rule caught 'the green' at the measure step and it became 'summer'; zero retired words shipped). Counts: 2,791 body words (budget 2,400-3,000); 48 spoken lines (17.2 per 1000w); average 17.1; median 15; longest 57; no sentence over 60; no one-sentence prose paragraphs; motif phrase 'the way' x2 (one simile, one plain). Gates: verify.py PASS; project sweep PASS (16/16 chapters carry footers; ch1 the recorded no-voices exception). Mirrors synced same turn: foundation/STATUS_PANEL.md (edge, exact figures, kills, territory, next beats -> ch17, last action), bible/HIS_STATUS_PANEL.md (edge + ch16 close), bible/ADAPTATION_LOG.md, foundation/SERIAL_LOG.md (session 42), README.md, codex/KNOWLEDGE_FIREWALLS.md, codex/PLACES.md, codex/TIMELINE.md, codex/GLOSSARY.md, foundation/CONTINUITY.md. Kit commit 605e071, pushed.",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-09-21"
+      },
+      "seq": 20,
+      "kind": "note"
+    },
+    {
+      "project": "devouring_dragon",
+      "file": "state/projects_registry.json",
+      "was": "Registry edge for devouring_dragon: 'after Chapter 15 \"The Hound's Third Time\" (DL 3665, the thaw; real age ~71-73 months) ... kit 1be6d2f, 2026-09-21', notes listing chapters 1-15, next ch16 (author-gated).",
+      "now": "Registry edge advanced to: 'after Chapter 16 \"The One Print\" (DL 3665, the summer; real age ~74-76 months) - the line back north on the hound's read, the dried pan marked and made the watch, the one print read, and he prints no more; prose written in plain words; kit 605e071, 2026-09-21'. Notes now list chapters 1-16 (ch16 2,791 words; 48 spoken lines, 17.2 per 1000w; average 17.1; longest 57) and next ch17 (author-gated): the watch by the pan in the next spring's wet.",
+      "reason": "Chapter 16 shipped on the author's verbatim go (\"Continue\") and every mirror was synced to it in the same turn; the registry still carried the Chapter 15 edge. Filed as a correction per the protocol's own rule (a second 'project' record for an existing id is rejected).",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-09-21"
+      },
+      "seq": 21,
+      "kind": "correction"
     }
   ]
 }
