@@ -62,13 +62,13 @@
       "path": "soul-land-universal-kit/soul_land_devouring_dragon/",
       "status": "live",
       "active": true,
-      "live_edge": "after Chapter 14 \"The Wrong Face\" (DL 3664–65, the deep country's second winter; real age ≈ 68–70 months) — the sign's second edge (the pale beast reading him), the broken watch-fold and a death, the WRONG FACE on the keepers' line, the aimed word paid for; kit 91497a0, 2026-09-20",
+      "live_edge": "after Chapter 14 \"The Wrong Face\" (DL 3664-65, the deep country's second winter; real age ~68-70 months) - the sign's second edge (the pale beast reading him), the broken watch-fold and a death, the WRONG FACE on the keepers' line, the aimed word paid for; SCOPE LAW in force (s39); kit b8e06d3, 2026-09-21",
       "authority": {
         "status_source": "foundation/STATUS_PANEL.md",
         "conflict_rule": "STATUS_PANEL.md is the live edge for the beast POV."
       },
-      "verification": "verified 2026-09-20 from the kit clone: ch14 gated (4,673 words; 43 spoken lines; 9.2 per 1000w; average 20.3; longest 57); all 14 footers match verify.py; workspace audit run across all five repos and all kit projects; verify.py per chapter + project sweep PASS",
-      "notes": "Chapters 1–14. Body words: ch1 2,595 … ch13 4,008, ch14 4,673. Prose averages 16.0–20.8, no sentence over 60, motif 'the way' 0–2 per chapter. Rulings in force: ER-12 ring-slot, ER-13 standing light, SB-11 soul-beast rule, house grammar. Audit fixes: STATUS_PANEL figures → ch14; ER-07 collision date receipted. Next: ch15 — the south; the wrong face tested."
+      "verification": "verified 2026-09-21 from the kit clone: ch13 and ch14 re-gated after the SCOPE TRIM (ch13 2,728 words, 32 spoken lines, 11.7 per 1000w, average 20.0, longest 60; ch14 3,267 words, 38 spoken lines, 11.6 per 1000w, average 19.1, longest 58); zero sentences over 60 and zero one-sentence paragraphs; all 14 footers match verify.py; verify.py per chapter + project sweep PASS",
+      "notes": "Chapters 1-14. Body words: ch1 2,595 ... ch12 3,280, ch13 2,728, ch14 3,267. Prose averages 16.0-20.8, no sentence over 60, motif 'the way' 0-2 per chapter. Rulings in force: SCOPE LAW (s39: write it once, no overview openings, 2,400-3,000 words a chapter), house grammar, ER-12 ring-slot, ER-13 standing light, SB-11 soul-beast rule. Next: ch15 (author-gated) - the south; the wrong face tested."
     },
     {
       "id": "dragon_prince_yuan",

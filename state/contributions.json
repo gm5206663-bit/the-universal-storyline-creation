@@ -125,6 +125,34 @@
       "text": "CHAPTER 14 'The Wrong Face' written (s38, 2026-09-20; author verbatim: 'Check everything and do'), after a full workspace audit. 4,673 words; 43 spoken lines (9.2 per 1000w); average 20.3, longest 57; one human-side scene at house density; no panels. Beats: the season of the watch (the line's watch-folds work north; he never goes near one); THE SIGN'S SECOND EDGE - his own lie-kills taught a rival reader, the pale beast of the deep fringe (wide tracks, meat untouched at a written kill); THE BROKEN FOLD AND THE DEATH - the beast walked the wire, killed at the water; the older lodge man died by the camp of black stone; THE WRONG FACE ON THE PAPER - Xiao An argues the printed beast is not the thing that signs; Old Qin rules that the count carries what can be proved and writes the beast into the keepers' line; the line turns SOUTH on the wide pads; THE HOUND'S SECOND READING - two scents in the nose, no way to make them one, called off; the veiling holds; THE WANT'S QUESTION - a heavy beast eaten deep and the hunger unmoved; no meal can answer it again; THE VOICE'S NEXT TRUTH PAID FOR - one AIMED WORD spent into the pale beast at four lengths (short, dense, no roll over the country); the beast stops and leaves the kill; the price is the aim (two days of the country reading too warmly, the thread loud in the chest). Firewall held: the men believe the mark has the pale beast's face; they have nothing of him. AUDIT FIXES same session: STATUS_PANEL exact-figures block brought forward from ch12 to ch14; CANON_LEDGER ER-07 collision-date TBD replaced with the s15 receipt. Gates: verify.py per chapter + project sweep PASS. Kit commit 91497a0, pushed.",
       "seq": 11,
       "kind": "note"
+    },
+    {
+      "project": "devouring_dragon",
+      "was": "Chapters 13 and 14 of the Devouring Dragon serial were shipped as the serial's longest (4,008 and 4,673 body words) and both said everything twice: an explanation paragraph after each scene whose only job was to interpret the scene above it, a season-overview opening in ch14, and a closing re-tell of each chapter's own events.",
+      "now": "THE SCOPE LAW (author ruling of 2026-09-21; recorded in the kit as foundation/RAILS.md SCOPE LAW and SOUL_LAND_WORKSPACE/kit/07_PROSE_LAW.md sec.10) and BOTH CHAPTERS CUT TO IT: ch13 2,728 words (32 spoken lines, 11.7 per 1000w; average 20.0; longest 60), ch14 3,267 words (38 spoken lines, 11.6 per 1000w; average 19.1; longest 58); zero sentences over 60; zero one-sentence paragraphs; every named beat and both human-side scenes kept. Kit commit b8e06d3, pushed. Mirrors brought to the new counts (STATUS_PANEL, HIS_STATUS_PANEL, README, SERIAL_LOG session 39).",
+      "reason": "Author, verbatim: 'Why you making nonsense by writing nonsenses like it becomes boring, wyrite what needs to write not everything , you can skip'. The writing itself was the defect: the length was not story, it was commentary.",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-09-21"
+      },
+      "seq": 12,
+      "kind": "correction"
+    },
+    {
+      "project": "devouring_dragon",
+      "decision": "SCOPE LAW, binding on the kit and the serial: (1) a beat is written once - no paragraph explains a paragraph and no chapter re-tells its own events at the close; (2) no overview openings (season summaries, status reports) - open in scene; (3) after a scene, one line of consequence, never a summary of the scene; (4) budget 2,400-3,000 words a chapter, ceiling 3,400 for a chapter carrying a season's turn with the reason in its footer; (5) skip material that changes nothing (repeated readings, repeated lessons, scenery that carries neither); (6) cutting removes explanation, never the scene. All prior hard rules stand over it (house grammar, dialogue density, sentence caps, no one-sentence paragraphs, panel law, firewall, figure law).",
+      "reason": "Author ruling 2026-09-21 (verbatim in the correction filed alongside): chapters 13-14 had grown by saying everything twice.",
+      "authorized_by": "Author, verbatim ruling 2026-09-21; executed under the standing delegation (2026-09-20).",
+      "date": "2026-09-21",
+      "seq": 13,
+      "kind": "decision"
+    },
+    {
+      "project": "devouring_dragon",
+      "tag": "chapter",
+      "text": "SCOPE TRIM (s39, 2026-09-21). Chapters 13 and 14 cut to the SCOPE LAW: 4,008 -> 2,728 and 4,673 -> 3,267 body words; nothing added. Cut: the explanation layer (12 paragraphs in ch13, 9 in ch14), ch14's season-overview opening, both closing re-tells; last one-sentence prose paragraphs killed; stage directions merged into their scenes. Kept: every named beat, both human-side scenes, every quoted line a mirror cites. Gates: verify.py per chapter PASS and project sweep PASS. Mirrors brought to the new counts: foundation/STATUS_PANEL.md, bible/HIS_STATUS_PANEL.md, README.md, foundation/SERIAL_LOG.md (session 39 entry; the s37 and s38 entries keep their as-shipped counts as history).",
+      "seq": 14,
+      "kind": "note"
     }
   ]
 }

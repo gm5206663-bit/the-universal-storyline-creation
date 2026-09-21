@@ -212,6 +212,17 @@
         "kit:91497a0"
       ],
       "count": 2
+    },
+    {
+      "when": "2026-09-21T00:23:29",
+      "file": "2026-09-21_dd_scope_trim.json",
+      "agent": "Sara (Agent Mode)",
+      "ids": [
+        "correction#12",
+        "decision#13",
+        "note#14"
+      ],
+      "count": 3
     }
   ]
 }

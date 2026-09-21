@@ -13,7 +13,7 @@ AT A GLANCE
   knowledge firewalls   18
   kit laws              11
   hard gates            7
-  growth events logged  8
+  growth events logged  23
 
 ==============================================================================
 SECTION 1 - CORE OPERATING RULE
@@ -546,16 +546,23 @@ SECTION 16 - PROJECT STATE: DEVOURING DRAGON (BEAST-POV SERIAL)  [CONTRIBUTED]
 
 path: soul-land-universal-kit/soul_land_devouring_dragon/
 status: live
-live edge: after Chapter 12 'The Bull at the Water' (DL 3664 green season at
-its height — Chapters 11–12 FULLY REWRITTEN in s31 on the author's 'Rewrite
-that chapter' directive, beats + quoted lines preserved; the bull taken at the
-water, the crossing, the war's shape changed; kit a5036cb)
-notes: Author ruling pending: the unified StoryOS gate fails 0/10 on gate 4
-(dialogue >= 3) against the beast-POV design. Do not rewrite chapters to force
-the gate green before the ruling. NOT the Dragon Prince Yuan project —
-different serial, do not conflate.
-verification: verified 2026-09-20: 12 chapters on disk (s31 rewrite gated:
-ch11 2,866w, ch12 3,175w, project sweep PASS)
+live edge: after Chapter 14 "The Wrong Face" (DL 3664-65, the deep country's
+second winter; real age ~68-70 months) - the sign's second edge (the pale
+beast reading him), the broken watch-fold and a death, the WRONG FACE on the
+keepers' line, the aimed word paid for; SCOPE LAW in force (s39); kit b8e06d3,
+2026-09-21
+notes: Chapters 1-14. Body words: ch1 2,595 ... ch12 3,280, ch13 2,728, ch14
+3,267. Prose averages 16.0-20.8, no sentence over 60, motif 'the way' 0-2 per
+chapter. Rulings in force: SCOPE LAW (s39: write it once, no overview
+openings, 2,400-3,000 words a chapter), house grammar, ER-12 ring-slot, ER-13
+standing light, SB-11 soul-beast rule. Next: ch15 (author-gated) - the south;
+the wrong face tested.
+verification: verified 2026-09-21 from the kit clone: ch13 and ch14 re-gated
+after the SCOPE TRIM (ch13 2,728 words, 32 spoken lines, 11.7 per 1000w,
+average 20.0, longest 60; ch14 3,267 words, 38 spoken lines, 11.6 per 1000w,
+average 19.1, longest 58); zero sentences over 60 and zero one-sentence
+paragraphs; all 14 footers match verify.py; verify.py per chapter + project
+sweep PASS
 
 RECORDS:
   - [correction] -
@@ -569,6 +576,76 @@ RECORDS:
   correction noted in the row); (3) new prey named per the serial's
   functional-naming convention — the old bull of the warm breaks [design].
   - [correction] -
+  - [correction] -
+  - [correction] -
+  - [correction] -
+  - [correction] -
+  - [note] CHAPTER 13 'The Keepers' Line' written (s37, 2026-09-20; author
+  verbatim: 'Continue'). First chapter written at the house grammar from the
+  draft up: 4,008 words; 41 spoken lines (10.2 per 1000w); sentence average
+  20.8, longest 60; no one-sentence paragraphs; one human-side scene at
+  house density (the watch-fold and the naming of the line); no panels.
+  Beats: the after-cost of the crossing paid down (the water bank relearned
+  him); the kill-word read for the first time as a SIGN (he had been signing
+  his ground since the first season); the takers' craft mirrored (a kill of
+  theirs left standing, the light boxed, the wire on both trails, a blind
+  and a staked hound); THE KEEPERS' LINE SET - the list goes to the line it
+  has seen (the watch: four days to a fold, the kill carried north a day's
+  walk at a time; the rule to look and not shoot; the line named by Old
+  Qin); the counter (the country made to lie); the voice spent once at the
+  edge of the deep place and read as a WORD, not a roar; the want wakened
+  patient (the flaw learned to wait); the wall at the thousand far, unfelt.
+  Firewall held on the page: no sighting, no print, no contact. Same session
+  closed the s36 rebuild: the paragraph rule enforced across all 13
+  chapters, ch5's false apparatus head repaired, all footers re-set to
+  verified counts. Gates: verify.py per chapter and project sweep PASS. Kit
+  commit 14405d9, pushed.
+  - [note] CHAPTER 14 'The Wrong Face' written (s38, 2026-09-20; author
+  verbatim: 'Check everything and do'), after a full workspace audit. 4,673
+  words; 43 spoken lines (9.2 per 1000w); average 20.3, longest 57; one
+  human-side scene at house density; no panels. Beats: the season of the
+  watch (the line's watch-folds work north; he never goes near one); THE
+  SIGN'S SECOND EDGE - his own lie-kills taught a rival reader, the pale
+  beast of the deep fringe (wide tracks, meat untouched at a written kill);
+  THE BROKEN FOLD AND THE DEATH - the beast walked the wire, killed at the
+  water; the older lodge man died by the camp of black stone; THE WRONG FACE
+  ON THE PAPER - Xiao An argues the printed beast is not the thing that
+  signs; Old Qin rules that the count carries what can be proved and writes
+  the beast into the keepers' line; the line turns SOUTH on the wide pads;
+  THE HOUND'S SECOND READING - two scents in the nose, no way to make them
+  one, called off; the veiling holds; THE WANT'S QUESTION - a heavy beast
+  eaten deep and the hunger unmoved; no meal can answer it again; THE
+  VOICE'S NEXT TRUTH PAID FOR - one AIMED WORD spent into the pale beast at
+  four lengths (short, dense, no roll over the country); the beast stops and
+  leaves the kill; the price is the aim (two days of the country reading too
+  warmly, the thread loud in the chest). Firewall held: the men believe the
+  mark has the pale beast's face; they have nothing of him. AUDIT FIXES same
+  session: STATUS_PANEL exact-figures block brought forward from ch12 to
+  ch14; CANON_LEDGER ER-07 collision-date TBD replaced with the s15 receipt.
+  Gates: verify.py per chapter + project sweep PASS. Kit commit 91497a0,
+  pushed.
+  - [correction] -
+  - [decision] SCOPE LAW, binding on the kit and the serial: (1) a beat is
+  written once - no paragraph explains a paragraph and no chapter re-tells
+  its own events at the close; (2) no overview openings (season summaries,
+  status reports) - open in scene; (3) after a scene, one line of
+  consequence, never a summary of the scene; (4) budget 2,400-3,000 words a
+  chapter, ceiling 3,400 for a chapter carrying a season's turn with the
+  reason in its footer; (5) skip material that changes nothing (repeated
+  readings, repeated lessons, scenery that carries neither); (6) cutting
+  removes explanation, never the scene. All prior hard rules stand over it
+  (house grammar, dialogue density, sentence caps, no one-sentence
+  paragraphs, panel law, firewall, figure law).
+  - [note] SCOPE TRIM (s39, 2026-09-21). Chapters 13 and 14 cut to the SCOPE
+  LAW: 4,008 -> 2,728 and 4,673 -> 3,267 body words; nothing added. Cut: the
+  explanation layer (12 paragraphs in ch13, 9 in ch14), ch14's season-
+  overview opening, both closing re-tells; last one-sentence prose
+  paragraphs killed; stage directions merged into their scenes. Kept: every
+  named beat, both human-side scenes, every quoted line a mirror cites.
+  Gates: verify.py per chapter PASS and project sweep PASS. Mirrors brought
+  to the new counts: foundation/STATUS_PANEL.md, bible/HIS_STATUS_PANEL.md,
+  README.md, foundation/SERIAL_LOG.md (session 39 entry; the s37 and s38
+  entries keep their as-shipped counts as history).
 
 
 ==============================================================================
@@ -802,6 +879,76 @@ OTHER RECORDS:
   functional-naming convention — the old bull of the warm breaks [design].
   (filed by Sara (Agent Mode))
   - [correction] - (filed by Sara (Agent Mode))
+  - [correction] - (filed by Sara (Agent Mode))
+  - [correction] - (filed by Sara (Agent Mode))
+  - [correction] - (filed by Sara (Agent Mode))
+  - [correction] - (filed by Sara (Agent Mode))
+  - [note] CHAPTER 13 'The Keepers' Line' written (s37, 2026-09-20; author
+  verbatim: 'Continue'). First chapter written at the house grammar from the
+  draft up: 4,008 words; 41 spoken lines (10.2 per 1000w); sentence average
+  20.8, longest 60; no one-sentence paragraphs; one human-side scene at
+  house density (the watch-fold and the naming of the line); no panels.
+  Beats: the after-cost of the crossing paid down (the water bank relearned
+  him); the kill-word read for the first time as a SIGN (he had been signing
+  his ground since the first season); the takers' craft mirrored (a kill of
+  theirs left standing, the light boxed, the wire on both trails, a blind
+  and a staked hound); THE KEEPERS' LINE SET - the list goes to the line it
+  has seen (the watch: four days to a fold, the kill carried north a day's
+  walk at a time; the rule to look and not shoot; the line named by Old
+  Qin); the counter (the country made to lie); the voice spent once at the
+  edge of the deep place and read as a WORD, not a roar; the want wakened
+  patient (the flaw learned to wait); the wall at the thousand far, unfelt.
+  Firewall held on the page: no sighting, no print, no contact. Same session
+  closed the s36 rebuild: the paragraph rule enforced across all 13
+  chapters, ch5's false apparatus head repaired, all footers re-set to
+  verified counts. Gates: verify.py per chapter and project sweep PASS. Kit
+  commit 14405d9, pushed. (filed by -)
+  - [note] CHAPTER 14 'The Wrong Face' written (s38, 2026-09-20; author
+  verbatim: 'Check everything and do'), after a full workspace audit. 4,673
+  words; 43 spoken lines (9.2 per 1000w); average 20.3, longest 57; one
+  human-side scene at house density; no panels. Beats: the season of the
+  watch (the line's watch-folds work north; he never goes near one); THE
+  SIGN'S SECOND EDGE - his own lie-kills taught a rival reader, the pale
+  beast of the deep fringe (wide tracks, meat untouched at a written kill);
+  THE BROKEN FOLD AND THE DEATH - the beast walked the wire, killed at the
+  water; the older lodge man died by the camp of black stone; THE WRONG FACE
+  ON THE PAPER - Xiao An argues the printed beast is not the thing that
+  signs; Old Qin rules that the count carries what can be proved and writes
+  the beast into the keepers' line; the line turns SOUTH on the wide pads;
+  THE HOUND'S SECOND READING - two scents in the nose, no way to make them
+  one, called off; the veiling holds; THE WANT'S QUESTION - a heavy beast
+  eaten deep and the hunger unmoved; no meal can answer it again; THE
+  VOICE'S NEXT TRUTH PAID FOR - one AIMED WORD spent into the pale beast at
+  four lengths (short, dense, no roll over the country); the beast stops and
+  leaves the kill; the price is the aim (two days of the country reading too
+  warmly, the thread loud in the chest). Firewall held: the men believe the
+  mark has the pale beast's face; they have nothing of him. AUDIT FIXES same
+  session: STATUS_PANEL exact-figures block brought forward from ch12 to
+  ch14; CANON_LEDGER ER-07 collision-date TBD replaced with the s15 receipt.
+  Gates: verify.py per chapter + project sweep PASS. Kit commit 91497a0,
+  pushed. (filed by -)
+  - [correction] - (filed by Sara (Agent Mode))
+  - [decision] SCOPE LAW, binding on the kit and the serial: (1) a beat is
+  written once - no paragraph explains a paragraph and no chapter re-tells
+  its own events at the close; (2) no overview openings (season summaries,
+  status reports) - open in scene; (3) after a scene, one line of
+  consequence, never a summary of the scene; (4) budget 2,400-3,000 words a
+  chapter, ceiling 3,400 for a chapter carrying a season's turn with the
+  reason in its footer; (5) skip material that changes nothing (repeated
+  readings, repeated lessons, scenery that carries neither); (6) cutting
+  removes explanation, never the scene. All prior hard rules stand over it
+  (house grammar, dialogue density, sentence caps, no one-sentence
+  paragraphs, panel law, firewall, figure law). (filed by -)
+  - [note] SCOPE TRIM (s39, 2026-09-21). Chapters 13 and 14 cut to the SCOPE
+  LAW: 4,008 -> 2,728 and 4,673 -> 3,267 body words; nothing added. Cut: the
+  explanation layer (12 paragraphs in ch13, 9 in ch14), ch14's season-
+  overview opening, both closing re-tells; last one-sentence prose
+  paragraphs killed; stage directions merged into their scenes. Kept: every
+  named beat, both human-side scenes, every quoted line a mirror cites.
+  Gates: verify.py per chapter PASS and project sweep PASS. Mirrors brought
+  to the new counts: foundation/STATUS_PANEL.md, bible/HIS_STATUS_PANEL.md,
+  README.md, foundation/SERIAL_LOG.md (session 39 entry; the s37 and s38
+  entries keep their as-shipped counts as history). (filed by -)
 
 
 ==============================================================================
