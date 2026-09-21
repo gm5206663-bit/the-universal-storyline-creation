@@ -62,13 +62,15 @@
       "path": "soul-land-universal-kit/soul_land_devouring_dragon/",
       "status": "live",
       "active": true,
-      "live_edge": "after Chapter 17 \"The Long Wet\" (DL 3666, the spring wet; real age ~83-85 months) - the watch by the pan through the whole wet gained the line no beast (its only catch a young ox in its own wire; the low water watch set for summer), and he lived the wet on stone leaving not one print; prose written in plain words (PLAIN LANGUAGE LAW, s40); kit a880e6d, 2026-09-21",
+      "live_edge": "after Chapter 18 \"Two Lines\" (DL 3666, the summer dry; real age ~87-89 months) - the paper carries two lines now (the pale killer with a face; the signer without), the water is the snare, and the hound - not the ground - is what reads him; prose written in plain words (PLAIN LANGUAGE LAW, s40); PACING LAW in force (s44); kit e16fccc, 2026-09-21",
       "authority": {
         "status_source": "foundation/STATUS_PANEL.md",
         "conflict_rule": "STATUS_PANEL.md is the live edge for the beast POV."
       },
-      "verification": "written and gated 2026-09-21 from the kit clone: verify.py PASS (2,967 body words; 50 spoken lines, 16.9 per 1000w; average 17.4; longest 57; no sentence over 60); project sweep PASS (17/17 chapters carry footers; ch1 the recorded no-voices exception); all mirrors synced same turn; footer counts match tools/measure_prose.py",
-      "notes": "Chapters 1-17, prose in plain words. Body words: ch1 2,595, ch2 3,096, ch3 3,390, ch4 2,609, ch5 3,386, ch6 2,930, ch7 3,097, ch8 3,391, ch9 3,895, ch10 3,432, ch11 2,795, ch12 3,283, ch13 2,564, ch14 3,169, ch15 2,686, ch16 2,791, ch17 2,967. Rulings in force: PLAIN LANGUAGE LAW (s40), SCOPE LAW (s39), house grammar (s35), ER-12 ring-slot, ER-13 standing light, SB-11 soul-beast rule, s43 measure ruling (short one-line beat paragraphs allowed; the 60-word cap is the rule). Next: ch18 (author-gated) - the low water watch when the flats come out."
+      "verification": "written and gated 2026-09-21 from the kit clone: verify.py PASS (2,867 body words; 49 spoken lines, 17.1 per 1000w; average 18.0; longest 60); project sweep PASS (18/18 chapters carry footers; ch1 the recorded no-voices exception); all mirrors synced same turn; footer counts match tools/measure_prose.py",
+      "notes": [
+        "Chapters 1-18, prose in plain words. Body words: ch1 2,595, ch2 3,096, ch3 3,390, ch4 2,609, ch5 3,386, ch6 2,930, ch7 3,097, ch8 3,391, ch9 3,895, ch10 3,432, ch11 2,795, ch12 3,283, ch13 2,564, ch14 3,169, ch15 2,686, ch16 2,791, ch17 2,967, ch18 2,867. Rulings in force: PACING LAW (s44), PLAIN LANGUAGE LAW (s40), SCOPE LAW (s39), house grammar (s35), ER-12 ring-slot, ER-13 standing light, SB-11 soul-beast rule, s43 measure ruling. Next: ch19 (author-gated) - the seasons at the water under the PACING LAW; sameness skipped; one anchored event where something is genuinely new."
+      ]
     },
     {
       "id": "dragon_prince_yuan",

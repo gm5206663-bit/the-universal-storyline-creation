@@ -297,6 +297,33 @@
         "correction#24"
       ],
       "count": 1
+    },
+    {
+      "when": "2026-09-21T09:15:43",
+      "file": "2026-09-21_dd_ch18.json",
+      "agent": "Sara (Agent Mode)",
+      "ids": [
+        "note#25"
+      ],
+      "count": 1
+    },
+    {
+      "when": "2026-09-21T09:15:43",
+      "file": "2026-09-21_dd_pacing_law.json",
+      "agent": "Sara (Agent Mode)",
+      "ids": [
+        "decision#26"
+      ],
+      "count": 1
+    },
+    {
+      "when": "2026-09-21T09:15:43",
+      "file": "2026-09-21_dd_registry_edge_ch18.json",
+      "agent": "Sara (Agent Mode)",
+      "ids": [
+        "correction#27"
+      ],
+      "count": 1
     }
   ]
 }

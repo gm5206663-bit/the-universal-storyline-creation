@@ -266,6 +266,43 @@
       },
       "seq": 24,
       "kind": "correction"
+    },
+    {
+      "project": "devouring_dragon",
+      "tag": "chapter",
+      "text": "CHAPTER 18 \"Two Lines\" WRITTEN AND SHIPPED (s44, 2026-09-21; author, verbatim: \"Next chapter\", with the pacing word in the same message). The summer dry delivered: THE DRAW-DOWN AND THE RUNS (the water comes apart into pools; everything walks the same lines between the same water; he drinks at the runs, having found the hound staked at the still water in the first week; the summer's rules - kills at the upper water taken standing in the stream over stone, eaten in the water, the rest left to the crows; the costs paid); THE LOW WATER WATCH (the wire in the low neck of the main pool; Xiao An's daily read of the draw-down; the younger man's boredom); THE HOUND'S NIGHTS (three nights standing pointed at the dark bank; \"She has never pointed at nothing in her life\"; Gao Tie's bedroll moved to the pool's edge); THE KILL WITH NO TRACKS (the grazer dead at the head of the run; fifty paces of mud and gravel holding every small foot and NOT ONE PRINT of a heavy hunter; the hound's bark into the shallows and her stare up the run she will not enter; Old Qin come the lodge road; the smell called as the crossing's, NOT the pale one's); THE TWO LINES (Old Qin's ruling - the paper takes a second line; the signer known apart from the pale beast; \"Two lines for two beasts is the count finally telling the truth\"); THE WATER IS THE SNARE (the watch not struck; the wire stays through the dry). Written plain from the first draft; the measure tool caught two 61-word sentences and nine heavy constructions before the footer was set. Counts: 2,867 body words (budget 2,400-3,000); 49 spoken lines (17.1 per 1000w); average 18.0; median 14; longest 60; retired-word scan clean. Gates: verify.py PASS; project sweep PASS (18/18 chapters carry footers; ch1 the recorded no-voices exception). Mirrors synced same turn: foundation/STATUS_PANEL.md (edge, figures, kills, territory, next beats + pacing state, last action), bible/HIS_STATUS_PANEL.md, bible/ADAPTATION_LOG.md, foundation/SERIAL_LOG.md (session 44), README.md, codex/KNOWLEDGE_FIREWALLS.md, codex/PLACES.md, codex/TIMELINE.md, codex/GLOSSARY.md, foundation/CONTINUITY.md. Kit commit e16fccc, pushed.",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-09-21"
+      },
+      "seq": 25,
+      "kind": "note"
+    },
+    {
+      "project": "devouring_dragon",
+      "decision": "PACING LAW (author word, s44, binding on the serial and the kit): (1) SAMENESS IS SKIPPED - when a thing is the same as it was before (a second watch that learns nothing, a third lesson already learned, a season repeating its predecessor), it gets one line and no scene; the story moves. (2) THE THOUSAND-YEAR ROAD IS TOLD BY TIME-SKIP SUMMARY - the road from the living edge to the cultivation-year-1,000 barrier is not ground out chapter by chapter; the years between are given in summary (what the years did, what changed, what held), with scenes kept only where something is genuinely new, and the barrier itself arrives at the end of such a summary. (3) It stands WITH the SCOPE LAW, not instead of it: cut explanation, never scene - but never write a scene whose only content is that nothing changed. (4) The panel's next-beats section carries the current pacing state so any session knows where the story stands on the road.",
+      "reason": "Author, verbatim, 2026-09-21: \"Hey don't make too much boring,skip when thing is same skip when he reaches thousand years old with summery of time skip\" - sent with the go for the next chapter. The serial's detailed years (real years 1-5) are long past; from here sameness is skipped and the barrier approaches by summary.",
+      "authorized_by": "Author, verbatim, 2026-09-21 (standing delegation executed; the word itself is the authority).",
+      "date": "2026-09-21",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-09-21"
+      },
+      "seq": 26,
+      "kind": "decision"
+    },
+    {
+      "project": "devouring_dragon",
+      "file": "state/projects_registry.json",
+      "was": "Registry edge for devouring_dragon: 'after Chapter 17 \"The Long Wet\" (DL 3666, the spring wet; real age ~83-85 months) ... kit a880e6d, 2026-09-21', notes listing chapters 1-17, next ch18 (author-gated).",
+      "now": "Registry edge advanced to: 'after Chapter 18 \"Two Lines\" (DL 3666, the summer dry; real age ~87-89 months) - the paper carries two lines now (the pale killer with a face; the signer without), the water is the snare, and the hound - not the ground - is what reads him; prose in plain words; kit e16fccc, 2026-09-21'. Notes now list chapters 1-18 (ch18 2,867 words; 49 spoken lines, 17.1 per 1000w; average 18.0; longest 60) and next ch19 under the PACING LAW (s44): the seasons at the water, sameness skipped, one anchored event where something is genuinely new.",
+      "reason": "Chapter 18 shipped on the author's verbatim \"Next chapter\" and every mirror was synced to it in the same turn; the registry still carried the Chapter 17 edge. Filed as a correction per the protocol's own rule (a second 'project' record for an existing id is rejected).",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-09-21"
+      },
+      "seq": 27,
+      "kind": "correction"
     }
   ]
 }

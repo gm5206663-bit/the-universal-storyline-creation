@@ -13,7 +13,7 @@ AT A GLANCE
   knowledge firewalls   18
   kit laws              11
   hard gates            7
-  growth events logged  31
+  growth events logged  34
 
 ==============================================================================
 SECTION 1 - CORE OPERATING RULE
@@ -546,24 +546,24 @@ SECTION 16 - PROJECT STATE: DEVOURING DRAGON (BEAST-POV SERIAL)  [CONTRIBUTED]
 
 path: soul-land-universal-kit/soul_land_devouring_dragon/
 status: live
-live edge: after Chapter 17 "The Long Wet" (DL 3666, the spring wet; real age
-~83-85 months) - the watch by the pan through the whole wet gained the line no
-beast (its only catch a young ox in its own wire; the low water watch set for
-summer), and he lived the wet on stone leaving not one print; prose written in
-plain words (PLAIN LANGUAGE LAW, s40); kit a880e6d, 2026-09-21
-notes: Chapters 1-17, prose in plain words. Body words: ch1 2,595, ch2 3,096,
-ch3 3,390, ch4 2,609, ch5 3,386, ch6 2,930, ch7 3,097, ch8 3,391, ch9 3,895,
-ch10 3,432, ch11 2,795, ch12 3,283, ch13 2,564, ch14 3,169, ch15 2,686, ch16
-2,791, ch17 2,967. Rulings in force: PLAIN LANGUAGE LAW (s40), SCOPE LAW
-(s39), house grammar (s35), ER-12 ring-slot, ER-13 standing light, SB-11 soul-
-beast rule, s43 measure ruling (short one-line beat paragraphs allowed; the
-60-word cap is the rule). Next: ch18 (author-gated) - the low water watch when
-the flats come out.
+live edge: after Chapter 18 "Two Lines" (DL 3666, the summer dry; real age
+~87-89 months) - the paper carries two lines now (the pale killer with a face;
+the signer without), the water is the snare, and the hound - not the ground -
+is what reads him; prose written in plain words (PLAIN LANGUAGE LAW, s40);
+PACING LAW in force (s44); kit e16fccc, 2026-09-21
+notes: ['Chapters 1-18, prose in plain words. Body words: ch1 2,595, ch2
+3,096, ch3 3,390, ch4 2,609, ch5 3,386, ch6 2,930, ch7 3,097, ch8 3,391, ch9
+3,895, ch10 3,432, ch11 2,795, ch12 3,283, ch13 2,564, ch14 3,169, ch15 2,686,
+ch16 2,791, ch17 2,967, ch18 2,867. Rulings in force: PACING LAW (s44), PLAIN
+LANGUAGE LAW (s40), SCOPE LAW (s39), house grammar (s35), ER-12 ring-slot,
+ER-13 standing light, SB-11 soul-beast rule, s43 measure ruling. Next: ch19
+(author-gated) - the seasons at the water under the PACING LAW; sameness
+skipped; one anchored event where something is genuinely new.']
 verification: written and gated 2026-09-21 from the kit clone: verify.py PASS
-(2,967 body words; 50 spoken lines, 16.9 per 1000w; average 17.4; longest 57;
-no sentence over 60); project sweep PASS (17/17 chapters carry footers; ch1
-the recorded no-voices exception); all mirrors synced same turn; footer counts
-match tools/measure_prose.py
+(2,867 body words; 49 spoken lines, 17.1 per 1000w; average 18.0; longest 60);
+project sweep PASS (18/18 chapters carry footers; ch1 the recorded no-voices
+exception); all mirrors synced same turn; footer counts match
+tools/measure_prose.py
 
 RECORDS:
   - [correction] -
@@ -781,6 +781,52 @@ RECORDS:
   codex/TIMELINE.md, codex/GLOSSARY.md, foundation/CONTINUITY.md. Kit commit
   a880e6d, pushed.
   - [correction] -
+  - [correction] -
+  - [note] CHAPTER 18 "Two Lines" WRITTEN AND SHIPPED (s44, 2026-09-21;
+  author, verbatim: "Next chapter", with the pacing word in the same
+  message). The summer dry delivered: THE DRAW-DOWN AND THE RUNS (the water
+  comes apart into pools; everything walks the same lines between the same
+  water; he drinks at the runs, having found the hound staked at the still
+  water in the first week; the summer's rules - kills at the upper water
+  taken standing in the stream over stone, eaten in the water, the rest left
+  to the crows; the costs paid); THE LOW WATER WATCH (the wire in the low
+  neck of the main pool; Xiao An's daily read of the draw-down; the younger
+  man's boredom); THE HOUND'S NIGHTS (three nights standing pointed at the
+  dark bank; "She has never pointed at nothing in her life"; Gao Tie's
+  bedroll moved to the pool's edge); THE KILL WITH NO TRACKS (the grazer
+  dead at the head of the run; fifty paces of mud and gravel holding every
+  small foot and NOT ONE PRINT of a heavy hunter; the hound's bark into the
+  shallows and her stare up the run she will not enter; Old Qin come the
+  lodge road; the smell called as the crossing's, NOT the pale one's); THE
+  TWO LINES (Old Qin's ruling - the paper takes a second line; the signer
+  known apart from the pale beast; "Two lines for two beasts is the count
+  finally telling the truth"); THE WATER IS THE SNARE (the watch not struck;
+  the wire stays through the dry). Written plain from the first draft; the
+  measure tool caught two 61-word sentences and nine heavy constructions
+  before the footer was set. Counts: 2,867 body words (budget 2,400-3,000);
+  49 spoken lines (17.1 per 1000w); average 18.0; median 14; longest 60;
+  retired-word scan clean. Gates: verify.py PASS; project sweep PASS (18/18
+  chapters carry footers; ch1 the recorded no-voices exception). Mirrors
+  synced same turn: foundation/STATUS_PANEL.md (edge, figures, kills,
+  territory, next beats + pacing state, last action),
+  bible/HIS_STATUS_PANEL.md, bible/ADAPTATION_LOG.md,
+  foundation/SERIAL_LOG.md (session 44), README.md,
+  codex/KNOWLEDGE_FIREWALLS.md, codex/PLACES.md, codex/TIMELINE.md,
+  codex/GLOSSARY.md, foundation/CONTINUITY.md. Kit commit e16fccc, pushed.
+  - [decision] PACING LAW (author word, s44, binding on the serial and the
+  kit): (1) SAMENESS IS SKIPPED - when a thing is the same as it was before
+  (a second watch that learns nothing, a third lesson already learned, a
+  season repeating its predecessor), it gets one line and no scene; the
+  story moves. (2) THE THOUSAND-YEAR ROAD IS TOLD BY TIME-SKIP SUMMARY - the
+  road from the living edge to the cultivation-year-1,000 barrier is not
+  ground out chapter by chapter; the years between are given in summary
+  (what the years did, what changed, what held), with scenes kept only where
+  something is genuinely new, and the barrier itself arrives at the end of
+  such a summary. (3) It stands WITH the SCOPE LAW, not instead of it: cut
+  explanation, never scene - but never write a scene whose only content is
+  that nothing changed. (4) The panel's next-beats section carries the
+  current pacing state so any session knows where the story stands on the
+  road.
   - [correction] -
 
 
@@ -1220,6 +1266,53 @@ OTHER RECORDS:
   codex/TIMELINE.md, codex/GLOSSARY.md, foundation/CONTINUITY.md. Kit commit
   a880e6d, pushed. (filed by Sara (Agent Mode))
   - [correction] - (filed by Sara (Agent Mode))
+  - [correction] - (filed by Sara (Agent Mode))
+  - [note] CHAPTER 18 "Two Lines" WRITTEN AND SHIPPED (s44, 2026-09-21;
+  author, verbatim: "Next chapter", with the pacing word in the same
+  message). The summer dry delivered: THE DRAW-DOWN AND THE RUNS (the water
+  comes apart into pools; everything walks the same lines between the same
+  water; he drinks at the runs, having found the hound staked at the still
+  water in the first week; the summer's rules - kills at the upper water
+  taken standing in the stream over stone, eaten in the water, the rest left
+  to the crows; the costs paid); THE LOW WATER WATCH (the wire in the low
+  neck of the main pool; Xiao An's daily read of the draw-down; the younger
+  man's boredom); THE HOUND'S NIGHTS (three nights standing pointed at the
+  dark bank; "She has never pointed at nothing in her life"; Gao Tie's
+  bedroll moved to the pool's edge); THE KILL WITH NO TRACKS (the grazer
+  dead at the head of the run; fifty paces of mud and gravel holding every
+  small foot and NOT ONE PRINT of a heavy hunter; the hound's bark into the
+  shallows and her stare up the run she will not enter; Old Qin come the
+  lodge road; the smell called as the crossing's, NOT the pale one's); THE
+  TWO LINES (Old Qin's ruling - the paper takes a second line; the signer
+  known apart from the pale beast; "Two lines for two beasts is the count
+  finally telling the truth"); THE WATER IS THE SNARE (the watch not struck;
+  the wire stays through the dry). Written plain from the first draft; the
+  measure tool caught two 61-word sentences and nine heavy constructions
+  before the footer was set. Counts: 2,867 body words (budget 2,400-3,000);
+  49 spoken lines (17.1 per 1000w); average 18.0; median 14; longest 60;
+  retired-word scan clean. Gates: verify.py PASS; project sweep PASS (18/18
+  chapters carry footers; ch1 the recorded no-voices exception). Mirrors
+  synced same turn: foundation/STATUS_PANEL.md (edge, figures, kills,
+  territory, next beats + pacing state, last action),
+  bible/HIS_STATUS_PANEL.md, bible/ADAPTATION_LOG.md,
+  foundation/SERIAL_LOG.md (session 44), README.md,
+  codex/KNOWLEDGE_FIREWALLS.md, codex/PLACES.md, codex/TIMELINE.md,
+  codex/GLOSSARY.md, foundation/CONTINUITY.md. Kit commit e16fccc, pushed.
+  (filed by Sara (Agent Mode))
+  - [decision] PACING LAW (author word, s44, binding on the serial and the
+  kit): (1) SAMENESS IS SKIPPED - when a thing is the same as it was before
+  (a second watch that learns nothing, a third lesson already learned, a
+  season repeating its predecessor), it gets one line and no scene; the
+  story moves. (2) THE THOUSAND-YEAR ROAD IS TOLD BY TIME-SKIP SUMMARY - the
+  road from the living edge to the cultivation-year-1,000 barrier is not
+  ground out chapter by chapter; the years between are given in summary
+  (what the years did, what changed, what held), with scenes kept only where
+  something is genuinely new, and the barrier itself arrives at the end of
+  such a summary. (3) It stands WITH the SCOPE LAW, not instead of it: cut
+  explanation, never scene - but never write a scene whose only content is
+  that nothing changed. (4) The panel's next-beats section carries the
+  current pacing state so any session knows where the story stands on the
+  road. (filed by Sara (Agent Mode))
   - [correction] - (filed by Sara (Agent Mode))
 
 
