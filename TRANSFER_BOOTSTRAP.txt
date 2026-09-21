@@ -13,7 +13,7 @@ AT A GLANCE
   knowledge firewalls   18
   kit laws              11
   hard gates            7
-  growth events logged  24
+  growth events logged  26
 
 ==============================================================================
 SECTION 1 - CORE OPERATING RULE
@@ -546,20 +546,23 @@ SECTION 16 - PROJECT STATE: DEVOURING DRAGON (BEAST-POV SERIAL)  [CONTRIBUTED]
 
 path: soul-land-universal-kit/soul_land_devouring_dragon/
 status: live
-live edge: after Chapter 14 "The Wrong Face" (DL 3664-65, the second winter at
-the edge of the deep forest; real age ~68-70 months) - the sign's second edge
-(the pale beast following him), the broken camp and a death, the WRONG FACE on
-the keepers' line, the aimed roar paid for; prose written in plain words
-(PLAIN LANGUAGE LAW, s40); kit 22765d8, 2026-09-21
-notes: Chapters 1-14, prose in plain words. Body words: ch1 2,595 ... ch12
-3,283, ch13 2,564, ch14 3,169. Rulings in force: PLAIN LANGUAGE LAW (s40),
-SCOPE LAW (s39), house grammar (s35), ER-12 ring-slot, ER-13 standing light,
-SB-11 soul-beast rule. Next: ch15 (author-gated) - the south; the wrong face
-tested.
-verification: verified 2026-09-21 from the kit clone after the plain-language
-pass: all 14 chapters re-gated (ch13 2,564w / 32 lines / average 17.7 /
-longest 54; ch14 3,169w / 38 / 17.2 / 46); zero retired house words in chapter
-prose; footers match verify.py; verify.py per chapter + project sweep PASS
+live edge: after Chapter 15 "The Hound's Third Time" (DL 3665, the thaw; real
+age ~71-73 months) - the south delivered: the south watch on the pale beast's
+chosen ground, the beast seen and counted, the hound's third reading, the
+paper held with no light for the box, the low country taken; prose written in
+plain words (PLAIN LANGUAGE LAW, s40); kit 1be6d2f, 2026-09-21
+notes: Chapters 1-15, prose in plain words. Body words: ch1 2,595, ch2 3,096,
+ch3 3,390, ch4 2,609, ch5 3,386, ch6 2,930, ch7 3,097, ch8 3,391, ch9 3,895,
+ch10 3,432, ch11 2,795, ch12 3,283, ch13 2,564, ch14 3,169, ch15 2,686.
+Rulings in force: PLAIN LANGUAGE LAW (s40), SCOPE LAW (s39), house grammar
+(s35), ER-12 ring-slot, ER-13 standing light, SB-11 soul-beast rule. Next:
+ch16 (author-gated) - the summer; the line walks where the hound points (Xiao
+An in front, Old Qin behind); the low ground hunted.
+verification: written and gated 2026-09-21 from the kit clone: verify.py PASS
+(2,686 body words; 51 spoken lines, 19.0 per 1000w; average 15.0; longest 53;
+no sentence over 60; no one-sentence paragraphs); project sweep PASS (15/15
+chapters carry footers; ch1 the recorded no-voices exception); all mirrors
+synced same turn; footer counts match the gate
 
 RECORDS:
   - [correction] -
@@ -671,6 +674,37 @@ RECORDS:
   page text (TIMELINE, CHARACTERS, HIS_STATUS_PANEL, ADAPTATION_LOG). Gates:
   verify.py per chapter PASS (ch1 the recorded no-voices exception); project
   sweep PASS; footers re-verified against the new counts.
+  - [note] CHAPTER 15 "The Hound's Third Time" WRITTEN AND SHIPPED (s41,
+  2026-09-21; author, verbatim: "Continue" - the go for the queued chapter).
+  The south delivered: the thaw and the empty ground; the watch set on the
+  pale beast's chosen ground (four days on the low trail below the shelf of
+  old rock; bait killed and left standing, his own trick learned from him;
+  wire, blind, hound staked); the pale beast come to the meat in daylight
+  (wire stepped, blind read, bait eaten in the open, walk-off south) and
+  SEEN AND COUNTED; THE HOUND'S THIRD TIME (first reading at the summer
+  water ch12, second on the high ground in the cold ch14 - the third time it
+  leaves a living beast to stand over ground carrying his old scent and will
+  not come off it); Old Qin's ruling - the list carries what the ground can
+  prove: the seen beast written with the place under it and the old lodge
+  man's name and pay under that, NO light for the box, and the summer
+  promise (Xiao An walks the high ground where the hound points, in front of
+  Old Qin); the low country taken by him - the ground the line left, the
+  road between the men's country and the deep forest. Written PLAIN from the
+  first draft under the s39 SCOPE LAW and the s40 PLAIN LANGUAGE LAW (no
+  explanation layer, no closing re-tell, no retired house word in the prose;
+  the one grep hit is the established counting rule in dialogue). Counts:
+  2,686 body words (budget 2,400-3,000); 51 spoken lines (19.0 per 1000w);
+  average 15.0; median 12; longest 53; no sentence over 60; no one-sentence
+  prose paragraphs. Gates: verify.py per chapter PASS; project sweep PASS
+  (15/15 chapters carry footers; ch1 the recorded no-voices exception).
+  Mirrors synced same turn: foundation/STATUS_PANEL.md (edge, exact figures,
+  kills, territory, next beats -> ch16, last action; a duplicated
+  cultivation-tail sentence removed), bible/HIS_STATUS_PANEL.md (edge + ch15
+  close), bible/ADAPTATION_LOG.md, foundation/SERIAL_LOG.md (session 41),
+  README.md (edge + next beat + file map), codex/CREATURES.md,
+  codex/KNOWLEDGE_FIREWALLS.md, codex/PLACES.md, codex/TIMELINE.md,
+  codex/GLOSSARY.md, foundation/CONTINUITY.md. Kit commit 1be6d2f, pushed.
+  - [correction] -
 
 
 ==============================================================================
@@ -1002,6 +1036,38 @@ OTHER RECORDS:
   page text (TIMELINE, CHARACTERS, HIS_STATUS_PANEL, ADAPTATION_LOG). Gates:
   verify.py per chapter PASS (ch1 the recorded no-voices exception); project
   sweep PASS; footers re-verified against the new counts. (filed by -)
+  - [note] CHAPTER 15 "The Hound's Third Time" WRITTEN AND SHIPPED (s41,
+  2026-09-21; author, verbatim: "Continue" - the go for the queued chapter).
+  The south delivered: the thaw and the empty ground; the watch set on the
+  pale beast's chosen ground (four days on the low trail below the shelf of
+  old rock; bait killed and left standing, his own trick learned from him;
+  wire, blind, hound staked); the pale beast come to the meat in daylight
+  (wire stepped, blind read, bait eaten in the open, walk-off south) and
+  SEEN AND COUNTED; THE HOUND'S THIRD TIME (first reading at the summer
+  water ch12, second on the high ground in the cold ch14 - the third time it
+  leaves a living beast to stand over ground carrying his old scent and will
+  not come off it); Old Qin's ruling - the list carries what the ground can
+  prove: the seen beast written with the place under it and the old lodge
+  man's name and pay under that, NO light for the box, and the summer
+  promise (Xiao An walks the high ground where the hound points, in front of
+  Old Qin); the low country taken by him - the ground the line left, the
+  road between the men's country and the deep forest. Written PLAIN from the
+  first draft under the s39 SCOPE LAW and the s40 PLAIN LANGUAGE LAW (no
+  explanation layer, no closing re-tell, no retired house word in the prose;
+  the one grep hit is the established counting rule in dialogue). Counts:
+  2,686 body words (budget 2,400-3,000); 51 spoken lines (19.0 per 1000w);
+  average 15.0; median 12; longest 53; no sentence over 60; no one-sentence
+  prose paragraphs. Gates: verify.py per chapter PASS; project sweep PASS
+  (15/15 chapters carry footers; ch1 the recorded no-voices exception).
+  Mirrors synced same turn: foundation/STATUS_PANEL.md (edge, exact figures,
+  kills, territory, next beats -> ch16, last action; a duplicated
+  cultivation-tail sentence removed), bible/HIS_STATUS_PANEL.md (edge + ch15
+  close), bible/ADAPTATION_LOG.md, foundation/SERIAL_LOG.md (session 41),
+  README.md (edge + next beat + file map), codex/CREATURES.md,
+  codex/KNOWLEDGE_FIREWALLS.md, codex/PLACES.md, codex/TIMELINE.md,
+  codex/GLOSSARY.md, foundation/CONTINUITY.md. Kit commit 1be6d2f, pushed.
+  (filed by Sara (Agent Mode))
+  - [correction] - (filed by Sara (Agent Mode))
 
 
 ==============================================================================

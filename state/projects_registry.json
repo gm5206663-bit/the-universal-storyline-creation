@@ -62,13 +62,13 @@
       "path": "soul-land-universal-kit/soul_land_devouring_dragon/",
       "status": "live",
       "active": true,
-      "live_edge": "after Chapter 14 \"The Wrong Face\" (DL 3664-65, the second winter at the edge of the deep forest; real age ~68-70 months) - the sign's second edge (the pale beast following him), the broken camp and a death, the WRONG FACE on the keepers' line, the aimed roar paid for; prose written in plain words (PLAIN LANGUAGE LAW, s40); kit 22765d8, 2026-09-21",
+      "live_edge": "after Chapter 15 \"The Hound's Third Time\" (DL 3665, the thaw; real age ~71-73 months) - the south delivered: the south watch on the pale beast's chosen ground, the beast seen and counted, the hound's third reading, the paper held with no light for the box, the low country taken; prose written in plain words (PLAIN LANGUAGE LAW, s40); kit 1be6d2f, 2026-09-21",
       "authority": {
         "status_source": "foundation/STATUS_PANEL.md",
         "conflict_rule": "STATUS_PANEL.md is the live edge for the beast POV."
       },
-      "verification": "verified 2026-09-21 from the kit clone after the plain-language pass: all 14 chapters re-gated (ch13 2,564w / 32 lines / average 17.7 / longest 54; ch14 3,169w / 38 / 17.2 / 46); zero retired house words in chapter prose; footers match verify.py; verify.py per chapter + project sweep PASS",
-      "notes": "Chapters 1-14, prose in plain words. Body words: ch1 2,595 ... ch12 3,283, ch13 2,564, ch14 3,169. Rulings in force: PLAIN LANGUAGE LAW (s40), SCOPE LAW (s39), house grammar (s35), ER-12 ring-slot, ER-13 standing light, SB-11 soul-beast rule. Next: ch15 (author-gated) - the south; the wrong face tested."
+      "verification": "written and gated 2026-09-21 from the kit clone: verify.py PASS (2,686 body words; 51 spoken lines, 19.0 per 1000w; average 15.0; longest 53; no sentence over 60; no one-sentence paragraphs); project sweep PASS (15/15 chapters carry footers; ch1 the recorded no-voices exception); all mirrors synced same turn; footer counts match the gate",
+      "notes": "Chapters 1-15, prose in plain words. Body words: ch1 2,595, ch2 3,096, ch3 3,390, ch4 2,609, ch5 3,386, ch6 2,930, ch7 3,097, ch8 3,391, ch9 3,895, ch10 3,432, ch11 2,795, ch12 3,283, ch13 2,564, ch14 3,169, ch15 2,686. Rulings in force: PLAIN LANGUAGE LAW (s40), SCOPE LAW (s39), house grammar (s35), ER-12 ring-slot, ER-13 standing light, SB-11 soul-beast rule. Next: ch16 (author-gated) - the summer; the line walks where the hound points (Xiao An in front, Old Qin behind); the low ground hunted."
     },
     {
       "id": "dragon_prince_yuan",
