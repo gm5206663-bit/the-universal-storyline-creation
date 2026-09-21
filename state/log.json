@@ -342,6 +342,15 @@
         "correction#29"
       ],
       "count": 1
+    },
+    {
+      "when": "2026-09-21T09:41:30",
+      "file": "2026-09-21_dd_skip_backward_work.json",
+      "agent": "Sara (Agent Mode)",
+      "ids": [
+        "correction#30"
+      ],
+      "count": 1
     }
   ]
 }

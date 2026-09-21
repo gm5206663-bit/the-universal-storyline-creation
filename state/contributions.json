@@ -329,6 +329,19 @@
       },
       "seq": 29,
       "kind": "correction"
+    },
+    {
+      "project": "devouring_dragon",
+      "file": "soul-land-universal-kit: foundation/STATUS_PANEL.md, foundation/SERIAL_LOG.md, foundation/RAILS.md + state/projects_registry.json",
+      "was": "Correction #28 and the registry notes queued chapters 11 and 12 (the two heaviest human-arc chapters, measured 100% and 77% men) for a legacy beast-first rebuild, listed first in line in the panel's next-beats as a debt against the s45 panel law.",
+      "now": "Author, verbatim: 'Hey please skip this nonsense' (2026-09-21). RULING RECORDED: NO BACKWARD WORK. Every chapter written before the s45 panel ruling stands as written; nothing earlier is queued for rebuild and no older chapter is raised again as pending work. The rebuild note is struck from the panel's next-beats; RAILS carries the ruling as PANEL LAW clause 7 (scope: forward only); the SERIAL_LOG s45 open item is closed by the ruling; the registry debt sentence is removed. The panel law itself is unchanged and binds the serial forward. Kit d289c51.",
+      "reason": "Author's word the same day, after reading the queued-rebuild note in the delivered session report.",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-09-21"
+      },
+      "seq": 30,
+      "kind": "correction"
     }
   ]
 }
