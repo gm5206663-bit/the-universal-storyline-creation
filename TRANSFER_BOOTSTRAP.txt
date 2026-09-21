@@ -13,7 +13,7 @@ AT A GLANCE
   knowledge firewalls   18
   kit laws              11
   hard gates            7
-  growth events logged  34
+  growth events logged  36
 
 ==============================================================================
 SECTION 1 - CORE OPERATING RULE
@@ -546,24 +546,26 @@ SECTION 16 - PROJECT STATE: DEVOURING DRAGON (BEAST-POV SERIAL)  [CONTRIBUTED]
 
 path: soul-land-universal-kit/soul_land_devouring_dragon/
 status: live
-live edge: after Chapter 18 "Two Lines" (DL 3666, the summer dry; real age
-~87-89 months) - the paper carries two lines now (the pale killer with a face;
-the signer without), the water is the snare, and the hound - not the ground -
-is what reads him; prose written in plain words (PLAIN LANGUAGE LAW, s40);
-PACING LAW in force (s44); kit e16fccc, 2026-09-21
-notes: ['Chapters 1-18, prose in plain words. Body words: ch1 2,595, ch2
-3,096, ch3 3,390, ch4 2,609, ch5 3,386, ch6 2,930, ch7 3,097, ch8 3,391, ch9
-3,895, ch10 3,432, ch11 2,795, ch12 3,283, ch13 2,564, ch14 3,169, ch15 2,686,
-ch16 2,791, ch17 2,967, ch18 2,867. Rulings in force: PACING LAW (s44), PLAIN
-LANGUAGE LAW (s40), SCOPE LAW (s39), house grammar (s35), ER-12 ring-slot,
-ER-13 standing light, SB-11 soul-beast rule, s43 measure ruling. Next: ch19
-(author-gated) - the seasons at the water under the PACING LAW; sameness
-skipped; one anchored event where something is genuinely new.']
-verification: written and gated 2026-09-21 from the kit clone: verify.py PASS
-(2,867 body words; 49 spoken lines, 17.1 per 1000w; average 18.0; longest 60);
-project sweep PASS (18/18 chapters carry footers; ch1 the recorded no-voices
-exception); all mirrors synced same turn; footer counts match
-tools/measure_prose.py
+live edge: after Chapter 18 "The Dry Country" (DL 3667; real age ~90-95
+months) - THE MEN'S THREAD IS CLOSED: the watch struck, the line walked home,
+no fire came up the country again; the country is his, and nothing in it hunts
+him in return; chapters 15-18 rebuilt s45 as pure beast chapters (no panels,
+no voices); PANEL LAW RE-BOUND in force (s45); kit 20ce52a, 2026-09-21
+notes: Chapters 1-18, prose in plain words. Rebuilt s45: ch15 2,229, ch16
+2,319, ch17 2,250, ch18 2,360 (ch1 2,595, ch2 3,096, ch3 3,390, ch4 2,609, ch5
+3,386, ch6 2,930, ch7 3,097, ch8 3,391, ch9 3,895, ch10 3,432, ch11 2,795,
+ch12 3,283, ch13 2,564, ch14 3,169). Rulings in force: PANEL LAW RE-BOUND
+(s45), PACING LAW (s44), PLAIN LANGUAGE LAW (s40), SCOPE LAW (s39 - beast-
+first floor 2,000), house grammar (s35, dialogue clause overridden), ER-12,
+ER-13, SB-11, s43 measure ruling. DEBT: ch11/ch12 legacy human-arc chapters
+(100%/77% men) queued for the same beast-first rebuild, first in line. Next:
+ch19 (author-gated) - the years on his border; sameness skipped; one anchored
+event where something is genuinely new.
+verification: rebuilt and re-gated 2026-09-21: verify.py PASS per rebuilt
+chapter (ch15 2,229 / ch16 2,319 / ch17 2,250 / ch18 2,360 words; no panel, no
+voices; no sentence over 60; zero retired words); project sweep PASS (18/18
+footers); verify.py gate 4 amended so the footer's panel declaration governs
+voices; all mirrors synced same turn
 
 RECORDS:
   - [correction] -
@@ -827,6 +829,8 @@ RECORDS:
   that nothing changed. (4) The panel's next-beats section carries the
   current pacing state so any session knows where the story stands on the
   road.
+  - [correction] -
+  - [correction] -
   - [correction] -
 
 
@@ -1313,6 +1317,8 @@ OTHER RECORDS:
   that nothing changed. (4) The panel's next-beats section carries the
   current pacing state so any session knows where the story stands on the
   road. (filed by Sara (Agent Mode))
+  - [correction] - (filed by Sara (Agent Mode))
+  - [correction] - (filed by Sara (Agent Mode))
   - [correction] - (filed by Sara (Agent Mode))
 
 

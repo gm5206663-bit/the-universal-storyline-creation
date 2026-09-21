@@ -303,6 +303,32 @@
       },
       "seq": 27,
       "kind": "correction"
+    },
+    {
+      "project": "devouring_dragon",
+      "file": "soul-land-universal-kit/soul_land_devouring_dragon/chapters/Chapter_15..18 + foundation/RAILS.md + SOUL_LAND_WORKSPACE/kit/tools/verify.py + all mirrors",
+      "was": "The human side had eaten the serial. Measured by section words before the fix: ch11 100% men, ch12 77%, ch18 87%, ch17 64%, ch15 60%, ch16 46%. The keepers (Gao Tie, Old Qin, Xiao An, the younger man) carried the plot through long human-side scenes chapter after chapter; the OC, a soul beast, had become the audience of his own story. The s34 house-grammar clause ('chapters with human-side beats always carry that scene on the page at house density') had been over-fired against the older s34 PANEL LAW ('only WHEN NEEDED - default: none'), and the kit's dialogue gate demanded three spoken lines of every chapter, which forced panels into existence.",
+      "now": "THE PANEL LAW RE-BOUND (author, verbatim: 'What Gao Tie and others what the hell are you even writing what is becoming sense of writing they are nothing, there are nothing to do, oc is soul' beast not human, multiple panel when needed not necessary , no human remind on Forest to die like what you think whom stroy we writeing'): (1) the story is the beast's - every chapter's spine is his; (2) panels only when needed, default none - one short scene, <=300 words target/400 ceiling, never two in a chapter, never consecutive without the author's word, never a planning scene or a re-tell; (3) the footer declares 'PANEL: NONE' or 'PANEL (one short scene): ...' and the gate reads the declaration; (4) the human thread does not linger - the keepers' forest thread is CLOSED (ch18: the watch struck, the men walked home, no fire came up the country again); (5) budget note - beast-first chapters run to a 2,000-word floor, nothing added merely to reach a number. EXECUTED: chapters 15-18 rebuilt in full as pure beast chapters (2,229 / 2,319 / 2,250 / 2,360 words; zero panels, zero voices; the men reach the page only as ground he reads); ch18 renamed 'Two Lines' -> 'The Dry Country'; verify.py gate 4 amended (panel declaration governs voices); ch1 given its auditable 'PANEL: NONE' line; all mirrors synced. DEBT FLAGGED, NOT HIDDEN: chapters 11 and 12 are legacy human-arc chapters (100%/77%) queued for the same rebuild, first in line.",
+      "reason": "Author correction, 2026-09-21 (verbatim above): the humans were nothing and had nothing to do; the OC is a soul beast; panels were being used by default instead of by need; no humans should remain on the forest storyline.",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-09-21"
+      },
+      "seq": 28,
+      "kind": "correction"
+    },
+    {
+      "project": "devouring_dragon",
+      "file": "state/projects_registry.json",
+      "was": "Registry edge for devouring_dragon: 'after Chapter 18 \"Two Lines\" (DL 3666, the summer dry; real age ~87-89 months) ... kit e16fccc, 2026-09-21', notes listing chapters 1-18 (ch18 2,867 words; 49 spoken lines), next ch19 under the PACING LAW.",
+      "now": "Registry edge advanced to: 'after Chapter 18 \"The Dry Country\" (DL 3667; real age ~90-95 months) - THE MEN'S THREAD IS CLOSED: the watch struck, the line walked home, no fire came up the country again; the country is his, and nothing in it hunts him in return; chapters 15-18 rebuilt s45 as pure beast chapters (no panels, no voices); kit 20ce52a, 2026-09-21'. Notes now list chapters 1-18 with the rebuilt counts (ch15 2,229, ch16 2,319, ch17 2,250, ch18 2,360) and next ch19 under the PACING + PANEL laws; the ch11/ch12 legacy rebuild is listed as the first queued item.",
+      "reason": "Chapters 15-18 were rebuilt on the author's verbatim panel correction and every mirror was synced the same turn; the registry still carried the pre-rebuild edge.",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-09-21"
+      },
+      "seq": 29,
+      "kind": "correction"
     }
   ]
 }
