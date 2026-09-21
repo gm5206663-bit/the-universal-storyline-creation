@@ -153,6 +153,34 @@
       "text": "SCOPE TRIM (s39, 2026-09-21). Chapters 13 and 14 cut to the SCOPE LAW: 4,008 -> 2,728 and 4,673 -> 3,267 body words; nothing added. Cut: the explanation layer (12 paragraphs in ch13, 9 in ch14), ch14's season-overview opening, both closing re-tells; last one-sentence prose paragraphs killed; stage directions merged into their scenes. Kept: every named beat, both human-side scenes, every quoted line a mirror cites. Gates: verify.py per chapter PASS and project sweep PASS. Mirrors brought to the new counts: foundation/STATUS_PANEL.md, bible/HIS_STATUS_PANEL.md, README.md, foundation/SERIAL_LOG.md (session 39 entry; the s37 and s38 entries keep their as-shipped counts as history).",
       "seq": 14,
       "kind": "note"
+    },
+    {
+      "project": "devouring_dragon",
+      "was": "The Devouring Dragon serial narrated in a private house vocabulary: the takers, the white, the green, folds, the folding, the fringe, the answering, the reading, the hush, the stillness, the veiling, the want, the word, the kill-word, the standings, lengths, warm breaks, the wall, the craft, the count, the thread, the mark, the deep country. A plain paragraph could not be understood on one reading.",
+      "now": "THE PLAIN LANGUAGE LAW (RAILS + kit 07 sec.11; retired-words table in codex/GLOSSARY.md) and one full pass: chapters 13-14 REWRITTEN in plain words; chapters 1-12 SWEPT (~350 substitutions, every one reviewed against its meaning, e.g. a 'fold of country' stayed a hollow and only the men's station became a camp). Zero retired words left in any chapter prose; gates re-run PASS; footers re-set to the verified counts (ch13 2,564w / 32 spoken lines / 12.5 per 1000w / average 17.7 / longest 54; ch14 3,169w / 38 / 12.0 / 17.2 / 46). Kit commit 22765d8, pushed.",
+      "reason": "Author, verbatim: 'What the hell even this writeing style what you can't write clear that can be understood, why this poem type nonsenses' — sent over a paragraph of chapter 14. The register was the defect, not the plot.",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-09-21"
+      },
+      "seq": 15,
+      "kind": "correction"
+    },
+    {
+      "project": "devouring_dragon",
+      "decision": "PLAIN LANGUAGE LAW, binding on the kit and the serial: (1) narration says what happened in plain words - a stranger must understand every sentence on one reading; (2) no invented house words as narration (retired list in codex/GLOSSARY.md); (3) in-world names (a team, a list, a line) may appear only in speech, and only where the scene explains them; (4) the subject of a sentence is a thing or a body, never an idea; (5) grep the retired list before shipping - any hit in narration is a defect. It stands over the house grammar and the SCOPE LAW and never excuses cutting a scene or thinning a voice.",
+      "reason": "Author ruling 2026-09-21 ('why this poem type nonsenses'): scenes had to be decoded, not read.",
+      "authorized_by": "Author, verbatim ruling 2026-09-21; executed under the standing delegation (2026-09-20).",
+      "date": "2026-09-21",
+      "seq": 16,
+      "kind": "decision"
+    },
+    {
+      "project": "devouring_dragon",
+      "tag": "chapter",
+      "text": "PLAIN-LANGUAGE PASS (s40, 2026-09-21). The private vocabulary was measured across chapters 1-14 and removed: the takers->hunters; the white->the snow/winter; the green->the summer; fold(s)/folding->camp(s)/ground (a 'fold of country' kept as a hollow); the fringe->the edge of the deep forest; the hush/stillness/veiling->the quiet; the want->the hunger; the word/kill-word->the roar / the sign of a kill; the answering->the beasts that came to his kills; the reading->the sense/the feeling; the standings->the standing lights; the mark (quarry)->the beast/their sign; lengths->paces; warm breaks->hot springs; the wall (barrier)->the barrier (men's wire fence: the fence); the craft->the trick; the count->the list; the thread->the pull; the deep country (narration)->the deep forest (kept in the men's speech, and as chapter 8's title). Chapters 13 and 14 were rewritten in full in plain words; chapters 1-12 were swept and then hand-repaired line by line for meaning. Mirror quotes that cited the old wording were aligned to the new page text (TIMELINE, CHARACTERS, HIS_STATUS_PANEL, ADAPTATION_LOG). Gates: verify.py per chapter PASS (ch1 the recorded no-voices exception); project sweep PASS; footers re-verified against the new counts.",
+      "seq": 17,
+      "kind": "note"
     }
   ]
 }

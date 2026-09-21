@@ -62,13 +62,13 @@
       "path": "soul-land-universal-kit/soul_land_devouring_dragon/",
       "status": "live",
       "active": true,
-      "live_edge": "after Chapter 14 \"The Wrong Face\" (DL 3664-65, the deep country's second winter; real age ~68-70 months) - the sign's second edge (the pale beast reading him), the broken watch-fold and a death, the WRONG FACE on the keepers' line, the aimed word paid for; SCOPE LAW in force (s39); kit b8e06d3, 2026-09-21",
+      "live_edge": "after Chapter 14 \"The Wrong Face\" (DL 3664-65, the second winter at the edge of the deep forest; real age ~68-70 months) - the sign's second edge (the pale beast following him), the broken camp and a death, the WRONG FACE on the keepers' line, the aimed roar paid for; prose written in plain words (PLAIN LANGUAGE LAW, s40); kit 22765d8, 2026-09-21",
       "authority": {
         "status_source": "foundation/STATUS_PANEL.md",
         "conflict_rule": "STATUS_PANEL.md is the live edge for the beast POV."
       },
-      "verification": "verified 2026-09-21 from the kit clone: ch13 and ch14 re-gated after the SCOPE TRIM (ch13 2,728 words, 32 spoken lines, 11.7 per 1000w, average 20.0, longest 60; ch14 3,267 words, 38 spoken lines, 11.6 per 1000w, average 19.1, longest 58); zero sentences over 60 and zero one-sentence paragraphs; all 14 footers match verify.py; verify.py per chapter + project sweep PASS",
-      "notes": "Chapters 1-14. Body words: ch1 2,595 ... ch12 3,280, ch13 2,728, ch14 3,267. Prose averages 16.0-20.8, no sentence over 60, motif 'the way' 0-2 per chapter. Rulings in force: SCOPE LAW (s39: write it once, no overview openings, 2,400-3,000 words a chapter), house grammar, ER-12 ring-slot, ER-13 standing light, SB-11 soul-beast rule. Next: ch15 (author-gated) - the south; the wrong face tested."
+      "verification": "verified 2026-09-21 from the kit clone after the plain-language pass: all 14 chapters re-gated (ch13 2,564w / 32 lines / average 17.7 / longest 54; ch14 3,169w / 38 / 17.2 / 46); zero retired house words in chapter prose; footers match verify.py; verify.py per chapter + project sweep PASS",
+      "notes": "Chapters 1-14, prose in plain words. Body words: ch1 2,595 ... ch12 3,283, ch13 2,564, ch14 3,169. Rulings in force: PLAIN LANGUAGE LAW (s40), SCOPE LAW (s39), house grammar (s35), ER-12 ring-slot, ER-13 standing light, SB-11 soul-beast rule. Next: ch15 (author-gated) - the south; the wrong face tested."
     },
     {
       "id": "dragon_prince_yuan",
