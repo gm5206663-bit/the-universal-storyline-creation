@@ -229,6 +229,43 @@
       },
       "seq": 21,
       "kind": "correction"
+    },
+    {
+      "project": "devouring_dragon",
+      "tag": "chapter",
+      "text": "CHAPTER 17 \"The Long Wet\" WRITTEN AND SHIPPED (s43, 2026-09-21; author, verbatim: \"Continue\" - the third consecutive go). The spring wet delivered: THE WATCH BY THE PAN (the three up on the high ground before the mud sets; the four stones standing where they were set; the wire low across both ways onto the pan; the lean-to; days all the same; the hound's rounds and the rain erasing her tracks); THE WET TAKES HIS GROUND (the streams over their banks; the low country one brown sheet; the flood's first gift - the slow kind stranded on the ridges, taken twice; then the meat gone and him hungry inside a week; the ravine den taken); THE RAIN'S HOURS (he crosses open ground only in the heaviest rain and watches his own print slump and fill inside the hour; the long way by the rock bars; two kills passed up and one mud-island beast left standing; thin again; their smoke read from far off; he never goes near the high ground); THE WIRE TAKES THE WRONG BEAST (the black-hour shock; the iron put down in the dark; half a night of poles; first light - a young ox of the low country drowned out of the flats, not what the wire was set for; the kill clean and off the pan; THE WET'S WHOLE WATCHING - the white light rises and stands in the rain and goes into the box); OLD QIN READS THE SEASON AND RULES (the pan's whole page; no heavy track but the ox's; the watch held and no line gained for a season of rain; THE LOW WATER WATCH SET for when the flats come out; the watch struck, the ground put back to rock, the four stones stay; \"Do not put a line on the paper out of wanting one\"); HE READS THE STRUCK WATCH (ten days after; their season baked into the pan and NOT ONE PRINT OF HIS; the trick's price paid for a whole wet; the bare-rock border rule). Written PLAIN from the first draft under the s39 SCOPE LAW and the s40 PLAIN LANGUAGE LAW; the s43 revise pass took out two prose age figures (the ox is 'young'), all 13 'the way' constructions were recast (0 formulaic left), the two over-60 sentences were split, and one-sentence lead paragraphs were merged. Counts: 2,967 body words (budget 2,400-3,000); 50 spoken lines (16.9 per 1000w); average 17.4; median 13; longest 57; no sentence over 60. Gates: verify.py PASS; project sweep PASS (17/17 chapters carry footers; ch1 the recorded no-voices exception). Mirrors synced same turn: foundation/STATUS_PANEL.md (edge, figures, kills, territory, next beats -> ch18, last action), bible/HIS_STATUS_PANEL.md, bible/ADAPTATION_LOG.md, foundation/SERIAL_LOG.md (session 43), foundation/OPEN.md (item 19), README.md, codex/KNOWLEDGE_FIREWALLS.md, codex/PLACES.md, codex/TIMELINE.md, codex/GLOSSARY.md, foundation/CONTINUITY.md. Kit commit a880e6d, pushed.",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-09-21"
+      },
+      "seq": 22,
+      "kind": "note"
+    },
+    {
+      "project": "devouring_dragon",
+      "file": "soul-land-universal-kit/soul_land_devouring_dragon/foundation/RAILS.md + every chapter footer 1-16 + STATUS_PANEL.md + HIS_STATUS_PANEL.md + SERIAL_LOG.md",
+      "was": "Since s37, chapter footers, the status panels and the session logs claimed 'no one-sentence paragraphs' as a measured property of the prose. The claim was false: the measure script's paragraph check stripped trailing punctuation from a paragraph before testing whether it ended with punctuation, so the check could never fire. Measured s43: the serial carries 26 short one-line beat paragraphs across ch4-ch17 (ch15 has 9, ch16 has 6, ch13 has 4, ch14 has 2, ch4 has 2, ch8/ch12/ch17 have 1 each).",
+      "now": "RULING (standing delegation, s43): short one-line beat paragraphs are house style and ALLOWED; the defect the house actually bars - the monster single-sentence paragraph - is already barred by the 60-word sentence cap (RAILS house grammar rule 1). The false clause was corrected in place: RAILS (four clauses reworded, with the ruling noted), STATUS_PANEL and HIS_STATUS_PANEL (claims corrected), SERIAL_LOG and HIS_STATUS_PANEL historical lines (bracketed '[clause reworded s43: ...]' and kept as the dated record), and every chapter footer 1-16 (the false clause removed). New tool added: soul_land_devouring_dragon/tools/measure_prose.py - the corrected, honest measure (words, dialogue density, sentence average/median/longest, over-60 list, one-line beat paragraph count reported as allowed, retired-word triage); every future chapter footer is to be set from it.",
+      "reason": "Found while measuring chapter 17's draft: the same buggy check shape was reused in the s43 measure and returned 0 on a draft that visibly contained one-sentence paragraphs, which exposed the s37-s42 claims. False claims in shipped files are defects; the fix keeps the trace (brackets in dated logs) rather than quietly editing history, and the corrected tool prevents the class from recurring.",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-09-21"
+      },
+      "seq": 23,
+      "kind": "correction"
+    },
+    {
+      "project": "devouring_dragon",
+      "file": "state/projects_registry.json",
+      "was": "Registry edge for devouring_dragon: 'after Chapter 16 \"The One Print\" (DL 3665, the summer; real age ~74-76 months) ... kit 605e071, 2026-09-21', notes listing chapters 1-16, next ch17 (author-gated).",
+      "now": "Registry edge advanced to: 'after Chapter 17 \"The Long Wet\" (DL 3666, the spring wet; real age ~83-85 months) - the watch by the pan through the whole wet gained the line no beast (its only catch a young ox in its own wire; the low water watch set for summer), and he lived the wet on stone leaving not one print; prose written in plain words; kit a880e6d, 2026-09-21'. Notes now list chapters 1-17 (ch17 2,967 words; 50 spoken lines, 16.9 per 1000w; average 17.4; longest 57) and next ch18 (author-gated): the low water watch when the flats come out.",
+      "reason": "Chapter 17 shipped on the author's verbatim go (\"Continue\") and every mirror was synced to it in the same turn; the registry still carried the Chapter 16 edge. Filed as a correction per the protocol's own rule (a second 'project' record for an existing id is rejected).",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-09-21"
+      },
+      "seq": 24,
+      "kind": "correction"
     }
   ]
 }

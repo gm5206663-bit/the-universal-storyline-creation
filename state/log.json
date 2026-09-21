@@ -270,6 +270,33 @@
         "correction#21"
       ],
       "count": 1
+    },
+    {
+      "when": "2026-09-21T03:25:27",
+      "file": "2026-09-21_dd_ch17.json",
+      "agent": "Sara (Agent Mode)",
+      "ids": [
+        "note#22"
+      ],
+      "count": 1
+    },
+    {
+      "when": "2026-09-21T03:25:27",
+      "file": "2026-09-21_dd_measure_bug.json",
+      "agent": "Sara (Agent Mode)",
+      "ids": [
+        "correction#23"
+      ],
+      "count": 1
+    },
+    {
+      "when": "2026-09-21T03:25:27",
+      "file": "2026-09-21_dd_registry_edge_ch17.json",
+      "agent": "Sara (Agent Mode)",
+      "ids": [
+        "correction#24"
+      ],
+      "count": 1
     }
   ]
 }
