@@ -342,6 +342,19 @@
       },
       "seq": 30,
       "kind": "correction"
+    },
+    {
+      "project": "devouring_dragon",
+      "file": "state/projects_registry.json + soul-land-universal-kit (soul_land_devouring_dragon)",
+      "was": "Registry edge: 'after Chapter 21 The Watch and the Pass — DL 3676-77, the pass crossed, the road north resumed (PANEL: NONE, sweep PASS 21/21, kit 2026-09-23)'. The serial was in fact one chapter further: Chapter 22 'The Deep Forest Proper' shipped the same day under the standing delegation.",
+      "now": "Edge advanced: 'after Chapter 22 The Deep Forest Proper (DL 3677-3679; two years inside the forest proper; real age ~228-236 months; cultivation estimate ~360-400) — the reversal completed (nothing here), the walked roads (pattern is belonging), the fern hall (the wrong: the meat abandoned; the roads are the camouflage), the water (the one ground the forest cannot read), the deep meals and the growth, the quiet-sense, the road's manners, the lean (the pull settling east of north; the road and the pull coming apart); PANEL: NONE; sweep PASS 22/22; kit 041e97a, 2026-09-23'. ALSO RECORDED: (1) A PARALLEL-CHAPTER COLLISION — two delegated agents answered the author's 'Next chapter' at the same time; the chapter that shipped first is live and stands, and the second draft is kept whole, labelled ALTERNATE and not canon, at soul_land_devouring_dragon/_alt_drafts/ with its own README (2,632w; PANEL: NONE; measured clean), the author free to rule; (2) three stale records brought current by the same pass — HIS_STATUS_PANEL closes for ch19-22 (the sheet had stopped at ch18), KNOWLEDGE_FIREWALLS audit lines (stale at ch14), and the STATUS_PANEL exact-figures line (stale at ch21); (3) NEXT BEAT registered: Chapter 23 'The Parting'.",
+      "reason": "Chapter 22 shipped after the deep-sweep registry sync, and the parallel draft needed a lawful home rather than a silent deletion or an unasked rewrite of a published chapter.",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-09-23"
+      },
+      "seq": 31,
+      "kind": "correction"
     }
   ]
 }
