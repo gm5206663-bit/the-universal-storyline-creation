@@ -6,8 +6,9 @@
   "active": false,
   "live_edge": "Chapter 24 (paused; the multi-panel law's home serial \u2014 canon always shown, the OC beside it)",
   "authority": {
-    "status_source": "Soul_Land_2_Project/THE_CODEX.md (v3.4) + JIANG_CHE_STATUS.md",
-    "entry_point": "CONTINUATION_PROMPT.md"
+    "status_source": "Soul_Land_2_Project/THE_CODEX.md (v15.2) + JIANG_CHE_STATUS.md (v4.2) + foundation/STATUS_PANEL.md (the live edge)",
+    "entry_point": "CONTINUATION_PROMPT.md",
+    "version_note": "corrected 2026-09-23: an earlier draft of this file said v3.4, quoting the kit README's stale table \u2014 the serial's own continuation prompt carries v15.2 (receipt: Soul_Land_2_Project/CONTINUATION_PROMPT.md header)"
   },
   "protagonist": "Jiang Che \u2014 SL2-era OC; rank 29, wall at thirty",
   "do_not": [
