@@ -370,7 +370,9 @@ SECTION 10 - PROJECT STATE: SL4 FIRE PHOENIX
 ==============================================================================
 
 path: sl4_fire_phoenix/
-live edge: After Chapter 31 - The Ticket Owed to Fire
+live edge: After Chapter 52 — Amiable Beasts (the live project is the PRIVATE
+repo gm5206663-bit/soul_land_4_fire_phoenix; this workspace's copies are
+archived snapshots)
 
 AUTHORITY:
   - status source: foundation/STATUS_PANEL.md

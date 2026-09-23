@@ -2,9 +2,9 @@
   "id": "sl4_fire_phoenix",
   "name": "SL4 Fire Phoenix",
   "path": "sl4_fire_phoenix/",
-  "status": "live",
+  "status": "live (private repo)",
   "active": false,
-  "live_edge": "After Chapter 31 - The Ticket Owed to Fire",
+  "live_edge": "After Chapter 52 \u2014 Amiable Beasts (the live project is the PRIVATE repo gm5206663-bit/soul_land_4_fire_phoenix; this workspace's copies are archived snapshots)",
   "authority": {
     "status_source": "foundation/STATUS_PANEL.md",
     "conflict_rule": "STATUS_PANEL.md is the ONLY current Yan Shuo'er status source. Every other file derives from it."
@@ -25,18 +25,66 @@
     "Public facts cause natural public consequences."
   ],
   "current_status": [
-    {"item": "Soul power", "value": "Rank 23 / Level 23", "note": "No new formal measurement in Chapter 31. No Level 30 yet."},
-    {"item": "Spiritual power", "value": "156", "note": "Latest formal end-term value."},
-    {"item": "Spiritual realm", "value": "Spirit Connection", "note": "Not Spirit Sea yet."},
-    {"item": "Ring count", "value": "2", "note": "No third ring."},
-    {"item": "Soul spirit count", "value": "2", "note": "Dawnflame Kite; Dawn-Iron Phoenix Roc."},
-    {"item": "Dawnflame Kite - public paperwork", "value": "100 years", "note": "Historical legal acquisition record."},
-    {"item": "Dawnflame Kite - sealed current", "value": "1,120 years", "note": "Newborn purple-tier. Crossed 1,000+ in Chapter 31 via the Platform. Phoenix-seed awakening active."},
-    {"item": "First ring response", "value": "Purple-tier", "note": "Evolved from yellow. Cannot be written as a static yellow ring."},
-    {"item": "Dawn-Iron Phoenix Roc", "value": "2,040 years", "note": "Deeper purple structural response. Rose from 1,680."},
-    {"item": "Second ring", "value": "Deep purple", "note": "Skybone Phoenix Frame remains the second skill."},
-    {"item": "Song Yichen", "value": "Rank 19 / SP 63", "note": "Platform gains not separately measured yet."},
-    {"item": "Luo Haoran", "value": "Rank 17 / SP 74", "note": "Platform gains not separately measured yet."}
+    {
+      "item": "Soul power",
+      "value": "Rank 23 / Level 23",
+      "note": "No new formal measurement in Chapter 31. No Level 30 yet."
+    },
+    {
+      "item": "Spiritual power",
+      "value": "156",
+      "note": "Latest formal end-term value."
+    },
+    {
+      "item": "Spiritual realm",
+      "value": "Spirit Connection",
+      "note": "Not Spirit Sea yet."
+    },
+    {
+      "item": "Ring count",
+      "value": "2",
+      "note": "No third ring."
+    },
+    {
+      "item": "Soul spirit count",
+      "value": "2",
+      "note": "Dawnflame Kite; Dawn-Iron Phoenix Roc."
+    },
+    {
+      "item": "Dawnflame Kite - public paperwork",
+      "value": "100 years",
+      "note": "Historical legal acquisition record."
+    },
+    {
+      "item": "Dawnflame Kite - sealed current",
+      "value": "1,120 years",
+      "note": "Newborn purple-tier. Crossed 1,000+ in Chapter 31 via the Platform. Phoenix-seed awakening active."
+    },
+    {
+      "item": "First ring response",
+      "value": "Purple-tier",
+      "note": "Evolved from yellow. Cannot be written as a static yellow ring."
+    },
+    {
+      "item": "Dawn-Iron Phoenix Roc",
+      "value": "2,040 years",
+      "note": "Deeper purple structural response. Rose from 1,680."
+    },
+    {
+      "item": "Second ring",
+      "value": "Deep purple",
+      "note": "Skybone Phoenix Frame remains the second skill."
+    },
+    {
+      "item": "Song Yichen",
+      "value": "Rank 19 / SP 63",
+      "note": "Platform gains not separately measured yet."
+    },
+    {
+      "item": "Luo Haoran",
+      "value": "Rank 17 / SP 74",
+      "note": "Platform gains not separately measured yet."
+    }
   ],
   "chronology_locks": {
     "platform_entry": "Pre-time-skip, began in Chapter 31.",
@@ -50,7 +98,12 @@
   },
   "user_locked_future": {
     "event": "At Level 30, mid-time-skip, Yan fuses with the 6,000-year Purple Flame Eidolon Bird.",
-    "awakens": ["full Fire Phoenix", "Ultimate Fire", "full wings", "true flight"],
+    "awakens": [
+      "full Fire Phoenix",
+      "Ultimate Fire",
+      "full wings",
+      "true flight"
+    ],
     "aftermath": "Power is public while identity remains hidden."
   },
   "chapter31_results": [
@@ -60,5 +113,6 @@
     "The direct Dorm 333 versus Dorm 336 match remains UNRESOLVED.",
     "Platform entry is official compensation and assessment data, not a fake duel result."
   ],
-  "anti_nerf": "Never reduce Yan, Dawnflame or Dorm 336 in order to preserve a canon character's standing. If a canon character would lose to the OC, the scene is written honestly and the consequence is carried - not the numbers bent."
+  "anti_nerf": "Never reduce Yan, Dawnflame or Dorm 336 in order to preserve a canon character's standing. If a canon character would lose to the OC, the scene is written honestly and the consequence is carried - not the numbers bent.",
+  "live_edge_history_note": "corrected 2026-09-23: this file said Ch31 while the live edge has been Ch52 since 2026-09-19 (the five-copies finding)"
 }
