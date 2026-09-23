@@ -1,356 +1,365 @@
 {
-  "events": [
-    {
-      "when": "2026-09-20T06:40:40",
-      "file": "live_serials_registry_2026-09-20.json",
-      "agent": "unknown",
-      "ids": [
-        "project:soul_land_2",
-        "project:soul_land_3",
-        "project:soul_land_4",
-        "project:holy_spirit",
-        "project:devouring_dragon",
-        "project:dragon_prince_yuan",
-        "project:blue_silver",
-        "project:soul_land_new"
-      ],
-      "count": 8
-    },
-    {
-      "when": "2026-09-20T06:40:48",
-      "file": "fix_sl4_path_2026-09-20.json",
-      "agent": "unknown",
-      "ids": [
-        "correction#1"
-      ],
-      "count": 1
-    },
-    {
-      "when": "2026-09-20T09:34:58",
-      "file": "dd_live_edge_ch12_2026-09-20.json",
-      "agent": "Sara (Agent Mode)",
-      "ids": [
-        "correction#2"
-      ],
-      "count": 1
-    },
-    {
-      "when": "2026-09-20T09:34:58",
-      "file": "sl2_live_edge_ch23_2026-09-20.json",
-      "agent": "Sara (Agent Mode)",
-      "ids": [
-        "correction#3"
-      ],
-      "count": 1
-    },
-    {
-      "when": "2026-09-20T09:34:58",
-      "file": "dd_decisions_s29_2026-09-20.json",
-      "agent": "Sara (Agent Mode)",
-      "ids": [
-        "decision#4"
-      ],
-      "count": 1
-    },
-    {
-      "when": "2026-09-20T09:34:58",
-      "file": "manual_curation_session29_2026-09-20",
-      "agent": "Sara (Agent Mode)",
-      "ids": [
-        "correction#2",
-        "correction#3",
-        "decision#1",
-        "registry:devouring_dragon.live_edge",
-        "registry:soul_land_2.live_edge"
-      ],
-      "count": 2,
-      "note": "state/projects_registry.json hand-curated: two stale live edges updated (devouring_dragon Ch10->Ch12, soul_land_2 Ch22->Ch23); matching corrections filed via intake the same turn (append-only record kept)."
-    },
-    {
-      "when": "2026-09-20T09:47:43",
-      "file": "dd_names_corrected_2026-09-20.json",
-      "agent": "Sara (Agent Mode)",
-      "ids": [
-        "correction#5"
-      ],
-      "count": 1
-    },
-    {
-      "when": "2026-09-20T11:03:19",
-      "file": "registry_dd_s31_rewrite_2026-09-20.json",
-      "agent": "Sara (Agent Mode)",
-      "ids": [
-        "project:devouring_dragon"
-      ],
-      "count": 1
-    },
-    {
-      "when": "2026-09-20T11:33:24",
-      "file": "2026-09-20_dd_soul_beast_correction.json",
-      "agent": "Sara (Agent Mode)",
-      "ids": [
-        "correction#6"
-      ],
-      "count": 1
-    },
-    {
-      "when": "2026-09-20T11:33:27",
-      "file": "registry_dd_s32_soul_beast_2026-09-20.json",
-      "agent": "Sara (Agent Mode)",
-      "ids": [
-        "project:devouring_dragon"
-      ],
-      "count": 1
-    },
-    {
-      "when": "2026-09-20T12:51:43",
-      "file": "2026-09-20_dd_ring_slot_law.json",
-      "agent": "Sara (Agent Mode)",
-      "ids": [
-        "correction#7"
-      ],
-      "count": 1
-    },
-    {
-      "when": "2026-09-20T12:51:46",
-      "file": "registry_dd_s33_ring_slot_2026-09-20.json",
-      "agent": "Sara (Agent Mode)",
-      "ids": [
-        "project:devouring_dragon"
-      ],
-      "count": 1
-    },
-    {
-      "when": "2026-09-20T12:59:55",
-      "file": "2026-09-20_dd_style_law.json",
-      "agent": "Sara (Agent Mode)",
-      "ids": [
-        "correction#8"
-      ],
-      "count": 1
-    },
-    {
-      "when": "2026-09-20T12:59:55",
-      "file": "registry_dd_s34_style_2026-09-20.json",
-      "agent": "Sara (Agent Mode)",
-      "ids": [
-        "project:devouring_dragon"
-      ],
-      "count": 1
-    },
-    {
-      "when": "2026-09-20T13:07:59",
-      "file": "registry_dd_s35_house_grammar_2026-09-20.json",
-      "agent": "Sara (Agent Mode)",
-      "ids": [
-        "project:devouring_dragon"
-      ],
-      "count": 1
-    },
-    {
-      "when": "2026-09-20T13:38:37",
-      "file": "2026-09-20_dd_full_rebuild.json",
-      "agent": "Sara (Agent Mode)",
-      "ids": [
-        "correction#9"
-      ],
-      "count": 1
-    },
-    {
-      "when": "2026-09-20T13:40:00",
-      "file": "2026-09-20_dd_full_rebuild.json",
-      "agent": "Sara (Agent Mode)",
-      "ids": [
-        "correction#9",
-        "project:devouring_dragon"
-      ],
-      "count": 2
-    },
-    {
-      "when": "2026-09-20T13:52:00",
-      "file": "s36_ch7_quotation_repair.json",
-      "agent": "Sara (Agent Mode)",
-      "ids": [
-        "project:devouring_dragon@f1012e7"
-      ],
-      "count": 1
-    },
-    {
-      "when": "2026-09-20T14:43:27",
-      "file": "2026-09-20_dd_ch13_keepers_line.json",
-      "agent": "unknown",
-      "ids": [
-        "note#10"
-      ],
-      "count": 1
-    },
-    {
-      "when": "2026-09-20T14:45:00",
-      "file": "2026-09-20_dd_ch13_keepers_line.json",
-      "agent": "Sara (Agent Mode)",
-      "ids": [
-        "project:devouring_dragon",
-        "kit:14405d9"
-      ],
-      "count": 2
-    },
-    {
-      "when": "2026-09-20T15:56:37",
-      "file": "2026-09-20_dd_ch14_wrong_face.json",
-      "agent": "unknown",
-      "ids": [
-        "note#11"
-      ],
-      "count": 1
-    },
-    {
-      "when": "2026-09-20T15:20:00",
-      "file": "2026-09-20_dd_ch14_wrong_face.json",
-      "agent": "Sara (Agent Mode)",
-      "ids": [
-        "project:devouring_dragon",
-        "kit:91497a0"
-      ],
-      "count": 2
-    },
-    {
-      "when": "2026-09-21T00:23:29",
-      "file": "2026-09-21_dd_scope_trim.json",
-      "agent": "Sara (Agent Mode)",
-      "ids": [
-        "correction#12",
-        "decision#13",
-        "note#14"
-      ],
-      "count": 3
-    },
-    {
-      "when": "2026-09-21T00:34:43",
-      "file": "2026-09-21_dd_plain_language.json",
-      "agent": "Sara (Agent Mode)",
-      "ids": [
-        "correction#15",
-        "decision#16",
-        "note#17"
-      ],
-      "count": 3
-    },
-    {
-      "when": "2026-09-21T01:29:31",
-      "file": "2026-09-21_dd_ch15.json",
-      "agent": "Sara (Agent Mode)",
-      "ids": [
-        "note#18"
-      ],
-      "count": 1
-    },
-    {
-      "when": "2026-09-21T01:29:40",
-      "file": "2026-09-21_dd_registry_edge_ch15.json",
-      "agent": "Sara (Agent Mode)",
-      "ids": [
-        "correction#19"
-      ],
-      "count": 1
-    },
-    {
-      "when": "2026-09-21T01:46:01",
-      "file": "2026-09-21_dd_ch16.json",
-      "agent": "Sara (Agent Mode)",
-      "ids": [
-        "note#20"
-      ],
-      "count": 1
-    },
-    {
-      "when": "2026-09-21T01:46:01",
-      "file": "2026-09-21_dd_registry_edge_ch16.json",
-      "agent": "Sara (Agent Mode)",
-      "ids": [
-        "correction#21"
-      ],
-      "count": 1
-    },
-    {
-      "when": "2026-09-21T03:25:27",
-      "file": "2026-09-21_dd_ch17.json",
-      "agent": "Sara (Agent Mode)",
-      "ids": [
-        "note#22"
-      ],
-      "count": 1
-    },
-    {
-      "when": "2026-09-21T03:25:27",
-      "file": "2026-09-21_dd_measure_bug.json",
-      "agent": "Sara (Agent Mode)",
-      "ids": [
-        "correction#23"
-      ],
-      "count": 1
-    },
-    {
-      "when": "2026-09-21T03:25:27",
-      "file": "2026-09-21_dd_registry_edge_ch17.json",
-      "agent": "Sara (Agent Mode)",
-      "ids": [
-        "correction#24"
-      ],
-      "count": 1
-    },
-    {
-      "when": "2026-09-21T09:15:43",
-      "file": "2026-09-21_dd_ch18.json",
-      "agent": "Sara (Agent Mode)",
-      "ids": [
-        "note#25"
-      ],
-      "count": 1
-    },
-    {
-      "when": "2026-09-21T09:15:43",
-      "file": "2026-09-21_dd_pacing_law.json",
-      "agent": "Sara (Agent Mode)",
-      "ids": [
-        "decision#26"
-      ],
-      "count": 1
-    },
-    {
-      "when": "2026-09-21T09:15:43",
-      "file": "2026-09-21_dd_registry_edge_ch18.json",
-      "agent": "Sara (Agent Mode)",
-      "ids": [
-        "correction#27"
-      ],
-      "count": 1
-    },
-    {
-      "when": "2026-09-21T09:29:06",
-      "file": "2026-09-21_dd_panel_rebound.json",
-      "agent": "Sara (Agent Mode)",
-      "ids": [
-        "correction#28"
-      ],
-      "count": 1
-    },
-    {
-      "when": "2026-09-21T09:29:06",
-      "file": "2026-09-21_dd_registry_edge_s45.json",
-      "agent": "Sara (Agent Mode)",
-      "ids": [
-        "correction#29"
-      ],
-      "count": 1
-    },
-    {
-      "when": "2026-09-21T09:41:30",
-      "file": "2026-09-21_dd_skip_backward_work.json",
-      "agent": "Sara (Agent Mode)",
-      "ids": [
-        "correction#30"
-      ],
-      "count": 1
-    }
-  ]
+ "events": [
+  {
+   "when": "2026-09-20T06:40:40",
+   "file": "live_serials_registry_2026-09-20.json",
+   "agent": "unknown",
+   "ids": [
+    "project:soul_land_2",
+    "project:soul_land_3",
+    "project:soul_land_4",
+    "project:holy_spirit",
+    "project:devouring_dragon",
+    "project:dragon_prince_yuan",
+    "project:blue_silver",
+    "project:soul_land_new"
+   ],
+   "count": 8
+  },
+  {
+   "when": "2026-09-20T06:40:48",
+   "file": "fix_sl4_path_2026-09-20.json",
+   "agent": "unknown",
+   "ids": [
+    "correction#1"
+   ],
+   "count": 1
+  },
+  {
+   "when": "2026-09-20T09:34:58",
+   "file": "dd_live_edge_ch12_2026-09-20.json",
+   "agent": "Sara (Agent Mode)",
+   "ids": [
+    "correction#2"
+   ],
+   "count": 1
+  },
+  {
+   "when": "2026-09-20T09:34:58",
+   "file": "sl2_live_edge_ch23_2026-09-20.json",
+   "agent": "Sara (Agent Mode)",
+   "ids": [
+    "correction#3"
+   ],
+   "count": 1
+  },
+  {
+   "when": "2026-09-20T09:34:58",
+   "file": "dd_decisions_s29_2026-09-20.json",
+   "agent": "Sara (Agent Mode)",
+   "ids": [
+    "decision#4"
+   ],
+   "count": 1
+  },
+  {
+   "when": "2026-09-20T09:34:58",
+   "file": "manual_curation_session29_2026-09-20",
+   "agent": "Sara (Agent Mode)",
+   "ids": [
+    "correction#2",
+    "correction#3",
+    "decision#1",
+    "registry:devouring_dragon.live_edge",
+    "registry:soul_land_2.live_edge"
+   ],
+   "count": 2,
+   "note": "state/projects_registry.json hand-curated: two stale live edges updated (devouring_dragon Ch10->Ch12, soul_land_2 Ch22->Ch23); matching corrections filed via intake the same turn (append-only record kept)."
+  },
+  {
+   "when": "2026-09-20T09:47:43",
+   "file": "dd_names_corrected_2026-09-20.json",
+   "agent": "Sara (Agent Mode)",
+   "ids": [
+    "correction#5"
+   ],
+   "count": 1
+  },
+  {
+   "when": "2026-09-20T11:03:19",
+   "file": "registry_dd_s31_rewrite_2026-09-20.json",
+   "agent": "Sara (Agent Mode)",
+   "ids": [
+    "project:devouring_dragon"
+   ],
+   "count": 1
+  },
+  {
+   "when": "2026-09-20T11:33:24",
+   "file": "2026-09-20_dd_soul_beast_correction.json",
+   "agent": "Sara (Agent Mode)",
+   "ids": [
+    "correction#6"
+   ],
+   "count": 1
+  },
+  {
+   "when": "2026-09-20T11:33:27",
+   "file": "registry_dd_s32_soul_beast_2026-09-20.json",
+   "agent": "Sara (Agent Mode)",
+   "ids": [
+    "project:devouring_dragon"
+   ],
+   "count": 1
+  },
+  {
+   "when": "2026-09-20T12:51:43",
+   "file": "2026-09-20_dd_ring_slot_law.json",
+   "agent": "Sara (Agent Mode)",
+   "ids": [
+    "correction#7"
+   ],
+   "count": 1
+  },
+  {
+   "when": "2026-09-20T12:51:46",
+   "file": "registry_dd_s33_ring_slot_2026-09-20.json",
+   "agent": "Sara (Agent Mode)",
+   "ids": [
+    "project:devouring_dragon"
+   ],
+   "count": 1
+  },
+  {
+   "when": "2026-09-20T12:59:55",
+   "file": "2026-09-20_dd_style_law.json",
+   "agent": "Sara (Agent Mode)",
+   "ids": [
+    "correction#8"
+   ],
+   "count": 1
+  },
+  {
+   "when": "2026-09-20T12:59:55",
+   "file": "registry_dd_s34_style_2026-09-20.json",
+   "agent": "Sara (Agent Mode)",
+   "ids": [
+    "project:devouring_dragon"
+   ],
+   "count": 1
+  },
+  {
+   "when": "2026-09-20T13:07:59",
+   "file": "registry_dd_s35_house_grammar_2026-09-20.json",
+   "agent": "Sara (Agent Mode)",
+   "ids": [
+    "project:devouring_dragon"
+   ],
+   "count": 1
+  },
+  {
+   "when": "2026-09-20T13:38:37",
+   "file": "2026-09-20_dd_full_rebuild.json",
+   "agent": "Sara (Agent Mode)",
+   "ids": [
+    "correction#9"
+   ],
+   "count": 1
+  },
+  {
+   "when": "2026-09-20T13:40:00",
+   "file": "2026-09-20_dd_full_rebuild.json",
+   "agent": "Sara (Agent Mode)",
+   "ids": [
+    "correction#9",
+    "project:devouring_dragon"
+   ],
+   "count": 2
+  },
+  {
+   "when": "2026-09-20T13:52:00",
+   "file": "s36_ch7_quotation_repair.json",
+   "agent": "Sara (Agent Mode)",
+   "ids": [
+    "project:devouring_dragon@f1012e7"
+   ],
+   "count": 1
+  },
+  {
+   "when": "2026-09-20T14:43:27",
+   "file": "2026-09-20_dd_ch13_keepers_line.json",
+   "agent": "unknown",
+   "ids": [
+    "note#10"
+   ],
+   "count": 1
+  },
+  {
+   "when": "2026-09-20T14:45:00",
+   "file": "2026-09-20_dd_ch13_keepers_line.json",
+   "agent": "Sara (Agent Mode)",
+   "ids": [
+    "project:devouring_dragon",
+    "kit:14405d9"
+   ],
+   "count": 2
+  },
+  {
+   "when": "2026-09-20T15:56:37",
+   "file": "2026-09-20_dd_ch14_wrong_face.json",
+   "agent": "unknown",
+   "ids": [
+    "note#11"
+   ],
+   "count": 1
+  },
+  {
+   "when": "2026-09-20T15:20:00",
+   "file": "2026-09-20_dd_ch14_wrong_face.json",
+   "agent": "Sara (Agent Mode)",
+   "ids": [
+    "project:devouring_dragon",
+    "kit:91497a0"
+   ],
+   "count": 2
+  },
+  {
+   "when": "2026-09-21T00:23:29",
+   "file": "2026-09-21_dd_scope_trim.json",
+   "agent": "Sara (Agent Mode)",
+   "ids": [
+    "correction#12",
+    "decision#13",
+    "note#14"
+   ],
+   "count": 3
+  },
+  {
+   "when": "2026-09-21T00:34:43",
+   "file": "2026-09-21_dd_plain_language.json",
+   "agent": "Sara (Agent Mode)",
+   "ids": [
+    "correction#15",
+    "decision#16",
+    "note#17"
+   ],
+   "count": 3
+  },
+  {
+   "when": "2026-09-21T01:29:31",
+   "file": "2026-09-21_dd_ch15.json",
+   "agent": "Sara (Agent Mode)",
+   "ids": [
+    "note#18"
+   ],
+   "count": 1
+  },
+  {
+   "when": "2026-09-21T01:29:40",
+   "file": "2026-09-21_dd_registry_edge_ch15.json",
+   "agent": "Sara (Agent Mode)",
+   "ids": [
+    "correction#19"
+   ],
+   "count": 1
+  },
+  {
+   "when": "2026-09-21T01:46:01",
+   "file": "2026-09-21_dd_ch16.json",
+   "agent": "Sara (Agent Mode)",
+   "ids": [
+    "note#20"
+   ],
+   "count": 1
+  },
+  {
+   "when": "2026-09-21T01:46:01",
+   "file": "2026-09-21_dd_registry_edge_ch16.json",
+   "agent": "Sara (Agent Mode)",
+   "ids": [
+    "correction#21"
+   ],
+   "count": 1
+  },
+  {
+   "when": "2026-09-21T03:25:27",
+   "file": "2026-09-21_dd_ch17.json",
+   "agent": "Sara (Agent Mode)",
+   "ids": [
+    "note#22"
+   ],
+   "count": 1
+  },
+  {
+   "when": "2026-09-21T03:25:27",
+   "file": "2026-09-21_dd_measure_bug.json",
+   "agent": "Sara (Agent Mode)",
+   "ids": [
+    "correction#23"
+   ],
+   "count": 1
+  },
+  {
+   "when": "2026-09-21T03:25:27",
+   "file": "2026-09-21_dd_registry_edge_ch17.json",
+   "agent": "Sara (Agent Mode)",
+   "ids": [
+    "correction#24"
+   ],
+   "count": 1
+  },
+  {
+   "when": "2026-09-21T09:15:43",
+   "file": "2026-09-21_dd_ch18.json",
+   "agent": "Sara (Agent Mode)",
+   "ids": [
+    "note#25"
+   ],
+   "count": 1
+  },
+  {
+   "when": "2026-09-21T09:15:43",
+   "file": "2026-09-21_dd_pacing_law.json",
+   "agent": "Sara (Agent Mode)",
+   "ids": [
+    "decision#26"
+   ],
+   "count": 1
+  },
+  {
+   "when": "2026-09-21T09:15:43",
+   "file": "2026-09-21_dd_registry_edge_ch18.json",
+   "agent": "Sara (Agent Mode)",
+   "ids": [
+    "correction#27"
+   ],
+   "count": 1
+  },
+  {
+   "when": "2026-09-21T09:29:06",
+   "file": "2026-09-21_dd_panel_rebound.json",
+   "agent": "Sara (Agent Mode)",
+   "ids": [
+    "correction#28"
+   ],
+   "count": 1
+  },
+  {
+   "when": "2026-09-21T09:29:06",
+   "file": "2026-09-21_dd_registry_edge_s45.json",
+   "agent": "Sara (Agent Mode)",
+   "ids": [
+    "correction#29"
+   ],
+   "count": 1
+  },
+  {
+   "when": "2026-09-21T09:41:30",
+   "file": "2026-09-21_dd_skip_backward_work.json",
+   "agent": "Sara (Agent Mode)",
+   "ids": [
+    "correction#30"
+   ],
+   "count": 1
+  },
+  {
+   "when": "2026-09-23T19:30:00",
+   "file": "2026-09-23_deep_sweep_registry_sync.json",
+   "agent": "Sara (Agent Mode)",
+   "ids": [
+    "registry-sync"
+   ],
+   "what": "Control Centre registry synced to live reality in the 2026-09-23 deep sweep: Tide live->paused(24ch, revival queued); DD Ch18->Ch21; AP ->complete(116); Holy Spirit ->paused(revival queued); DPY ->blocked(source); Tianyu ->dropped(post-mortem); golden_lion REGISTERED (was absent); soul_land_3_new REGISTERED (frozen). All edges verified from a fresh kit clone."
+  }
+ ]
 }
