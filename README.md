@@ -19,6 +19,9 @@ make serve      # the above, then serve the site on :8080
 
 Open `index.html`. That is the whole Control Centre.
 
+It is also **live on GitHub Pages** (published 2026-09-23):
+https://gm5206663-bit.github.io/the-universal-storyline-creation/
+
 To hand it to another agent, give them `TRANSFER_BOOTSTRAP.txt`. It is the same
 state as plain text and needs no access to this directory.
 
