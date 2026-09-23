@@ -1,4 +1,9 @@
 # CONTROL CENTRE
+<p align="center">
+  <a href="https://gm5206663-bit.github.io/the-universal-storyline-creation/"><img src="https://img.shields.io/badge/site-live-brightgreen?style=flat-square" alt="Live site"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="MIT"></a>
+</p>
+
 
 Navigation and state reference for every Soul Land serial, plus the portable
 authoring law that governs them. Built so a fresh agent — or a human
