@@ -369,6 +369,15 @@
         "correction#31"
       ],
       "count": 1
+    },
+    {
+      "when": "2026-09-24T00:00:00",
+      "file": "direct-state-commit-2026-09-24_mcu_projects.json",
+      "agent": "Arena agent (Agent Mode)",
+      "ids": [
+        "project-registration"
+      ],
+      "what": "Two MCU serials uploaded to GitHub (first non-Soul-Land line in the system) and registered: stark_heir ACTIVE (Ch.1 v5 / Ch.2 v2 / Ch.3 v3 gated; IM1 beats 1–12 staged; assets incl. complete MCU chronology v4 + butterfly registry T-14..T-22; HANDOFF/STATUS/README/LICENSE/NOTICE refreshed) and mcu_eternal_fanfic PAUSED (Varun, Ch.1–3 gated; user-locked pause). Gates verified PASS pre-upload; user convention mirrored (one repo per serial, HANDOFF cold-start, STATUS_PANEL single live-edge source, STATUS.md file map, MIT + fan-work NOTICE). User order: 'check everything and understand then do.'"
     }
   ]
 }

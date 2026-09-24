@@ -13,7 +13,7 @@ AT A GLANCE
   knowledge firewalls   18
   kit laws              11
   hard gates            7
-  growth events logged  39
+  growth events logged  40
 
 ==============================================================================
 SECTION 1 - CORE OPERATING RULE
@@ -888,7 +888,41 @@ gate PASS)
 
 
 ==============================================================================
-SECTION 20 - KNOWLEDGE FIREWALLS
+SECTION 20 - PROJECT STATE: STARK HEIR — MARK HOWARD STARK (MCU / IRON MAN 1)  [CONTRIBUTED]
+==============================================================================
+
+path: stark_heir/ (repo: gm5206663-bit/stark_heir)
+status: active
+live edge: Ch.1 v5 / Ch.2 v2 The Albatross / Ch.3 v3 The Return shipped and
+gated (mcu_verify PASS, zero-digit, zero-CJK). IM1 beats 1–12 staged scene-by-
+scene in film order incl. the five-panel cave arc and the chest-swap. Next:
+Chapter Four — workshop rebirth / weapons-division storm (IM1 beats 13+).
+notes: Mark Howard Stark — Tony's public son (born Nov 1996, twelve at
+IM1-2008); hidden Adaptation Talent + stabilized X-gene + growing psychic
+core; canon braided around with absolute fan ownership per P1–P15 +
+P12-AMENDMENT camera law; complete MCU chronology + butterfly registry (T-14
+armor-naming, T-2
+verification: verified 2026-09-24 at registration from live workspace (gates
+PASS) by the Arena agent
+
+
+==============================================================================
+SECTION 21 - PROJECT STATE: VARUN — THE ELEVENTH ETERNAL (MCU / ETERNALS)  [CONTRIBUTED]
+==============================================================================
+
+path: mcu_eternal_fanfic/ (repo: gm5206663-bit/mcu_eternal_fanfic)
+status: paused
+live edge: PAUSED after Chapter Three 'The First Shore' by user order — shore
+battle won, law on sand, bead pair carried. Next on revival: Chapter Four
+(first ATTACK order, the freeze, uncontrolled catch, wound+regen).
+notes: Varun — eleventh Eternal; local gravity + kinetic redistribution;
+Adaptation Talent (MCU Eternal version); Ajak-lineage threads sealed
+verification: verified 2026-09-24 at registration from live workspace (gates
+PASS) by the Arena agent
+
+
+==============================================================================
+SECTION 22 - KNOWLEDGE FIREWALLS
 ==============================================================================
 
 STATES: KNOWN / KNOWN PARTLY / SUSPICION / DISBELIEF / UNKNOWN / FALSE BELIEF / HIDDEN
@@ -1030,7 +1064,7 @@ regressions - without it, the next agent will helpfully let the character find
 out early because the plot needs it.
 
 ==============================================================================
-SECTION 21 - ADAPTATION TALENT (cross-project)
+SECTION 23 - ADAPTATION TALENT (cross-project)
 ==============================================================================
 
 WHAT IT IS: An innate, non-conscious, existence-level personal law or instinct
@@ -1057,7 +1091,7 @@ Adaptation cannot bypass setting rules. It operates inside the setting's
 physics - it is not an exemption from them.
 
 ==============================================================================
-SECTION 22 - CONTRIBUTED STATE
+SECTION 24 - CONTRIBUTED STATE
 ==============================================================================
 
 OTHER RECORDS:
@@ -1335,7 +1369,7 @@ OTHER RECORDS:
 
 
 ==============================================================================
-SECTION 23 - HOW THIS SYSTEM GROWS
+SECTION 25 - HOW THIS SYSTEM GROWS
 ==============================================================================
 
 This is not a static document. It is a generated view over a state layer that
@@ -1359,7 +1393,7 @@ RESERVED: authority_order, seven_gates, gate_scope_warning, _comment. These
 change the shape of the system and need the user, not a contribution.
 
 ==============================================================================
-SECTION 24 - INSTRUCTIONS TO THE RECEIVING AGENT
+SECTION 26 - INSTRUCTIONS TO THE RECEIVING AGENT
 ==============================================================================
 
  1. Ingest this bootstrap fully before doing anything else.

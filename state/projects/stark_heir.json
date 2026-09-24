@@ -1,0 +1,20 @@
+{
+  "id": "stark_heir",
+  "name": "Stark Heir — Mark Howard Stark (MCU / Iron Man 1)",
+  "path": "stark_heir/ (repo: gm5206663-bit/stark_heir)",
+  "status": "active",
+  "active": true,
+  "live_edge": "Ch.1 v5 / Ch.2 v2 The Albatross / Ch.3 v3 The Return shipped and gated (mcu_verify PASS, zero-digit, zero-CJK). IM1 beats 1–12 staged scene-by-scene in film order incl. the five-panel cave arc and the chest-swap. Next: Chapter Four — workshop rebirth / weapons-division storm (IM1 beats 13+).",
+  "authority": {
+    "status_source": "foundation/STATUS_PANEL.md",
+    "gate": "python3 tools/mcu_verify.py must exit PASS · zero-digit · zero-CJK · pre-gate self-check + garble scan mandatory",
+    "entry_point": "HANDOFF.md (the cold-start brief)"
+  },
+  "protagonist": "Mark Howard Stark — Tony's public son (born Nov 1996, twelve at IM1-2008); hidden Adaptation Talent + stabilized X-gene + growing psychic core; canon braided around with absolute fan ownership per P1–P15 + P12-AMENDMENT camera law; complete MCU chronology + butterfly registry (T-14 armor-naming, T-22 JARVIS-Edwin) in foundation/MCU_TIMELINE.md v4",
+  "do_not": [
+    "never stage canon as exposition/montage/replay — camera goes where canon goes (P12-AMENDMENT)",
+    "numeric panel slugs violate the zero-digit gate — spell them",
+    "military hospital = the only declared off-page IM1 beat (the film never stages it)"
+  ],
+  "mirror_note": "Registered 2026-09-24 by the Arena agent; repo mirrors the full workspace incl. coverage, audits, gates, LICENSE + NOTICE"
+}

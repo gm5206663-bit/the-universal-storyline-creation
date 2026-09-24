@@ -1,0 +1,19 @@
+{
+  "id": "mcu_eternal_fanfic",
+  "name": "Varun — the eleventh Eternal (MCU / Eternals)",
+  "path": "mcu_eternal_fanfic/ (repo: gm5206663-bit/mcu_eternal_fanfic)",
+  "status": "paused",
+  "active": false,
+  "live_edge": "PAUSED after Chapter Three 'The First Shore' by user order — shore battle won, law on sand, bead pair carried. Next on revival: Chapter Four (first ATTACK order, the freeze, uncontrolled catch, wound+regen).",
+  "authority": {
+    "status_source": "foundation/STATUS_PANEL.md",
+    "gate": "python3 tools/mcu_verify.py must exit PASS",
+    "entry_point": "HANDOFF.md (the cold-start brief)"
+  },
+  "protagonist": "Varun — eleventh Eternal; local gravity + kinetic redistribution; Adaptation Talent (MCU Eternal version); Ajak-lineage threads sealed",
+  "do_not": [
+    "paused state is a user lock — revival only on user word",
+    "canon causes never replaced (Eternals movie spine)"
+  ],
+  "mirror_note": "Registered 2026-09-24 by the Arena agent; 3 chapters gated; files intact"
+}

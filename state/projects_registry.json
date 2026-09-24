@@ -111,6 +111,34 @@
       },
       "verification": "verified 2026-09-23 from a fresh live clone (deep-sweep audit; gate PASS)",
       "notes": "The ~10,000-year black third ring is the first true contender against the bloodline threshold. Mu En's rule: do not be the strongest in the room."
+    },
+    {
+      "id": "stark_heir",
+      "name": "Stark Heir — Mark Howard Stark (MCU / Iron Man 1)",
+      "path": "stark_heir/ (repo: gm5206663-bit/stark_heir)",
+      "status": "active",
+      "active": true,
+      "live_edge": "Ch.1 v5 / Ch.2 v2 The Albatross / Ch.3 v3 The Return shipped and gated (mcu_verify PASS, zero-digit, zero-CJK). IM1 beats 1–12 staged scene-by-scene in film order incl. the five-panel cave arc and the chest-swap. Next: Chapter Four — workshop rebirth / weapons-division storm (IM1 beats 13+).",
+      "authority": {
+        "status_source": "foundation/STATUS_PANEL.md",
+        "conflict_rule": "STATUS_PANEL.md is the single live-edge source of truth; every other file derives from it."
+      },
+      "verification": "verified 2026-09-24 at registration from live workspace (gates PASS) by the Arena agent",
+      "notes": "Mark Howard Stark — Tony's public son (born Nov 1996, twelve at IM1-2008); hidden Adaptation Talent + stabilized X-gene + growing psychic core; canon braided around with absolute fan ownership per P1–P15 + P12-AMENDMENT camera law; complete MCU chronology + butterfly registry (T-14 armor-naming, T-2"
+    },
+    {
+      "id": "mcu_eternal_fanfic",
+      "name": "Varun — the eleventh Eternal (MCU / Eternals)",
+      "path": "mcu_eternal_fanfic/ (repo: gm5206663-bit/mcu_eternal_fanfic)",
+      "status": "paused",
+      "active": false,
+      "live_edge": "PAUSED after Chapter Three 'The First Shore' by user order — shore battle won, law on sand, bead pair carried. Next on revival: Chapter Four (first ATTACK order, the freeze, uncontrolled catch, wound+regen).",
+      "authority": {
+        "status_source": "foundation/STATUS_PANEL.md",
+        "conflict_rule": "STATUS_PANEL.md is the single live-edge source of truth; every other file derives from it."
+      },
+      "verification": "verified 2026-09-24 at registration from live workspace (gates PASS) by the Arena agent",
+      "notes": "Varun — eleventh Eternal; local gravity + kinetic redistribution; Adaptation Talent (MCU Eternal version); Ajak-lineage threads sealed"
     }
   ]
 }
