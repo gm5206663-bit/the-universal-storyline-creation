@@ -1,21 +1,21 @@
 {
-  "id": "golden_lion",
-  "name": "The Golden Lion",
-  "path": "soul_land_2_new/",
-  "status": "live",
-  "active": true,
-  "live_edge": "Chapter 6 \u2014 Measure and Weight (2026-09-23; the serial pushes near-daily \u2014 verify the latest chapter on disk before quoting this)",
-  "authority": {
-    "status_source": "foundation/STATUS_PANEL.md",
-    "laws": "foundation/AUTHORS_LAW.md (L-01..) + codex/PROSE_METHOD_SL2.md (METHOD v4 plain-first) + foundation/NATURAL_DOCTRINE.md (G01\u2013G07)",
-    "gate": "checks/verify.py (sl2-goldenv2)",
-    "entry_point": "README.md"
-  },
-  "protagonist": "Jin Yang \u2014 village-born OC, Golden Lion martial soul (metal; earth secondary via ring-2), womb-born Adaptation Talent, rank 23 at canon start, walking to Shrek Academy",
-  "do_not": [
-    "canon lanes are default; following canon never needs a nod (L-11)",
-    "canon systems process the hero like everyone (L-11.5 \u2014 the dorm retrofit)",
-    "no CJK in chapter files; >=3 spoken lines; 2,800-word floor from ch3"
-  ],
-  "mirror_note": "Registered 2026-09-23 by the delegated agent from the serial's own ledgers"
+    "id": "golden_lion",
+    "name": "The Golden Lion",
+    "path": "soul_land_2_new/",
+    "status": "live",
+    "active": true,
+    "live_edge": "Chapter 8 — The Sect Behind the Smoke (2026-09-23, G09 sect-join executed — assessment-eve armed, panel v20) — 8 chapters live, agent-driven near-daily",
+    "authority": {
+        "status_source": "foundation/STATUS_PANEL.md",
+        "laws": "foundation/AUTHORS_LAW.md (L-01..) + codex/PROSE_METHOD_SL2.md (METHOD v4 plain-first) + foundation/NATURAL_DOCTRINE.md (G01–G07)",
+        "gate": "checks/verify.py (sl2-goldenv2)",
+        "entry_point": "README.md"
+    },
+    "protagonist": "Jin Yang — village-born OC, Golden Lion martial soul (metal; earth secondary via ring-2), womb-born Adaptation Talent, rank 23 at canon start, walking to Shrek Academy",
+    "do_not": [
+        "canon lanes are default; following canon never needs a nod (L-11)",
+        "canon systems process the hero like everyone (L-11.5 — the dorm retrofit)",
+        "no CJK in chapter files; >=3 spoken lines; 2,800-word floor from ch3"
+    ],
+    "mirror_note": "Registered 2026-09-23 by the delegated agent from the serial's own ledgers"
 }

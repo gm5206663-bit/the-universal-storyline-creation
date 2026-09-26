@@ -1,23 +1,23 @@
 {
-  "id": "devouring_dragon",
-  "name": "The Devouring Dragon",
-  "path": "soul_land_devouring_dragon/",
-  "status": "live",
-  "active": true,
-  "live_edge": "After Chapter 20 \u2014 The Road Itself (the pass country found; the watch begun from the high seat; DL 3676)",
-  "authority": {
-    "status_source": "foundation/STATUS_PANEL.md (single status source)",
-    "laws": "foundation/RAILS.md (prose law s25/s34, scope s39, plain language s40, pacing s44, panel law re-bound s45)",
-    "gate": "SOUL_LAND_WORKSPACE/kit/tools/verify.py --project (sweep must PASS)",
-    "entry_point": "README.md section HANDOFF (kit 10); HANDOFF.md is a pointer stub"
-  },
-  "protagonist": "A nameless Devouring Dragon spirit beast \u2014 the only egg, kinless; Adaptation Talent from the egg (never named in prose)",
-  "do_not": [
-    "panels only when needed \u2014 default NONE (s45; the story is the beast's)",
-    "retired house-words never return to prose (list in codex/GLOSSARY.md)",
-    "no count-numbers in prose; figures panel-only",
-    "no leaps; overlord distance is gravity, never cast"
-  ],
-  "pacing_law": "s44: sameness skipped; the road to the cultivation-year-1,000 barrier told by time-skip summary",
-  "mirror_note": "Updated 2026-09-23 through Chapter 20 (sessions s46\u2013s47 under the author's standing delegation)"
+    "id": "devouring_dragon",
+    "name": "The Devouring Dragon",
+    "path": "soul_land_devouring_dragon/",
+    "status": "live",
+    "active": true,
+    "live_edge": "After Chapter 24 — The Stone Country (DL 3681-3683 — the stone country, the opposite country, high kinds teaching, warmth map, thin bargain, scree wrong, first pass crossed in gray kind's company, winter den at warm spring) — 24 chapters live, gates PASS, canon-voice rollout Ch1-10 rewritten",
+    "authority": {
+        "status_source": "foundation/STATUS_PANEL.md (single status source)",
+        "laws": "foundation/RAILS.md (prose law s25/s34, scope s39, plain language s40, pacing s44, panel law re-bound s45)",
+        "gate": "SOUL_LAND_WORKSPACE/kit/tools/verify.py --project (sweep must PASS)",
+        "entry_point": "README.md section HANDOFF (kit 10); HANDOFF.md is a pointer stub"
+    },
+    "protagonist": "A nameless Devouring Dragon spirit beast — the only egg, kinless; Adaptation Talent from the egg (never named in prose)",
+    "do_not": [
+        "panels only when needed — default NONE (s45; the story is the beast's)",
+        "retired house-words never return to prose (list in codex/GLOSSARY.md)",
+        "no count-numbers in prose; figures panel-only",
+        "no leaps; overlord distance is gravity, never cast"
+    ],
+    "pacing_law": "s44: sameness skipped; the road to the cultivation-year-1,000 barrier told by time-skip summary",
+    "mirror_note": "Updated 2026-09-23 through Chapter 20 (sessions s46–s47 under the author's standing delegation)"
 }
