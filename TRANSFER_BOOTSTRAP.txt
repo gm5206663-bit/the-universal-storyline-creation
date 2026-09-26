@@ -1,5 +1,5 @@
 SOUL LAND UNIVERSAL - TRANSFER BOOTSTRAP
-Generated 2026-09-20 from state/. Control Centre is the navigation
+Generated 2026-09-26 from state/. Control Centre is the navigation
 and state reference. Do not hand-edit this file; edit state/ and rebuild.
 
 PURPOSE
@@ -8,8 +8,8 @@ discipline. You are taking over existing projects, not starting a new story.
 
 AT A GLANCE
   projects tracked      6
-  project files         606
-  words on disk         1,682,117
+  project files         891
+  words on disk         1,388,550
   knowledge firewalls   18
   kit laws              11
   hard gates            7
