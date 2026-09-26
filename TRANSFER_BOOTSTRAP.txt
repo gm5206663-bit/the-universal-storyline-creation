@@ -551,13 +551,8 @@ SECTION 16 - PROJECT STATE: DEVOURING DRAGON (BEAST-POV SERIAL)  [CONTRIBUTED]
 
 path: soul-land-universal-kit/soul_land_devouring_dragon/
 status: live
-live edge: after Chapter 22 'The Deep Forest Proper' — DL 3677-3679, two years
-inside the forest proper (the reversal completed; the walked roads — pattern
-is belonging; the fern hall and the second law, the roads are the camouflage;
-the water, the one ground the forest cannot read; the deep meals and the
-growth; the quiet-sense; the road's manners; THE LEAN — the pull settling east
-of north, the road and the pull coming apart ahead); PANEL: NONE, sweep PASS
-22/22; NEXT BEAT Ch 23 'The Parting'; kit 041e97a, 2026-09-23
+live edge: after Chapter 24 'The Stone Country' — 24 chapters live, gates
+PASS, canon-voice rollout Ch1-10 rewritten (2026-09-26 audit)
 notes: Chapters 1-18, prose in plain words. Rebuilt s45: ch15 2,229, ch16
 2,319, ch17 2,250, ch18 2,360 (ch1 2,595, ch2 3,096, ch3 3,390, ch4 2,609, ch5
 3,386, ch6 2,930, ch7 3,097, ch8 3,391, ch9 3,895, ch10 3,432, ch11 2,795,
@@ -567,14 +562,8 @@ queued), PACING LAW (s44), PLAIN LANGUAGE LAW (s40), SCOPE LAW (s39 - beast-
 first floor 2,000), house grammar (s35, dialogue clause overridden), ER-12,
 ER-13, SB-11, s43 measure ruling. Next: ch19 (author-gated) - the years on his
 border; sameness skipped; one anchored event where something is genuinely new.
-verification: verified 2026-09-23 from a fresh clone of kit 041e97a: sweep
-PASS 22/22 (0 digits, 0 CJK, footers 22/22; the no-panel list ch1+ch15-22 by
-design); the chapter measured 2,367w / avg 18.8 / longest 56 / zero retired
-words. Same-day pass brought three stale records current: HIS_STATUS_PANEL
-closes ch19-22, KNOWLEDGE_FIREWALLS audit to ch22, STATUS_PANEL figures line
-to ch22. Parallel-draft collision recorded: the first-shipped Ch 22 stands;
-the second draft is archived ALTERNATE at
-soul_land_devouring_dragon/_alt_drafts/.
+verification: verified 2026-09-26 from fresh clone: 24 chapters, sweep PASS
+24/24
 
 RECORDS:
   - [correction] -
@@ -922,7 +911,54 @@ PASS) by the Arena agent
 
 
 ==============================================================================
-SECTION 22 - KNOWLEDGE FIREWALLS
+SECTION 22 - PROJECT STATE: SOUL LAND 2 — THE GOLDEN LION (JIN YANG)  [CONTRIBUTED]
+==============================================================================
+
+path: soul-land-universal-kit/soul_land_2_new/
+status: live
+live edge: after Chapter 8 'The Sect Behind the Smoke' — Ch8 shipped
+2026-09-23, G09 sect-join executed, assessment-eve armed, panel v20, 8
+chapters live
+notes: Agent-driven near-daily, walking to Shrek at eleven, Golden Lion
+martial soul, Adaptation Talent womb-born
+verification: verified 2026-09-26 from fresh clone: 8 chapters, gate
+sl2-goldenv PASS
+
+
+==============================================================================
+SECTION 23 - PROJECT STATE: SOUL LAND 2 — THE GREY WOLF (YE CANG) — PERFECT REBUILD  [CONTRIBUTED]
+==============================================================================
+
+path: soul-land-2-the-grey-wolf/
+status: live
+live edge: after Chapter 6 'The Hem Road' — 6 chapters perfect rebuild v0.7.0
+2026-09-26, Arc1 Grey Ridge complete, Arc2 hem-road craft daily life, band
+2400-3400w avg 14-18 over60 0 the-way 0 clean and clear, Spirit Sea 850 body
+500kg Storm Frost Ghost Wolf ice+wind High Ring Veil hides purple as yellow,
+80 panel rows IN SYNC
+notes: F0-F22 locks, effective talent 3.5x, Ghost Veil 3 clones golden lock
+toughest skull tofu waist Light of Netherworld, Storm Step Wind Blade Burst
+Wings 50m, ingested into soul-library 193ch total
+verification: verified 2026-09-26 from fresh clone: 6 chapters 15798w, run_all
+green, release v0.7.0-perfect-rebuild 293K zip
+
+
+==============================================================================
+SECTION 24 - PROJECT STATE: SOUL LAND 3 — LAN SHEN (DUAL-TRACK REINCARNATION)  [CONTRIBUTED]
+==============================================================================
+
+path: lan_shen/
+status: live
+live edge: after Chapter 2 'The Fifteen' — V2 epoch canon-parallel rebuild, 2
+chapters live 8779w, 9 layers ALL GREEN, next ch3 foundling girl canon 005
+notes: V1 15 chapters archived, V2 doctrine: canon on page complete unskipped
+Wulin close-third, OC parallel same clock
+verification: verified 2026-09-26: README 1->2 chapters fix, status_gen
+registered Chapter_02
+
+
+==============================================================================
+SECTION 25 - KNOWLEDGE FIREWALLS
 ==============================================================================
 
 STATES: KNOWN / KNOWN PARTLY / SUSPICION / DISBELIEF / UNKNOWN / FALSE BELIEF / HIDDEN
@@ -1064,7 +1100,7 @@ regressions - without it, the next agent will helpfully let the character find
 out early because the plot needs it.
 
 ==============================================================================
-SECTION 23 - ADAPTATION TALENT (cross-project)
+SECTION 26 - ADAPTATION TALENT (cross-project)
 ==============================================================================
 
 WHAT IT IS: An innate, non-conscious, existence-level personal law or instinct
@@ -1091,7 +1127,7 @@ Adaptation cannot bypass setting rules. It operates inside the setting's
 physics - it is not an exemption from them.
 
 ==============================================================================
-SECTION 24 - CONTRIBUTED STATE
+SECTION 27 - CONTRIBUTED STATE
 ==============================================================================
 
 OTHER RECORDS:
@@ -1369,7 +1405,7 @@ OTHER RECORDS:
 
 
 ==============================================================================
-SECTION 25 - HOW THIS SYSTEM GROWS
+SECTION 28 - HOW THIS SYSTEM GROWS
 ==============================================================================
 
 This is not a static document. It is a generated view over a state layer that
@@ -1393,7 +1429,7 @@ RESERVED: authority_order, seven_gates, gate_scope_warning, _comment. These
 change the shape of the system and need the user, not a contribution.
 
 ==============================================================================
-SECTION 26 - INSTRUCTIONS TO THE RECEIVING AGENT
+SECTION 29 - INSTRUCTIONS TO THE RECEIVING AGENT
 ==============================================================================
 
  1. Ingest this bootstrap fully before doing anything else.

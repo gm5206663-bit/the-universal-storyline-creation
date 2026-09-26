@@ -1,144 +1,186 @@
 {
-  "projects": [
-    {
-      "id": "soul_land_2",
-      "name": "Soul Land 2 — Jiang Che",
-      "path": "soul-land-universal-kit/Soul_Land_2_Project/",
-      "status": "paused",
-      "active": false,
-      "live_edge": "paused at 24 chapters (incl. Ch 8-B 'The First Rank') — REVIVAL_QUEUE_2026-09-23.md staged in-kit; the wall at thirty (Jiang Che 29)",
-      "authority": {
-        "status_source": "foundation/STATUS_PANEL.md",
-        "conflict_rule": "STATUS_PANEL.md is the single live-edge source of truth; every other file derives from it."
-      },
-      "verification": "verified 2026-09-23 from a fresh live clone (deep-sweep audit; gate PASS) sl2-goldenv-unified",
-      "notes": "Ranks at the edge: Yuhao 17-peak (18-verge), Wang Dong 23, Jiang Che 29. The prize is two words. R5 (thirty-wall) sweep pending in OPEN.md and CANON_LEDGER."
-    },
-    {
-      "id": "soul_land_3",
-      "name": "Soul Land 3 — Lin Hao",
-      "path": "soul-land-universal-kit/Soul_Land_3_Project/",
-      "status": "complete",
-      "active": false,
-      "live_edge": "COMPLETE at Chapter 116 'The Grindstone' — ten-layer run_all ALL GREEN, full-spectrum repair passed",
-      "authority": {
-        "status_source": "LIN_HAO_STATUS.md",
-        "conflict_rule": "The chapter footers (checks/state.json) are the single source; LIN_HAO_STATUS.md is re-derived from them."
-      },
-      "verification": "verified 2026-09-23 from a fresh live clone (deep-sweep audit; gate PASS) run_all",
-      "notes": "Chapter 117 is the survive-to-the-end battle for the class-president election announced in Chapter 116."
-    },
-    {
-      "id": "soul_land_4",
-      "name": "Soul Land 4 — Fire Phoenix (Yan Shuo'er)",
-      "path": "soul_land_4_fire_phoenix/ (private GitHub repo)",
-      "status": "live",
-      "active": true,
-      "live_edge": "after Chapter 52 'Amiable Beasts' (cf1cb9e, 2026-09-19 sync: Chapter52 v2 + validator/precedence fixes)",
-      "authority": {
-        "status_source": "foundation/STATUS_PANEL.md",
-        "conflict_rule": "STATUS_PANEL.md is the ONLY current status source; every other file derives from it."
-      },
-      "verification": "verified 2026-09-20 from the private-repo clone at cf1cb9e",
-      "notes": "Stale ch31 copies exist in the kit archive (_archive/2026-09-19_stale_sl4_copies_at_ch31) and the kit's NEXT_STEPS file stopped at Chapter 51 — the private repo is ahead. Never use the stale copies."
-    },
-    {
-      "id": "holy_spirit",
-      "name": "Holy Spirit — Luo Chen",
-      "path": "soul-land-universal-kit/soul_land_holy_spirit/",
-      "status": "paused",
-      "active": false,
-      "live_edge": "after Chapter 4 'The Use' — revival queued 2026-09-23 (kit soul_land_holy_spirit/REVIVAL_QUEUE)",
-      "authority": {
-        "status_source": "foundation/STATUS_PANEL.md",
-        "conflict_rule": "STATUS_PANEL.md holds the live edge; next beats are author-gated."
-      },
-      "verification": "verified 2026-09-23 from a fresh live clone (deep-sweep audit; gate PASS)",
-      "notes": "Twin souls: DEVOURING DRAGON (public) + DRAGON HEART (hidden). Next beats are author-gated."
-    },
-    {
-      "id": "devouring_dragon",
-      "name": "Devouring Dragon (beast-POV serial)",
-      "path": "soul-land-universal-kit/soul_land_devouring_dragon/",
-      "status": "live",
-      "active": true,
-      "live_edge": "after Chapter 22 'The Deep Forest Proper' — DL 3677-3679, two years inside the forest proper (the reversal completed; the walked roads — pattern is belonging; the fern hall and the second law, the roads are the camouflage; the water, the one ground the forest cannot read; the deep meals and the growth; the quiet-sense; the road's manners; THE LEAN — the pull settling east of north, the road and the pull coming apart ahead); PANEL: NONE, sweep PASS 22/22; NEXT BEAT Ch 23 'The Parting'; kit 041e97a, 2026-09-23",
-      "authority": {
-        "status_source": "foundation/STATUS_PANEL.md",
-        "conflict_rule": "STATUS_PANEL.md is the live edge for the beast POV."
-      },
-      "verification": "verified 2026-09-23 from a fresh clone of kit 041e97a: sweep PASS 22/22 (0 digits, 0 CJK, footers 22/22; the no-panel list ch1+ch15-22 by design); the chapter measured 2,367w / avg 18.8 / longest 56 / zero retired words. Same-day pass brought three stale records current: HIS_STATUS_PANEL closes ch19-22, KNOWLEDGE_FIREWALLS audit to ch22, STATUS_PANEL figures line to ch22. Parallel-draft collision recorded: the first-shipped Ch 22 stands; the second draft is archived ALTERNATE at soul_land_devouring_dragon/_alt_drafts/.",
-      "notes": "Chapters 1-18, prose in plain words. Rebuilt s45: ch15 2,229, ch16 2,319, ch17 2,250, ch18 2,360 (ch1 2,595, ch2 3,096, ch3 3,390, ch4 2,609, ch5 3,386, ch6 2,930, ch7 3,097, ch8 3,391, ch9 3,895, ch10 3,432, ch11 2,795, ch12 3,283, ch13 2,564, ch14 3,169). Rulings in force: PANEL LAW RE-BOUND (s45; forward only - chapters written before it stand as written, no rebuild queued), PACING LAW (s44), PLAIN LANGUAGE LAW (s40), SCOPE LAW (s39 - beast-first floor 2,000), house grammar (s35, dialogue clause overridden), ER-12, ER-13, SB-11, s43 measure ruling. Next: ch19 (author-gated) - the years on his border; sameness skipped; one anchored event where something is genuinely new."
-    },
-    {
-      "id": "dragon_prince_yuan",
-      "name": "Dragon Prince Yuan — Zhou Xu",
-      "path": "soul-land-universal-kit/dragon_prince_yuan_native_oc_fanfiction/",
-      "status": "blocked",
-      "active": false,
-      "live_edge": "after Chapter 1 'The Second Son in the Green Smoke' — Ch 2 blocked on source-novel text (not fetchable); gate PASS",
-      "authority": {
-        "status_source": "foundation/CURRENT_STATE_MANIFEST.json",
-        "conflict_rule": "The native manifest is the authoritative edge; STATUS_PANEL.md mirrors it."
-      },
-      "verification": "verified 2026-09-23 from a fresh live clone (deep-sweep audit; gate PASS)",
-      "notes": "Open for the author: Zhou Xu's realm, firewall boundaries (TBD in KNOWLEDGE_FIREWALLS.md), wine-quirk handling, name confirmation."
-    },
-    {
-      "id": "blue_silver",
-      "name": "Blue Silver — Sunweave",
-      "path": "blue_silver/",
-      "status": "gate-pass",
-      "active": false,
-      "live_edge": "Book One complete — 15 rebuilt chapters, 34,711 words, all seven gates passing; ends on THE KEEPER",
-      "authority": {
-        "status_source": "bluesilver_foundation/REBUILD_CONTINUITY.md",
-        "conflict_rule": "Where REBUILD_CONTINUITY.md and bluesilver_codex/ disagree, REBUILD_CONTINUITY.md wins. chapters/ is SUPERSEDED — history only, never continuity."
-      },
-      "verification": "verified 2026-09-20: 15 files in chapters_rebuilt/",
-      "notes": "Protagonist Sunweave is a real elemental mutant with Adaptation Talent (no royal, dragon or devour blood). Kill count zero across all 775 years is permanent."
-    },
-    {
-      "id": "soul_land_new",
-      "name": "Soul Land New — Tian Yu",
-      "path": "soul-land-universal-kit/SOUL_LAND_NEW/",
-      "status": "dropped",
-      "active": false,
-      "live_edge": "post-mortem (SARA.md §177–198): the Tianyu project — canon integration failed, dropped by author. Do not continue.",
-      "authority": {
-        "status_source": "bible/CURRENT_STATE_PRE11.md",
-        "conflict_rule": "The bible snapshot is the one-page truth of the pre-11 state; its numbers live only there, in TIANYU_STATUS_PRE11.md, and in the chronicle."
-      },
-      "verification": "verified 2026-09-23 from a fresh live clone (deep-sweep audit; gate PASS)",
-      "notes": "The ~10,000-year black third ring is the first true contender against the bloodline threshold. Mu En's rule: do not be the strongest in the room."
-    },
-    {
-      "id": "stark_heir",
-      "name": "Stark Heir — Mark Howard Stark (MCU / Iron Man 1)",
-      "path": "stark_heir/ (repo: gm5206663-bit/stark_heir)",
-      "status": "active",
-      "active": true,
-      "live_edge": "Ch.1 v5 / Ch.2 v2 The Albatross / Ch.3 v3 The Return shipped and gated (mcu_verify PASS, zero-digit, zero-CJK). IM1 beats 1–12 staged scene-by-scene in film order incl. the five-panel cave arc and the chest-swap. Next: Chapter Four — workshop rebirth / weapons-division storm (IM1 beats 13+).",
-      "authority": {
-        "status_source": "foundation/STATUS_PANEL.md",
-        "conflict_rule": "STATUS_PANEL.md is the single live-edge source of truth; every other file derives from it."
-      },
-      "verification": "verified 2026-09-24 at registration from live workspace (gates PASS) by the Arena agent",
-      "notes": "Mark Howard Stark — Tony's public son (born Nov 1996, twelve at IM1-2008); hidden Adaptation Talent + stabilized X-gene + growing psychic core; canon braided around with absolute fan ownership per P1–P15 + P12-AMENDMENT camera law; complete MCU chronology + butterfly registry (T-14 armor-naming, T-2"
-    },
-    {
-      "id": "mcu_eternal_fanfic",
-      "name": "Varun — the eleventh Eternal (MCU / Eternals)",
-      "path": "mcu_eternal_fanfic/ (repo: gm5206663-bit/mcu_eternal_fanfic)",
-      "status": "paused",
-      "active": false,
-      "live_edge": "PAUSED after Chapter Three 'The First Shore' by user order — shore battle won, law on sand, bead pair carried. Next on revival: Chapter Four (first ATTACK order, the freeze, uncontrolled catch, wound+regen).",
-      "authority": {
-        "status_source": "foundation/STATUS_PANEL.md",
-        "conflict_rule": "STATUS_PANEL.md is the single live-edge source of truth; every other file derives from it."
-      },
-      "verification": "verified 2026-09-24 at registration from live workspace (gates PASS) by the Arena agent",
-      "notes": "Varun — eleventh Eternal; local gravity + kinetic redistribution; Adaptation Talent (MCU Eternal version); Ajak-lineage threads sealed"
-    }
-  ]
+    "projects": [
+        {
+            "id": "soul_land_2",
+            "name": "Soul Land 2 — Jiang Che",
+            "path": "soul-land-universal-kit/Soul_Land_2_Project/",
+            "status": "paused",
+            "active": false,
+            "live_edge": "paused at 24 chapters (incl. Ch 8-B 'The First Rank') — REVIVAL_QUEUE_2026-09-23.md staged in-kit; the wall at thirty (Jiang Che 29)",
+            "authority": {
+                "status_source": "foundation/STATUS_PANEL.md",
+                "conflict_rule": "STATUS_PANEL.md is the single live-edge source of truth; every other file derives from it."
+            },
+            "verification": "verified 2026-09-23 from a fresh live clone (deep-sweep audit; gate PASS) sl2-goldenv-unified",
+            "notes": "Ranks at the edge: Yuhao 17-peak (18-verge), Wang Dong 23, Jiang Che 29. The prize is two words. R5 (thirty-wall) sweep pending in OPEN.md and CANON_LEDGER."
+        },
+        {
+            "id": "soul_land_3",
+            "name": "Soul Land 3 — Lin Hao",
+            "path": "soul-land-universal-kit/Soul_Land_3_Project/",
+            "status": "complete",
+            "active": false,
+            "live_edge": "COMPLETE at Chapter 116 'The Grindstone' — ten-layer run_all ALL GREEN, full-spectrum repair passed",
+            "authority": {
+                "status_source": "LIN_HAO_STATUS.md",
+                "conflict_rule": "The chapter footers (checks/state.json) are the single source; LIN_HAO_STATUS.md is re-derived from them."
+            },
+            "verification": "verified 2026-09-23 from a fresh live clone (deep-sweep audit; gate PASS) run_all",
+            "notes": "Chapter 117 is the survive-to-the-end battle for the class-president election announced in Chapter 116."
+        },
+        {
+            "id": "soul_land_4",
+            "name": "Soul Land 4 — Fire Phoenix (Yan Shuo'er)",
+            "path": "soul_land_4_fire_phoenix/ (private GitHub repo)",
+            "status": "live",
+            "active": true,
+            "live_edge": "after Chapter 52 'Amiable Beasts' (cf1cb9e, 2026-09-19 sync: Chapter52 v2 + validator/precedence fixes)",
+            "authority": {
+                "status_source": "foundation/STATUS_PANEL.md",
+                "conflict_rule": "STATUS_PANEL.md is the ONLY current status source; every other file derives from it."
+            },
+            "verification": "verified 2026-09-20 from the private-repo clone at cf1cb9e",
+            "notes": "Stale ch31 copies exist in the kit archive (_archive/2026-09-19_stale_sl4_copies_at_ch31) and the kit's NEXT_STEPS file stopped at Chapter 51 — the private repo is ahead. Never use the stale copies."
+        },
+        {
+            "id": "holy_spirit",
+            "name": "Holy Spirit — Luo Chen",
+            "path": "soul-land-universal-kit/soul_land_holy_spirit/",
+            "status": "paused",
+            "active": false,
+            "live_edge": "after Chapter 4 'The Use' — revival queued 2026-09-23 (kit soul_land_holy_spirit/REVIVAL_QUEUE)",
+            "authority": {
+                "status_source": "foundation/STATUS_PANEL.md",
+                "conflict_rule": "STATUS_PANEL.md holds the live edge; next beats are author-gated."
+            },
+            "verification": "verified 2026-09-23 from a fresh live clone (deep-sweep audit; gate PASS)",
+            "notes": "Twin souls: DEVOURING DRAGON (public) + DRAGON HEART (hidden). Next beats are author-gated."
+        },
+        {
+            "id": "devouring_dragon",
+            "name": "Devouring Dragon (beast-POV serial)",
+            "path": "soul-land-universal-kit/soul_land_devouring_dragon/",
+            "status": "live",
+            "active": true,
+            "live_edge": "after Chapter 24 'The Stone Country' — 24 chapters live, gates PASS, canon-voice rollout Ch1-10 rewritten (2026-09-26 audit)",
+            "authority": {
+                "status_source": "foundation/STATUS_PANEL.md",
+                "conflict_rule": "STATUS_PANEL.md is the live edge for the beast POV."
+            },
+            "verification": "verified 2026-09-26 from fresh clone: 24 chapters, sweep PASS 24/24",
+            "notes": "Chapters 1-18, prose in plain words. Rebuilt s45: ch15 2,229, ch16 2,319, ch17 2,250, ch18 2,360 (ch1 2,595, ch2 3,096, ch3 3,390, ch4 2,609, ch5 3,386, ch6 2,930, ch7 3,097, ch8 3,391, ch9 3,895, ch10 3,432, ch11 2,795, ch12 3,283, ch13 2,564, ch14 3,169). Rulings in force: PANEL LAW RE-BOUND (s45; forward only - chapters written before it stand as written, no rebuild queued), PACING LAW (s44), PLAIN LANGUAGE LAW (s40), SCOPE LAW (s39 - beast-first floor 2,000), house grammar (s35, dialogue clause overridden), ER-12, ER-13, SB-11, s43 measure ruling. Next: ch19 (author-gated) - the years on his border; sameness skipped; one anchored event where something is genuinely new."
+        },
+        {
+            "id": "dragon_prince_yuan",
+            "name": "Dragon Prince Yuan — Zhou Xu",
+            "path": "soul-land-universal-kit/dragon_prince_yuan_native_oc_fanfiction/",
+            "status": "blocked",
+            "active": false,
+            "live_edge": "after Chapter 1 'The Second Son in the Green Smoke' — Ch 2 blocked on source-novel text (not fetchable); gate PASS",
+            "authority": {
+                "status_source": "foundation/CURRENT_STATE_MANIFEST.json",
+                "conflict_rule": "The native manifest is the authoritative edge; STATUS_PANEL.md mirrors it."
+            },
+            "verification": "verified 2026-09-23 from a fresh live clone (deep-sweep audit; gate PASS)",
+            "notes": "Open for the author: Zhou Xu's realm, firewall boundaries (TBD in KNOWLEDGE_FIREWALLS.md), wine-quirk handling, name confirmation."
+        },
+        {
+            "id": "blue_silver",
+            "name": "Blue Silver — Sunweave",
+            "path": "blue_silver/",
+            "status": "gate-pass",
+            "active": false,
+            "live_edge": "Book One complete — 15 rebuilt chapters, 34,711 words, all seven gates passing; ends on THE KEEPER",
+            "authority": {
+                "status_source": "bluesilver_foundation/REBUILD_CONTINUITY.md",
+                "conflict_rule": "Where REBUILD_CONTINUITY.md and bluesilver_codex/ disagree, REBUILD_CONTINUITY.md wins. chapters/ is SUPERSEDED — history only, never continuity."
+            },
+            "verification": "verified 2026-09-20: 15 files in chapters_rebuilt/",
+            "notes": "Protagonist Sunweave is a real elemental mutant with Adaptation Talent (no royal, dragon or devour blood). Kill count zero across all 775 years is permanent."
+        },
+        {
+            "id": "soul_land_new",
+            "name": "Soul Land New — Tian Yu",
+            "path": "soul-land-universal-kit/SOUL_LAND_NEW/",
+            "status": "dropped",
+            "active": false,
+            "live_edge": "post-mortem (SARA.md §177–198): the Tianyu project — canon integration failed, dropped by author. Do not continue.",
+            "authority": {
+                "status_source": "bible/CURRENT_STATE_PRE11.md",
+                "conflict_rule": "The bible snapshot is the one-page truth of the pre-11 state; its numbers live only there, in TIANYU_STATUS_PRE11.md, and in the chronicle."
+            },
+            "verification": "verified 2026-09-23 from a fresh live clone (deep-sweep audit; gate PASS)",
+            "notes": "The ~10,000-year black third ring is the first true contender against the bloodline threshold. Mu En's rule: do not be the strongest in the room."
+        },
+        {
+            "id": "stark_heir",
+            "name": "Stark Heir — Mark Howard Stark (MCU / Iron Man 1)",
+            "path": "stark_heir/ (repo: gm5206663-bit/stark_heir)",
+            "status": "active",
+            "active": true,
+            "live_edge": "Ch.1 v5 / Ch.2 v2 The Albatross / Ch.3 v3 The Return shipped and gated (mcu_verify PASS, zero-digit, zero-CJK). IM1 beats 1–12 staged scene-by-scene in film order incl. the five-panel cave arc and the chest-swap. Next: Chapter Four — workshop rebirth / weapons-division storm (IM1 beats 13+).",
+            "authority": {
+                "status_source": "foundation/STATUS_PANEL.md",
+                "conflict_rule": "STATUS_PANEL.md is the single live-edge source of truth; every other file derives from it."
+            },
+            "verification": "verified 2026-09-24 at registration from live workspace (gates PASS) by the Arena agent",
+            "notes": "Mark Howard Stark — Tony's public son (born Nov 1996, twelve at IM1-2008); hidden Adaptation Talent + stabilized X-gene + growing psychic core; canon braided around with absolute fan ownership per P1–P15 + P12-AMENDMENT camera law; complete MCU chronology + butterfly registry (T-14 armor-naming, T-2"
+        },
+        {
+            "id": "mcu_eternal_fanfic",
+            "name": "Varun — the eleventh Eternal (MCU / Eternals)",
+            "path": "mcu_eternal_fanfic/ (repo: gm5206663-bit/mcu_eternal_fanfic)",
+            "status": "paused",
+            "active": false,
+            "live_edge": "PAUSED after Chapter Three 'The First Shore' by user order — shore battle won, law on sand, bead pair carried. Next on revival: Chapter Four (first ATTACK order, the freeze, uncontrolled catch, wound+regen).",
+            "authority": {
+                "status_source": "foundation/STATUS_PANEL.md",
+                "conflict_rule": "STATUS_PANEL.md is the single live-edge source of truth; every other file derives from it."
+            },
+            "verification": "verified 2026-09-24 at registration from live workspace (gates PASS) by the Arena agent",
+            "notes": "Varun — eleventh Eternal; local gravity + kinetic redistribution; Adaptation Talent (MCU Eternal version); Ajak-lineage threads sealed"
+        },
+        {
+            "id": "golden_lion",
+            "name": "Soul Land 2 — The Golden Lion (Jin Yang)",
+            "path": "soul-land-universal-kit/soul_land_2_new/",
+            "status": "live",
+            "active": true,
+            "live_edge": "after Chapter 8 'The Sect Behind the Smoke' — Ch8 shipped 2026-09-23, G09 sect-join executed, assessment-eve armed, panel v20, 8 chapters live",
+            "authority": {
+                "status_source": "foundation/STATUS_PANEL.md",
+                "conflict_rule": "STATUS_PANEL.md is single live-edge truth"
+            },
+            "verification": "verified 2026-09-26 from fresh clone: 8 chapters, gate sl2-goldenv PASS",
+            "notes": "Agent-driven near-daily, walking to Shrek at eleven, Golden Lion martial soul, Adaptation Talent womb-born"
+        },
+        {
+            "id": "grey_wolf",
+            "name": "Soul Land 2 — The Grey Wolf (Ye Cang) — PERFECT REBUILD",
+            "path": "soul-land-2-the-grey-wolf/",
+            "status": "live",
+            "active": true,
+            "live_edge": "after Chapter 6 'The Hem Road' — 6 chapters perfect rebuild v0.7.0 2026-09-26, Arc1 Grey Ridge complete, Arc2 hem-road craft daily life, band 2400-3400w avg 14-18 over60 0 the-way 0 clean and clear, Spirit Sea 850 body 500kg Storm Frost Ghost Wolf ice+wind High Ring Veil hides purple as yellow, 80 panel rows IN SYNC",
+            "authority": {
+                "status_source": "foundation/STATUS.md",
+                "conflict_rule": "STATUS.md v5.0 perfect rebuild F22 is single source, SKILLS_CANON.md v5.0, METERS.md v4.0"
+            },
+            "verification": "verified 2026-09-26 from fresh clone: 6 chapters 15798w, run_all green, release v0.7.0-perfect-rebuild 293K zip",
+            "notes": "F0-F22 locks, effective talent 3.5x, Ghost Veil 3 clones golden lock toughest skull tofu waist Light of Netherworld, Storm Step Wind Blade Burst Wings 50m, ingested into soul-library 193ch total"
+        },
+        {
+            "id": "lan_shen",
+            "name": "Soul Land 3 — Lan Shen (dual-track reincarnation)",
+            "path": "lan_shen/",
+            "status": "live",
+            "active": true,
+            "live_edge": "after Chapter 2 'The Fifteen' — V2 epoch canon-parallel rebuild, 2 chapters live 8779w, 9 layers ALL GREEN, next ch3 foundling girl canon 005",
+            "authority": {
+                "status_source": "STATUS.md",
+                "conflict_rule": "STATUS.md auto-generated from tree, never hand-edited"
+            },
+            "verification": "verified 2026-09-26: README 1->2 chapters fix, status_gen registered Chapter_02",
+            "notes": "V1 15 chapters archived, V2 doctrine: canon on page complete unskipped Wulin close-third, OC parallel same clock"
+        }
+    ]
 }
