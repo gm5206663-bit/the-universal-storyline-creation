@@ -355,6 +355,16 @@
       },
       "seq": 31,
       "kind": "correction"
+    },
+    {
+      "project": "qing_ling",
+      "text": "Gate gap found while registering this project. tools/schema.py PROJECT_STATUSES defines nine values: live, active, gate-pass, portable, reference, template, external, paused, superseded. state/projects_registry.json currently holds three statuses outside that list: blocked (dragon_prince_yuan), complete (soul_land_3), dropped (soul_land_new). validate.py enforces the list on incoming contributions, so any future agent filing one of those three words is rejected, while the same words sit unchallenged in the state layer. This is a schema question, not a data question: either the three statuses are added to PROJECT_STATUSES with selftest cases, or the three projects are corrected onto defined values. Both change a rule, so both need the author, not an agent. Logged, not fixed.",
+      "provenance": {
+        "agent": "arena-agent",
+        "date": "2026-09-30"
+      },
+      "seq": 32,
+      "kind": "note"
     }
   ]
 }

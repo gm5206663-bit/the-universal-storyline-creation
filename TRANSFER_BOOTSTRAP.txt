@@ -13,7 +13,7 @@ AT A GLANCE
   knowledge firewalls   18
   kit laws              11
   hard gates            7
-  growth events logged  40
+  growth events logged  41
 
 ==============================================================================
 SECTION 1 - CORE OPERATING RULE
@@ -958,7 +958,44 @@ registered Chapter_02
 
 
 ==============================================================================
-SECTION 25 - KNOWLEDGE FIREWALLS
+SECTION 25 - PROJECT STATE: SOUL LAND 3 - QING LING (THE GOLDEN-VEINED BLUE SILVER GRASS BESIDE TANG WULIN)  [CONTRIBUTED]
+==============================================================================
+
+path: soul-land-universal-kit/soul_land_3_fanfiction/
+status: live
+live edge: after Chapter 6 'The Road East' - arrival evening in Eastsea, first
+hour in the new place. OC age 9, rank 12, gates intact, hammers hidden in the
+wrist rings. 6 chapters, 26,115 words measured.
+notes: Registered 2026-09-30 to close the gap against non-negotiable 7 in
+soul-land-universal-kit/AGENTS.md (sync every mirror the same turn, including
+the Control Centre registry). This is the account's most active serial and it
+was absent from projects_registry.json. Era separation holds: this is a
+distinct serial from soul_land_3 (Lin Hao, complete at 116) - same era label,
+different story, different OC, no shared state. Next beat is author-gated: ch
+7 reporting-in, the roommate reveal of the unnamed station encounter, and the
+canon ch 36 fight.
+verification: verified 2026-09-30 by reading the live repo through the GitHub
+API at commit 1b2ac8a (2026-09-29T03:06). Chapter word counts measured from
+the raw chapter files, not quoted from the commit message.
+filed by: arena-agent on 2026-09-30
+
+RECORDS:
+  - [note] Gate gap found while registering this project. tools/schema.py
+  PROJECT_STATUSES defines nine values: live, active, gate-pass, portable,
+  reference, template, external, paused, superseded.
+  state/projects_registry.json currently holds three statuses outside that
+  list: blocked (dragon_prince_yuan), complete (soul_land_3), dropped
+  (soul_land_new). validate.py enforces the list on incoming contributions,
+  so any future agent filing one of those three words is rejected, while the
+  same words sit unchallenged in the state layer. This is a schema question,
+  not a data question: either the three statuses are added to
+  PROJECT_STATUSES with selftest cases, or the three projects are corrected
+  onto defined values. Both change a rule, so both need the author, not an
+  agent. Logged, not fixed.
+
+
+==============================================================================
+SECTION 26 - KNOWLEDGE FIREWALLS
 ==============================================================================
 
 STATES: KNOWN / KNOWN PARTLY / SUSPICION / DISBELIEF / UNKNOWN / FALSE BELIEF / HIDDEN
@@ -1100,7 +1137,7 @@ regressions - without it, the next agent will helpfully let the character find
 out early because the plot needs it.
 
 ==============================================================================
-SECTION 26 - ADAPTATION TALENT (cross-project)
+SECTION 27 - ADAPTATION TALENT (cross-project)
 ==============================================================================
 
 WHAT IT IS: An innate, non-conscious, existence-level personal law or instinct
@@ -1127,7 +1164,7 @@ Adaptation cannot bypass setting rules. It operates inside the setting's
 physics - it is not an exemption from them.
 
 ==============================================================================
-SECTION 27 - CONTRIBUTED STATE
+SECTION 28 - CONTRIBUTED STATE
 ==============================================================================
 
 OTHER RECORDS:
@@ -1402,10 +1439,22 @@ OTHER RECORDS:
   - [correction] - (filed by Sara (Agent Mode))
   - [correction] - (filed by Sara (Agent Mode))
   - [correction] - (filed by Sara (Agent Mode))
+  - [note] Gate gap found while registering this project. tools/schema.py
+  PROJECT_STATUSES defines nine values: live, active, gate-pass, portable,
+  reference, template, external, paused, superseded.
+  state/projects_registry.json currently holds three statuses outside that
+  list: blocked (dragon_prince_yuan), complete (soul_land_3), dropped
+  (soul_land_new). validate.py enforces the list on incoming contributions,
+  so any future agent filing one of those three words is rejected, while the
+  same words sit unchallenged in the state layer. This is a schema question,
+  not a data question: either the three statuses are added to
+  PROJECT_STATUSES with selftest cases, or the three projects are corrected
+  onto defined values. Both change a rule, so both need the author, not an
+  agent. Logged, not fixed. (filed by arena-agent)
 
 
 ==============================================================================
-SECTION 28 - HOW THIS SYSTEM GROWS
+SECTION 29 - HOW THIS SYSTEM GROWS
 ==============================================================================
 
 This is not a static document. It is a generated view over a state layer that
@@ -1429,7 +1478,7 @@ RESERVED: authority_order, seven_gates, gate_scope_warning, _comment. These
 change the shape of the system and need the user, not a contribution.
 
 ==============================================================================
-SECTION 29 - INSTRUCTIONS TO THE RECEIVING AGENT
+SECTION 30 - INSTRUCTIONS TO THE RECEIVING AGENT
 ==============================================================================
 
  1. Ingest this bootstrap fully before doing anything else.
