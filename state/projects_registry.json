@@ -199,6 +199,20 @@
         "agent": "arena-agent",
         "date": "2026-09-30"
       }
+    },
+    {
+      "id": "clear_sky_lion",
+      "name": "Clear Sky Lion",
+      "path": "github.com/gm5206663-bit/soul-land-2-clear-sky-lion",
+      "status": "active",
+      "live_edge": "none - Stage 0 open, zero chapters, lane table R1-R15 awaiting author",
+      "verification": "foundation gate not built yet (Stage 0 step 5, before chapter 1); method layer selftest 16/16 on build day",
+      "notes": "SL2 serial: OC from the Clear Sky Sect, same age as Huo Yuhao, twin martial souls (Clear Sky Hammer + Golden Lion King), womb-born Adaptation Talent, rank 29 with purple/yellow lion rings at day 1, grade-3 blacksmith. Stage 0 lane table filed 2026-09-30 at foundation/OPEN_RULINGS.md. New repo per separation walls.",
+      "authority": "author word outranks every file",
+      "provenance": {
+        "agent": "arena-agent",
+        "date": "2026-09-30"
+      }
     }
   ]
 }
