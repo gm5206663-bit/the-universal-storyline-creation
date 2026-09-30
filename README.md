@@ -41,6 +41,12 @@ README.md               this file
 PROTOCOL.md             the contribution contract. Read before filing anything.
 Makefile                the commands
 
+foundation/              THE UNIVERSAL FOUNDATION LAYER (docset v6.0)
+  README.md              core vs packs, how to use, gate contract
+  STAGE_0.md             the rulings-first lifecycle: open -> rule -> gate -> close
+  templates/             one template per foundation file (19 core + 2 packs)
+  DRY_RUN_2026-09-30.md  receipt: proven against pokemon + grey-wolf
+
 state/                  the data. This is what actually persists.
   workspace.json        measured from disk by tools/extract_state.py
   canon.json            canon spine, rank ladder, ring ages, user rulings
@@ -63,6 +69,7 @@ tools/
   ingest.py             merge validated input into state/
   bootstrap.py          state/ -> TRANSFER_BOOTSTRAP.txt
   build.py              state/ -> index.html
+  foundation_gate.py    gate any serial's foundation/ docset (--selftest)
 ```
 
 ---

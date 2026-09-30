@@ -12,6 +12,12 @@ control_centre/
 ├── index.html              GENERATED — never hand-edit
 ├── TRANSFER_BOOTSTRAP.txt  GENERATED — never hand-edit
 ├── PROTOCOL.md             this file
+├── Makefile                the commands
+├── foundation/             THE UNIVERSAL FOUNDATION LAYER (docset v6.0)
+│   ├── README.md           core vs packs, how to use, gate contract
+│   ├── STAGE_0.md          the rulings-first lifecycle
+│   ├── templates/          one template per foundation file (19 core + packs)
+│   └── DRY_RUN_2026-09-30.md   receipt: proven against pokemon + grey-wolf
 ├── state/                  the data. hand-curated + contributions
 │   ├── workspace.json      measured from disk by tools/extract_state.py
 │   ├── canon.json          canon spine, rank ladder, ring ages, user rulings
@@ -32,7 +38,8 @@ control_centre/
     ├── validate.py         reject bad input
     ├── ingest.py           merge validated input into state/
     ├── bootstrap.py        state/ -> TRANSFER_BOOTSTRAP.txt
-    └── build.py            state/ -> index.html
+    ├── build.py            state/ -> index.html
+    └── foundation_gate.py  gate any serial's foundation/ docset (--selftest)
 ```
 
 **The two generated files are artifacts.** If you edit them by hand, the next
