@@ -9,6 +9,8 @@ Checks the universal foundation layer (foundation/README.md, docset v6.0):
 the nineteen core files exist and are filled, pack pairs are complete,
 rulings keep verbatim discipline, STATUS carries a live edge, HANDOFF carries
 a read order, and a locked Stage 0 may not sit next to chapters on disk.
+Unambiguous scaffolding ({{placeholders}}, template examples) FAILs; bare
+TBD/FIXME WARNs (prose may be quoting the ban) and only fails under --strict.
 
 A check that cannot fail on a bad input is not a check, which is why
 --selftest injects a defect for each one. The selftest runs before every
@@ -40,13 +42,17 @@ PACKS = {
     "world": ["ECONOMY.md"],
 }
 
-# Leftover template scaffolding. 'EXAMPLE - DELETE' is the template's own
-# delete-me marker (written with an en-dash in the files; match loosely).
-PLACEHOLDER_RES = [
+# Leftover template scaffolding. `{{...}}` and the template's own delete-me
+# marker are unambiguous scaffolding: FAIL. Bare TBD/FIXME in prose may be a
+# receipt that mentions the ban ("no FIXME residue") rather than residue, so
+# they WARN and --strict escalates them: eyes on it, not a blind verdict.
+FAIL_PLACEHOLDER_RES = [
     (re.compile(r"\{\{|\}\}"), "unfilled {{placeholder}}"),
-    (re.compile(r"\bTBD\b"), "unfilled TBD"),
-    (re.compile(r"\bFIXME\b"), "unfilled FIXME"),
     (re.compile(r"EXAMPLE\s*[—-]\s*DELETE", re.I), "template example not deleted"),
+]
+WARN_PLACEHOLDER_RES = [
+    (re.compile(r"\bTBD\b"), "TBD present - confirm it is not unfilled scaffolding"),
+    (re.compile(r"\bFIXME\b"), "FIXME present - confirm it is not unfilled scaffolding"),
 ]
 
 # Ruling entries: house format A (### R1 / ## F2 sections) and format B
@@ -133,20 +139,24 @@ def count_chapters(serial_root):
 
 
 def check_file_filled(path, rel):
-    """Errors for one required file: exists, not thin, no scaffolding."""
-    errs = []
+    """(errors, warnings) for one required file: exists, not thin, no scaffolding."""
+    errs, warns = [], []
     if not os.path.isfile(path):
-        return [f"missing required file: {rel}"]
+        return [f"missing required file: {rel}"], warns
     text = read(path)
     if len(text.strip()) < MIN_BYTES:
         errs.append(f"{rel} is under {MIN_BYTES} bytes - not filled")
-    for rx, label in PLACEHOLDER_RES:
+    for rx, label in FAIL_PLACEHOLDER_RES:
         m = rx.search(text)
         if m:
             i = max(0, m.start() - 30)
             errs.append(f"{rel}: {label}, near ...{text[i:m.end() + 30]!r}...")
             break  # one scaffolding finding per file is enough to fail it
-    return errs
+    for rx, label in WARN_PLACEHOLDER_RES:
+        if rx.search(text):
+            warns.append(f"{rel}: {label}")
+            break
+    return errs, warns
 
 
 def check_rulings(text, rel="foundation/RULINGS_LOG.md"):
@@ -181,8 +191,10 @@ def check(serial_root, packs_request="auto", strict=False):
     for pack in sorted(active):
         required.extend(PACKS[pack])
     for name in required:
-        errs.extend(check_file_filled(os.path.join(fdir, name),
-                                      os.path.relpath(os.path.join(fdir, name), serial_root)))
+        fe, fw = check_file_filled(os.path.join(fdir, name),
+                                   os.path.relpath(os.path.join(fdir, name), serial_root))
+        errs.extend(fe)
+        warns.extend(fw)
 
     # 2 - pack pairs: half a system is not a system
     for pack, files in PACKS.items():
@@ -314,6 +326,12 @@ def selftest():
     def ph(b):
         _mk_serial(b, CORE, VALID_TEXT + "\n{{FILL_ME}}\n")
     run("unfilled placeholder fails", ph)
+
+    def tbd_mentioned(b):
+        _mk_serial(b, CORE, VALID_TEXT + "\nThe ban: no TODO/FIXME residue here.\n")
+    run("TBD/FIXME mention warns, not fails", tbd_mentioned, expect_fail=False)
+    run("TBD/FIXME mention fails in strict mode", tbd_mentioned,
+        expect_fail=True, strict=True)
 
     def half_sys(b):
         good(b)

@@ -365,6 +365,17 @@
       },
       "seq": 32,
       "kind": "note"
+    },
+    {
+      "project": "clear_sky_lion",
+      "tag": "foundation-layer",
+      "text": "Universal foundation layer live in this repo at foundation/ (docset v6.0): STAGE_0 lifecycle, 22 per-file templates, foundation_gate.py (18/18 selftest after the TBD/FIXME false-positive fix). Receipts: DRY_RUN_2026-09-30.md and FLEET_AUDIT_2026-09-30.md - 17 serial docsets measured, 2 PASS (pokemon; grey-wolf after adoption of its 5 missing files from its own record), 15 FAIL with per-serial gaps; qian-xunji caught carrying a half system pack (SYSTEM_SPEC without METERS). Author order executed: 'Check others all things and create and do others All things'. Clear Sky Lion stays drafting-locked: R1-R15 still open, no agent may answer Lock 4/Lock 5.",
+      "provenance": {
+        "agent": "arena-agent",
+        "date": "2026-09-30"
+      },
+      "seq": 33,
+      "kind": "note"
     }
   ]
 }

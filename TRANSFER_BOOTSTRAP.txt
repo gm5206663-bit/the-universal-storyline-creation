@@ -13,7 +13,7 @@ AT A GLANCE
   knowledge firewalls   18
   kit laws              11
   hard gates            7
-  growth events logged  42
+  growth events logged  43
 
 ==============================================================================
 SECTION 1 - CORE OPERATING RULE
@@ -1011,6 +1011,18 @@ verification: foundation gate not built yet (Stage 0 step 5, before chapter
 1); method layer selftest 16/16 on build day
 filed by: arena-agent on 2026-09-30
 
+RECORDS:
+  - [note] Universal foundation layer live in this repo at foundation/
+  (docset v6.0): STAGE_0 lifecycle, 22 per-file templates,
+  foundation_gate.py (18/18 selftest after the TBD/FIXME false-positive
+  fix). Receipts: DRY_RUN_2026-09-30.md and FLEET_AUDIT_2026-09-30.md - 17
+  serial docsets measured, 2 PASS (pokemon; grey-wolf after adoption of its
+  5 missing files from its own record), 15 FAIL with per-serial gaps; qian-
+  xunji caught carrying a half system pack (SYSTEM_SPEC without METERS).
+  Author order executed: 'Check others all things and create and do others
+  All things'. Clear Sky Lion stays drafting-locked: R1-R15 still open, no
+  agent may answer Lock 4/Lock 5.
+
 
 ==============================================================================
 SECTION 27 - KNOWLEDGE FIREWALLS
@@ -1469,6 +1481,16 @@ OTHER RECORDS:
   PROJECT_STATUSES with selftest cases, or the three projects are corrected
   onto defined values. Both change a rule, so both need the author, not an
   agent. Logged, not fixed. (filed by arena-agent)
+  - [note] Universal foundation layer live in this repo at foundation/
+  (docset v6.0): STAGE_0 lifecycle, 22 per-file templates,
+  foundation_gate.py (18/18 selftest after the TBD/FIXME false-positive
+  fix). Receipts: DRY_RUN_2026-09-30.md and FLEET_AUDIT_2026-09-30.md - 17
+  serial docsets measured, 2 PASS (pokemon; grey-wolf after adoption of its
+  5 missing files from its own record), 15 FAIL with per-serial gaps; qian-
+  xunji caught carrying a half system pack (SYSTEM_SPEC without METERS).
+  Author order executed: 'Check others all things and create and do others
+  All things'. Clear Sky Lion stays drafting-locked: R1-R15 still open, no
+  agent may answer Lock 4/Lock 5. (filed by arena-agent)
 
 
 ==============================================================================

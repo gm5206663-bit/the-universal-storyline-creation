@@ -97,7 +97,9 @@ Control Centre selftest law.
 
 ### What it checks
 
-- the nineteen core files exist and are filled (no `{{placeholders}}` left);
+- the nineteen core files exist and are filled (no `{{placeholders}}` or
+  template examples left — those FAIL; bare `TBD`/`FIXME` WARNs for eyes-on
+  and only fails under `--strict`, because prose may be quoting the ban);
 - pack pairs are complete — half a system is not a system;
 - `RULINGS_LOG.md` declares verbatim discipline and carries ruling entries
   (both house formats accepted: `### R1 …` with blockquotes, and the
