@@ -13,7 +13,7 @@ AT A GLANCE
   knowledge firewalls   18
   kit laws              11
   hard gates            7
-  growth events logged  52
+  growth events logged  53
 
 ==============================================================================
 SECTION 1 - CORE OPERATING RULE
@@ -1598,6 +1598,15 @@ OTHER RECORDS:
   14/14). foundation_gate: stage 0 unlocked, PASS, 0 chapters. 13/13 lanes
   ruled; drafting unlocked; chapter 1 waits for the author's word. (filed by
   arena-agent)
+  - [note] fire_dragon_lizard: Chapter 1 shipped 2026-10-03 on the author's
+  word 'Write'. chapters/Chapter_01.md 'The Lizard and the Grass' -
+  coverage-first (Canon_Coverage_Chapter_01.md: Douluo ch1 receipts +
+  corroborated ceremony mechanics, disputed details excluded), 2444 words
+  inside the 2400-3400 band, chapter_gate PASS 0 errors, two gain-beat
+  panels, no System tokens, Tang San's canon beats intact (Blue Silver Grass
+  + innate full), OC awakens Ground Fire Dragon Lizard with innate mid (no
+  digit in prose), D1 earned on page. STATUS v2 + cockpit mirrors synced
+  same turn. Next: chapter 2 on the author's word. (filed by arena-agent)
 
 
 ==============================================================================
