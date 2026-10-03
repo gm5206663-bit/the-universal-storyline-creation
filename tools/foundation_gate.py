@@ -61,9 +61,12 @@ ENTRY_RE = re.compile(r"(?:^|\n)\s{0,3}#{1,4}\s*\**[RF]\d+\b", re.M)
 TABLE_ENTRY_RE = re.compile(r"^\|\s*[RF]\d+\s*\|", re.M)
 BLOCKQUOTE_RE = re.compile(r"^\s*>", re.M)
 
-# Stage 0 state detector. 'unlocked' wins over 'locked': a closed Stage 0
-# keeps its history, including old LOCKED quotes, so the newest state marks
-# itself as unlocked / closed in STATUS and HANDOFF.
+# Stage 0 state detector. 'unlocked' wins over 'locked' only when no open
+# lanes remain: a closed Stage 0 keeps its history (old LOCKED quotes), so an
+# unlocked statement marks the new state -- UNLESS the layer's own red-lane
+# marker ('OPEN' rows in OPEN_RULINGS) is present, which means lanes are still
+# open and future-step prose like "closed -> drafting unlocked" must not flip
+# the state. Selftest covers both directions.
 UNLOCKED_RE = re.compile(
     r"drafting (?:is |now )?unlocked|stage\s*0[:\s—-]*closed|stage zero[^.]{0,40}closed",
     re.I,
@@ -72,6 +75,7 @@ LOCKED_RE = re.compile(
     r"drafting (?:is |stays )?locked|drafting stays locked|zero chapters until",
     re.I,
 )
+OPEN_LANES_RE = re.compile(r"🔴\s*OPEN")
 
 # Stale citation tags on the two version axes (VERSION_OF_RECORD.md).
 STALE_RES = [
@@ -123,9 +127,13 @@ def stage0_state(fdir):
     text = "\n".join(blob)
     if not text:
         return None
+    locked = bool(LOCKED_RE.search(text))
+    open_lanes = bool(OPEN_LANES_RE.search(text))
+    if locked and open_lanes:
+        return "locked"          # lanes still open; future-step prose lies not
     if UNLOCKED_RE.search(text):
         return "unlocked"
-    if LOCKED_RE.search(text):
+    if locked:
         return "locked"
     return None
 
@@ -372,6 +380,15 @@ def selftest():
                    VALID_TEXT + "\nStage 0 closed. Drafting is unlocked.\n",
                    chapters=2)
     run("unlocked stage 0 + chapters passes", unlocked_with_chapters, expect_fail=False)
+
+    def open_lanes_beat_future_prose(b):
+        _mk_serial(b, CORE,
+                   VALID_TEXT
+                   + "\nDRAFTING IS LOCKED; lanes 🔴 OPEN (R10).\n"
+                   + "step 5: Stage 0 closed -> drafting unlocked\n",
+                   chapters=1)
+    run("open lanes keep state locked despite future-step prose",
+        open_lanes_beat_future_prose)
 
     def stale(b):
         _mk_serial(b, CORE, VALID_TEXT + "\nfoundation docset v5.1 20 files\n")

@@ -376,6 +376,30 @@
       },
       "seq": 33,
       "kind": "note"
+    },
+    {
+      "project": "supergirl_adrian_vale",
+      "decision": "supergirl-adrian-vale keeps its own foundation standard (USER_LOCKS.json + OPEN_DECISIONS + verify_foundation.py); no universal-foundation-layer adoption",
+      "reason": "Author's selection 2026-10-03 (ask_user: 'Supergirl - keep its own standard, or adopt?'). Selected keep_own. The serial runs a parallel healthy house pattern; registry entry already notes the gate would fail it on docset shape, not health.",
+      "authorized_by": "author (gm5206663-bit)",
+      "date": "2026-10-03",
+      "provenance": {
+        "agent": "arena-agent",
+        "date": "2026-10-03"
+      },
+      "seq": 34,
+      "kind": "decision"
+    },
+    {
+      "project": "clear_sky_lion",
+      "tag": "stage-0",
+      "text": "Stage 0 at 12 of 15 ruled (2026-10-03 author selection 'take_all': R1-R9, R13-R15 defaults installed verbatim in the serial's RULINGS_LOG). R10 ceiling, R11 clan posture (omitted from the list - agent error, recorded), R12 Lock 4 remain OPEN - no agent may answer them; drafting stays LOCKED, zero chapters. Core docset built same day (20 files), foundation gate PASS with stage 0 correctly reading 'locked'. Gate detector fixed the same turn: red-lane markers keep state locked despite future-step 'drafting unlocked' prose; selftest 19/19. Author's operational steer on record: 'Manage all GitHub.' System Cheat kit issues #2/#3 left untouched (author's gifts, still held).",
+      "provenance": {
+        "agent": "arena-agent",
+        "date": "2026-10-03"
+      },
+      "seq": 35,
+      "kind": "note"
     }
   ]
 }

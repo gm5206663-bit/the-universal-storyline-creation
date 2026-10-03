@@ -205,7 +205,7 @@ ul.bullets li::before{content:"\2013";position:absolute;left:0;color:var(--ink3)
 <span class="chip">PROJECTS <b>6</b></span>
 <span class="chip">WORDS <b>1,388,550</b></span>
 <span class="chip">FIREWALLS <b>18</b></span>
-<span class="chip">GROWTH EVENTS <b>45</b></span>
+<span class="chip">GROWTH EVENTS <b>47</b></span>
 <span class="chip warn">BUILT <b>2026-09-26</b></span>
 </div></div></header>
 <section id="status"><div class="wrap"><h3>SECTION 00</h3><h4>Operating status</h4>
@@ -591,11 +591,13 @@ ul.bullets li::before{content:"\2013";position:absolute;left:0;color:var(--ink3)
 <div class="grid g4">
 <div class="card"><div class="metric small">18</div><div class="mlabel">FIREWALLS</div></div>
 <div class="card"><div class="metric small">17</div><div class="mlabel">CONTRIBUTED PROJECTS</div></div>
-<div class="card"><div class="metric small">33</div><div class="mlabel">CONTRIBUTED RECORDS</div></div>
-<div class="card"><div class="metric small">45</div><div class="mlabel">GROWTH EVENTS</div></div>
+<div class="card"><div class="metric small">35</div><div class="mlabel">CONTRIBUTED RECORDS</div></div>
+<div class="card"><div class="metric small">47</div><div class="mlabel">GROWTH EVENTS</div></div>
 </div>
 <div class="scroll"><table>
 <thead><tr><th>When</th><th>Agent</th><th>Records added</th><th>Source file</th></tr></thead><tbody>
+<tr><td class="mono">2026-10-03T07:48:40</td><td class="k">arena-agent</td><td class="mono">note#35</td><td class="mono">clear_sky_stage0_12of15.json</td></tr>
+<tr><td class="mono">2026-10-03T07:48:40</td><td class="k">arena-agent</td><td class="mono">decision#34</td><td class="mono">supergirl_keep_own_standard.json</td></tr>
 <tr><td class="mono">2026-10-03T07:22:55</td><td class="k">arena-agent</td><td class="mono">project:fire_phoenix_workshop</td><td class="mono">fire_phoenix_workshop.json</td></tr>
 <tr><td class="mono">2026-10-03T07:22:55</td><td class="k">arena-agent</td><td class="mono">project:supergirl_adrian_vale</td><td class="mono">supergirl_project.json</td></tr>
 <tr><td class="mono">2026-09-30T10:18:59</td><td class="k">arena-agent</td><td class="mono">note#33</td><td class="mono">foundation_layer_fleet_audit.json</td></tr>
@@ -678,6 +680,8 @@ ul.bullets li::before{content:"\2013";position:absolute;left:0;color:var(--ink3)
 <tr><td class="num">31</td><td class="k">correction</td><td class="mono">devouring_dragon</td><td>-</td><td class="mono">Sara (Agent Mode)</td></tr>
 <tr><td class="num">32</td><td class="k">note</td><td class="mono">qing_ling</td><td>Gate gap found while registering this project. tools/schema.py PROJECT_STATUSES defines nine values: live, active, gate-pass, portable, reference, template, external, paused, superseded. state/projects_registry.json currently holds three statuses outside that list: blocked (dragon_prince_yuan), complete (soul_land_3), dropped (soul_land_new). validate.py enforces the list on incoming contributions, so any future agent filing one of those three words is rejected, while the same words sit unchallenged in the state layer. This is a schema question, not a data question: either the three statuses are added to PROJECT_STATUSES with selftest cases, or the three projects are corrected onto defined values. Both change a rule, so both need the author, not an agent. Logged, not fixed.</td><td class="mono">arena-agent</td></tr>
 <tr><td class="num">33</td><td class="k">note</td><td class="mono">clear_sky_lion</td><td>Universal foundation layer live in this repo at foundation/ (docset v6.0): STAGE_0 lifecycle, 22 per-file templates, foundation_gate.py (18/18 selftest after the TBD/FIXME false-positive fix). Receipts: DRY_RUN_2026-09-30.md and FLEET_AUDIT_2026-09-30.md - 17 serial docsets measured, 2 PASS (pokemon; grey-wolf after adoption of its 5 missing files from its own record), 15 FAIL with per-serial gaps; qian-xunji caught carrying a half system pack (SYSTEM_SPEC without METERS). Author order executed: &#x27;Check others all things and create and do others All things&#x27;. Clear Sky Lion stays drafting-locked: R1-R15 still open, no agent may answer Lock 4/Lock 5.</td><td class="mono">arena-agent</td></tr>
+<tr><td class="num">34</td><td class="k">decision</td><td class="mono">supergirl_adrian_vale</td><td>supergirl-adrian-vale keeps its own foundation standard (USER_LOCKS.json + OPEN_DECISIONS + verify_foundation.py); no universal-foundation-layer adoption</td><td class="mono">arena-agent</td></tr>
+<tr><td class="num">35</td><td class="k">note</td><td class="mono">clear_sky_lion</td><td>Stage 0 at 12 of 15 ruled (2026-10-03 author selection &#x27;take_all&#x27;: R1-R9, R13-R15 defaults installed verbatim in the serial&#x27;s RULINGS_LOG). R10 ceiling, R11 clan posture (omitted from the list - agent error, recorded), R12 Lock 4 remain OPEN - no agent may answer them; drafting stays LOCKED, zero chapters. Core docset built same day (20 files), foundation gate PASS with stage 0 correctly reading &#x27;locked&#x27;. Gate detector fixed the same turn: red-lane markers keep state locked despite future-step &#x27;drafting unlocked&#x27; prose; selftest 19/19. Author&#x27;s operational steer on record: &#x27;Manage all GitHub.&#x27; System Cheat kit issues #2/#3 left untouched (author&#x27;s gifts, still held).</td><td class="mono">arena-agent</td></tr>
 </tbody></table></div>
 <div class="note law"><span class="nt">APPEND-ONLY BY DESIGN</span>A contribution can ADD a firewall, an anchor, a decision or a correction. It cannot silently overwrite existing state. A correction is recorded as a correction, which keeps the old value visible and shows why it changed. That is deliberate: a state layer where anything can be quietly replaced is a state layer nobody can trust.</div>
 </div></section>
@@ -729,7 +733,7 @@ AT A GLANCE
   knowledge firewalls   18
   kit laws              11
   hard gates            7
-  growth events logged  45
+  growth events logged  47
 
 ==============================================================================
 SECTION 1 - CORE OPERATING RULE
@@ -1738,6 +1742,16 @@ RECORDS:
   Author order executed: &#x27;Check others all things and create and do others
   All things&#x27;. Clear Sky Lion stays drafting-locked: R1-R15 still open, no
   agent may answer Lock 4/Lock 5.
+  - [note] Stage 0 at 12 of 15 ruled (2026-10-03 author selection
+  &#x27;take_all&#x27;: R1-R9, R13-R15 defaults installed verbatim in the serial&#x27;s
+  RULINGS_LOG). R10 ceiling, R11 clan posture (omitted from the list - agent
+  error, recorded), R12 Lock 4 remain OPEN - no agent may answer them;
+  drafting stays LOCKED, zero chapters. Core docset built same day (20
+  files), foundation gate PASS with stage 0 correctly reading &#x27;locked&#x27;. Gate
+  detector fixed the same turn: red-lane markers keep state locked despite
+  future-step &#x27;drafting unlocked&#x27; prose; selftest 19/19. Author&#x27;s
+  operational steer on record: &#x27;Manage all GitHub.&#x27; System Cheat kit issues
+  #2/#3 left untouched (author&#x27;s gifts, still held).
 
 
 ==============================================================================
@@ -1757,6 +1771,11 @@ verification: own standard, not docset v6.0: tools/verify.py +
 verify_foundation.py + selftest.py; generated README from
 foundation/CURRENT_STATE_MANIFEST.json
 filed by: arena-agent on 2026-10-03
+
+RECORDS:
+  - [decision] supergirl-adrian-vale keeps its own foundation standard
+  (USER_LOCKS.json + OPEN_DECISIONS + verify_foundation.py); no universal-
+  foundation-layer adoption
 
 
 ==============================================================================
@@ -2240,6 +2259,19 @@ OTHER RECORDS:
   Author order executed: &#x27;Check others all things and create and do others
   All things&#x27;. Clear Sky Lion stays drafting-locked: R1-R15 still open, no
   agent may answer Lock 4/Lock 5. (filed by arena-agent)
+  - [decision] supergirl-adrian-vale keeps its own foundation standard
+  (USER_LOCKS.json + OPEN_DECISIONS + verify_foundation.py); no universal-
+  foundation-layer adoption (filed by arena-agent)
+  - [note] Stage 0 at 12 of 15 ruled (2026-10-03 author selection
+  &#x27;take_all&#x27;: R1-R9, R13-R15 defaults installed verbatim in the serial&#x27;s
+  RULINGS_LOG). R10 ceiling, R11 clan posture (omitted from the list - agent
+  error, recorded), R12 Lock 4 remain OPEN - no agent may answer them;
+  drafting stays LOCKED, zero chapters. Core docset built same day (20
+  files), foundation gate PASS with stage 0 correctly reading &#x27;locked&#x27;. Gate
+  detector fixed the same turn: red-lane markers keep state locked despite
+  future-step &#x27;drafting unlocked&#x27; prose; selftest 19/19. Author&#x27;s
+  operational steer on record: &#x27;Manage all GitHub.&#x27; System Cheat kit issues
+  #2/#3 left untouched (author&#x27;s gifts, still held). (filed by arena-agent)
 
 
 ==============================================================================

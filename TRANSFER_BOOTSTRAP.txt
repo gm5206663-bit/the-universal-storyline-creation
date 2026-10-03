@@ -13,7 +13,7 @@ AT A GLANCE
   knowledge firewalls   18
   kit laws              11
   hard gates            7
-  growth events logged  45
+  growth events logged  47
 
 ==============================================================================
 SECTION 1 - CORE OPERATING RULE
@@ -1022,6 +1022,16 @@ RECORDS:
   Author order executed: 'Check others all things and create and do others
   All things'. Clear Sky Lion stays drafting-locked: R1-R15 still open, no
   agent may answer Lock 4/Lock 5.
+  - [note] Stage 0 at 12 of 15 ruled (2026-10-03 author selection
+  'take_all': R1-R9, R13-R15 defaults installed verbatim in the serial's
+  RULINGS_LOG). R10 ceiling, R11 clan posture (omitted from the list - agent
+  error, recorded), R12 Lock 4 remain OPEN - no agent may answer them;
+  drafting stays LOCKED, zero chapters. Core docset built same day (20
+  files), foundation gate PASS with stage 0 correctly reading 'locked'. Gate
+  detector fixed the same turn: red-lane markers keep state locked despite
+  future-step 'drafting unlocked' prose; selftest 19/19. Author's
+  operational steer on record: 'Manage all GitHub.' System Cheat kit issues
+  #2/#3 left untouched (author's gifts, still held).
 
 
 ==============================================================================
@@ -1041,6 +1051,11 @@ verification: own standard, not docset v6.0: tools/verify.py +
 verify_foundation.py + selftest.py; generated README from
 foundation/CURRENT_STATE_MANIFEST.json
 filed by: arena-agent on 2026-10-03
+
+RECORDS:
+  - [decision] supergirl-adrian-vale keeps its own foundation standard
+  (USER_LOCKS.json + OPEN_DECISIONS + verify_foundation.py); no universal-
+  foundation-layer adoption
 
 
 ==============================================================================
@@ -1524,6 +1539,19 @@ OTHER RECORDS:
   Author order executed: 'Check others all things and create and do others
   All things'. Clear Sky Lion stays drafting-locked: R1-R15 still open, no
   agent may answer Lock 4/Lock 5. (filed by arena-agent)
+  - [decision] supergirl-adrian-vale keeps its own foundation standard
+  (USER_LOCKS.json + OPEN_DECISIONS + verify_foundation.py); no universal-
+  foundation-layer adoption (filed by arena-agent)
+  - [note] Stage 0 at 12 of 15 ruled (2026-10-03 author selection
+  'take_all': R1-R9, R13-R15 defaults installed verbatim in the serial's
+  RULINGS_LOG). R10 ceiling, R11 clan posture (omitted from the list - agent
+  error, recorded), R12 Lock 4 remain OPEN - no agent may answer them;
+  drafting stays LOCKED, zero chapters. Core docset built same day (20
+  files), foundation gate PASS with stage 0 correctly reading 'locked'. Gate
+  detector fixed the same turn: red-lane markers keep state locked despite
+  future-step 'drafting unlocked' prose; selftest 19/19. Author's
+  operational steer on record: 'Manage all GitHub.' System Cheat kit issues
+  #2/#3 left untouched (author's gifts, still held). (filed by arena-agent)
 
 
 ==============================================================================

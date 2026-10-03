@@ -424,6 +424,24 @@
         "project:fire_phoenix_workshop"
       ],
       "count": 1
+    },
+    {
+      "when": "2026-10-03T07:48:40",
+      "file": "supergirl_keep_own_standard.json",
+      "agent": "arena-agent",
+      "ids": [
+        "decision#34"
+      ],
+      "count": 1
+    },
+    {
+      "when": "2026-10-03T07:48:40",
+      "file": "clear_sky_stage0_12of15.json",
+      "agent": "arena-agent",
+      "ids": [
+        "note#35"
+      ],
+      "count": 1
     }
   ]
 }
