@@ -430,6 +430,15 @@
       },
       "seq": 38,
       "kind": "note"
+    },
+    {
+      "text": "fire_dragon_lizard: Stage 0 COMPLETE (2026-10-03). R12 RULED by the author's verbatim selection 'Full start: close R12 with defaults + build the chapter gate' - direction = fire-phoenix pattern (canon road in parallel + natural butterflies under the No-Fix Law); three-blank spine format stays banned. Chapter gate built: tools/chapter_gate.py (band 2400-3400 per R13, System-token bans per PRE4, stage-lock check, selftest 14/14). foundation_gate: stage 0 unlocked, PASS, 0 chapters. 13/13 lanes ruled; drafting unlocked; chapter 1 waits for the author's word.",
+      "provenance": {
+        "agent": "arena-agent",
+        "date": "2026-10-03"
+      },
+      "seq": 39,
+      "kind": "note"
     }
   ]
 }
