@@ -213,6 +213,33 @@
         "agent": "arena-agent",
         "date": "2026-09-30"
       }
+    },
+    {
+      "id": "supergirl_adrian_vale",
+      "name": "Supergirl - Adrian Vale",
+      "path": "github.com/gm5206663-bit/supergirl-adrian-vale",
+      "status": "active",
+      "live_edge": "chapter 12 adopted-rebuilt-clean; next chapter 13; foundation-021/022 epoch, 53-pass zip",
+      "verification": "own standard, not docset v6.0: tools/verify.py + verify_foundation.py + selftest.py; generated README from foundation/CURRENT_STATE_MANIFEST.json",
+      "notes": "Created 2026-10-01. First non-Soul-Land/non-MCU fandom line (DC TV). Parallel house pattern: USER_LOCKS.json (typed rulings), OPEN_DECISIONS, CANON_LEDGER, SERIAL_FOUNDATION, STATUS_PANEL. Registered 2026-10-03 during full-estate management sweep. Universal foundation layer adoption = author decision (foundation gate would fail it on docset shape, not on health).",
+      "authority": "author word outranks every file",
+      "provenance": {
+        "agent": "arena-agent",
+        "date": "2026-10-03"
+      }
+    },
+    {
+      "id": "fire_phoenix_workshop",
+      "name": "Fire Phoenix Workshop (V2 line)",
+      "path": "github.com/gm5206663-bit/fire-phoenix-workshop",
+      "status": "active",
+      "live_edge": "repository created 2026-10-03, empty - no commits yet",
+      "notes": "Private, non-public working repository for the Fire Phoenix provenance-preserving V2 line (companion to soul_land_4_fire_phoenix). Registered 2026-10-03 during full-estate sweep; empty at registration - first push expected from the working agent. Nothing filed here takes that agent's lane.",
+      "authority": "author word outranks every file",
+      "provenance": {
+        "agent": "arena-agent",
+        "date": "2026-10-03"
+      }
     }
   ]
 }
