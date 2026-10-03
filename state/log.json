@@ -442,6 +442,24 @@
         "note#35"
       ],
       "count": 1
+    },
+    {
+      "when": "2026-10-03T08:50:23",
+      "file": "fire_dragon_lizard_project.json",
+      "agent": "arena-agent",
+      "ids": [
+        "project:fire_dragon_lizard"
+      ],
+      "count": 1
+    },
+    {
+      "when": "2026-10-03T08:50:23",
+      "file": "no_fix_law_decision.json",
+      "agent": "arena-agent",
+      "ids": [
+        "decision#36"
+      ],
+      "count": 1
     }
   ]
 }

@@ -240,6 +240,19 @@
         "agent": "arena-agent",
         "date": "2026-10-03"
       }
+    },
+    {
+      "id": "fire_dragon_lizard",
+      "name": "Fire Dragon Lizard (Soul Land 1)",
+      "path": "github.com/gm5206663-bit/soul-land-1-fire-dragon-lizard",
+      "status": "active",
+      "live_edge": "none - Stage 0 open 2026-10-03, zero chapters, lanes R1-R13 awaiting author",
+      "notes": "Third Soul Land 1 line (alongside SL1_GU_YUAN and soul_land_new - separation walls hold). Premise ruled verbatim same day (PRE1-PRE5): same age as Tang San, the village, his childhood friend, Fire Dragon Lizard martial soul, womb Adaptation Talent, NO SYSTEM, and the No-Fix Law. New repo per house precedent; registered on the author's founding order.",
+      "authority": "author word outranks every file",
+      "provenance": {
+        "agent": "arena-agent",
+        "date": "2026-10-03"
+      }
     }
   ]
 }

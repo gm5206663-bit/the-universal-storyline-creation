@@ -13,7 +13,7 @@ AT A GLANCE
   knowledge firewalls   18
   kit laws              11
   hard gates            7
-  growth events logged  47
+  growth events logged  49
 
 ==============================================================================
 SECTION 1 - CORE OPERATING RULE
@@ -1073,7 +1073,23 @@ filed by: arena-agent on 2026-10-03
 
 
 ==============================================================================
-SECTION 29 - KNOWLEDGE FIREWALLS
+SECTION 29 - PROJECT STATE: FIRE DRAGON LIZARD (SOUL LAND 1)  [CONTRIBUTED]
+==============================================================================
+
+path: github.com/gm5206663-bit/soul-land-1-fire-dragon-lizard
+status: active
+live edge: none - Stage 0 open 2026-10-03, zero chapters, lanes R1-R13
+awaiting author
+notes: Third Soul Land 1 line (alongside SL1_GU_YUAN and soul_land_new -
+separation walls hold). Premise ruled verbatim same day (PRE1-PRE5): same age
+as Tang San, the village, his childhood friend, Fire Dragon Lizard martial
+soul, womb Adaptation Talent, NO SYSTEM, and the No-Fix Law. New repo per
+house precedent; registered on the author's founding order.
+filed by: arena-agent on 2026-10-03
+
+
+==============================================================================
+SECTION 30 - KNOWLEDGE FIREWALLS
 ==============================================================================
 
 STATES: KNOWN / KNOWN PARTLY / SUSPICION / DISBELIEF / UNKNOWN / FALSE BELIEF / HIDDEN
@@ -1215,7 +1231,7 @@ regressions - without it, the next agent will helpfully let the character find
 out early because the plot needs it.
 
 ==============================================================================
-SECTION 30 - ADAPTATION TALENT (cross-project)
+SECTION 31 - ADAPTATION TALENT (cross-project)
 ==============================================================================
 
 WHAT IT IS: An innate, non-conscious, existence-level personal law or instinct
@@ -1242,7 +1258,7 @@ Adaptation cannot bypass setting rules. It operates inside the setting's
 physics - it is not an exemption from them.
 
 ==============================================================================
-SECTION 31 - CONTRIBUTED STATE
+SECTION 32 - CONTRIBUTED STATE
 ==============================================================================
 
 OTHER RECORDS:
@@ -1552,10 +1568,14 @@ OTHER RECORDS:
   future-step 'drafting unlocked' prose; selftest 19/19. Author's
   operational steer on record: 'Manage all GitHub.' System Cheat kit issues
   #2/#3 left untouched (author's gifts, still held). (filed by arena-agent)
+  - [decision] THE NO-FIX LAW (author's universal rule): "There is no fix in
+  my fen fiction, there is always thing's go naturally, this is rule" -
+  nothing is fixed in advance across the author's fan fiction; growth and
+  ceilings go naturally, never pinned (filed by arena-agent)
 
 
 ==============================================================================
-SECTION 32 - HOW THIS SYSTEM GROWS
+SECTION 33 - HOW THIS SYSTEM GROWS
 ==============================================================================
 
 This is not a static document. It is a generated view over a state layer that
@@ -1579,7 +1599,7 @@ RESERVED: authority_order, seven_gates, gate_scope_warning, _comment. These
 change the shape of the system and need the user, not a contribution.
 
 ==============================================================================
-SECTION 33 - INSTRUCTIONS TO THE RECEIVING AGENT
+SECTION 34 - INSTRUCTIONS TO THE RECEIVING AGENT
 ==============================================================================
 
  1. Ingest this bootstrap fully before doing anything else.
