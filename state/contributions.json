@@ -526,6 +526,19 @@
       "reason": "The author's order of 2026-10-07 (R26, verbatim: 'Read-and-fix pass first') was executed the same day: both chapters read line by line against the style gate and the canon; the registry must carry the post-pass truth, not the baseline.",
       "seq": 46,
       "was": "Edge said 'Ch01 (v4) live; Ch02 v1 on disk awaiting the author-ordered read-and-fix pass (2026-10-07); next: the pass, then Ch03' with the pre-pass baseline (Ch01 3,503w / Ch02 2,873w)."
+    },
+    {
+      "file": "state/projects_registry.json",
+      "kind": "correction",
+      "now": "Edge advanced to Ch03: \"Ch01 v5 · Ch02 v2 · Ch03 'The First Cut' v1 — all live; house gate ALL HARD CHECKS PASS (3,392w / 2,495w / 2,691w); next: Ch04 on the author's word.\" Verification carries both ship commits (9d332c5 the pass, 301161f Ch03).",
+      "project": "qian_xunji_adaptation",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-10-07"
+      },
+      "reason": "The author's word 'Next' (2026-10-07) executed: Ch03 written, read whole (k08), gated, measured, shipped the same day; the registry must carry the post-Ch03 truth.",
+      "seq": 47,
+      "was": "Edge said 'Ch01 v5 live; Ch02 v2 read-and-fix pass complete ...; next: Ch03 on the author's word.'"
     }
   ]
 }

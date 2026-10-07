@@ -1146,10 +1146,9 @@ SECTION 31 - PROJECT STATE: QIAN XUN JI REBORN — ADAPTATION TALENT MORTAL DIVI
 
 path: qian-xunji-adaptation/
 status: active
-live edge: Ch01 'The Night After' v5 live; Ch02 'The Codex' v2 read-and-fix
-pass complete (R26, 2026-10-07 — house gate ALL HARD CHECKS PASS; Ch01 3,392w
-/ Ch02 2,495w, band IN, 0 over-60, 0 the-way, 0 jargon); next: Ch03 on the
-author's word.
+live edge: Ch01 v5 · Ch02 v2 · Ch03 'The First Cut' v1 — all live; house gate
+ALL HARD CHECKS PASS (Ch01 3,392w / Ch02 2,495w / Ch03 2,691w, band IN, 0
+over-60, 0 the-way, 0 jargon); next: Ch04 on the author's word.
 notes: SL1 era — OC reincarnator as Qian Xun Ji right after the night with
 Bibi Dong; adaptation talent Mortal Divine Level. Registered in the 2026-10-07
 sweep. Docset adopted 2026-10-07 on the author's order ("Ask questions let's
@@ -1158,14 +1157,21 @@ Dong's road, the secret, and the far era are never pre-decided; the codex is
 story-only. Read-and-fix pass done 2026-10-07: story kept whole, foundation-
 note paragraphs out of the bodies, jargon out, numbers measured (pre-pass
 baseline Ch01 3,503w / Ch02 2,873w kept for the record). One author-strike
-item carried: the Earth-name line wording.
+item carried: the Earth-name line wording (Ch01 v5). Ch03 'The First Cut'
+written 2026-10-07 on the author's 'Next': the reform's first case (Chenghe;
+steward stripped; seat kept under five years of open books; the answer rule),
+the guild opened (first teacher, first reader), Bibi Dong's yard beat kept
+small — her road not advanced, the secret not decided, the far era untouched
+(R22–R24).
 verification: in-repo record (foundation/ + chapters/); foundation docset v6.0
 adopted 2026-10-07 — foundation_gate PASS 0 errors / 0 warnings (was FAIL 15
 in FLEET_AUDIT_2026-09-30); R26 read-and-fix pass shipped 2026-10-07 (commit
-9d332c5) — chapters re-measured with tools/measure_chapter.py, house style
-gate run directly on both files: ALL HARD CHECKS PASS.
+9d332c5); Ch03 shipped the same day (commit 301161f) — all chapters measured
+with tools/measure_chapter.py, house style gate run directly on the files: ALL
+HARD CHECKS PASS.
 
 RECORDS:
+  - [correction] -
   - [correction] -
   - [correction] -
 
@@ -1689,6 +1695,7 @@ OTHER RECORDS:
   + innate full), OC awakens Ground Fire Dragon Lizard with innate mid (no
   digit in prose), D1 earned on page. STATUS v2 + cockpit mirrors synced
   same turn. Next: chapter 2 on the author's word. (filed by arena-agent)
+  - [correction] - (filed by Sara (Agent Mode))
   - [correction] - (filed by Sara (Agent Mode))
   - [correction] - (filed by Sara (Agent Mode))
   - [correction] - (filed by Sara (Agent Mode))
