@@ -1071,7 +1071,9 @@ decision (foundation gate would fail it on docset shape, not on health).
 verification: verified 2026-10-07: mirror gate fix shipped — the generated
 STATUS.md was stale (run_all FAIL 'MIRROR: stale generated STATUS.md'); views
 regenerated from CURRENT_STATE_MANIFEST.json, run_all now 53/53 selftest +
-PROJECT CHECKS PASS (commit 3ce6573)
+PROJECT CHECKS PASS (commit 3ce6573); shelf resynced 2026-10-07: shelves carry
+this repo's latest editions for all 15 chapters (ch8-15 were stale), 59,182 w
+measured
 filed by: arena-agent on 2026-10-03
 
 RECORDS:
@@ -1727,6 +1729,7 @@ OTHER RECORDS:
   + innate full), OC awakens Ground Fire Dragon Lizard with innate mid (no
   digit in prose), D1 earned on page. STATUS v2 + cockpit mirrors synced
   same turn. Next: chapter 2 on the author's word. (filed by arena-agent)
+  - [correction] - (filed by Sara (Agent Mode))
   - [correction] - (filed by Sara (Agent Mode))
   - [correction] - (filed by Sara (Agent Mode))
   - [correction] - (filed by Sara (Agent Mode))

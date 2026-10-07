@@ -220,7 +220,7 @@
       "path": "github.com/gm5206663-bit/supergirl-adrian-vale",
       "status": "active",
       "live_edge": "after Chapter 15 'Blood Bonds' — Ch13-15 rebuilt clean (no meta, no ticker spam, no private secrets; proper superpowered fights); next Ch16. 15 chapters, 45,745 words (the shelf figure).",
-      "verification": "verified 2026-10-07: mirror gate fix shipped — the generated STATUS.md was stale (run_all FAIL 'MIRROR: stale generated STATUS.md'); views regenerated from CURRENT_STATE_MANIFEST.json, run_all now 53/53 selftest + PROJECT CHECKS PASS (commit 3ce6573)",
+      "verification": "verified 2026-10-07: mirror gate fix shipped — the generated STATUS.md was stale (run_all FAIL 'MIRROR: stale generated STATUS.md'); views regenerated from CURRENT_STATE_MANIFEST.json, run_all now 53/53 selftest + PROJECT CHECKS PASS (commit 3ce6573); shelf resynced 2026-10-07: shelves carry this repo's latest editions for all 15 chapters (ch8-15 were stale), 59,182 w measured",
       "notes": "Created 2026-10-01. First non-Soul-Land/non-MCU fandom line (DC TV). Parallel house pattern: USER_LOCKS.json (typed rulings), OPEN_DECISIONS, CANON_LEDGER, SERIAL_FOUNDATION, STATUS_PANEL. Registered 2026-10-03 during full-estate management sweep. Universal foundation layer adoption = author decision (foundation gate would fail it on docset shape, not on health).",
       "authority": "author word outranks every file",
       "provenance": {

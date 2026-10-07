@@ -682,6 +682,19 @@
       "reason": "author: 'Correct more please, there is many things like check my GitHub and others projects and other things' - the library is the reading surface; its own files must agree with the shelf and with each serial's receipts",
       "seq": 58,
       "was": "qian-xunji-adaptation's chapters were not on the shelf; search/sitemap/calendar lagged behind serials.json; words labels were stale and one rendered doubled; build_recaps could not run off its original machine"
+    },
+    {
+      "file": "soul-library: 29 chapter files across 5 serials + data/serials.json + search_data.json + analytics/recaps/sentinel + README/news/feed",
+      "kind": "correction",
+      "now": "Full shelf resync, found by READING (file-by-file compare against every source repo), not by the sentinel: 29 chapter files were stale. Supergirl - Adrian Vale worst: chapters 8-15 were old edits on the shelf (~1,150-2,600 word versions) while the source repo carried the revised editions (~2,900-4,300 words) - shelf 45,852 w vs source 59,182 w. Also Golden Lion 8 files (pre-v4 cards-era copies), Grey Wolf 5, Devouring Dragon 3, One in a Thousand 5. Every serial with a source repo is now byte-identical to that repo's latest editions (verified file-by-file: 8/6/24/15/7/11 all identical; blue_silver, unraveled_tide, qian already matched). All 219 chapter entries then re-measured in ONE pass with the site's own measure: grand total 928,740 words (was 917,201); labels uniformly measured; search index rebuilt whole under the exact existing rule (219 entries); analytics + recaps (24 DD continuity recaps) + sentinel 26/26 re-run; README rows/totals updated; news + feed carry the resync. Shipped c59c0d8. Cascade: profile gm5206663-bit now reads 928K+/9 serials/219 chapters and Supergirl 59,182 w; how-to-write-fanfiction docs read 928K+ (6 spots).",
+      "project": "soul-library",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-10-07"
+      },
+      "reason": "author: 'All five gates green, nothing going to happen by doing green, you really need to do everything' - the sentinel cannot see a file that is itself stale, so the shelf copies were compared byte-for-byte against every source repo, and everything downstream was re-measured from the files",
+      "seq": 59,
+      "was": "the shelf claimed 'copied unchanged from the source of truth ... the workspace wins' but 29 files across 5 serials (Supergirl 8, Golden Lion 8, Grey Wolf 5, One in a Thousand 5, Devouring Dragon 3) were behind their sources; every word count was inherited from earlier partial passes; the labels table disagreed with any fresh measure"
     }
   ]
 }
