@@ -643,6 +643,19 @@
       "reason": "author call-out: the invented arms master is nonsense - not canon, and not who Qian Xunji is; the correction removes him and re-sources the sword discipline to the books",
       "seq": 55,
       "was": "Ch04 v3 (2,735w; shipped c2cd58d) - had the invented arms master and his stick-corrections; superseded by v4 as the live chapter"
+    },
+    {
+      "file": "foundation/NUMBER_LEDGER.md (qian-xunji-adaptation)",
+      "kind": "correction",
+      "now": "New foundation doc answering the author's question sincerely (\"Tell me sincerely what you give numbers from 10 to what you even create\"): NUMBER_LEDGER.md - the provenance of EVERY number on the pages, in plain words, in four buckets. (1) CANON LADDER: the 1-99 rank ladder with the ten-stages table (1-9 apprentice ... 90-99 Titled, 95-98 the high band, 99 peerless, 100 godhood), and the source of each specific canon number (Xunji 95 [baike]; 96 = the story's fixed choice, NOT canon; Chen Xin 97; Golden Crocodile 98; Daoliu/Bibi 99; Worshipers 96/97; Yue Guan and Gui Mei 95; Tang Hao 90 newly Titled at the fight). (2) MEASURED NUMBERS: word counts/averages/dialogue printed by tools/measure_chapter.py - reproducible by anyone; band and caps are the author's earlier rules. (3) BOOKKEEPING NUMBERS: R-codes (the author's rulings, my index), k-codes (my shorthand for house laws - strippable on request), section numbers, CC row numbers, draft version numbers, commit hashes - administrative, not canon, not story. (4) INVENTION: what is mine, always tagged [design]/PROPOSED in footers (court, struck arms master, physician, guild furniture, held cuts, doubling test, wall line...), with the rule restated: invention may dress the scene, may not decide the future (R22-R24). Also the honest weak spots: the novels not read end-to-end; canon chapter numbers rest on fandom/baike citation lists and snippets; thinnest receipts = the sword-ladder chapter numbers (SL3 ch1249/1515); a documented AI-noise source was flagged and never used; if the novel disagrees, the novel wins and the record is fixed same-day. STATUS.md carries a one-line note.",
+      "project": "qian-xunji-adaptation",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-10-07"
+      },
+      "reason": "author asked sincerely where the numbers come from and what is created; the ledger answers in plain words and makes the whole accounting auditable",
+      "seq": 56,
+      "was": "no number-provenance doc existed; sources lived scattered in footers, receipts blocks, and chat"
     }
   ]
 }

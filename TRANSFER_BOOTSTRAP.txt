@@ -1187,14 +1187,16 @@ verification: in-repo record (foundation/ + chapters/); foundation docset v6.0
 + CANON_MASTER.md harvest (26c12ba; franchise-complete map b8f2f4c) —
 foundation_gate PASS; deep round 7054605 (franchise rows deepened; SL6 = fan
 works only; gates re-verified); Ch04 v4 aafbce9 (arms master struck on the
-author's call; discipline from the book alone; 2,716w; v1-v3 archived) 0/0;
-house style gate ALL HARD CHECKS PASS on all 3 chapters; chapter numbers re-
-measured after the corrections (Ch02 2,490w / Ch03 2,694w). | Ch04 ship: qian-
-xunji-adaptation 49ac668 (Ch04 v1 2,596w, house gate ALL HARD CHECKS PASS;
-four chapters live). | Canon-scope correction 2026-10-07 (author's call-out):
-franchise-wide pass (SL2–SL5) — core origin (SL2-created; none in 2619) +
-sword ladder Intent/Soul/God recovered; 'fanon' note withdrawn; CANON_MASTER
-§2b/§11/§13 corrected (fcdb2c2).
+author's call; discipline from the book alone; 2,716w; v1-v3 archived);
+NUMBER_LEDGER.md 9c43436 (number provenance:
+canon/measured/bookkeeping/invention + weak spots) 0/0; house style gate ALL
+HARD CHECKS PASS on all 3 chapters; chapter numbers re-measured after the
+corrections (Ch02 2,490w / Ch03 2,694w). | Ch04 ship: qian-xunji-adaptation
+49ac668 (Ch04 v1 2,596w, house gate ALL HARD CHECKS PASS; four chapters live).
+| Canon-scope correction 2026-10-07 (author's call-out): franchise-wide pass
+(SL2–SL5) — core origin (SL2-created; none in 2619) + sword ladder
+Intent/Soul/God recovered; 'fanon' note withdrawn; CANON_MASTER §2b/§11/§13
+corrected (fcdb2c2).
 
 RECORDS:
   - [correction] -
@@ -1724,6 +1726,7 @@ OTHER RECORDS:
   + innate full), OC awakens Ground Fire Dragon Lizard with innate mid (no
   digit in prose), D1 earned on page. STATUS v2 + cockpit mirrors synced
   same turn. Next: chapter 2 on the author's word. (filed by arena-agent)
+  - [correction] - (filed by Sara (Agent Mode))
   - [correction] - (filed by Sara (Agent Mode))
   - [correction] - (filed by Sara (Agent Mode))
   - [correction] - (filed by Sara (Agent Mode))
