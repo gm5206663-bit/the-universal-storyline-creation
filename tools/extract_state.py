@@ -4,6 +4,18 @@
 Run from the repo root's control_centre/ directory. Every number written here is
 measured from disk, never typed by hand. Re-run any time the workspace changes.
 
+2026-10-07 sweep fixes (the author: "Check everything completely"):
+  - every measured tree now carries CANDIDATE PATHS and a missing tree is an
+    honest "absent" row, never a crash: the 2026-09-30 park moved blue_silver
+    under _archive/, the 2026-10-03 delete wave removed SOUL_LAND_NEW,
+    reference/sl3_lin_hao and soul_land_starter outright, and the list still
+    named all of them at their old paths;
+  - the list now measures the trees that actually carry the work today
+    (the kit's live serials + the private Fire Phoenix);
+  - optional --workspace PATH so a clone can measure a workspace that is not
+    its sibling (used by the 2026-10-07 refresh; without it the old
+    cold-start behavior is unchanged).
+
 If the fiction workspace is not present alongside control_centre/ - which is the
 normal case for an agent who has been handed the Control Centre on its own - this
 script leaves the committed state/workspace.json untouched and exits 0. The
@@ -16,14 +28,23 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 WS   = os.path.dirname(ROOT)
 STATE = os.path.join(ROOT, 'state')
 
-# The directories that must exist for measurement to mean anything. If the first
-# one is missing we are almost certainly looking at a bare Control Centre handoff
-# rather than the full workspace.
-REQUIRED_DIRS = ['blue_silver', 'SOUL_LAND_UNIVERSAL_KIT']
+# optional --workspace PATH (2026-10-07)
+for i, a in enumerate(sys.argv):
+    if a == '--workspace' and i + 1 < len(sys.argv):
+        WS = os.path.abspath(sys.argv[i + 1])
+
+# The directories that must exist for measurement to mean anything. Accepts the
+# modern layouts: the kit as a sibling OR a soul-land-universal-kit clone beside
+# the control centre.
+REQUIRED_SETS = [
+    ['SOUL_LAND_UNIVERSAL_KIT'],
+    ['soul-land-universal-kit/SOUL_LAND_UNIVERSAL_KIT',
+     'soul-land-universal-kit/soul_land_devouring_dragon/chapters'],
+]
 
 
 def workspace_present():
-    return all(os.path.isdir(os.path.join(WS, d)) for d in REQUIRED_DIRS)
+    return any(all(os.path.isdir(os.path.join(WS, d)) for d in s) for s in REQUIRED_SETS)
 
 def is_binary(p):
     try:
@@ -61,7 +82,7 @@ def measure(path):
 # The committed state/workspace.json already holds the measurements, so there is
 # nothing to re-derive. Leave it alone and let the rest of the pipeline run.
 if not workspace_present():
-    missing = [d for d in REQUIRED_DIRS if not os.path.isdir(os.path.join(WS, d))]
+    missing = ['blue_silver / SOUL_LAND_UNIVERSAL_KIT']
     print("  workspace not present alongside control_centre/ "
           f"(missing: {', '.join(missing)})")
     kept = os.path.join(STATE, 'workspace.json')
@@ -79,27 +100,48 @@ if not workspace_present():
 
 
 # ---------- projects ----------
+# 2026-10-07: candidates per tree; first existing path wins. A tree that exists
+# in NO candidate is recorded absent (honest), never crashed on. The 2026-10-03
+# delete wave (SOUL_LAND_NEW, reference/sl3_lin_hao, soul_land_starter) and the
+# 2026-09-30 park (blue_silver) are why candidates exist.
 PROJECTS = [
-    ('blue_silver',              'Blue Silver',      'Book One complete — 15 rebuilt chapters', 'gate-pass'),
-    ('sl4_fire_phoenix',         'SL4 Fire Phoenix', 'After Chapter 31 — The Ticket Owed to Fire', 'live'),
-    ('SOUL_LAND_UNIVERSAL_KIT',  'Universal Kit',    '11 laws + 13 templates + verify tooling', 'portable'),
-    ('SOUL_LAND_NEW',            'Soul Land New',    'Tian Yu — 6 chapters, pre-Chapter-11', 'active'),
-    ('reference/sl3_lin_hao',    'SL3 Lin Hao',      'Reference archive — craft only, never canon', 'reference'),
-    ('soul_land_starter',        'Starter Pack',     'Blank-project bootstrap skeleton', 'template'),
+    ('blue_silver', 'Blue Silver', 'Book One complete — 15 rebuilt chapters; PARKED 2026-09-30',
+     'gate-pass', ['blue_silver', '_archive/2026-09-30_park/blue_silver',
+                   'soul-land-universal-kit/_archive/2026-09-30_park/blue_silver']),
+    ('SOUL_LAND_UNIVERSAL_KIT', 'Universal Kit', '11 laws + templates + verify tooling',
+     'portable', ['SOUL_LAND_UNIVERSAL_KIT', 'soul-land-universal-kit/SOUL_LAND_UNIVERSAL_KIT']),
+    ('soul_land_devouring_dragon', 'Devouring Dragon', 'After Chapter 24 — The Stone Country',
+     'live', ['soul_land_devouring_dragon', 'soul-land-universal-kit/soul_land_devouring_dragon']),
+    ('soul_land_3_oc', 'One in a Thousand', 'Ch 1-7 live — 63,209 words on the shelf',
+     'live', ['soul_land_3_oc', 'soul-land-universal-kit/soul_land_3_oc']),
+    ('soul_land_2_new', 'The Golden Lion', 'After Chapter 8 — The Sect Behind the Smoke',
+     'live', ['soul_land_2_new', 'soul-land-universal-kit/soul_land_2_new']),
+    ('sl4_fire_phoenix', 'SL4 Fire Phoenix', 'After Chapter 52 — Amiable Beasts (private repo)',
+     'live', ['sl4_fire_phoenix/soul_land_4_fire_phoenix', 'soul_land_4_fire_phoenix']),
 ]
 projects = []
 tot_f = tot_w = 0
-for path, name, edge, status in PROJECTS:
-    m = measure(os.path.join(WS, path))
+for pid, name, edge, status, cands in PROJECTS:
+    hit = next((c for c in cands if os.path.isdir(os.path.join(WS, c))), None)
+    if hit is None:
+        projects.append({'id': pid, 'name': name, 'path': cands[0],
+                         'files': 0, 'words': 0, 'live_edge': edge, 'status': status,
+                         'absent': True, 'mislabeled_binaries': []})
+        continue
+    m = measure(os.path.join(WS, hit))
     tot_f += m['files']; tot_w += m['words']
-    projects.append({'id': path.replace('/', '_'), 'name': name, 'path': path,
+    projects.append({'id': pid, 'name': name, 'path': hit,
                      'files': m['files'], 'words': m['words'], 'live_edge': edge,
                      'status': status, 'mislabeled_binaries': m['mislabeled_binaries']})
 
 # ---------- blue silver chapters ----------
 bs = []
-cdir = os.path.join(WS, 'blue_silver/chapters_rebuilt')
-for fn in sorted(os.listdir(cdir)):
+_bsc = next((c for c in ('blue_silver/chapters_rebuilt',
+                         '_archive/2026-09-30_park/blue_silver/chapters_rebuilt',
+                         'soul-land-universal-kit/_archive/2026-09-30_park/blue_silver/chapters_rebuilt')
+             if os.path.isdir(os.path.join(WS, c))), None)
+cdir = os.path.join(WS, _bsc) if _bsc else None
+for fn in (sorted(os.listdir(cdir)) if cdir else []):
     if not fn.startswith('Chapter_') or not fn.endswith('.md'): continue
     p = os.path.join(cdir, fn)
     txt = open(p, encoding='utf-8').read()
@@ -113,17 +155,22 @@ for fn in sorted(os.listdir(cdir)):
 
 # ---------- kit laws ----------
 laws = []
-kdir = os.path.join(WS, 'SOUL_LAND_UNIVERSAL_KIT')
-for fn in sorted(os.listdir(kdir)):
+_kd = next((c for c in ('SOUL_LAND_UNIVERSAL_KIT', 'soul-land-universal-kit/SOUL_LAND_UNIVERSAL_KIT')
+            if os.path.isdir(os.path.join(WS, c))), None)
+kdir = os.path.join(WS, _kd) if _kd else None
+for fn in (sorted(os.listdir(kdir)) if kdir else []):
     if re.match(r'^\d\d_[A-Z_]+\.md$', fn):
         txt = open(os.path.join(kdir, fn), encoding='utf-8').read()
         laws.append({'file': fn, 'n': int(fn[:2]), 'words': len(txt.split()),
                      'title': txt.split('\n')[0].lstrip('# ').strip()})
-templates = sorted(f for f in os.listdir(os.path.join(kdir, 'templates')) if f.endswith('.md'))
+templates = sorted(f for f in os.listdir(os.path.join(kdir, 'templates')) if f.endswith('.md')) if kdir and os.path.isdir(os.path.join(kdir, 'templates')) else []
 
 # ---------- sl4 chapters ----------
-sl4dir = os.path.join(WS, 'sl4_fire_phoenix/soul_land_4_fire_phoenix/chapters')
-sl4 = [f for f in sorted(os.listdir(sl4dir)) if re.match(r'^Chapter_\d+\.md$', f)]
+_s4 = next((c for c in ('sl4_fire_phoenix/soul_land_4_fire_phoenix/chapters',
+                        'soul_land_4_fire_phoenix/chapters')
+            if os.path.isdir(os.path.join(WS, c))), None)
+sl4dir = os.path.join(WS, _s4) if _s4 else None
+sl4 = [f for f in (sorted(os.listdir(sl4dir)) if sl4dir else []) if re.match(r'^Chapter_\d+\.md$', f)]
 
 state = {
     'generated': datetime.date.today().isoformat(),

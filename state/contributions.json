@@ -448,6 +448,58 @@
       },
       "seq": 40,
       "kind": "note"
+    },
+    {
+      "project": "soul-land-universal-kit / multi-project",
+      "file": "state/projects_registry.json",
+      "was": "Four registry edges sat one to three chapters behind reality: grey_wolf 'after Chapter 6' (but five unreceipted draft files sat in chapters/, so file counts read eleven), stark_heir 'Ch.1 v3 / Ch.2 v2 / Ch.3 v3' (five chapters shipped), supergirl_adrian_vale 'chapter 12 adopted-rebuilt-clean; next chapter 13' (fifteen chapters live), fire_dragon_lizard 'Stage 0 open, zero chapters' (five chapters shipped, and its own README/STATUS had also lagged).",
+      "now": "All four refreshed from fresh 2026-10-07 clones: grey_wolf — 'after Chapter 6 The Hem Road, v0.7.0, 6 chapters, four layers green; the Ch7-11 unreceipted draft fragments archived (marker README) so counts measure the six shipped'; stark_heir — 'after Chapter 5 Gulmira, 5 chapters gated (mcu_verify PASS), next Chapter Six'; supergirl_adrian_vale — 'after Chapter 15 Blood Bonds, 15 chapters 45,745 words, next Ch16, mirror gate fixed'; fire_dragon_lizard — 'after Chapter 5 The Proof (gate PASS 3,693w), next Ch6 on the author's word'.",
+      "reason": "The 2026-10-07 full sweep (the author: 'Check everything completely'). Each edge was verified from the project's own chapters and receipts, not from memory; the stale files inside those projects (grey wolf chapters/, fire-dragon-lizard README/STATUS, supergirl generated STATUS.md) were fixed the same day in their own repos with their own gates re-run.",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-10-07"
+      },
+      "seq": 41,
+      "kind": "correction"
+    },
+    {
+      "project": "soul-land-universal-kit / multi-project",
+      "file": "state/projects_registry.json",
+      "was": "Lifecycle edges were behind the author's own rulings: qing_ling listed 'live' at Chapter 6 (it was parked 2026-09-30 at Chapter 7 'Room 205'); soul_land_3 listed as before its kit-tree deletion; blue_silver without its 2026-09-30 park; soul_land_new without the tree deletion; soul_land_4 at the 2026-09-19 hash with no note of the public replacement lane; fire_phoenix_workshop described as 'empty - no commits yet' (it carries the whole replacement-lane control record).",
+      "now": "Refreshed: qing_ling status paused — 'PARKED 2026-09-30 at Chapter 7 Room 205, 7 chapters all gates PASS, resumable, tree under _archive/2026-09-30_park/'; soul_land_3 — 'COMPLETE at 116; tree deleted from the kit 2026-10-03 by the author's word; shelf + private repo carry it'; blue_silver — 'Book One complete; parked 2026-09-30'; soul_land_new — 'tree deleted 2026-10-03'; soul_land_4 — 'head aec4d01 (LICENSE+NOTICE add-only); the replacement lane for Ch48-60 is in the public fire-phoenix-workshop repo, author-review only, C61 NOT authorized'; fire_phoenix_workshop — the real control record (PROJECT_CONTROL override, accepted reader line C48-C55, review packages through C60, C61 not authorized, Ch52 public baseline).",
+      "reason": "The 2026-10-07 full sweep. Every state change above was made by the author's own rulings in the window 2026-09-30..2026-10-03 and the registry had not caught up.",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-10-07"
+      },
+      "seq": 42,
+      "kind": "correction"
+    },
+    {
+      "project": "pokemon_adaptation",
+      "file": "state/projects_registry.json",
+      "was": "Absent from the projects registry entirely, while the Control Centre's own Fleet Audit (2026-09-30) named it and measured it: 'PASS — 0 err / 0 warn — The standard. Stage 0 closed, packs none.'",
+      "now": "Registered (2026-10-07 sweep): pokemon_adaptation — 'Pokémon — Stage 0 Foundation', path pokemon-adaptation/, status active, edge 'Stage 0 — R15-R18 ruled, doctrine error corrected, the gate is built; DRAFTING LOCKED by design (zero chapters).' The pair of duplicate-'project' intake files filed a minute earlier were rightly rejected by the protocol (a 'project' for an existing id is rejected) and are kept in intake/rejected/ — this correction is the lawful record.",
+      "reason": "Registry must match the fleet it audits: a serial the Control Centre measured cannot be missing from its own registry.",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-10-07"
+      },
+      "seq": 43,
+      "kind": "correction"
+    },
+    {
+      "project": "qian_xunji_adaptation",
+      "file": "state/projects_registry.json",
+      "was": "Absent from the projects registry entirely, while the Fleet Audit (2026-09-30) named and measured it (FAIL 15 = docset-adoption gap, not a defect).",
+      "now": "Registered (2026-10-07 sweep): qian_xunji_adaptation — 'Qian Xun Ji Reborn — Adaptation Talent Mortal Divine Level', path qian-xunji-adaptation/, status active, edge 'Chapter 1 The Night After (v3, clean-phenomena) and Chapter 2 The Codex on disk; STATUS panel v0.7 carries the live state; next on the author's word.'",
+      "reason": "Registry must match the fleet it audits.",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-10-07"
+      },
+      "seq": 44,
+      "kind": "correction"
     }
   ]
 }

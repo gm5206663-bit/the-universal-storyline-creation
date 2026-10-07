@@ -1,5 +1,5 @@
 SOUL LAND UNIVERSAL - TRANSFER BOOTSTRAP
-Generated 2026-09-26 from state/. Control Centre is the navigation
+Generated 2026-10-07 from state/. Control Centre is the navigation
 and state reference. Do not hand-edit this file; edit state/ and rebuild.
 
 PURPOSE
@@ -8,12 +8,12 @@ discipline. You are taking over existing projects, not starting a new story.
 
 AT A GLANCE
   projects tracked      6
-  project files         891
-  words on disk         1,388,550
+  project files         994
+  words on disk         1,691,361
   knowledge firewalls   18
   kit laws              11
   hard gates            7
-  growth events logged  53
+  growth events logged  57
 
 ==============================================================================
 SECTION 1 - CORE OPERATING RULE
@@ -507,11 +507,13 @@ SECTION 13 - PROJECT STATE: SOUL LAND 3 — LIN HAO  [CONTRIBUTED]
 path: soul-land-universal-kit/Soul_Land_3_Project/
 status: complete
 live edge: COMPLETE at Chapter 116 'The Grindstone' — ten-layer run_all ALL
-GREEN, full-spectrum repair passed
+GREEN, full-spectrum repair passed. The tree was DELETED from the kit on
+2026-10-03 by the author's word ('delete, not joke around'); the serial lives
+on the Soul Library shelf (116 chapters) and in the private fiction repo.
 notes: Chapter 117 is the survive-to-the-end battle for the class-president
 election announced in Chapter 116.
-verification: verified 2026-09-23 from a fresh live clone (deep-sweep audit;
-gate PASS) run_all
+verification: verified 2026-10-07: kit tree absent (correct state, asserted by
+the library sentinel); shelf edge 116
 
 
 ==============================================================================
@@ -520,12 +522,16 @@ SECTION 14 - PROJECT STATE: SOUL LAND 4 — FIRE PHOENIX (YAN SHUO'ER)  [CONTRIB
 
 path: soul_land_4_fire_phoenix/ (private GitHub repo)
 status: live
-live edge: after Chapter 52 'Amiable Beasts' (cf1cb9e, 2026-09-19 sync:
-Chapter52 v2 + validator/precedence fixes)
+live edge: after Chapter 52 'Amiable Beasts' (the live project is the PRIVATE
+repo gm5206663-bit/soul_land_4_fire_phoenix; head aec4d01 = LICENSE + NOTICE
+add-only, no story change). The authored replacement lane for Ch48-60 lives in
+the PUBLIC fire-phoenix-workshop repo as author-review packages — C61 is NOT
+authorized; public authority remains the Ch52 baseline.
 notes: Stale ch31 copies exist in the kit archive
 (_archive/2026-09-19_stale_sl4_copies_at_ch31) and the kit's NEXT_STEPS file
 stopped at Chapter 51 — the private repo is ahead. Never use the stale copies.
-verification: verified 2026-09-20 from the private-repo clone at cf1cb9e
+verification: verified 2026-10-07: private clone head aec4d01; validators per
+repo; workshop control doc read
 
 RECORDS:
   - [correction] -
@@ -553,17 +559,17 @@ path: soul-land-universal-kit/soul_land_devouring_dragon/
 status: live
 live edge: after Chapter 24 'The Stone Country' — 24 chapters live, gates
 PASS, canon-voice rollout Ch1-10 rewritten (2026-09-26 audit)
-notes: Chapters 1-18, prose in plain words. Rebuilt s45: ch15 2,229, ch16
-2,319, ch17 2,250, ch18 2,360 (ch1 2,595, ch2 3,096, ch3 3,390, ch4 2,609, ch5
-3,386, ch6 2,930, ch7 3,097, ch8 3,391, ch9 3,895, ch10 3,432, ch11 2,795,
-ch12 3,283, ch13 2,564, ch14 3,169). Rulings in force: PANEL LAW RE-BOUND
-(s45; forward only - chapters written before it stand as written, no rebuild
-queued), PACING LAW (s44), PLAIN LANGUAGE LAW (s40), SCOPE LAW (s39 - beast-
-first floor 2,000), house grammar (s35, dialogue clause overridden), ER-12,
-ER-13, SB-11, s43 measure ruling. Next: ch19 (author-gated) - the years on his
-border; sameness skipped; one anchored event where something is genuinely new.
-verification: verified 2026-09-26 from fresh clone: 24 chapters, sweep PASS
-24/24
+notes: Chapters 1-24 live; canon-voice rollout has rewritten Ch1-10
+(novel/manhua/donghua lenses — receipts in foundation/CANON_STUDY.md). PANEL
+LAW RE-BOUND in force (default NONE; footer declares). ch13 'deep country'
+dialogue triage recorded 2026-10-07 (lawful, narration-only ban). Next: ch25
+on the author's word; the machine block in the serial README carries the live
+edge.
+verification: verified 2026-10-07 from a fresh clone: project sweep PASS 24/24
+(0 digits, 0 CJK, footers 24/24; the no-panel list ch1+ch15-24 by design).
+Measure flags one retired word in ch13 — 'the deep country' inside the
+hunters' dialogue — LAWFUL: the retired table bans the word in narration only,
+and this is the hunters speaking; recorded, no prose change.
 
 RECORDS:
   - [correction] -
@@ -855,11 +861,15 @@ SECTION 18 - PROJECT STATE: BLUE SILVER — SUNWEAVE  [CONTRIBUTED]
 path: blue_silver/
 status: gate-pass
 live edge: Book One complete — 15 rebuilt chapters, 34,711 words, all seven
-gates passing; ends on THE KEEPER
+gates passing; ends on THE KEEPER. PARKED 2026-09-30 under soul-land-
+universal-kit/_archive/2026-09-30_park/blue_silver/ (BOOK_TWO_OPTIONS.md
+awaits the author). Rejected first draft archived separately, never
+continuity.
 notes: Protagonist Sunweave is a real elemental mutant with Adaptation Talent
 (no royal, dragon or devour blood). Kill count zero across all 775 years is
 permanent.
-verification: verified 2026-09-20: 15 files in chapters_rebuilt/
+verification: verified 2026-10-07: unified gate PASS run against the parked
+tree; shelf edge 15
 
 
 ==============================================================================
@@ -868,12 +878,12 @@ SECTION 19 - PROJECT STATE: SOUL LAND NEW — TIAN YU  [CONTRIBUTED]
 
 path: soul-land-universal-kit/SOUL_LAND_NEW/
 status: dropped
-live edge: post-mortem (SARA.md §177–198): the Tianyu project — canon
-integration failed, dropped by author. Do not continue.
+live edge: DROPPED post-mortem (SARA.md §177-198) — the Tianyu project; canon
+integration failed, dropped by the author. The tree was deleted from the kit
+2026-10-03. Do not continue.
 notes: The ~10,000-year black third ring is the first true contender against
 the bloodline threshold. Mu En's rule: do not be the strongest in the room.
-verification: verified 2026-09-23 from a fresh live clone (deep-sweep audit;
-gate PASS)
+verification: verified 2026-10-07: no tree in the kit clone
 
 
 ==============================================================================
@@ -882,17 +892,20 @@ SECTION 20 - PROJECT STATE: STARK HEIR — MARK HOWARD STARK (MCU / IRON MAN 1) 
 
 path: stark_heir/ (repo: gm5206663-bit/stark_heir)
 status: active
-live edge: Ch.1 v5 / Ch.2 v2 The Albatross / Ch.3 v3 The Return shipped and
-gated (mcu_verify PASS, zero-digit, zero-CJK). IM1 beats 1–12 staged scene-by-
-scene in film order incl. the five-panel cave arc and the chest-swap. Next:
-Chapter Four — workshop rebirth / weapons-division storm (IM1 beats 13+).
+live edge: after Chapter 5 'Gulmira' — 5 chapters shipped and gated
+(mcu_verify PASS, zero-digit, zero-CJK). Canon consumed: Iron Man 1 beats
+1-19, staged scene-by-scene in film order (ambush, cave, return, workshop
+rebirth, gala, Gulmira sortie, jet intercept and the caught parachute, Raza
+camp + Mark One salvage, the Malibu injunction). Next: Chapter Six — Pepper's
+hack, the theft of the heart, the count toward Iron Monger.
 notes: Mark Howard Stark — Tony's public son (born Nov 1996, twelve at
 IM1-2008); hidden Adaptation Talent + stabilized X-gene + growing psychic
 core; canon braided around with absolute fan ownership per P1–P15 +
 P12-AMENDMENT camera law; complete MCU chronology + butterfly registry (T-14
 armor-naming, T-2
-verification: verified 2026-09-24 at registration from live workspace (gates
-PASS) by the Arena agent
+verification: verified 2026-10-07 from a fresh clone: chapters 1-5 on disk;
+Ch5 'Gulmira' gated PASS (0 digits / 0 CJK body); README v1-epoch status
+current through Ch5
 
 
 ==============================================================================
@@ -931,16 +944,18 @@ SECTION 23 - PROJECT STATE: SOUL LAND 2 — THE GREY WOLF (YE CANG) — PERFECT 
 
 path: soul-land-2-the-grey-wolf/
 status: live
-live edge: after Chapter 6 'The Hem Road' — 6 chapters perfect rebuild v0.7.0
-2026-09-26, Arc1 Grey Ridge complete, Arc2 hem-road craft daily life, band
-2400-3400w avg 14-18 over60 0 the-way 0 clean and clear, Spirit Sea 850 body
-500kg Storm Frost Ghost Wolf ice+wind High Ring Veil hides purple as yellow,
-80 panel rows IN SYNC
+live edge: after Chapter 6 'The Hem Road' — v0.7.0 perfect rebuild: 6
+chapters, all four layers green (style gate, panel ledger IN SYNC, site built,
+manuscript 6 editions + FULL). The unreceipted Ch7-11 draft fragments found
+inside chapters/ were archived in the 2026-10-07 sweep
+(archive_unshipped_drafts_2026-10-07/ with a marker README) so file counts now
+measure the six shipped chapters, matching every receipt.
 notes: F0-F22 locks, effective talent 3.5x, Ghost Veil 3 clones golden lock
 toughest skull tofu waist Light of Netherworld, Storm Step Wind Blade Burst
 Wings 50m, ingested into soul-library 193ch total
-verification: verified 2026-09-26 from fresh clone: 6 chapters 15798w, run_all
-green, release v0.7.0-perfect-rebuild 293K zip
+verification: verified 2026-10-07 from a fresh clone: run_all green after the
+sweep (manuscript 6 editions, style gate passed, site built, panels IN SYNC);
+chapters/ holds exactly 6 shipped files
 
 
 ==============================================================================
@@ -962,10 +977,12 @@ SECTION 25 - PROJECT STATE: SOUL LAND 3 - QING LING (THE GOLDEN-VEINED BLUE SILV
 ==============================================================================
 
 path: soul-land-universal-kit/soul_land_3_fanfiction/
-status: live
-live edge: after Chapter 6 'The Road East' - arrival evening in Eastsea, first
-hour in the new place. OC age 9, rank 12, gates intact, hammers hidden in the
-wrist rings. 6 chapters, 26,115 words measured.
+status: paused
+live edge: PARKED 2026-09-30 at Chapter 7 'Room 205' — 7 chapters shipped, all
+gates PASS (ch7 ALL 16.7 / NARR 20.3 / o60 0 / CJK 0), receipts complete
+through SERIAL_LOG 015; resumable — the ch8 plan is drafted in NEXT_STEPS.
+Tree: soul-land-universal-kit/_archive/2026-09-30_park/soul_land_3_fanfiction/
+(start at foundation/PARKED_2026-09-30.md).
 notes: Registered 2026-09-30 to close the gap against non-negotiable 7 in
 soul-land-universal-kit/AGENTS.md (sync every mirror the same turn, including
 the Control Centre registry). This is the account's most active serial and it
@@ -974,9 +991,8 @@ distinct serial from soul_land_3 (Lin Hao, complete at 116) - same era label,
 different story, different OC, no shared state. Next beat is author-gated: ch
 7 reporting-in, the roommate reveal of the unnamed station encounter, and the
 canon ch 36 fight.
-verification: verified 2026-09-30 by reading the live repo through the GitHub
-API at commit 1b2ac8a (2026-09-29T03:06). Chapter word counts measured from
-the raw chapter files, not quoted from the commit message.
+verification: verified 2026-10-07 from the kit clone: parked doc lists 7
+shipped chapters with gates; README of the park present
 filed by: arena-agent on 2026-09-30
 
 RECORDS:
@@ -1000,15 +1016,15 @@ SECTION 26 - PROJECT STATE: CLEAR SKY LION  [CONTRIBUTED]
 
 path: github.com/gm5206663-bit/soul-land-2-clear-sky-lion
 status: active
-live edge: none - Stage 0 open, zero chapters, lane table R1-R15 awaiting
-author
+live edge: Stage 0 open — R10 (the No-Fix Law) RULED; locked on R11/R12
+(2026-10-03, bd91cb6). Zero chapters by design: rulings first, prose second.
 notes: SL2 serial: OC from the Clear Sky Sect, same age as Huo Yuhao, twin
 martial souls (Clear Sky Hammer + Golden Lion King), womb-born Adaptation
 Talent, rank 29 with purple/yellow lion rings at day 1, grade-3 blacksmith.
 Stage 0 lane table filed 2026-09-30 at foundation/OPEN_RULINGS.md. New repo
 per separation walls.
-verification: foundation gate not built yet (Stage 0 step 5, before chapter
-1); method layer selftest 16/16 on build day
+verification: verified 2026-10-07 from a fresh clone: zero chapter files; R10
+ruling in README/foundation
 filed by: arena-agent on 2026-09-30
 
 RECORDS:
@@ -1040,16 +1056,18 @@ SECTION 27 - PROJECT STATE: SUPERGIRL - ADRIAN VALE  [CONTRIBUTED]
 
 path: github.com/gm5206663-bit/supergirl-adrian-vale
 status: active
-live edge: chapter 12 adopted-rebuilt-clean; next chapter 13;
-foundation-021/022 epoch, 53-pass zip
+live edge: after Chapter 15 'Blood Bonds' — Ch13-15 rebuilt clean (no meta, no
+ticker spam, no private secrets; proper superpowered fights); next Ch16. 15
+chapters, 45,745 words (the shelf figure).
 notes: Created 2026-10-01. First non-Soul-Land/non-MCU fandom line (DC TV).
 Parallel house pattern: USER_LOCKS.json (typed rulings), OPEN_DECISIONS,
 CANON_LEDGER, SERIAL_FOUNDATION, STATUS_PANEL. Registered 2026-10-03 during
 full-estate management sweep. Universal foundation layer adoption = author
 decision (foundation gate would fail it on docset shape, not on health).
-verification: own standard, not docset v6.0: tools/verify.py +
-verify_foundation.py + selftest.py; generated README from
-foundation/CURRENT_STATE_MANIFEST.json
+verification: verified 2026-10-07: mirror gate fix shipped — the generated
+STATUS.md was stale (run_all FAIL 'MIRROR: stale generated STATUS.md'); views
+regenerated from CURRENT_STATE_MANIFEST.json, run_all now 53/53 selftest +
+PROJECT CHECKS PASS (commit 3ce6573)
 filed by: arena-agent on 2026-10-03
 
 RECORDS:
@@ -1064,11 +1082,19 @@ SECTION 28 - PROJECT STATE: FIRE PHOENIX WORKSHOP (V2 LINE)  [CONTRIBUTED]
 
 path: github.com/gm5206663-bit/fire-phoenix-workshop
 status: active
-live edge: repository created 2026-10-03, empty - no commits yet
+live edge: NOT empty — the public provenance-preserving workshop for Fire
+Phoenix. PROJECT_CONTROL.md override (2026-10-03): the locally accepted
+reader-facing line is
+accepted_replacement_layers/2026-10-03_option_A_v2_contiguous_C48_C55/;
+author-review packages run through C60; the public authority is still the Ch52
+'Amiable Beasts' baseline (kept as audit baseline); the Dorm333 Ch53 candidate
+stays rejected/quarantined; C61 is not authorized.
 notes: Private, non-public working repository for the Fire Phoenix provenance-
 preserving V2 line (companion to soul_land_4_fire_phoenix). Registered
 2026-10-03 during full-estate sweep; empty at registration - first push
 expected from the working agent. Nothing filed here takes that agent's lane.
+verification: verified 2026-10-07 from a fresh clone: ACTIVE_START_HERE.md +
+PROJECT_CONTROL.md present; docs reconcile public status (57a6f5a)
 filed by: arena-agent on 2026-10-03
 
 
@@ -1078,18 +1104,60 @@ SECTION 29 - PROJECT STATE: FIRE DRAGON LIZARD (SOUL LAND 1)  [CONTRIBUTED]
 
 path: github.com/gm5206663-bit/soul-land-1-fire-dragon-lizard
 status: active
-live edge: none - Stage 0 open 2026-10-03, zero chapters, lanes R1-R13
-awaiting author
+live edge: after Chapter 5 'The Proof' (gate PASS, 3,693w) — Su Yuntao returns
+with the boy's signed awakening proof; the hall's letter read aloud; the paper
+lives in the bench ('cut it honest'). Next: Chapter 6 on the author's word.
 notes: Third Soul Land 1 line (alongside SL1_GU_YUAN and soul_land_new -
 separation walls hold). Premise ruled verbatim same day (PRE1-PRE5): same age
 as Tang San, the village, his childhood friend, Fire Dragon Lizard martial
 soul, womb Adaptation Talent, NO SYSTEM, and the No-Fix Law. New repo per
 house precedent; registered on the author's founding order.
+verification: verified 2026-10-07: chapter_gate re-run on Ch5 PASS (0 errors /
+0 warnings); STATUS panel + README had lagged the shipped chapters 3-5 and
+were brought current the same day (commit 35211a3)
 filed by: arena-agent on 2026-10-03
 
 
 ==============================================================================
-SECTION 30 - KNOWLEDGE FIREWALLS
+SECTION 30 - PROJECT STATE: POKÉMON — STAGE 0 FOUNDATION  [CONTRIBUTED]
+==============================================================================
+
+path: pokemon-adaptation/
+status: active
+live edge: Stage 0 — R15-R18 ruled, doctrine error corrected, the gate is
+built; DRAFTING LOCKED by design (zero chapters).
+notes: Non-Soul-Land fandom serial. It was named audited in the Control
+Centre's own Fleet Audit but had no registry row — registered in the
+2026-10-07 sweep so the registry matches the fleet.
+verification: fleet foundation gate PASS — 0 err / 0 warn
+(FLEET_AUDIT_2026-09-30: 'The standard. Stage 0 closed, packs none.')
+
+RECORDS:
+  - [correction] -
+
+
+==============================================================================
+SECTION 31 - PROJECT STATE: QIAN XUN JI REBORN — ADAPTATION TALENT MORTAL DIVINE LEVEL  [CONTRIBUTED]
+==============================================================================
+
+path: qian-xunji-adaptation/
+status: active
+live edge: Chapter 1 'The Night After' (v3, clean-phenomena) and Chapter 2
+'The Codex' on disk; the wiki-style STATUS panel (v0.7) carries the live
+state; next on the author's word.
+notes: SL1 era — OC reincarnator as Qian Xun Ji right after the night with
+Bibi Dong; adaptation talent Mortal Divine Level. Registered in the 2026-10-07
+sweep — it was named audited in the Fleet Audit but had no registry row.
+verification: in-repo record (foundation/ + chapters/); fleet gate FAIL 15 =
+docset-adoption gap, not a defect (FLEET_AUDIT_2026-09-30) — adoption is the
+next step when the serial's agent resumes
+
+RECORDS:
+  - [correction] -
+
+
+==============================================================================
+SECTION 32 - KNOWLEDGE FIREWALLS
 ==============================================================================
 
 STATES: KNOWN / KNOWN PARTLY / SUSPICION / DISBELIEF / UNKNOWN / FALSE BELIEF / HIDDEN
@@ -1231,7 +1299,7 @@ regressions - without it, the next agent will helpfully let the character find
 out early because the plot needs it.
 
 ==============================================================================
-SECTION 31 - ADAPTATION TALENT (cross-project)
+SECTION 33 - ADAPTATION TALENT (cross-project)
 ==============================================================================
 
 WHAT IT IS: An innate, non-conscious, existence-level personal law or instinct
@@ -1258,7 +1326,7 @@ Adaptation cannot bypass setting rules. It operates inside the setting's
 physics - it is not an exemption from them.
 
 ==============================================================================
-SECTION 32 - CONTRIBUTED STATE
+SECTION 34 - CONTRIBUTED STATE
 ==============================================================================
 
 OTHER RECORDS:
@@ -1607,10 +1675,14 @@ OTHER RECORDS:
   + innate full), OC awakens Ground Fire Dragon Lizard with innate mid (no
   digit in prose), D1 earned on page. STATUS v2 + cockpit mirrors synced
   same turn. Next: chapter 2 on the author's word. (filed by arena-agent)
+  - [correction] - (filed by Sara (Agent Mode))
+  - [correction] - (filed by Sara (Agent Mode))
+  - [correction] - (filed by Sara (Agent Mode))
+  - [correction] - (filed by Sara (Agent Mode))
 
 
 ==============================================================================
-SECTION 33 - HOW THIS SYSTEM GROWS
+SECTION 35 - HOW THIS SYSTEM GROWS
 ==============================================================================
 
 This is not a static document. It is a generated view over a state layer that
@@ -1634,7 +1706,7 @@ RESERVED: authority_order, seven_gates, gate_scope_warning, _comment. These
 change the shape of the system and need the user, not a contribution.
 
 ==============================================================================
-SECTION 34 - INSTRUCTIONS TO THE RECEIVING AGENT
+SECTION 36 - INSTRUCTIONS TO THE RECEIVING AGENT
 ==============================================================================
 
  1. Ingest this bootstrap fully before doing anything else.

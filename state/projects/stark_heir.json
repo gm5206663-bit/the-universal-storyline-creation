@@ -4,7 +4,7 @@
   "path": "stark_heir/ (repo: gm5206663-bit/stark_heir)",
   "status": "active",
   "active": true,
-  "live_edge": "Ch.1 v5 / Ch.2 v2 The Albatross / Ch.3 v3 The Return shipped and gated (mcu_verify PASS, zero-digit, zero-CJK). IM1 beats 1–12 staged scene-by-scene in film order incl. the five-panel cave arc and the chest-swap. Next: Chapter Four — workshop rebirth / weapons-division storm (IM1 beats 13+).",
+  "live_edge": "after Chapter 5 'Gulmira' — 5 chapters shipped and gated (mcu_verify PASS, zero-digit, zero-CJK). Canon consumed: Iron Man 1 beats 1-19 in film order. Next: Chapter Six — Pepper's hack, the theft of the heart, the count toward Iron Monger.",
   "authority": {
     "status_source": "foundation/STATUS_PANEL.md",
     "gate": "python3 tools/mcu_verify.py must exit PASS · zero-digit · zero-CJK · pre-gate self-check + garble scan mandatory",
