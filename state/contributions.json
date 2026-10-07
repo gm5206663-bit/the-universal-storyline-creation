@@ -500,6 +500,19 @@
       },
       "seq": 44,
       "kind": "correction"
+    },
+    {
+      "project": "devouring_dragon",
+      "file": "state/projects_registry.json + state/projects/devouring_dragon.json",
+      "was": "Both edges said the canon-voice rollout had rewritten 'Ch1-10'. Verified against the chapters themselves on 2026-10-07: every one of Ch 1-12 carries the canon-voice/lens rewrite markers, the serial's own tracker reads 12/24 with Ch 13 next, and Ch 19-24 additionally carry the s52 plain-scene rewrite ('REWRITTEN 2026-09-23 under the PLAIN-SCENE LAW').",
+      "now": "Edges corrected to: canon-voice rollout Ch 1-12 (12/24, next 13-18); the s52 plain-scene pass already redone on Ch 19-24. The same correction was shipped the same hour to the kit README + STATE.md (kit 7d008ea... a6ef1f2), the serial README, the Soul Library README (091aeba) and the profile README (ba5a981) — eight stale claims across five repositories, all verified against the chapter footers before the edit.",
+      "reason": "The 2026-10-07 full sweep (the author: 'Check everything completely'). A count claim maintained in five places had drifted in all five; the fix was applied everywhere the claim lives, not just where it was found.",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-10-07"
+      },
+      "seq": 45,
+      "kind": "correction"
     }
   ]
 }

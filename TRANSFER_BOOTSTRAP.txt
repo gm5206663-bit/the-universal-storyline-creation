@@ -13,7 +13,7 @@ AT A GLANCE
   knowledge firewalls   18
   kit laws              11
   hard gates            7
-  growth events logged  57
+  growth events logged  58
 
 ==============================================================================
 SECTION 1 - CORE OPERATING RULE
@@ -558,8 +558,11 @@ SECTION 16 - PROJECT STATE: DEVOURING DRAGON (BEAST-POV SERIAL)  [CONTRIBUTED]
 path: soul-land-universal-kit/soul_land_devouring_dragon/
 status: live
 live edge: after Chapter 24 'The Stone Country' — 24 chapters live, gates
-PASS, canon-voice rollout Ch1-10 rewritten (2026-09-26 audit)
-notes: Chapters 1-24 live; canon-voice rollout has rewritten Ch1-10
+PASS; canon-voice rollout Ch 1-12 (12/24, next 13-18); the s52 plain-scene
+pass already redone on Ch 19-24 (verified against the chapters' own rewrite
+markers, 2026-10-07)
+notes: Chapters 1-24 live; canon-voice rollout has rewritten Ch1-12 (12/24,
+next 13-18); the s52 plain-scene pass has already redone Ch19-24
 (novel/manhua/donghua lenses — receipts in foundation/CANON_STUDY.md). PANEL
 LAW RE-BOUND in force (default NONE; footer declares). ch13 'deep country'
 dialogue triage recorded 2026-10-07 (lawful, narration-only ban). Next: ch25
@@ -833,6 +836,7 @@ RECORDS:
   that nothing changed. (4) The panel's next-beats section carries the
   current pacing state so any session knows where the story stands on the
   road.
+  - [correction] -
   - [correction] -
   - [correction] -
   - [correction] -
@@ -1675,6 +1679,7 @@ OTHER RECORDS:
   + innate full), OC awakens Ground Fire Dragon Lizard with innate mid (no
   digit in prose), D1 earned on page. STATUS v2 + cockpit mirrors synced
   same turn. Next: chapter 2 on the author's word. (filed by arena-agent)
+  - [correction] - (filed by Sara (Agent Mode))
   - [correction] - (filed by Sara (Agent Mode))
   - [correction] - (filed by Sara (Agent Mode))
   - [correction] - (filed by Sara (Agent Mode))
