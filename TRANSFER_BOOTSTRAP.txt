@@ -1146,15 +1146,17 @@ SECTION 31 - PROJECT STATE: QIAN XUN JI REBORN — ADAPTATION TALENT MORTAL DIVI
 
 path: qian-xunji-adaptation/
 status: active
-live edge: Ch1–Ch4 live — Ch04 'The Second Core' v1 (R27: sword path walked as
-a road; second core formed cold in the spiritual sea, turning against the warm
-first; strongest-under-the-gods = his own self-assessment); 2,596w band IN, 0
-over-60/the-way/jargon, house gate ALL HARD CHECKS PASS; Ch03 due line fixed
-to the season; five-answer ledger + RULINGS_LOG R27 in docs; CANON_MASTER.md
-now FRANCHISE-COMPLETE (third pass b8f2f4c): §0 map of all volumes + extras +
-crossovers, SL2–SL5 core-era blocks, the Ye Xinglan sword-soul receipt; §13
-items 10–13 (SL6 unverified; open ruling — does the bible reach beyond
-SL1–SL3?). Ch04 stands as the author set it. next: Ch05 on the author's word.
+live edge: Ch1–Ch4 live — Ch04 'The Second Core' v2 (author-ordered rewrite
+2026-10-07; R27 beats kept - the sword-consciousness fusion now EARNED in the
+winter's held cuts; second core formed cold in the spiritual sea, turning
+against the warm first; strongest-under-the-gods = his own self-assessment);
+2,783w band IN, 0 over-60/the-way/jargon, house gate ALL HARD CHECKS PASS;
+Ch03 due line fixed to the season; five-answer ledger + RULINGS_LOG R27 in
+docs; CANON_MASTER.md now FRANCHISE-COMPLETE (third pass b8f2f4c): §0 map of
+all volumes + extras + crossovers, SL2–SL5 core-era blocks, the Ye Xinglan
+sword-soul receipt; §13 items 10–13 (SL6 unverified; open ruling — does the
+bible reach beyond SL1–SL3?). Ch04 v2 is the live chapter (v1 archived byte-
+preserved). next: Ch05 on the author's word.
 notes: SL1 era — OC reincarnator as Qian Xun Ji right after the night with
 Bibi Dong; adaptation talent Mortal Divine Level. Registered in the 2026-10-07
 sweep. Docset adopted 2026-10-07 on the author's order ("Ask questions let's
@@ -1182,13 +1184,15 @@ books only.
 verification: in-repo record (foundation/ + chapters/); foundation docset v6.0
 + CANON_MASTER.md harvest (26c12ba; franchise-complete map b8f2f4c) —
 foundation_gate PASS; deep round 7054605 (franchise rows deepened; SL6 = fan
-works only; gates re-verified) 0/0; house style gate ALL HARD CHECKS PASS on
-all 3 chapters; chapter numbers re-measured after the corrections (Ch02 2,490w
-/ Ch03 2,694w). | Ch04 ship: qian-xunji-adaptation 49ac668 (Ch04 v1 2,596w,
-house gate ALL HARD CHECKS PASS; four chapters live). | Canon-scope correction
-2026-10-07 (author's call-out): franchise-wide pass (SL2–SL5) — core origin
-(SL2-created; none in 2619) + sword ladder Intent/Soul/God recovered; 'fanon'
-note withdrawn; CANON_MASTER §2b/§11/§13 corrected (fcdb2c2).
+works only; gates re-verified); Ch04 v2 6935a2b (author-ordered rewrite;
+fusion earned in the held cuts; 2,783w; v1 archived) 0/0; house style gate ALL
+HARD CHECKS PASS on all 3 chapters; chapter numbers re-measured after the
+corrections (Ch02 2,490w / Ch03 2,694w). | Ch04 ship: qian-xunji-adaptation
+49ac668 (Ch04 v1 2,596w, house gate ALL HARD CHECKS PASS; four chapters live).
+| Canon-scope correction 2026-10-07 (author's call-out): franchise-wide pass
+(SL2–SL5) — core origin (SL2-created; none in 2619) + sword ladder
+Intent/Soul/God recovered; 'fanon' note withdrawn; CANON_MASTER §2b/§11/§13
+corrected (fcdb2c2).
 
 RECORDS:
   - [correction] -
@@ -1718,6 +1722,7 @@ OTHER RECORDS:
   + innate full), OC awakens Ground Fire Dragon Lizard with innate mid (no
   digit in prose), D1 earned on page. STATUS v2 + cockpit mirrors synced
   same turn. Next: chapter 2 on the author's word. (filed by arena-agent)
+  - [correction] - (filed by Sara (Agent Mode))
   - [correction] - (filed by Sara (Agent Mode))
   - [correction] - (filed by Sara (Agent Mode))
   - [correction] - (filed by Sara (Agent Mode))

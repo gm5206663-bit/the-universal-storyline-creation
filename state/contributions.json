@@ -604,6 +604,19 @@
       "reason": "the author asked for the franchise check to go deeper; the thin rows and unread page sections were the remaining depth, now folded in with era tags",
       "seq": 52,
       "was": "revision b8f2f4c: franchise map at row level only (SL6 = 'a 2026 series listing'; SL4 = 'Blue Xuanyu'; extras = chapter titles); Renxue, Bibi Dong, and the Hall fleet un-deepened"
+    },
+    {
+      "file": "chapters/Chapter_04_The_Second_Core.md (qian-xunji-adaptation)",
+      "kind": "correction",
+      "now": "Ch04 v2 - the last chapter REWRITTEN on the author's order (\"Rewrite the last chapter\"). Same chapter, same beats, same R27 answers (second core in the spiritual sea between the brows, cold, turning against the warm first; strongest-under-the-gods stays his own self-assessment). The rewrite's one structural change: the sword-consciousness fusion is now EARNED ON THE PAGE - through the winter he holds each cut's close, the light kept burning past the stroke, until a thread grows between him and the blade; that thread is the seed the five sealed days turn into the second core (v1's sudden \"the blade decide\" beat is gone). Exposition tightened; the repeated \"punctual\" tic cut to one use; every PROPOSED detail of v1 kept (court, arms master and his \"Ten thousand times\", the wall line \"It is not the light.\", the due line, \"Sword Dao\", the five-day parallel, the sword by the chair, the closing line). No beat added or removed; rank 96, era law, R22-R24 boundaries untouched. v1 archived byte-preserved at _archive/2026-10-07_superseded/Chapter_04_The_Second_Core_v1.md. Re-measured and re-gated at ship: 2,783w, band IN, 0 over-60, 0 the-way, 0 jargon, house gate ALL HARD CHECKS PASS; footer + SERIAL_LOG + METERS + RULINGS_LOG + STATUS updated; one same-day re-measure correction (2,782 to 2,783) fixed forward.",
+      "project": "qian-xunji-adaptation",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-10-07"
+      },
+      "reason": "author order: \"Rewrite the last chapter\" - a v2 while keeping every R27 beat and all standing locks",
+      "seq": 53,
+      "was": "Ch04 v1 (2,596w) - the fusion arrived as the blade's sudden decision; shipped 49ac668; v2 supersedes it as the live chapter"
     }
   ]
 }
