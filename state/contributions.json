@@ -552,6 +552,19 @@
       "reason": "The author's order of 2026-10-07 (verbatim: “What the hell,go collect all information of canon completely everything”) executed: the canon harvest compiled (CANON_MASTER.md) and the canon-clock/name corrections applied to chapters + docs; the registry must carry the post-harvest truth.",
       "seq": 48,
       "was": "Edge said “Ch01 v5 · Ch02 v2 · Ch03 'The First Cut' v1 — all live; house gate ALL HARD CHECKS PASS (3,392w / 2,495w / 2,691w); next: Ch04 on the author's word.”"
+    },
+    {
+      "file": "state/projects_registry.json",
+      "kind": "correction",
+      "now": "Edge advanced to Ch04 (shipped qian-xunji-adaptation 49ac668): “Ch1–Ch4 live — Ch04 'The Second Core' v1 (the author's R27 order: the sword walked as a road until the blade stayed; the second core formed cold in the spiritual sea between the brows, turning against the warm first; strongest-below-the-gods kept as his own sum, never narration); read whole (k08), 2,596w, band IN, 0 over-60 / 0 the-way / 0 jargon, house gate ALL HARD CHECKS PASS; Ch03 due line fixed to the season; five-answer ledger in METERS, RULINGS_LOG R27; next: Ch05 on the author's word.” Verification carries 49ac668. A decision-class record for the R27 ruling (sword path = sword dao; tool-souls do not speak; core in the spiritual sea; his self-assessment) follows the ruling-class precedent or lives in the serial's RULINGS_LOG.",
+      "project": "qian_xunji_adaptation",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-10-07"
+      },
+      "reason": "The author's R27 order of 2026-10-07 (verbatim: “Next, he going to go for condess second soul core,he know if he succeeded he become strongest under God in this era, he going to from spirit core but not exactly he going to achieve sword soul' level and put this you know fusion both, sword consciousness fusion of spritual power and sword, you can check” — with same-day answers: sword = the sword path, canon checked, spiritual sea, one chapter, his self-assessment) was executed the same day: Ch04 written, read whole, gated, measured, shipped; the registry must carry the post-Ch04 truth.",
+      "seq": 49,
+      "was": "Edge refreshed after the canon harvest (shipped qian-xunji-adaptation 26c12ba): “Ch1–Ch3 live — canon-harvest corrections applied (clock ~11y: Renxue 2620 / Tang San 11 Jan 2631, present late 2619; Ch02 invented names out; Ch03 direction canon-east); Ch02 2,490w / Ch03 2,694w, gates green; complete canon mine in foundation/CANON_MASTER.md; next: Ch04 on the author's word.” Verification carries 26c12ba."
     }
   ]
 }
