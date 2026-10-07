@@ -630,6 +630,19 @@
       "reason": "author order: \"Rebuild the last chapter\" - a full rebuild (fresh prose, structure rebuilt) while keeping every R27 beat, answer, and lock",
       "seq": 54,
       "was": "Ch04 v2 (2,783w; shipped 6935a2b) - superseded by v3 as the live chapter; v1 (2,596w) and v2 both archived byte-preserved"
+    },
+    {
+      "file": "chapters/Chapter_04_The_Second_Core.md (qian-xunji-adaptation)",
+      "kind": "correction",
+      "now": "Ch04 v4 - the invented old arms master STRUCK. The author, shown the three 'old men' in the chapter, called the invention out: \"Why you even do, like canon is nonsense, what you think who is he.\" The arms master of v1-v3 was struck from the page: he was invention, and wrong for who he is - the era's Angel Douluo, ninety-five, six-winged, does not take stick-corrections in his own court (the author's own R27 line: \"he have sword of course\"). The discipline now comes from the book alone: the Seven Treasures blade-walker's road (canon - Chen Xin, read, never met) and the far volume's ledger, 'ten thousand mornings, or don't bother' (riding the SL2 ch271 Ji Juechen receipt). The Grand Worship at the door is now named by his title, so the only 'old man' left on the page is the book's. Everything else stands: beats, locks, R27 answers; rank 96 and era law untouched. v3 archived byte-preserved alongside v1 and v2 (_archive/2026-10-07_superseded/). Re-measured at ship: 2,716w, band IN, 0 over-60, 0 the-way, 0 jargon; house gate ALL HARD CHECKS PASS; footer + STATUS + METERS + SERIAL_LOG (row 7d) + RULINGS_LOG updated.",
+      "project": "qian-xunji-adaptation",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-10-07"
+      },
+      "reason": "author call-out: the invented arms master is nonsense - not canon, and not who Qian Xunji is; the correction removes him and re-sources the sword discipline to the books",
+      "seq": 55,
+      "was": "Ch04 v3 (2,735w; shipped c2cd58d) - had the invented arms master and his stick-corrections; superseded by v4 as the live chapter"
     }
   ]
 }
