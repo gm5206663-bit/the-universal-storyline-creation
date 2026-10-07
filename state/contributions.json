@@ -617,6 +617,19 @@
       "reason": "author order: \"Rewrite the last chapter\" - a v2 while keeping every R27 beat and all standing locks",
       "seq": 53,
       "was": "Ch04 v1 (2,596w) - the fusion arrived as the blade's sudden decision; shipped 49ac668; v2 supersedes it as the live chapter"
+    },
+    {
+      "file": "chapters/Chapter_04_The_Second_Core.md (qian-xunji-adaptation)",
+      "kind": "correction",
+      "now": "Ch04 v3 - the last chapter REBUILT on the author's order (\"Rebuild the last chapter\"; the same word as the s38 Ch01-12 rebuild). Third build of the chapter. Fresh prose end to end; the structure rebuilt around cause and effect. New on the page: the FAILED DOUBLING SCENE - he spins a second turn from the angel's own warmth and watches it slide back down the old channel (\"doubling was not the thing\" shown, not argued); the HELD-CUT LADDER restaged (three holds, then seven, the arm ringing, the afternoon return; the thread growing from warmth-at-the-hand to a line running to the sea behind the brows); the wet-snow night now pays the winter off - the fused light finishes the stroke for him, a half-breath late. Signature lines kept verbatim (the arms master's \"Ten thousand times ... Or don't bother.\"; the wall line \"It is not the light.\"; the physician's \"Due when the cold breaks.\"; \"Proud things eat.\"; the closing line). No beat added or removed; R27 answers unchanged; all locks untouched (Bibi Dong's road, the secret, the far era - R22-R24); rank 96 and era law unchanged. v2 archived byte-preserved at _archive/2026-10-07_superseded/Chapter_04_The_Second_Core_v2.md (v1 already archived). Read whole (k08); re-measured at ship: 2,735w, band IN, 0 over-60, 0 the-way, 0 jargon; house gate ALL HARD CHECKS PASS; footer + STATUS + METERS + SERIAL_LOG (row 7c) + RULINGS_LOG updated.",
+      "project": "qian-xunji-adaptation",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-10-07"
+      },
+      "reason": "author order: \"Rebuild the last chapter\" - a full rebuild (fresh prose, structure rebuilt) while keeping every R27 beat, answer, and lock",
+      "seq": 54,
+      "was": "Ch04 v2 (2,783w; shipped 6935a2b) - superseded by v3 as the live chapter; v1 (2,596w) and v2 both archived byte-preserved"
     }
   ]
 }
