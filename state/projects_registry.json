@@ -276,13 +276,13 @@
       "path": "qian-xunji-adaptation/",
       "status": "active",
       "active": true,
-      "live_edge": "Ch01 'The Night After' (v4) live; Ch02 'The Codex' v1 on disk awaiting the author-ordered read-and-fix pass (2026-10-07); next: the pass, then Ch03.",
+      "live_edge": "Ch01 'The Night After' v5 live; Ch02 'The Codex' v2 read-and-fix pass complete (R26, 2026-10-07 — house gate ALL HARD CHECKS PASS; Ch01 3,392w / Ch02 2,495w, band IN, 0 over-60, 0 the-way, 0 jargon); next: Ch03 on the author's word.",
       "authority": {
         "status_source": "foundation/STATUS.md",
         "conflict_rule": "STATUS.md is the live-edge source; rulings log carries the author's words verbatim."
       },
-      "verification": "in-repo record (foundation/ + chapters/); foundation docset v6.0 adopted 2026-10-07 — foundation_gate PASS 0 errors / 0 warnings (was FAIL 15 in FLEET_AUDIT_2026-09-30).",
-      "notes": "SL1 era — OC reincarnator as Qian Xun Ji right after the night with Bibi Dong; adaptation talent Mortal Divine Level. Registered in the 2026-10-07 sweep. Docset adopted 2026-10-07 on the author's order (\"Ask questions let's build foundation for fen fiction\"): rulings R21–R26 recorded verbatim; Bibi Dong's road, the secret, and the far era are never pre-decided; the codex is story-only. Baseline measured (Ch01 body 3,503w / Ch02 2,873w) — read-and-fix pass next."
+      "verification": "in-repo record (foundation/ + chapters/); foundation docset v6.0 adopted 2026-10-07 — foundation_gate PASS 0 errors / 0 warnings (was FAIL 15 in FLEET_AUDIT_2026-09-30); R26 read-and-fix pass shipped 2026-10-07 (commit 9d332c5) — chapters re-measured with tools/measure_chapter.py, house style gate run directly on both files: ALL HARD CHECKS PASS.",
+      "notes": "SL1 era — OC reincarnator as Qian Xun Ji right after the night with Bibi Dong; adaptation talent Mortal Divine Level. Registered in the 2026-10-07 sweep. Docset adopted 2026-10-07 on the author's order (\"Ask questions let's build foundation for fen fiction\"): rulings R21–R26 recorded verbatim; Bibi Dong's road, the secret, and the far era are never pre-decided; the codex is story-only. Read-and-fix pass done 2026-10-07: story kept whole, foundation-note paragraphs out of the bodies, jargon out, numbers measured (pre-pass baseline Ch01 3,503w / Ch02 2,873w kept for the record). One author-strike item carried: the Earth-name line wording."
     }
   ]
 }

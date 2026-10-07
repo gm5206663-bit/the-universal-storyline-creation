@@ -513,6 +513,19 @@
       },
       "seq": 45,
       "kind": "correction"
+    },
+    {
+      "file": "state/projects_registry.json",
+      "kind": "correction",
+      "now": "Refreshed after the R26 read-and-fix pass (shipped qian-xunji-adaptation 9d332c5): edge 'Ch01 v5 live; Ch02 v2 pass complete — house gate ALL HARD CHECKS PASS; Ch01 3,392w / Ch02 2,495w, band IN, 0 over-60; next Ch03 on the author's word'; verification now carries the pass receipt; notes carry what the pass did and the one author-strike item (the Earth-name line).",
+      "project": "qian_xunji_adaptation",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-10-07"
+      },
+      "reason": "The author's order of 2026-10-07 (R26, verbatim: 'Read-and-fix pass first') was executed the same day: both chapters read line by line against the style gate and the canon; the registry must carry the post-pass truth, not the baseline.",
+      "seq": 46,
+      "was": "Edge said 'Ch01 (v4) live; Ch02 v1 on disk awaiting the author-ordered read-and-fix pass (2026-10-07); next: the pass, then Ch03' with the pre-pass baseline (Ch01 3,503w / Ch02 2,873w)."
     }
   ]
 }
