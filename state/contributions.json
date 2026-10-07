@@ -539,6 +539,19 @@
       "reason": "The author's word 'Next' (2026-10-07) executed: Ch03 written, read whole (k08), gated, measured, shipped the same day; the registry must carry the post-Ch03 truth.",
       "seq": 47,
       "was": "Edge said 'Ch01 v5 live; Ch02 v2 read-and-fix pass complete ...; next: Ch03 on the author's word.'"
+    },
+    {
+      "file": "state/projects_registry.json",
+      "kind": "correction",
+      "now": "Edge refreshed after the canon harvest (shipped qian-xunji-adaptation 26c12ba): “Ch1–Ch3 live — canon-harvest corrections applied (clock ~11y: Renxue 2620 / Tang San 11 Jan 2631, present late 2619; Ch02 invented names out; Ch03 direction canon-east); Ch02 2,490w / Ch03 2,694w, gates green; complete canon mine in foundation/CANON_MASTER.md; next: Ch04 on the author's word.” Verification carries 26c12ba.",
+      "project": "qian_xunji_adaptation",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-10-07"
+      },
+      "reason": "The author's order of 2026-10-07 (verbatim: “What the hell,go collect all information of canon completely everything”) executed: the canon harvest compiled (CANON_MASTER.md) and the canon-clock/name corrections applied to chapters + docs; the registry must carry the post-harvest truth.",
+      "seq": 48,
+      "was": "Edge said “Ch01 v5 · Ch02 v2 · Ch03 'The First Cut' v1 — all live; house gate ALL HARD CHECKS PASS (3,392w / 2,495w / 2,691w); next: Ch04 on the author's word.”"
     }
   ]
 }
