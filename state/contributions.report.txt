@@ -1,0 +1,7 @@
+VALIDATION REPORT — contributions.json
+checked: 2026-10-07T14:16:27
+result:  FAIL
+
+ERRORS (1) — must fix before this can be ingested:
+  -  missing 'kind'
+

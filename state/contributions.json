@@ -656,6 +656,32 @@
       "reason": "author asked sincerely where the numbers come from and what is created; the ledger answers in plain words and makes the whole accounting auditable",
       "seq": 56,
       "was": "no number-provenance doc existed; sources lived scattered in footers, receipts blocks, and chat"
+    },
+    {
+      "file": "framework/tools/test_auth.py + scripts/server.py (storyos-site)",
+      "kind": "correction",
+      "now": "The auth suite was rewritten to the DEPLOYED contract (all GET public - reading is the site's job; the key guards writes and the single key-gated read /api/audit; POST /api/propose public, 202; retired and unknown routes asserted as plain 404s). The residue cleanup now scans the real writer path (data/decisions/<proj>.jsonl) plus the proposals inbox plus legacy homes, matches the returned id together with the probe markers (never id alone), and verifies zero residue by PARSED record, not substring. scripts/server.py: the /api/learn 401 body no longer names the key header - denials do not teach; the contract stays documented in the public /agents.md. Proof: pre-fix run left a probe rule S0001 in the ledger and was served via /api/state as an ACTIVE learned rule while the suite stayed silent; post-fix PASS 20/20, two consecutive runs, zero residue accumulation. Shipped ee07f81.",
+      "project": "storyos_site",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-10-07"
+      },
+      "reason": "fleet-wide correction sweep on the author's word: run each project's own checkers and fix what they read wrong; the suite had been testing a retired server generation and hiding a live data defect",
+      "seq": 57,
+      "was": "test_auth.py guarded the superseded framework server's routes (/p/, /api/project/, <proj>/state.txt) against the deployed scripts/server.py (3 phantom failures on every run); its cleanup searched only legacy STORYOS_HOME paths and matched a 'what' field the deployed writer never stores, so a probe rule survived in the real ledger as an active served learned rule"
+    },
+    {
+      "file": "soul-library: data/serials.json + search_data.json + sitemap.xml + recaps_data.json + tools/build_recaps.py + README.md + news.html + feed.xml + calendar.html",
+      "kind": "correction",
+      "now": "Qian Xun Ji Reborn joins the shelf: 4 chapters copied byte-identical from qian-xunji-adaptation, 11,292 words measured by the site's own measure. While wiring it in, the sweep fixed what the site's own numbers showed wrong: search_data.json never covered Supergirl - Adrian Vale (15 ch) or the new serial (entries rebuilt under the exact existing rule - footer-stripped text capped at 20k - and a dd entry re-derives byte-for-byte under it); sitemap.xml was missing Grey Wolf (6), Supergirl (15) and dd Chapter 24 (per-serial coverage now complete); the shelf words labels were stale ('22K' vs measured 25K; '65.3K words' rendered as '... words words') - all now NK from measured totals; tools/build_recaps.py crashed on a foreign default kit path even though only the Devouring Dragon needs the kit, and it read a 'name' field serials.json never stores so every recap title shipped as a raw id - fixed, regenerated (219 chapters / 9 serials; 24 DD continuity recaps); news + feed carry the arrival and the index catch-up; README table, counts (219 chapters, 917,201 words measured) and sources list brought true; calendar.html ('every serial, one timeline') gained 13 fact-checked rows (Qian Xun Ji Reborn, Fire Dragon Lizard, The System Cheat, Gu Yuan, The Grey Wolf, Clear Sky Lion, One in a Thousand, LAN SHEN, Supergirl, Stark Heir, MCU Eternal OC, Miraculous, Pokemon). Sentinel: 26 pass / 0 warn / 0 fail. Shipped e635de8 + ffa95c6; profile gm5206663-bit synced to the same measured numbers (1ad1966).",
+      "project": "soul-library",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-10-07"
+      },
+      "reason": "author: 'Correct more please, there is many things like check my GitHub and others projects and other things' - the library is the reading surface; its own files must agree with the shelf and with each serial's receipts",
+      "seq": 58,
+      "was": "qian-xunji-adaptation's chapters were not on the shelf; search/sitemap/calendar lagged behind serials.json; words labels were stale and one rendered doubled; build_recaps could not run off its original machine"
     }
   ]
 }
