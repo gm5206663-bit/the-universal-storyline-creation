@@ -1181,9 +1181,10 @@ Canon record now era-tagged franchise-wide; later-era receipts = the OC's
 books only.
 verification: in-repo record (foundation/ + chapters/); foundation docset v6.0
 + CANON_MASTER.md harvest (26c12ba; franchise-complete map b8f2f4c) —
-foundation_gate PASS 0/0; house style gate ALL HARD CHECKS PASS on all 3
-chapters; chapter numbers re-measured after the corrections (Ch02 2,490w /
-Ch03 2,694w). | Ch04 ship: qian-xunji-adaptation 49ac668 (Ch04 v1 2,596w,
+foundation_gate PASS; deep round 7054605 (franchise rows deepened; SL6 = fan
+works only; gates re-verified) 0/0; house style gate ALL HARD CHECKS PASS on
+all 3 chapters; chapter numbers re-measured after the corrections (Ch02 2,490w
+/ Ch03 2,694w). | Ch04 ship: qian-xunji-adaptation 49ac668 (Ch04 v1 2,596w,
 house gate ALL HARD CHECKS PASS; four chapters live). | Canon-scope correction
 2026-10-07 (author's call-out): franchise-wide pass (SL2–SL5) — core origin
 (SL2-created; none in 2619) + sword ladder Intent/Soul/God recovered; 'fanon'
@@ -1717,6 +1718,7 @@ OTHER RECORDS:
   + innate full), OC awakens Ground Fire Dragon Lizard with innate mid (no
   digit in prose), D1 earned on page. STATUS v2 + cockpit mirrors synced
   same turn. Next: chapter 2 on the author's word. (filed by arena-agent)
+  - [correction] - (filed by Sara (Agent Mode))
   - [correction] - (filed by Sara (Agent Mode))
   - [correction] - (filed by Sara (Agent Mode))
   - [correction] - (filed by Sara (Agent Mode))

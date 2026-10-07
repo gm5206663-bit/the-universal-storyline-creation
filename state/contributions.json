@@ -591,6 +591,19 @@
       "reason": "canon verification must span the complete franchise — mainline SL1-SL6, every wai-zhuan extra, and the crossover related works — before any canon verdict; the previous correction was still too narrow",
       "seq": 51,
       "was": "revision fcdb2c2: CANON_MASTER era-tagged SL2-SL5 receipts for the R27 check only; no franchise map; SL6 / Shrek Team / Douluo World / crossovers unchecked"
+    },
+    {
+      "file": "foundation/CANON_MASTER.md (qian-xunji-adaptation)",
+      "kind": "correction",
+      "now": "Deep round (author: \"Go deeper\"). The franchise map's thin rows were deepened at source: RENXUE — early history (hated the cold mother; clung to grandfather Qian Daoliu; the Xue Qinghe impersonation was her own plan, ch164/195; in the palace fight she declares herself \"Qian Xunji's child\", ch192; unmasks via a mask-type soul tool, ch193; the staged-attack/year-as-servant METHOD flagged manhua-only). BIBI DONG — had been attempting the Rakshasa God trials for over twenty years (ch223), with a Rakshasa projection when sensing Renxue's Angel trials; the tournament restraint (ordered Tang San's death, then chose to endure and let the world underestimate the Hall, ch124-130); the Soul Hunting Operation had been blocked by the Elder Hall about two decades before it passed (ch146); Phase One and the Ninth Elder's death (ch156). THE HALL — fuller named fleet (Snake Lance She Long, Porcupine Fish Ci Xue, Sacred Dragon Tuoba Xi, Devil Bear, Ghost Leopard, Spirit Kite, Sea Turtle, Ninth Elder) and bishop grades (Platinum 81+ Salas; Bishop 61+ Meyers; Golden Generation rated 71+). SL4 — protagonist Tang Xuanyu (son of Tang Wulin and Gu Yuena; golden-silver egg in the far north; adopted by Lan Xiao and Nan Cheng; Golden and Silver Dragon King bloodlines clash at every tenth-rank breakthrough; \"Little Dragon God\"; ends as the new Dragon God, founding the Divine Dragon Realm). EXTRAS' CASTS — Tang Sect Heroes: the god-realm civil war, the Golden Dragon King slain, its divine core forced into newborn Tang Wulin under eighteen seals, the six god-realms' alliance, the War of the Gods, Tang San leading the Great God Circle, Huo Yuhao (Emotion God, founder of the Spirit Transmission Tower) present; God Realm Legend set about thirty years after Huo Yuhao's ascent; Shrek Team: four god-kings (Light God-King Chang Gong Wei, Death God A Dai, Mad God Lei Xiang, Strength God Zhou Weiqing) teach four students including Dai Ying, Huo Yuhao's daughter (Lei Xiang becomes Shrek's awakening-branch dean teaching Yi Chen); Douluo World: Huo Yuhao and Tang Wutong's son leads the team against the first-generation Seven Devils. SL6 — named in the zh.wikipedia series line-up (June 2026 revision), but the deep search found only fan works by other authors under the name; still not citable. New open flag: section 13 item 14 (the manhua-only Xue Qinghe method). STATUS.md and RULINGS_LOG.md carry matching addenda; gates re-verified green from the correct working directory; Ch04 untouched.",
+      "project": "qian-xunji-adaptation",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-10-07"
+      },
+      "reason": "the author asked for the franchise check to go deeper; the thin rows and unread page sections were the remaining depth, now folded in with era tags",
+      "seq": 52,
+      "was": "revision b8f2f4c: franchise map at row level only (SL6 = 'a 2026 series listing'; SL4 = 'Blue Xuanyu'; extras = chapter titles); Renxue, Bibi Dong, and the Hall fleet un-deepened"
     }
   ]
 }
