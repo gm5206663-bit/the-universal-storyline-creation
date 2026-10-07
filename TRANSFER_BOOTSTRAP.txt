@@ -1173,8 +1173,7 @@ Sky, the continent, open-gaps list; every claim tagged with receipts. Canon
 corrections applied to chapters and docs the same day. | Ch04 'The Second
 Core' (R27): the whole climb in one chapter — sword walked as a road (Chen Xin
 receipts), thread of spirit in the blade, five sealed days, second core
-between the brows, spiritual sea; Wall beats D-plus? none; docs to post-Ch04
-truth.
+between the brows, spiritual sea; read whole (k08); docs to post-Ch04 truth.
 verification: in-repo record (foundation/ + chapters/); foundation docset v6.0
 + CANON_MASTER.md harvest (26c12ba) — foundation_gate PASS 0/0; house style
 gate ALL HARD CHECKS PASS on all 3 chapters; chapter numbers re-measured after
