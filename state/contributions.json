@@ -708,6 +708,19 @@
       "reason": "author, verbatim: 'physician?, seriously what you even think this world is, when even soul land working and written like that even' / 'What the hell even this, i don't understand single thing, what you can't write clear and clean and readable like canon written' / 'that who teach, hmm?, seriously, what the hell you even thinking seriously, like he never learn anything needed teaching what the hell, why you makeing nonsense' / 'Wow this is normal World' / 'Are you serious?, this is normal World'",
       "seq": 60,
       "was": "Chapter 04 v4 shipped in a literary-realism register with wrong-world diction, an invented aphorism quoted as if the books said it, and a canon swordsman staged as a teacher — after v4 had already struck one invented master on the author's call, i.e. the same defect shipped twice"
+    },
+    {
+      "file": "qian-xunji-adaptation: chapters/Chapter_01-04 (full rebuild) + foundation/{RULINGS_LOG R29, FAILURES F12-F13, SERIAL_LOG 7f-7h, NUMBER_LEDGER, CANON_MASTER 3+14, CANON_HARVEST_2026-10-07.md} + _archive; soul-library shelf + data + news + feed; profile row",
+      "kind": "correction",
+      "now": "The author ordered a complete canon harvest, then a full rebuild of every chapter. CANON_HARVEST_2026-10-07.md now holds nineteen sourced batches: Spirit Hall's real structure (the Pope holds THREE votes and twenty Titled elders can depose him), the seven Worshipers with exact levels, the Angel God's blood-only succession through the Qian family, Bibi Dong's whole record, martial souls and the divine class, soul bones ranked, domains, Qian Renxue's arc, the calendar (Tang San born 2631, Renxue 2620 - our clock is canon-pinned), the Seven Great Sects, soul beasts and their drop rules, the God Realm's thirty-two first-class seats, the two empires, the dated SL1 arc, the Master's ten theories, the family that breaks Popes, the Shrek Seven, the three trial places, and the hidden weapons. Three of my own errors were found and fixed on the way: I had deleted five canon facts and logged them as invention (F12), and I had capped the codex at era level and invented a 'collision' to justify it (F13). R29 is now law: the OC's knowledge is complete across all six series, and the codex is limited by strategy, never by knowledge. Then all four chapters rebuilt from scratch - Ch01 3,157w / Ch02 2,513w / Ch03 2,541w / Ch04 2,526w, serial total 10,737w, every one VERDICT PASS and every one inside the house target of average 14-18 / median 11-14 / longest under 60, which no previous version of Ch01 or Ch02 achieved. Shipped qian 13b37c1, soul-library 3482da1 (grand total 928,185, recaps 219/9/24, sentinel 26/0/0), profile 169c529 -> updated.",
+      "project": "qian-xunji-adaptation",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-10-07"
+      },
+      "reason": "author, verbatim: 'Seriously what nonsense, so what is his spritual Domine what' / 'Go collect all canon information completely everything from all soul land's completely everything and then understand them completely because you have nothing Idea of anything' / 'that master all theory mostly flawed and knowledge of spirit hall that be public, and ocs is completely High level knowledge from all soul land series, oc Codex is not wrong it was you who limited' / 'Rebuild all chapters'",
+      "seq": 61,
+      "was": "A story written from a canon file with whole systems missing from it - no spiritual-power ladder, no ring-age table, no Angel succession rule - and a codex limited to what its own era could carry, on the false grounds that the Master's theories were a rival to it"
     }
   ]
 }
