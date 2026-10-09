@@ -1199,7 +1199,9 @@ corrections (Ch02 2,490w / Ch03 2,694w). | Ch04 ship: qian-xunji-adaptation
 (SL2–SL5) — core origin (SL2-created; none in 2619) + sword ladder
 Intent/Soul/God recovered; 'fanon' note withdrawn; CANON_MASTER §2b/§11/§13
 corrected (fcdb2c2).; shelf: 4 chapters live in soul-library (byte-identical
-copies, 11,292 w measured, ingested e635de8/ffa95c6)
+copies, 11,292 w measured, ingested e635de8/ffa95c6); 2026-10-07 Ch04 v5
+rebuilt in canon register on the author's correction (R28 filed, F11 logged);
+4 chapters, 11,362 w, all gate PASS
 
 RECORDS:
   - [correction] -
@@ -1729,6 +1731,7 @@ OTHER RECORDS:
   + innate full), OC awakens Ground Fire Dragon Lizard with innate mid (no
   digit in prose), D1 earned on page. STATUS v2 + cockpit mirrors synced
   same turn. Next: chapter 2 on the author's word. (filed by arena-agent)
+  - [correction] - (filed by Sara (Agent Mode))
   - [correction] - (filed by Sara (Agent Mode))
   - [correction] - (filed by Sara (Agent Mode))
   - [correction] - (filed by Sara (Agent Mode))

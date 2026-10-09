@@ -695,6 +695,19 @@
       "reason": "author: 'All five gates green, nothing going to happen by doing green, you really need to do everything' - the sentinel cannot see a file that is itself stale, so the shelf copies were compared byte-for-byte against every source repo, and everything downstream was re-measured from the files",
       "seq": 59,
       "was": "the shelf claimed 'copied unchanged from the source of truth ... the workspace wins' but 29 files across 5 serials (Supergirl 8, Golden Lion 8, Grey Wolf 5, One in a Thousand 5, Devouring Dragon 3) were behind their sources; every word count was inherited from earlier partial passes; the labels table disagreed with any fresh measure"
+    },
+    {
+      "file": "qian-xunji-adaptation: chapters/Chapter_04_The_Second_Core.md (full rebuild) + Chapter_01/03 diction + foundation/{RULINGS_LOG,FAILURES,SERIAL_LOG,NUMBER_LEDGER}.md + _archive v4; soul-library shelf resync + data + news + feed",
+      "kind": "correction",
+      "now": "Chapter 04 rebuilt whole in the canon register on the author's correction. Four faults the author named, all struck: (1) the Chen Xin passage staged as a master handing the era's Angel Douluo his art — no swordsman of any kind now appears on the page; the footer states honestly that the figure IS canon (剑道尘心, 97) and was struck for the beat, not for being invented; (2) wrong-world diction — 'physician' x3 here and x3 in Ch01/Ch03 (-> doctor), 'no politics standing by the bed' (-> 'Nobody else in it'); (3) an invented aphorism cited as book-lore ('the whole ledger of the art in a single line - ten thousand mornings, or don't bother') and the 'Sword Dao' naming story; (4) literary-realism register instead of the canon register ('a man and a sword are a marriage', 'punctual as a clerk', 'the old lives agreed on the road', 'be the house'). Rewritten to the register of Ch01-Ch03, the chapters that survived the author's earlier style call (FAILURES.md F7): avg 15.4 -> 13.9, median 12 -> 11, longest 49 -> 44, dialogue 3 -> 10 lines, 2,784w, gate PASS (the project's own tools/measure_chapter.py). All four chapters re-gated PASS. R28 filed as law (canon register; nothing invented; no metaphor standing in for a fact), F11 filed as failure, SERIAL_LOG 7e. Shipped 39f84b0. Shelf: 3 qian copies resynced byte-identical (SHA-verified), counts re-measured under the project's own counting rule after a first ad-hoc pass was caught 5-10 words high on all 219 entries and reverted; only 2 entries moved; grand total 928,740 -> 928,810; recaps 219/9/24 and sentinel 26/0/0 re-run WITH the kit path; news + feed carry it. Shipped e54395f.",
+      "project": "qian-xunji-adaptation",
+      "provenance": {
+        "agent": "Sara (Agent Mode)",
+        "date": "2026-10-07"
+      },
+      "reason": "author, verbatim: 'physician?, seriously what you even think this world is, when even soul land working and written like that even' / 'What the hell even this, i don't understand single thing, what you can't write clear and clean and readable like canon written' / 'that who teach, hmm?, seriously, what the hell you even thinking seriously, like he never learn anything needed teaching what the hell, why you makeing nonsense' / 'Wow this is normal World' / 'Are you serious?, this is normal World'",
+      "seq": 60,
+      "was": "Chapter 04 v4 shipped in a literary-realism register with wrong-world diction, an invented aphorism quoted as if the books said it, and a canon swordsman staged as a teacher — after v4 had already struck one invented master on the author's call, i.e. the same defect shipped twice"
     }
   ]
 }
