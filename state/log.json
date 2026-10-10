@@ -541,6 +541,15 @@
         "correction#45"
       ],
       "count": 1
+    },
+    {
+      "when": "2026-10-10T10:07:57",
+      "file": "ch10_ch11_deleted.json",
+      "agent": "Sara (Agent Mode)",
+      "ids": [
+        "correction#75"
+      ],
+      "count": 1
     }
   ]
 }
