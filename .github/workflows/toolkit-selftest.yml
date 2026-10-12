@@ -1,0 +1,48 @@
+# TOOLKIT SELFTEST — the toolkit's own 102 checks, on every push.
+#
+# Armed 2026-10-12, under the same rollout as the others: actions pinned to
+# SHAs, permissions contents: read, concurrency, job timeout.
+#
+# TRIGGER COVERS WHAT THE CHECKER READS.
+#
+# WHAT THIS DOES AND DOES NOT VERIFY — tools/selftest.py, the toolkit's own suite. tools/foundation_gate.py is a gate FOR serials and cannot be pointed at the toolkit itself (verified: it demands the nineteen core files of a serial's foundation docset, which this repo does not claim to be).
+
+name: toolkit-selftest
+
+on:
+  push:
+    paths:
+      - 'tools/**'
+      - 'foundation/**'
+      - '.github/workflows/toolkit-selftest.yml'
+  pull_request:
+    paths:
+      - 'tools/**'
+      - 'foundation/**'
+      - '.github/workflows/toolkit-selftest.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: toolkit-selftest-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  gate:
+    name: toolkit selftest
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: "3.11"
+      - name: Toolkit selftest (102 checks)
+        run: python3 tools/selftest.py
